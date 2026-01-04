@@ -15,9 +15,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY
-});
+const ai = new GoogleGenAI(process.env.GEMINI_API_KEY);
 
 const SYSTEM_INSTRUCTION = `
 You are GitaLens AI, a guide offering spiritual steadiness and clarity rooted in Bhagavad Gita principles.
@@ -111,27 +109,20 @@ app.post("/api/guidance", async (req, res) => {
       ${includeVerse && mode === 2 ? "Integrate a relevant Bhagavad Gita verse (reference and text) naturally into your response. Do not use labels like 'Verse:' or 'Relevance:'. The mention should feel like a quiet part of the narrative." : ""}
     `;
 
-    const result = await ai.models.generateContent({
-      model: "gemini-2.0-flash", // Using 2.0-flash as a safe modern default or 1.5-flash? 
-      // User used `gemini-3-flash-preview`? There is no 3-flash. Maybe `gemini-1.5-flash` or `gemini-2.0-flash-exp`.
-      // Wait. The code in Step 16 said `gemini-3-flash-preview`. 
-      // Does that prompt exist? Maybe the user meant `gemini-1.5-flash` or `gemini-2.0-flash`?
-      // I'll stick to `gemini-1.5-flash` as it is standard. Or `gemini-2.0-flash` if verified?
-      // Actually, if `gemini-1.5-flash` failed with 400 (even without system instructions), maybe it's Deprecated? No.
-      // Maybe the KEY is for a specific project.
-
-      // I will try `gemini-1.5-flash` BUT verify `config` structure.
-      // In SDK 0.x, `config` works.
-
+    const model = ai.getGenerativeModel({
       model: "gemini-1.5-flash",
+      systemInstruction: SYSTEM_INSTRUCTION,
+    });
+
+    const result = await model.generateContent({
       contents: [...conversationHistory, { role: 'user', parts: [{ text: prompt }] }],
-      config: {
-        systemInstruction: SYSTEM_INSTRUCTION,
+      generationConfig: {
         temperature: 0.3,
       },
     });
 
-    const text = result.text || "I am unable to provide clarity at this moment.";
+    const response = await result.response;
+    const text = response.text() || "I am unable to provide clarity at this moment.";
     const isChoicePrompt = (!history || history.length === 0) && mode === 0;
 
     res.json({
