@@ -17,31 +17,21 @@ if (!process.env.GEMINI_API_KEY) {
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
-async function test() {
-    console.log("Testing @google/genai with model: gemini-1.5-flash");
+async function listModels() {
+    console.log("Listing available models for this API key...");
     try {
-        const result = await ai.models.generateContent({
-            model: "gemini-1.5-flash",
-            contents: "Hello",
-        });
-        console.log("Success! Response:", result.text);
-    } catch (error) {
-        console.error("Fail with gemini-1.5-flash:");
-        console.error(error);
+        const list = await ai.models.list();
+        console.log("List type:", typeof list);
+        console.log("List keys:", Object.keys(list));
 
-        // Try with 'models/' prefix
-        console.log("\nRetrying with 'models/gemini-1.5-flash'...");
-        try {
-            const result2 = await ai.models.generateContent({
-                model: "models/gemini-1.5-flash",
-                contents: "Hello",
-            });
-            console.log("Success with prefix! Response:", result2.text);
-        } catch (error2) {
-            console.error("Fail with prefix:");
-            console.error(error2);
+        // Try iterating if it's iterable
+        console.log("Iterating...");
+        for await (const model of list) {
+            console.log(`- ${model.name}`);
         }
+    } catch (error) {
+        console.error("List failed:", error);
     }
 }
 
-test();
+listModels();

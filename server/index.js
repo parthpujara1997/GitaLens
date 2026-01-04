@@ -112,8 +112,12 @@ app.post("/api/guidance", async (req, res) => {
     `;
 
     const result = await ai.models.generateContent({
-      model: "models/gemini-1.5-flash-001",
+      model: "models/gemini-1.5-flash",
       contents: [...conversationHistory, { role: 'user', parts: [{ text: prompt }] }],
+      config: {
+        systemInstruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },
+        temperature: 0.3,
+      },
     });
 
     const text = result.text || "I am unable to provide clarity at this moment.";
@@ -126,17 +130,7 @@ app.post("/api/guidance", async (req, res) => {
 
   } catch (error) {
     console.error("Gemini error:", error);
-    let availableModels = "Unable to list";
-    try {
-      const list = await ai.models.list();
-      availableModels = list;
-    } catch (e) { availableModels = "List failed: " + e.message; }
-
-    res.status(500).json({
-      error: "Gemini request failed",
-      details: error.message,
-      available_models: availableModels
-    });
+    res.status(500).json({ error: "Gemini request failed" });
   }
 });
 
