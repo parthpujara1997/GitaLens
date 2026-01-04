@@ -113,9 +113,9 @@ app.post("/api/guidance", async (req, res) => {
 
     const result = await ai.models.generateContent({
       model: "gemini-1.5-flash",
-      systemInstruction: SYSTEM_INSTRUCTION,
       contents: [...conversationHistory, { role: 'user', parts: [{ text: prompt }] }],
       config: {
+        systemInstruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },
         temperature: 0.3,
       },
     });
