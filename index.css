@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+    --color-parchment: #F7F4EF;
+    --color-parchment-dark: #1E1E1C;
+    --color-parchment-bubble: #F3EFE7;
+
+    --color-charcoal: #2B2B2B;
+    --color-charcoal-dark: #262626;
+
+    --color-stone: #D6D2C8;
+    --color-stone-warm: #E2DED6;
+    --color-stone-light: #ECE8E1;
+    --color-stone-neutral: #E7E3DA;
+
+    --color-saffron-brown: #6B4F1D;
+    --color-saffron-beige: #F1E7D6;
+    --color-saffron-accent: #C2A15F;
+    --color-saffron-deep: #6B5A38;
+
+    --color-sandalwood: #EFE6D8;
+    --color-sandalwood-border: #D8CBB5;
+
+    --color-clay: #7A5A3A;
+    --color-clay-hover: #6A4D33;
+    --color-clay-tint: #F0DAD3;
+
+    --color-indigo: #3A3F4B;
+    --color-indigo-hover: #4A5060;
+    --color-indigo-active: #5A5F6A;
+
+    --color-olive: #8E947E;
+
+    --font-sans: Inter, sans-serif;
+    --font-serif: "Playfair Display", serif;
+}
+
+@layer base {
+    body {
+        @apply bg-parchment text-charcoal font-sans antialiased;
+    }
+
+    h1,
+    h2,
+    .serif {
+        @apply font-serif;
+    }
+
+    button,
+    [role="button"],
+    a {
+        @apply cursor-pointer;
+    }
+}
+
+@layer utilities {
+    .glass-panel {
+        @apply bg-stone-neutral/80 backdrop-blur-md border-r border-stone/50;
+    }
+
+    .glass-card {
+        @apply bg-white/60 backdrop-blur-sm border border-stone/40 shadow-sm hover:shadow-md transition-all duration-300;
+    }
+
+    .glass-input {
+        @apply bg-white/50 backdrop-blur-sm border border-stone/60 focus:border-saffron-accent focus:ring-1 focus:ring-saffron-accent/20 transition-all duration-200;
+    }
+}
