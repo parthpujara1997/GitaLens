@@ -15,7 +15,12 @@ async function testRemote() {
 
         console.log("Status:", response.status);
         const text = await response.text();
-        console.log("Body:", text);
+        try {
+            const json = JSON.parse(text);
+            console.log("Error Message:", json.details);
+        } catch (e) {
+            console.log("Body:", text);
+        }
 
     } catch (error) {
         console.error("Test failed:", error);

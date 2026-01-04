@@ -126,10 +126,16 @@ app.post("/api/guidance", async (req, res) => {
 
   } catch (error) {
     console.error("Gemini error:", error);
+    let availableModels = "Unable to list";
+    try {
+      const list = await ai.models.list();
+      availableModels = list;
+    } catch (e) { availableModels = "List failed: " + e.message; }
+
     res.status(500).json({
       error: "Gemini request failed",
       details: error.message,
-      stack: error.stack
+      available_models: availableModels
     });
   }
 });
