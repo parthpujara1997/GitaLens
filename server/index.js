@@ -112,7 +112,7 @@ app.post("/api/guidance", async (req, res) => {
     `;
 
     const result = await ai.models.generateContent({
-      model: "models/gemini-1.5-flash",
+      model: "models/gemini-1.5-flash-001",
       contents: [...conversationHistory, { role: 'user', parts: [{ text: prompt }] }],
     });
 

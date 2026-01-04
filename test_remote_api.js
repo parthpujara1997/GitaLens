@@ -17,19 +17,14 @@ async function testRemote() {
         const text = await response.text();
         try {
             const json = JSON.parse(text);
-            console.log("Error Message:", json.details);
-
-            const models = json.available_models;
-            if (models) {
-                // Check structure (array or object wrapper)
-                const list = Array.isArray(models) ? models : (models.models || []);
-                if (Array.isArray(list) && list.length > 0) {
-                    console.log("Model Names:", list.map(m => m.name || m.displayName));
-                } else {
-                    console.log("Models raw:", JSON.stringify(models).substring(0, 500));
-                }
+            if (json.text) {
+                console.log("SUCCESS! Response:", json.text);
             } else {
-                console.log("No available_models field.");
+                console.log("Error details:", json.details || json.error);
+                if (json.available_models) {
+                    const list = Array.isArray(json.available_models) ? json.available_models : (json.available_models.models || []);
+                    console.log("Models:", list.map(m => m.name || m.displayName));
+                }
             }
         } catch (e) {
             console.log("Body snippet:", text.substring(0, 200));
