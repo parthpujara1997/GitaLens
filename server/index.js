@@ -15,7 +15,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const ai = new GoogleGenAI(process.env.GEMINI_API_KEY);
+const ai = new GoogleGenAI({
+  apiKey: process.env.GEMINI_API_KEY
+});
 
 const SYSTEM_INSTRUCTION = `
 You are GitaLens AI, a guide offering spiritual steadiness and clarity rooted in Bhagavad Gita principles.
@@ -109,20 +111,16 @@ app.post("/api/guidance", async (req, res) => {
       ${includeVerse && mode === 2 ? "Integrate a relevant Bhagavad Gita verse (reference and text) naturally into your response. Do not use labels like 'Verse:' or 'Relevance:'. The mention should feel like a quiet part of the narrative." : ""}
     `;
 
-    const model = ai.getGenerativeModel({
+    const result = await ai.models.generateContent({
       model: "gemini-1.5-flash",
       systemInstruction: SYSTEM_INSTRUCTION,
-    });
-
-    const result = await model.generateContent({
       contents: [...conversationHistory, { role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: {
+      config: {
         temperature: 0.3,
       },
     });
 
-    const response = await result.response;
-    const text = response.text() || "I am unable to provide clarity at this moment.";
+    const text = result.text || "I am unable to provide clarity at this moment.";
     const isChoicePrompt = (!history || history.length === 0) && mode === 0;
 
     res.json({
