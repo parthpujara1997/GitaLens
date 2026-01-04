@@ -112,7 +112,7 @@ app.post("/api/guidance", async (req, res) => {
     `;
 
     const result = await ai.models.generateContent({
-      model: "models/gemini-1.5-flash",
+      model: "models/gemini-2.5-flash",
       contents: [...conversationHistory, { role: 'user', parts: [{ text: prompt }] }],
       config: {
         systemInstruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },
@@ -129,7 +129,9 @@ app.post("/api/guidance", async (req, res) => {
     });
 
   } catch (error) {
-    console.error("Gemini error:", error);
+    console.error("Gemini error (full):", error);
+    console.error("Gemini error message:", error.message);
+    console.error("Gemini error stack:", error.stack);
     res.status(500).json({ error: "Gemini request failed" });
   }
 });
