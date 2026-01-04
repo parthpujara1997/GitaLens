@@ -96,7 +96,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
   };
 
   const handleSubmit = async (e?: React.FormEvent, overrideInput?: string) => {
-    // ... no changes to core handleSubmit for now ...
+    e?.preventDefault();
     const messageToSend = overrideInput || input.trim();
     if (!messageToSend || loading) return;
 
