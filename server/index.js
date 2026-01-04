@@ -126,7 +126,11 @@ app.post("/api/guidance", async (req, res) => {
 
   } catch (error) {
     console.error("Gemini error:", error);
-    res.status(500).json({ error: "Gemini request failed" });
+    res.status(500).json({
+      error: "Gemini request failed",
+      details: error.message,
+      stack: error.stack
+    });
   }
 });
 
