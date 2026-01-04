@@ -1,6 +1,6 @@
 import { LanguageLevel, InteractionMode } from "./types";
 
-const API_URL = "http://localhost:3001/api/guidance";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001/api/guidance";
 
 export const getGuidance = async (
   userInput: string,
