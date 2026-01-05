@@ -251,13 +251,26 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
 
 
 
+
+
+      <AnimatePresence>
+        {readingVerse && (
+          <VerseModal
+            chapter={readingVerse.chapter}
+            verse={readingVerse.verse}
+            onClose={() => setReadingVerse(null)}
+            onOpenLibrary={() => onNavigate('LIBRARY')}
+          />
+        )}
+      </AnimatePresence>
+
       <form onSubmit={handleSubmit} className="p-4 bg-white border-t">
         <div className="relative flex items-center">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Share your burden..."
+            placeholder="What's on your mind..."
             className="w-full px-5 py-3 pr-12 bg-stone-50 border border-stone-200 rounded-full text-sm focus:outline-none focus:border-saffron-accent focus:ring-1 focus:ring-saffron-accent transition-all placeholder:text-stone-400 placeholder:italic"
             disabled={loading}
           />
