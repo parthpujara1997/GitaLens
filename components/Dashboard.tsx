@@ -195,7 +195,17 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
         </div>
       </section>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
+        <motion.button
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          onClick={() => onNavigate(View.LIBRARY)}
+          className="glass-card w-full flex flex-col items-center justify-center p-6 rounded-2xl text-center"
+        >
+          <span className="text-base font-medium text-charcoal">Library</span>
+          <p className="text-stone-500/80 text-[10px] uppercase tracking-tighter mt-1">Explore Gita</p>
+        </motion.button>
+
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}

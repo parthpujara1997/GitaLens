@@ -4,6 +4,31 @@ export interface Verse {
   reflection: string;
 }
 
+export interface GitaVerse {
+  id: string;
+  chapter: number;
+  verse: number;
+  reference: string;
+  sanskrit?: string;
+  text: string;
+  reflection: string;
+  themes: string[];
+  speaker: 'Krishna' | 'Arjuna' | 'Sanjaya' | 'Dhritarashtra';
+}
+
+export interface GitaChapter {
+  number: number;
+  name: string;
+  description: string;
+  verseCount: number;
+}
+
+export interface Theme {
+  id: string;
+  name: string;
+  description: string;
+}
+
 export interface UserProgress {
   reflection_days: number;
   last_visit_date: string | null;
@@ -19,6 +44,7 @@ export enum View {
   DASHBOARD = 'DASHBOARD',
   GUIDANCE = 'GUIDANCE',
   JOURNAL = 'JOURNAL',
+  LIBRARY = 'LIBRARY',
   SETTINGS = 'SETTINGS',
   FAVORITES = 'FAVORITES',
   HISTORY = 'HISTORY'
@@ -44,6 +70,5 @@ export enum InteractionMode {
 }
 
 export interface AppSettings {
-  showSupportingVerses: boolean;
   languageLevel: LanguageLevel;
 }

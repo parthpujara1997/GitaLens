@@ -7,6 +7,7 @@ import Journal from './components/Journal';
 import Settings from './components/Settings';
 import Favorites from './components/Favorites';
 import HistoryView from './components/History';
+import Library from './components/Library';
 import Navigation from './components/Navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useAuth } from './contexts/AuthContext';
@@ -208,6 +209,12 @@ const App: React.FC = () => {
               {currentView === View.JOURNAL && (
                 <Journal
                   onComplete={() => setCurrentView(View.DASHBOARD)}
+                  onAuthRequired={(mode) => { setAuthMode(mode); setIsAuthModalOpen(true); }}
+                />
+              )}
+              {currentView === View.LIBRARY && (
+                <Library
+                  onBack={() => setCurrentView(View.DASHBOARD)}
                   onAuthRequired={(mode) => { setAuthMode(mode); setIsAuthModalOpen(true); }}
                 />
               )}

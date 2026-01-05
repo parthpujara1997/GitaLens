@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from '../types';
-import { Home, Compass, PenLine, Settings, Heart, History, LucideIcon } from 'lucide-react';
+import { Home, Compass, PenLine, Settings, Heart, History, BookOpen, LucideIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 import { useAuth } from '../contexts/AuthContext';
@@ -24,6 +24,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeView, onNavigate, orienta
     { view: View.DASHBOARD, label: 'Home', icon: Home },
     { view: View.GUIDANCE, label: 'Guidance', icon: Compass },
     { view: View.JOURNAL, label: 'Journal', icon: PenLine },
+    { view: View.LIBRARY, label: 'Library', icon: BookOpen },
     { view: View.FAVORITES, label: 'Favorites', icon: Heart },
     { view: View.HISTORY, label: 'History', icon: History },
     { view: View.SETTINGS, label: 'Settings', icon: Settings },

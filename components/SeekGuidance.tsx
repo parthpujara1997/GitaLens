@@ -3,9 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { AppSettings, InteractionMode, LanguageLevel } from '../types';
 import { getGuidance } from '../services/aiService';
 import { storageService } from '../services/storageService';
-import { Compass, ArrowLeft, Bookmark, Check } from 'lucide-react';
+import { Compass, ArrowLeft, Bookmark, Check, Quote, ArrowRight } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
+import { getVerse } from '../gitaData';
 
 interface SeekGuidanceProps {
   settings: AppSettings;
@@ -18,18 +19,17 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<{ role: 'user' | 'ai'; content: string }[]>([]);
   const [loading, setLoading] = useState(false);
-  const [mode, setMode] = useState<InteractionMode>(InteractionMode.UNDECIDED);
-  const [showChoices, setShowChoices] = useState(false);
   const [showLevelMenu, setShowLevelMenu] = useState(false);
   const [shouldSave, setShouldSave] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
+  const [readingVerse, setReadingVerse] = useState<{ chapter: number; verse: number } | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
-  }, [messages, loading, showChoices]);
+  }, [messages, loading]);
 
   const handleLanguageChange = (level: LanguageLevel) => {
     const newSettings = { ...settings, languageLevel: level };
@@ -41,7 +41,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
   const callBackend = async (text: string, historyOverride?: typeof messages) => {
     const response = await getGuidance(
       text,
-      `Mode: ${mode}, Language: ${settings.languageLevel}, Verses: ${settings.showSupportingVerses}`,
+      `Language: ${settings.languageLevel}`,
       (historyOverride || messages).map(m => ({
         role: m.role,
         content: m.content
@@ -106,14 +106,10 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
     }
 
     setLoading(true);
-    setShowChoices(false);
 
     try {
       const aiText = await callBackend(messageToSend);
       setMessages(prev => [...prev, { role: 'ai', content: aiText }]);
-      if (mode === InteractionMode.UNDECIDED) {
-        setShowChoices(true);
-      }
     } catch {
       setMessages(prev => [
         ...prev,
@@ -124,29 +120,22 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
     }
   };
 
-  const handleChoice = async (selectedMode: InteractionMode) => {
-    setMode(selectedMode);
-    setShowChoices(false);
-
-    const choiceText =
-      selectedMode === InteractionMode.EXPLORE
-        ? 'I want to talk this through.'
-        : 'I want to receive guidance.';
-
-    const updatedHistory = [...messages, { role: 'user', content: choiceText }];
-    setMessages(updatedHistory);
-    setLoading(true);
-
-    try {
-      const aiText = await callBackend(
-        `User selected ${selectedMode}. Continue accordingly.`,
-        updatedHistory
-      );
-      setMessages(prev => [...prev, { role: 'ai', content: aiText }]);
-    } finally {
-      setLoading(false);
+  const findVerseReference = (text: string): { chapter: number; verse: number } | null => {
+    // Look for patterns like "Chapter 2, Verse 47" or "2.47"
+    const match = text.match(/Chapter (\d+), Verse (\d+)/i);
+    if (match) {
+      return { chapter: parseInt(match[1]), verse: parseInt(match[2]) };
     }
+    return null;
   };
+
+  // Import locally to avoid circular dependency issues if they arise, or assuming gitaData is available
+  // We'll trust the gitaData import availability.
+  // We need to import getVerse. Since we can't easily add top-level imports with multi_replace without context,
+  // we will assume the file already imports what it needs or I'll add the import in a separate chunk.
+
+
+
 
   return (
     <div className="flex flex-col h-[75vh] md:h-[80vh] w-full max-w-xl mx-auto bg-white rounded-2xl border overflow-hidden">
@@ -221,52 +210,135 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
           </div>
         )}
 
-        {messages.map((m, idx) => (
-          <div key={idx} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-            <div className={`max-w-[85%] rounded-2xl px-5 py-4 border ${m.role === 'user' ? 'bg-indigo text-white border-indigo' : 'bg-white text-charcoal shadow-sm border-stone-warm/30'}`}>
-              <p className="text-sm whitespace-pre-wrap leading-relaxed">{m.content}</p>
-            </div>
-          </div>
-        ))}
+        {messages.map((m, idx) => {
+          const verseRef = m.role === 'ai' ? findVerseReference(m.content) : null;
 
-        {showChoices && (
-          <div className="flex flex-col space-y-3 pt-4 animate-in fade-in slide-in-from-bottom-4">
-            <p className="text-[10px] uppercase tracking-widest text-stone-400 font-bold text-center">How shall we proceed?</p>
-            <div className="grid grid-cols-2 gap-3">
-              <button
-                onClick={() => handleChoice(InteractionMode.EXPLORE)}
-                className="px-4 py-3 bg-white border border-stone-warm rounded-xl text-sm font-medium hover:border-saffron-accent transition-all"
-              >
-                Talk this through
-              </button>
-              <button
-                onClick={() => handleChoice(InteractionMode.GUIDANCE)}
-                className="px-4 py-3 bg-white border border-stone-warm rounded-xl text-sm font-medium hover:border-saffron-accent transition-all"
-              >
-                Receive guidance
-              </button>
+          return (
+            <div key={idx} className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'} space-y-2`}>
+              <div className={`max-w-[85%] rounded-2xl px-5 py-4 border ${m.role === 'user' ? 'bg-indigo text-white border-indigo' : 'bg-white text-charcoal shadow-sm border-stone-warm/30'}`}>
+                <p className="text-sm whitespace-pre-wrap leading-relaxed">{m.content}</p>
+              </div>
+
+              {m.role === 'ai' && verseRef && (
+                <button
+                  onClick={() => setReadingVerse(verseRef)}
+                  className="ml-2 flex items-center space-x-2 px-4 py-2 bg-saffron-light/20 hover:bg-saffron-light/30 border border-saffron-accent/20 rounded-full transition-colors group"
+                >
+                  <span className="text-xs font-bold text-saffron-dark uppercase tracking-wide">Read related verse</span>
+                  <div className="w-4 h-4 rounded-full bg-saffron-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <ArrowLeft size={10} className="rotate-180 text-saffron-dark" />
+                  </div>
+                </button>
+              )}
             </div>
-          </div>
-        )}
+          );
+        })}
+
+
 
         {loading && (
           <div className="flex justify-start">
-            <div className="bg-white/50 backdrop-blur-sm rounded-2xl px-5 py-4 border border-stone-warm/30 animate-pulse">
-              <p className="text-sm text-stone-400 italic">Anticipating wisdom...</p>
+            <div className={`bg-white/50 backdrop-blur-sm rounded-2xl px-5 py-4 border border-stone-warm/30 ${loading ? 'animate-pulse' : ''}`}>
+              <div className="flex space-x-1">
+                <div className="w-1.5 h-1.5 bg-stone-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                <div className="w-1.5 h-1.5 bg-stone-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                <div className="w-1.5 h-1.5 bg-stone-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+              </div>
             </div>
           </div>
         )}
       </div>
 
-      <form onSubmit={handleSubmit} className="p-4 border-t bg-white">
-        <input
-          value={input}
-          onChange={e => setInput(e.target.value)}
-          disabled={loading || showChoices}
-          placeholder="What's weighing on your mind?"
-          className="w-full px-5 py-4 bg-stone-50 border border-stone-warm/50 rounded-2xl text-sm focus:outline-none focus:border-saffron-accent transition-all placeholder:text-stone-400"
-        />
+
+
+      <form onSubmit={handleSubmit} className="p-4 bg-white border-t">
+        <div className="relative flex items-center">
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Share your burden..."
+            className="w-full px-5 py-3 pr-12 bg-stone-50 border border-stone-200 rounded-full text-sm focus:outline-none focus:border-saffron-accent focus:ring-1 focus:ring-saffron-accent transition-all placeholder:text-stone-400 placeholder:italic"
+            disabled={loading}
+          />
+          <button
+            type="submit"
+            disabled={!input.trim() || loading}
+            className="absolute right-2 p-2 bg-charcoal text-white rounded-full disabled:opacity-30 disabled:cursor-not-allowed hover:bg-black transition-all"
+          >
+            <ArrowRight size={16} />
+          </button>
+        </div>
       </form>
+    </div >
+
+  );
+};
+
+interface VerseModalProps {
+  chapter: number;
+  verse: number;
+  onClose: () => void;
+  onOpenLibrary: () => void;
+}
+
+const VerseModal: React.FC<VerseModalProps> = ({ chapter, verse, onClose, onOpenLibrary }) => {
+  const verseData = getVerse(chapter, verse);
+
+  if (!verseData) return null;
+
+  return (
+    <div className="absolute inset-0 z-50 flex items-center justify-center p-4 bg-charcoal/40 backdrop-blur-sm">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.95 }}
+        className="bg-white w-full max-w-md max-h-[80vh] overflow-y-auto rounded-xl shadow-2xl flex flex-col"
+      >
+        <div className="sticky top-0 z-10 flex items-center justify-between p-4 border-b bg-white">
+          <h3 className="font-serif text-lg text-charcoal">
+            Chapter {chapter}, Verse {verse}
+          </h3>
+          <div className="flex items-center space-x-2">
+            <button
+              onClick={onOpenLibrary}
+              className="text-[10px] uppercase font-bold tracking-wider text-saffron-dark hover:text-saffron-light transition-colors px-2 py-1"
+            >
+              Open Library
+            </button>
+            <button
+              onClick={onClose}
+              className="w-8 h-8 flex items-center justify-center rounded-full bg-stone-100 hover:bg-stone-200 text-stone-500 transition-colors"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+
+        <div className="p-6 space-y-6">
+          <div className="space-y-4">
+            <Quote className="text-saffron-accent/40 w-8 h-8" />
+            <p className="font-serif text-xl leading-relaxed text-charcoal">
+              {verseData.text}
+            </p>
+          </div>
+
+          <div className="bg-stone-50 p-5 rounded-xl border border-stone-warm/50">
+            <h4 className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-2">Reflection</h4>
+            <p className="text-sm text-stone-600 leading-relaxed">
+              {verseData.reflection}
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            {verseData.themes.map(theme => (
+              <span key={theme} className="px-2 py-1 bg-stone-100 text-stone-500 text-[10px] uppercase tracking-wider font-bold rounded">
+                {theme}
+              </span>
+            ))}
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 };
