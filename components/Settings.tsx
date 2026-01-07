@@ -10,9 +10,8 @@ interface SettingsProps {
 
 const Settings: React.FC<SettingsProps> = ({ settings, onUpdate, onBack }) => {
   const levels = [
-    { id: LanguageLevel.SIMPLE, label: 'Simple', desc: 'Concrete and direct language.' },
-    { id: LanguageLevel.MODERATE, label: 'Moderate', desc: 'Modern and clear language.' },
-    { id: LanguageLevel.ORIGINAL, label: 'Original', desc: 'Formal and classical reasoning.' },
+    { id: LanguageLevel.MODERN, label: 'Modern', desc: 'Clear, grounded, contemporary language.' },
+    { id: LanguageLevel.ORIGINAL, label: 'Original', desc: 'Profound, nuanced, and poetic.' },
   ];
 
   return (
@@ -33,8 +32,8 @@ const Settings: React.FC<SettingsProps> = ({ settings, onUpdate, onBack }) => {
                 key={level.id}
                 onClick={() => onUpdate({ ...settings, languageLevel: level.id })}
                 className={`w-full flex flex-col items-start p-4 rounded-xl transition-all ${settings.languageLevel === level.id
-                    ? 'bg-indigo-active text-[#F3F0EA] shadow-md'
-                    : 'bg-white/50 text-[#6E6B64] border border-stone-warm hover:border-stone'
+                  ? 'bg-indigo-active text-[#F3F0EA] shadow-md'
+                  : 'bg-white/50 text-[#6E6B64] border border-stone-warm hover:border-stone'
                   }`}
               >
                 <div className="flex items-center justify-between w-full mb-1">

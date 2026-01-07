@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, BookOpen, Heart, Tag, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
+import { ArrowLeft, BookOpen, Heart, Tag, ChevronLeft, ChevronRight, Scroll } from 'lucide-react';
 import { GITA_VERSES, CHAPTERS, THEMES, getVersesByChapter, getVersesByTheme } from '../gitaData';
 import { GitaVerse } from '../types';
 import { useAuth } from '../contexts/AuthContext';
@@ -403,9 +403,9 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <div className="md:col-span-2 bg-white/40 rounded-2xl p-6 border border-stone-warm/50">
                                     <div className="flex items-center space-x-2 mb-3">
-                                        <Sparkles size={16} className="text-saffron-accent" />
+                                        <Scroll size={16} className="text-saffron-accent" />
                                         <h4 className="text-xs uppercase tracking-widest font-bold text-stone-600">
-                                            Insight & Commentary
+                                            Insight
                                         </h4>
                                     </div>
 

@@ -163,7 +163,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
 
   return (
     <div className="flex flex-col items-center space-y-8 animate-in fade-in duration-700 w-full max-w-xl mx-auto pb-10">
-      <div className="text-center pt-2 pb-6">
+      <div className="text-center pt-2 pb-1">
         <img
           src="/logo.png"
           alt="GitaLens"
