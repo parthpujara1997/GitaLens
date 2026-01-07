@@ -35,3 +35,38 @@ export const getGuidance = async (
     return { text: "A moment of silence is needed. Please try again soon.", isChoicePrompt: false };
   }
 };
+
+export interface VerseReflection {
+  type: 'reflection' | 'context';
+  text: string;
+}
+
+export const generateVerseReflection = async (
+  verseText: string,
+  chapterName: string,
+  speaker: string
+): Promise<VerseReflection> => {
+  try {
+    const response = await fetch(`${API_URL.replace('/guidance', '/reflection')}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        verseText,
+        chapterName,
+        speaker
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Server error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error generating verse reflection:", error);
+    throw error;
+  }
+};

@@ -1,14 +1,18 @@
-async function test() {
+
+const fetch = require('node-fetch');
+
+async function testApi() {
     try {
-        const response = await fetch("http://localhost:3001/api/guidance", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ userInput: "I feel lost", mode: 2, level: 1, history: [] })
-        });
+        console.log("Fetching from bhagavadgitaapi.in...");
+        const response = await fetch('https://bhagavadgitaapi.in/slok/1/1');
+        if (!response.ok) {
+            throw new Error(`HTTP status ${response.status}`);
+        }
         const data = await response.json();
-        console.log("Response:", JSON.stringify(data, null, 2));
+        console.log("Success! Data preview:", JSON.stringify(data).slice(0, 200));
     } catch (e) {
-        console.error("Error:", e);
+        console.error("Fetch failed:", e.message);
     }
 }
-test();
+
+testApi();

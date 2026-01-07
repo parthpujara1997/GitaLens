@@ -6,6 +6,7 @@ import { Verse } from '../types';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 import LoginPrompt from './Auth/LoginPrompt';
+import { VerseCardSkeleton } from './Skeleton';
 
 interface FavoritesProps {
     onBack: () => void;
@@ -104,8 +105,10 @@ const Favorites: React.FC<FavoritesProps> = ({ onBack, onAuthRequired }) => {
 
             <div className="space-y-4">
                 {loading ? (
-                    <div className="flex justify-center py-20">
-                        <Loader2 className="animate-spin text-stone-300" size={32} />
+                    <div className="space-y-4">
+                        <VerseCardSkeleton />
+                        <VerseCardSkeleton />
+                        <VerseCardSkeleton />
                     </div>
                 ) : favorites.length === 0 ? (
                     <div className="bg-white/40 border border-dashed border-stone-warm rounded-3xl p-12 text-center">

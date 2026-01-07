@@ -11,14 +11,18 @@ import { getVerse } from '../gitaData';
 interface SeekGuidanceProps {
   settings: AppSettings;
   onNavigate: (view: any) => void;
+  initialMessages: { role: 'user' | 'ai'; content: string }[];
+  onUpdateMessages: (messages: { role: 'user' | 'ai'; content: string }[]) => void;
+  onEndSession: () => void;
 }
 
-const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, onNavigate }) => {
+const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, onNavigate, initialMessages, onUpdateMessages, onEndSession }) => {
   const { user } = useAuth();
   const [settings, setSettings] = useState<AppSettings>(initialSettings);
   const [input, setInput] = useState('');
-  const [messages, setMessages] = useState<{ role: 'user' | 'ai'; content: string }[]>([]);
+  const messages = initialMessages; // Use prop directly
   const [loading, setLoading] = useState(false);
+
   const [showLevelMenu, setShowLevelMenu] = useState(false);
   const [shouldSave, setShouldSave] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
@@ -52,7 +56,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
 
   const endSession = async () => {
     if (messages.length === 0 || !shouldSave) {
-      onNavigate('DASHBOARD');
+      onEndSession();
       return;
     }
 
@@ -74,7 +78,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
       onNavigate('HISTORY');
     } else {
       // Guests don't save history session data anymore to maintain exclusivity
-      onNavigate('DASHBOARD');
+      onEndSession();
     }
   };
 
@@ -101,7 +105,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
     if (!messageToSend || loading) return;
 
     if (!overrideInput) {
-      setMessages(prev => [...prev, { role: 'user', content: messageToSend }]);
+      onUpdateMessages([...messages, { role: 'user', content: messageToSend }]);
       setInput('');
     }
 
@@ -109,10 +113,11 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
 
     try {
       const aiText = await callBackend(messageToSend);
-      setMessages(prev => [...prev, { role: 'ai', content: aiText }]);
+      onUpdateMessages([...messages, { role: 'user', content: messageToSend }, { role: 'ai', content: aiText }]);
     } catch {
-      setMessages(prev => [
-        ...prev,
+      onUpdateMessages([
+        ...messages,
+        { role: 'user', content: messageToSend },
         { role: 'ai', content: 'Unable to reach the guidance service.' }
       ]);
     } finally {
@@ -158,7 +163,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
 
             {showLevelMenu && (
               <div className="absolute right-0 mt-2 w-32 bg-white border border-stone-warm rounded-xl p-1 shadow-lg z-10 transition-all">
-                {[LanguageLevel.SIMPLE, LanguageLevel.MODERATE, LanguageLevel.ORIGINAL].map(level => (
+                {[LanguageLevel.MODERN, LanguageLevel.ORIGINAL].map(level => (
                   <button
                     key={level}
                     onClick={() => handleLanguageChange(level)}

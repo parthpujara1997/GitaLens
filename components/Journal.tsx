@@ -94,28 +94,34 @@ const Journal: React.FC<JournalProps> = ({ onComplete, onAuthRequired }) => {
         </div>
       </section>
 
-      {user && entries.length > 0 && (
+      {user && (
         <section className="space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <h3 className="text-xs uppercase tracking-widest font-bold text-stone-500 px-2">Recent Reflections</h3>
-          <div className="space-y-3">
-            {entries.map((entry) => (
-              <motion.div
-                key={entry.id}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="bg-white/60 backdrop-blur-sm border border-stone-warm/30 rounded-2xl p-5 hover:bg-white/80 transition-colors"
-              >
-                <div className="flex justify-between items-start mb-2">
-                  <span className="text-[10px] font-bold text-stone-400 uppercase tracking-tighter">
-                    {new Date(entry.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
-                  </span>
-                </div>
-                <p className="text-charcoal text-sm leading-relaxed whitespace-pre-wrap">
-                  {entry.content}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+          {entries.length === 0 ? (
+            <div className="bg-white/40 border border-dashed border-stone-warm rounded-2xl p-8 text-center">
+              <p className="text-stone-400 text-sm italic">Your past reflections will appear here.</p>
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {entries.map((entry) => (
+                <motion.div
+                  key={entry.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-white/60 backdrop-blur-sm border border-stone-warm/30 rounded-2xl p-5 hover:bg-white/80 transition-colors"
+                >
+                  <div className="flex justify-between items-start mb-2">
+                    <span className="text-[10px] font-bold text-stone-400 uppercase tracking-tighter">
+                      {new Date(entry.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                    </span>
+                  </div>
+                  <p className="text-charcoal text-sm leading-relaxed whitespace-pre-wrap">
+                    {entry.content}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          )}
         </section>
       )}
 

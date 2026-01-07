@@ -47,7 +47,7 @@ export const storageService = {
   getSettings: (): AppSettings => {
     const data = localStorage.getItem(SETTINGS_KEY);
     return data ? JSON.parse(data) : {
-      languageLevel: LanguageLevel.MODERATE
+      languageLevel: LanguageLevel.MODERN
     };
   },
 

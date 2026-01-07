@@ -22,6 +22,7 @@ const App: React.FC = () => {
   const [settings, setSettings] = useState<AppSettings>(storageService.getSettings());
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authMode, setAuthMode] = useState<'login' | 'signup' | 'update-password'>('login');
+  const [chatSession, setChatSession] = useState<{ role: 'user' | 'ai'; content: string }[]>([]);
 
   React.useEffect(() => {
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
@@ -43,6 +44,11 @@ const App: React.FC = () => {
       setProgress(storageService.getProgress());
     }
   }, [user]);
+
+  // Scroll to top when view changes
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentView]);
 
   const syncUserProgress = async () => {
     if (!user) return;
@@ -127,6 +133,14 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row bg-parchment overflow-hidden">
+      {/* Skip to Content Link for Accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-saffron-accent focus:text-white focus:rounded-lg focus:outline-none"
+      >
+        Skip to Content
+      </a>
+
       {/* Sidebar Navigation for PC */}
       <aside className="hidden md:flex md:w-64 flex-col fixed inset-y-0 left-0 bg-stone-neutral/50 backdrop-blur-sm border-r border-stone-warm p-6 z-20">
         <div className="mb-0 px-2 flex justify-center">
@@ -146,7 +160,7 @@ const App: React.FC = () => {
       </aside>
 
       {/* Main Content Area */}
-      <main className="flex-grow flex flex-col md:ml-64 mb-20 md:mb-0 min-h-screen relative overflow-y-auto overflow-x-hidden">
+      <main id="main-content" className="flex-grow flex flex-col md:ml-64 mb-20 md:mb-0 min-h-screen relative overflow-y-auto overflow-x-hidden">
         {/* Top Right Auth Header */}
         <header className="sticky top-0 right-0 z-30 flex justify-end p-4 md:p-6 pointer-events-none">
           <div className="pointer-events-auto flex items-center space-x-3">
@@ -204,7 +218,16 @@ const App: React.FC = () => {
                 />
               )}
               {currentView === View.GUIDANCE && (
-                <SeekGuidance settings={settings} onNavigate={handleNavigate} />
+                <SeekGuidance
+                  settings={settings}
+                  onNavigate={handleNavigate}
+                  initialMessages={chatSession}
+                  onUpdateMessages={setChatSession}
+                  onEndSession={() => {
+                    setChatSession([]);
+                    handleNavigate(View.DASHBOARD);
+                  }}
+                />
               )}
               {currentView === View.JOURNAL && (
                 <Journal

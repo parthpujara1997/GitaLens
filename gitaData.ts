@@ -3284,20 +3284,20 @@ export const GITA_VERSES: GitaVerse[] = [
         "chapter": 8,
         "verse": 1,
         "reference": "Chapter 8, Verse 1",
-        "text": "Shri Purohit Swami did not comment on this sloka",
+        "text": "8.1 Arjuna asked: What is Brahman? What is the Self? What is action? What is called the perishable order? And what is called the Divine Order, O Supreme Lord?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna"
+        "speaker": "Arjuna"
     },
     {
         "id": "8-2",
         "chapter": 8,
         "verse": 2,
         "reference": "Chapter 8, Verse 2",
-        "text": "8.2 Who is it who rules the spirit sacrifice in many; and at the time of death how may those who have learned self-control come to the knowledge of Thee?",
+        "text": "8.2 What is the Adhiyajna (The basis of sacrifice), and how does it dwell in this body, O Madhusudana? And how at the time of death, art Thou to be known by the self-controlled?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna"
+        "speaker": "Arjuna"
     },
     {
         "id": "8-3",
@@ -4902,7 +4902,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "chapter": 12,
         "verse": 3,
         "reference": "Chapter 12, Verse 3",
-        "text": "Shri Purohit Swami did not comment on this sloka",
+        "text": "12.3 But those who worship Me as the Eternal, the Indestructible, the Unmanifest, the Omnipresent, the Incomprehensible, the Immutable, the Immovable, the Everlasting.",
         "reflection": "",
         "themes": [],
         "speaker": "Krishna"
@@ -5060,7 +5060,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "chapter": 12,
         "verse": 18,
         "reference": "Chapter 12, Verse 18",
-        "text": "Shri Purohit Swami did not comment on this sloka",
+        "text": "12.18 He who hates no creature, who is friendly and compassionate to all, free from attachment and egoism, balanced in pleasure and pain, and forgiving.",
         "reflection": "",
         "themes": [],
         "speaker": "Krishna"

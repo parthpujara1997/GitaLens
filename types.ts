@@ -58,9 +58,8 @@ export interface GuidanceSummary {
 }
 
 export enum LanguageLevel {
-  ORIGINAL = 'ORIGINAL',
-  MODERATE = 'MODERATE',
-  SIMPLE = 'SIMPLE'
+  MODERN = 'MODERN',
+  ORIGINAL = 'ORIGINAL'
 }
 
 export enum InteractionMode {
