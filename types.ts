@@ -55,6 +55,7 @@ export interface GuidanceSummary {
   date: string;
   topic: string;
   summary: string;
+  messages?: { role: 'user' | 'ai'; content: string }[];
 }
 
 export enum LanguageLevel {

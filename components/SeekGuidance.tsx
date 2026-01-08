@@ -73,6 +73,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
         user_id: user.id,
         topic,
         summary,
+        messages: messages, // Saving full conversation
         date: new Date().toISOString()
       });
       onNavigate('HISTORY');

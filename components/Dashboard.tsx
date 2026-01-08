@@ -1,10 +1,9 @@
-
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { View, UserProgress } from '../types';
 import { storageService } from '../services/storageService';
 import { DAILY_VERSES } from '../constants';
-import { Share2, Copy, Check, Loader2, Heart } from 'lucide-react';
+import { Share2, Copy, Check, Loader2, Heart, Scroll } from 'lucide-react';
 import html2canvas from 'html2canvas';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
@@ -22,7 +21,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
   const [copied, setCopied] = useState(false);
   const [isSharing, setIsSharing] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
-  const verseRef = React.useRef<HTMLElement>(null);
+  const shareRef = useRef<HTMLDivElement>(null);
 
   const dailyVerse = useMemo(() => {
     const today = new Date().getDate();
@@ -92,7 +91,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
 
   const handleShare = async (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (!verseRef.current || isSharing) return;
+    if (!shareRef.current || isSharing) return;
 
     setIsSharing(true);
 
@@ -104,24 +103,17 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
     }, 10000);
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 300));
+      await new Promise(resolve => setTimeout(resolve, 300)); // Wait for ref
 
-      const canvas = await html2canvas(verseRef.current, {
+      const canvas = await html2canvas(shareRef.current, {
         backgroundColor: '#F5F5F0',
         scale: 2,
-        logging: true,
+        logging: false,
         allowTaint: true,
-        useCORS: false,
-        imageTimeout: 5000,
-        onclone: (clonedDoc) => {
-          const element = clonedDoc.querySelector('[data-html2canvas-ignore="true"]')?.parentElement;
-          if (element) {
-            element.style.padding = '20px';
-          }
-        }
+        useCORS: true,
       });
 
-      const fileName = `gitalens-verse-${new Date().toISOString().split('T')[0]}.png`;
+      const fileName = `gitalens-daily-${new Date().toISOString().split('T')[0]}.png`;
 
       if (navigator.share && navigator.canShare) {
         try {
@@ -144,6 +136,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
         }
       }
 
+      // Fallback
       const dataUrl = canvas.toDataURL('image/png');
       const link = document.createElement('a');
       link.download = fileName;
@@ -233,7 +226,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
         className="group relative w-full bg-sandalwood/40 border border-sandalwood-border/50 rounded-2xl p-6 transition-all hover:bg-sandalwood/60 cursor-pointer"
         onClick={() => setShowReflection(!showReflection)}
       >
-        <div ref={verseRef as any} className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-4">
           <div className="flex justify-between items-center">
             <span className="text-saffron-accent uppercase tracking-[0.2em] text-[9px] font-bold">Daily Verse</span>
             <span className="text-saffron-deep text-[10px] font-medium tracking-wide uppercase opacity-60">{dailyVerse.reference}</span>
@@ -252,7 +245,6 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
           )}
 
           <div
-            data-html2canvas-ignore="true"
             className={`flex justify-end space-x-2 pt-2 transition-opacity duration-300 ${showReflection ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
           >
             <button
@@ -280,6 +272,54 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
           </div>
         </div>
       </motion.section>
+
+      {/* Hidden Share Card Staging Area */}
+      <div className="fixed top-0 left-0 -z-50 opacity-0 pointer-events-none" aria-hidden="true">
+        <div
+          ref={shareRef}
+          style={{
+            width: '600px',
+            backgroundColor: '#F5F5F0',
+            padding: '48px',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            border: '8px double #D8CBB5'
+          }}
+        >
+          <div style={{ marginBottom: '24px', opacity: 0.9 }}>
+            <img
+              src="/logo.png"
+              alt="GitaLens"
+              style={{
+                height: '80px',
+                width: 'auto',
+                margin: '0 auto',
+                display: 'block'
+              }}
+            />
+          </div>
+
+          <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#C2A15F', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '32px' }}>
+            {dailyVerse.reference}
+          </h3>
+          <p style={{ fontFamily: '"Playfair Display", serif', fontSize: '30px', fontStyle: 'italic', color: '#262626', lineHeight: 1.6, marginBottom: '24px', padding: '0 32px' }}>
+            "{dailyVerse.text}"
+          </p>
+
+          <div style={{ width: '40px', height: '1px', backgroundColor: '#C2A15F', marginBottom: '24px', opacity: 0.5 }}></div>
+
+          <p style={{ fontSize: '14px', fontFamily: 'Inter, sans-serif', color: '#57534e', lineHeight: 1.6, marginBottom: '32px', maxWidth: '480px', fontStyle: 'italic' }}>
+            {dailyVerse.reflection}
+          </p>
+
+          <p style={{ fontSize: '12px', fontWeight: 'bold', color: '#a8a29e', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+            Daily Wisdom
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

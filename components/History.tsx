@@ -7,6 +7,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 import LoginPrompt from './Auth/LoginPrompt';
 import { VerseCardSkeleton } from './Skeleton';
+import ConfirmationModal from './ConfirmationModal';
 
 interface HistoryProps {
     onBack: () => void;
@@ -18,6 +19,16 @@ const HistoryView: React.FC<HistoryProps> = ({ onBack, onAuthRequired }) => {
     const [summaries, setSummaries] = useState<GuidanceSummary[]>([]);
     const [selectedSummary, setSelectedSummary] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
+
+    // Modal State
+    const [modalConfig, setModalConfig] = useState<{
+        isOpen: boolean;
+        type: 'SINGLE' | 'ALL' | null;
+        itemId?: string;
+    }>({
+        isOpen: false,
+        type: null
+    });
 
     useEffect(() => {
         if (user) {
@@ -44,7 +55,8 @@ const HistoryView: React.FC<HistoryProps> = ({ onBack, onAuthRequired }) => {
                 id: h.id,
                 date: h.date,
                 topic: h.topic,
-                summary: h.summary
+                summary: h.summary,
+                messages: h.messages || []
             }));
 
             setSummaries(mappedHistory);
@@ -56,21 +68,55 @@ const HistoryView: React.FC<HistoryProps> = ({ onBack, onAuthRequired }) => {
         }
     };
 
-    const clearHistory = async () => {
-        if (!window.confirm('Are you sure you want to clear your guidance history?')) return;
-
-        if (user) {
-            const { error } = await supabase
-                .from('history')
-                .delete()
-                .eq('user_id', user.id);
-
-            if (!error) setSummaries([]);
-        } else {
-            localStorage.removeItem('gitalens_history');
-            setSummaries([]);
-        }
+    const handleClearAllClick = () => {
+        setModalConfig({ isOpen: true, type: 'ALL' });
     };
+
+    const handleDeleteItemClick = (e: React.MouseEvent, id: string) => {
+        e.stopPropagation();
+        setModalConfig({ isOpen: true, type: 'SINGLE', itemId: id });
+    };
+
+    const confirmAction = async () => {
+        if (modalConfig.type === 'ALL') {
+            if (user) {
+                const { error } = await supabase
+                    .from('history')
+                    .delete()
+                    .eq('user_id', user.id);
+
+                if (!error) setSummaries([]);
+            } else {
+                localStorage.removeItem('gitalens_history');
+                setSummaries([]);
+            }
+        } else if (modalConfig.type === 'SINGLE' && modalConfig.itemId) {
+            if (user) {
+                const { error } = await supabase
+                    .from('history')
+                    .delete()
+                    .eq('id', modalConfig.itemId);
+
+                if (!error) {
+                    setSummaries(prev => prev.filter(item => item.id !== modalConfig.itemId));
+                }
+            }
+        }
+        setModalConfig({ isOpen: false, type: null });
+    };
+
+    // Render logic for conversation view
+    const renderConversation = (messages: { role: 'user' | 'ai'; content: string }[]) => (
+        <div className="space-y-4 max-h-[60vh] overflow-y-auto p-2 custom-scrollbar">
+            {messages.map((m, idx) => (
+                <div key={idx} className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'} space-y-1`}>
+                    <div className={`max-w-[90%] rounded-2xl px-4 py-3 border text-sm ${m.role === 'user' ? 'bg-indigo text-white border-indigo' : 'bg-white text-charcoal shadow-sm border-stone-warm/30'}`}>
+                        <p className="whitespace-pre-wrap leading-relaxed">{m.content}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
 
     if (!user) {
         return (
@@ -94,6 +140,18 @@ const HistoryView: React.FC<HistoryProps> = ({ onBack, onAuthRequired }) => {
 
     return (
         <div className="flex flex-col space-y-8 animate-in fade-in duration-700 w-full max-w-xl mx-auto pb-10">
+            <ConfirmationModal
+                isOpen={modalConfig.isOpen}
+                title={modalConfig.type === 'ALL' ? "Clear History?" : "Delete Session?"}
+                message={modalConfig.type === 'ALL'
+                    ? "Are you sure you want to clear your entire guidance history? This cannot be undone."
+                    : "Are you sure you want to delete this specific session?"}
+                onConfirm={confirmAction}
+                onCancel={() => setModalConfig({ isOpen: false, type: null })}
+                confirmLabel="Delete"
+                isDestructive={true}
+            />
+
             <div className="flex items-center justify-between pt-2">
                 <button
                     onClick={onBack}
@@ -104,8 +162,9 @@ const HistoryView: React.FC<HistoryProps> = ({ onBack, onAuthRequired }) => {
                 <h2 className="text-2xl font-semibold text-saffron-brown serif">History</h2>
                 {summaries.length > 0 ? (
                     <button
-                        onClick={clearHistory}
+                        onClick={handleClearAllClick}
                         className="p-2 hover:bg-stone-warm/50 rounded-full transition-colors text-stone-400 hover:text-red-400"
+                        title="Clear All History"
                     >
                         <Trash size={18} />
                     </button>
@@ -133,30 +192,41 @@ const HistoryView: React.FC<HistoryProps> = ({ onBack, onAuthRequired }) => {
                             key={item.id}
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
-                            className="glass-card p-6 rounded-2xl group cursor-pointer"
+                            className="glass-card p-6 rounded-2xl group cursor-pointer hover:shadow-md transition-all relative"
                             onClick={() => setSelectedSummary(selectedSummary === item.id ? null : item.id)}
                         >
-                            <div className="space-y-3">
+                            <div className="space-y-4">
                                 <div className="flex justify-between items-start">
-                                    <div>
+                                    <div className="pr-8">
                                         <span className="text-[10px] font-bold text-stone-400 uppercase tracking-widest">
                                             {new Date(item.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
                                         </span>
                                         <h3 className="text-charcoal font-semibold mt-1 serif text-base">{item.topic}</h3>
                                     </div>
-                                </div>
-
-                                <div className={`transition-all duration-300 overflow-hidden ${selectedSummary === item.id ? 'max-h-[500px] opacity-100' : 'max-h-12 opacity-60'}`}>
-                                    <p className="text-stone-600 text-sm leading-relaxed">
-                                        {item.summary}
-                                    </p>
-                                </div>
-
-                                {selectedSummary !== item.id && (
-                                    <button className="text-[10px] uppercase font-bold text-saffron-accent tracking-tighter">
-                                        Read Summary
+                                    <button
+                                        onClick={(e) => handleDeleteItemClick(e, item.id)}
+                                        className="p-2 -mr-2 -mt-2 text-stone-300 hover:text-red-400 hover:bg-red-50 rounded-full transition-colors"
+                                        title="Delete Session"
+                                    >
+                                        <Trash size={14} />
                                     </button>
-                                )}
+                                </div>
+
+                                <div className={`transition-all duration-300 ease-in-out overflow-hidden ${selectedSummary === item.id ? 'opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    {item.messages && item.messages.length > 0 ? (
+                                        renderConversation(item.messages)
+                                    ) : (
+                                        <p className="text-stone-600 text-sm leading-relaxed italic">
+                                            {item.summary || "No details available."}
+                                        </p>
+                                    )}
+                                </div>
+
+                                <div className="flex justify-between items-center pt-2">
+                                    <span className="text-[10px] font-bold text-stone-400 uppercase tracking-tighter">
+                                        {selectedSummary === item.id ? 'Close' : 'View Conversation'}
+                                    </span>
+                                </div>
                             </div>
                         </motion.div>
                     ))

@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, BookOpen, Heart, Tag, ChevronLeft, ChevronRight, Scroll } from 'lucide-react';
+import html2canvas from 'html2canvas';
+import { BookOpen, Search, Palette, X, ChevronRight, ChevronLeft, Heart, Tag, ArrowLeft, Scroll, Share2 } from 'lucide-react';
 import { GITA_VERSES, CHAPTERS, THEMES, getVersesByChapter, getVersesByTheme } from '../gitaData';
 import { GitaVerse } from '../types';
 import { useAuth } from '../contexts/AuthContext';
@@ -22,6 +23,10 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
     const [selectedTheme, setSelectedTheme] = useState<string | null>(null);
     const [selectedVerse, setSelectedVerse] = useState<GitaVerse | null>(null);
     const [bookmarkedVerses, setBookmarkedVerses] = useState<Set<string>>(new Set());
+
+    // Sharing state
+    const [isSharing, setIsSharing] = useState(false);
+    const shareRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         if (user) {
@@ -80,6 +85,49 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
             }
         } catch (err) {
             console.error('Error toggling bookmark:', err);
+        }
+    };
+
+    const handleShare = async (verse: GitaVerse) => {
+        if (!shareRef.current || isSharing) return;
+
+        setIsSharing(true);
+        try {
+            // Slight delay to ensure ref is populated if we just set it (though it's always rendered)
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+            const canvas = await html2canvas(shareRef.current, {
+                backgroundColor: '#F5F5F0', // Parchment color
+                scale: 2, // High res
+                logging: false,
+                useCORS: true,
+            });
+
+            const fileName = `gita-verse-${verse.chapter}-${verse.verse}.png`;
+
+            if (navigator.share && navigator.canShare) {
+                const blob = await new Promise<Blob | null>(resolve => canvas.toBlob(resolve, 'image/png'));
+                if (blob) {
+                    const file = new File([blob], fileName, { type: 'image/png' });
+                    if (navigator.canShare({ files: [file] })) {
+                        await navigator.share({
+                            title: 'Wisdom from GitaLens',
+                            text: `"${verse.text}" - Bhagavad Gita ${verse.reference}`,
+                            files: [file],
+                        });
+                    }
+                }
+            } else {
+                // Fallback: Download
+                const link = document.createElement('a');
+                link.download = fileName;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            }
+        } catch (err) {
+            console.error('Sharing failed:', err);
+        } finally {
+            setIsSharing(false);
         }
     };
 
@@ -370,6 +418,7 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
                     <div
                         key={selectedVerse.id}
                         onClick={(e) => e.stopPropagation()}
+                        state-sharing={isSharing ? "true" : "false"}
                         className="bg-[#EFE6D8] border border-[#D8CBB5] rounded-3xl p-8 md:p-10 max-w-4xl w-full max-h-[85vh] overflow-y-auto shadow-2xl relative flex flex-col mx-12"
                     >
                         <div className="flex items-start justify-between mb-6">
@@ -381,15 +430,28 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
                                     {CHAPTERS.find(c => c.number === selectedVerse.chapter)?.name}
                                 </h3>
                             </div>
-                            <button
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    handleBookmark(selectedVerse);
-                                }}
-                                className={`p-2 rounded-full transition-colors ${bookmarkedVerses.has(selectedVerse.reference) ? 'text-red-500 bg-red-50' : 'text-stone-400 hover:text-red-500 hover:bg-red-50'}`}
-                            >
-                                <Heart size={24} fill={bookmarkedVerses.has(selectedVerse.reference) ? 'currentColor' : 'none'} />
-                            </button>
+                            <div className="flex space-x-2">
+                                <button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleShare(selectedVerse);
+                                    }}
+                                    disabled={isSharing}
+                                    className="p-2 rounded-full transition-colors text-stone-400 hover:text-indigo-600 hover:bg-indigo-50"
+                                    title="Share Verse"
+                                >
+                                    <Share2 size={24} />
+                                </button>
+                                <button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleBookmark(selectedVerse);
+                                    }}
+                                    className={`p-2 rounded-full transition-colors ${bookmarkedVerses.has(selectedVerse.reference) ? 'text-red-500 bg-red-50' : 'text-stone-400 hover:text-red-500 hover:bg-red-50'}`}
+                                >
+                                    <Heart size={24} fill={bookmarkedVerses.has(selectedVerse.reference) ? 'currentColor' : 'none'} />
+                                </button>
+                            </div>
                         </div>
 
                         <div className="space-y-6">
@@ -444,6 +506,59 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
                 </div>,
                 document.body
             )}
+
+            {/* Hidden Share Card Staging Area */}
+            <div className="fixed top-0 left-0 -z-50 opacity-0 pointer-events-none" aria-hidden="true">
+                <div
+                    ref={shareRef}
+                    style={{
+                        width: '600px',
+                        backgroundColor: '#F5F5F0',
+                        padding: '48px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        textAlign: 'center',
+                        border: '8px double #D8CBB5'
+                    }}
+                >
+                    <div style={{ marginBottom: '24px', opacity: 0.9 }}>
+                        <img
+                            src="/logo.png"
+                            alt="GitaLens"
+                            style={{
+                                height: '80px',
+                                width: 'auto',
+                                margin: '0 auto',
+                                display: 'block'
+                            }}
+                        />
+                    </div>
+
+                    {selectedVerse && (
+                        <>
+                            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#C2A15F', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '32px' }}>
+                                {selectedVerse.reference}
+                            </h3>
+                            <p style={{ fontFamily: '"Playfair Display", serif', fontSize: '30px', fontStyle: 'italic', color: '#262626', lineHeight: 1.6, marginBottom: '24px', padding: '0 32px' }}>
+                                "{selectedVerse.text}"
+                            </p>
+
+                            <div style={{ width: '40px', height: '1px', backgroundColor: '#C2A15F', marginBottom: '24px', opacity: 0.5 }}></div>
+
+                            <p style={{ fontSize: '14px', fontFamily: 'Inter, sans-serif', color: '#57534e', lineHeight: 1.6, marginBottom: '32px', maxWidth: '480px', fontStyle: 'italic' }}>
+                                {/* @ts-ignore */}
+                                {(reflectionsData as Record<string, string>)[`${selectedVerse.chapter}.${selectedVerse.verse}`] || selectedVerse.reflection || "Insight pending..."}
+                            </p>
+
+                            <p style={{ fontSize: '12px', fontWeight: 'bold', color: '#a8a29e', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                                {selectedVerse.speaker}
+                            </p>
+                        </>
+                    )}
+                </div>
+            </div>
         </div>
     );
 };
