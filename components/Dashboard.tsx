@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { View, UserProgress } from '../types';
 import { storageService } from '../services/storageService';
-import { DAILY_VERSES } from '../constants';
+import { getRandomFamousVerse } from '../gitaData';
 import { Share2, Copy, Check, Loader2, Heart, Scroll } from 'lucide-react';
 import html2canvas from 'html2canvas';
 import { useAuth } from '../contexts/AuthContext';
@@ -24,8 +24,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
   const shareRef = useRef<HTMLDivElement>(null);
 
   const dailyVerse = useMemo(() => {
-    const today = new Date().getDate();
-    return DAILY_VERSES[today % DAILY_VERSES.length];
+    return getRandomFamousVerse();
   }, []);
 
   useEffect(() => {

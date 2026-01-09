@@ -337,6 +337,11 @@ const VerseModal: React.FC<VerseModalProps> = ({ chapter, verse, onClose, onOpen
         <div className="p-6 space-y-6">
           <div className="space-y-4">
             <Quote className="text-saffron-accent/40 w-8 h-8" />
+            {verseData.sanskrit && (
+              <p className="font-serif text-lg text-saffron-dark leading-relaxed whitespace-pre-wrap font-medium opacity-90">
+                {verseData.sanskrit}
+              </p>
+            )}
             <p className="font-serif text-xl leading-relaxed text-charcoal">
               {verseData.text}
             </p>

@@ -303,7 +303,7 @@ app.post("/api/guidance", async (req, res) => {
     `;
 
     const result = await ai.models.generateContent({
-      model: "models/gemini-2.5-flash",
+      model: "models/gemini-2.5-pro",
       contents: [...conversationHistory, { role: 'user', parts: [{ text: prompt }] }],
       config: {
         systemInstruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },

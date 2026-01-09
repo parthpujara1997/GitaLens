@@ -455,6 +455,14 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
                         </div>
 
                         <div className="space-y-6">
+                            {selectedVerse.sanskrit && (
+                                <div className="bg-white/40 rounded-2xl p-6 border border-stone-warm/50 text-center">
+                                    <p className="font-serif text-lg md:text-xl text-saffron-deep leading-relaxed whitespace-pre-wrap">
+                                        {selectedVerse.sanskrit}
+                                    </p>
+                                </div>
+                            )}
+
                             <div className="bg-white/60 rounded-2xl p-8 border-l-4 border-saffron-accent shadow-sm">
                                 <p className="serif text-xl md:text-2xl italic text-charcoal-dark leading-relaxed">
                                     <span className="font-bold text-xs text-stone-500 mr-2 not-italic uppercase block mb-2">{selectedVerse.speaker}</span>
@@ -541,6 +549,19 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
                             <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#C2A15F', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '32px' }}>
                                 {selectedVerse.reference}
                             </h3>
+                            {selectedVerse.sanskrit && (
+                                <p style={{
+                                    fontFamily: '"Playfair Display", serif',
+                                    fontSize: '22px',
+                                    color: '#78716c',
+                                    lineHeight: 1.8,
+                                    marginBottom: '24px',
+                                    padding: '0 20px',
+                                    whiteSpace: 'pre-wrap'
+                                }}>
+                                    {selectedVerse.sanskrit}
+                                </p>
+                            )}
                             <p style={{ fontFamily: '"Playfair Display", serif', fontSize: '30px', fontStyle: 'italic', color: '#262626', lineHeight: 1.6, marginBottom: '24px', padding: '0 32px' }}>
                                 "{selectedVerse.text}"
                             </p>
