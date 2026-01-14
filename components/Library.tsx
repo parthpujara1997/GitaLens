@@ -9,14 +9,16 @@ import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 import reflectionsData from '../src/data/ai_reflections.json';
 
+import ShareModal from './ShareModal';
+
 interface LibraryProps {
     onBack: () => void;
     onAuthRequired: (mode: 'login' | 'signup') => void;
+    initialVerseId?: string;
 }
 
 type ViewMode = 'chapters' | 'themes';
-
-const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
+const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseId }) => {
     const { user } = useAuth();
     const [viewMode, setViewMode] = useState<ViewMode>('chapters');
     const [expandedChapter, setExpandedChapter] = useState<number | null>(null);
@@ -25,8 +27,20 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
     const [bookmarkedVerses, setBookmarkedVerses] = useState<Set<string>>(new Set());
 
     // Sharing state
-    const [isSharing, setIsSharing] = useState(false);
-    const shareRef = useRef<HTMLDivElement>(null);
+    // Sharing state
+    const [showShareModal, setShowShareModal] = useState(false);
+    const [verseToShare, setVerseToShare] = useState<GitaVerse | null>(null);
+    const [language, setLanguage] = useState<'EN' | 'SA'>('EN');
+
+
+    useEffect(() => {
+        if (initialVerseId) {
+            const verse = GITA_VERSES.find(v => v.id === initialVerseId);
+            if (verse) {
+                setSelectedVerse(verse);
+            }
+        }
+    }, [initialVerseId]);
 
     useEffect(() => {
         if (user) {
@@ -88,47 +102,9 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
         }
     };
 
-    const handleShare = async (verse: GitaVerse) => {
-        if (!shareRef.current || isSharing) return;
-
-        setIsSharing(true);
-        try {
-            // Slight delay to ensure ref is populated if we just set it (though it's always rendered)
-            await new Promise(resolve => setTimeout(resolve, 100));
-
-            const canvas = await html2canvas(shareRef.current, {
-                backgroundColor: '#F5F5F0', // Parchment color
-                scale: 2, // High res
-                logging: false,
-                useCORS: true,
-            });
-
-            const fileName = `gita-verse-${verse.chapter}-${verse.verse}.png`;
-
-            if (navigator.share && navigator.canShare) {
-                const blob = await new Promise<Blob | null>(resolve => canvas.toBlob(resolve, 'image/png'));
-                if (blob) {
-                    const file = new File([blob], fileName, { type: 'image/png' });
-                    if (navigator.canShare({ files: [file] })) {
-                        await navigator.share({
-                            title: 'Wisdom from GitaLens',
-                            text: `"${verse.text}" - Bhagavad Gita ${verse.reference}`,
-                            files: [file],
-                        });
-                    }
-                }
-            } else {
-                // Fallback: Download
-                const link = document.createElement('a');
-                link.download = fileName;
-                link.href = canvas.toDataURL('image/png');
-                link.click();
-            }
-        } catch (err) {
-            console.error('Sharing failed:', err);
-        } finally {
-            setIsSharing(false);
-        }
+    const handleShare = (verse: GitaVerse) => {
+        setVerseToShare(verse);
+        setShowShareModal(true);
     };
 
     const renderChapterView = () => (
@@ -418,7 +394,6 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
                     <div
                         key={selectedVerse.id}
                         onClick={(e) => e.stopPropagation()}
-                        state-sharing={isSharing ? "true" : "false"}
                         className="bg-[#EFE6D8] border border-[#D8CBB5] rounded-3xl p-8 md:p-10 max-w-4xl w-full max-h-[85vh] overflow-y-auto shadow-2xl relative flex flex-col mx-12"
                     >
                         <div className="flex items-start justify-between mb-6">
@@ -436,7 +411,6 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
                                         e.stopPropagation();
                                         handleShare(selectedVerse);
                                     }}
-                                    disabled={isSharing}
                                     className="p-2 rounded-full transition-colors text-stone-400 hover:text-indigo-600 hover:bg-indigo-50"
                                     title="Share Verse"
                                 >
@@ -455,20 +429,45 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
                         </div>
 
                         <div className="space-y-6">
-                            {selectedVerse.sanskrit && (
-                                <div className="bg-white/40 rounded-2xl p-6 border border-stone-warm/50 text-center">
-                                    <p className="font-serif text-lg md:text-xl text-saffron-deep leading-relaxed whitespace-pre-wrap">
-                                        {selectedVerse.sanskrit}
+                            {/* Language Toggle */}
+                            <div className="flex justify-center">
+                                <div className="flex bg-stone-100 p-1 rounded-xl border border-stone-200">
+                                    <button
+                                        onClick={() => setLanguage('EN')}
+                                        className={`px-6 py-2 rounded-lg text-xs font-bold transition-all ${language === 'EN'
+                                            ? 'bg-white text-charcoal shadow-sm'
+                                            : 'text-stone-400 hover:text-stone-600'
+                                            }`}
+                                    >
+                                        ENGLISH
+                                    </button>
+                                    <button
+                                        onClick={() => setLanguage('SA')}
+                                        className={`px-6 py-2 rounded-lg text-xs font-bold transition-all ${language === 'SA'
+                                            ? 'bg-white text-saffron-accent shadow-sm'
+                                            : 'text-stone-400 hover:text-stone-600'
+                                            }`}
+                                    >
+                                        SANSKRIT
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* Verse Content */}
+                            {language === 'SA' ? (
+                                <div className="bg-white/60 rounded-2xl p-8 border-l-4 border-saffron-accent shadow-sm min-h-[200px] flex items-center justify-center text-center">
+                                    <p className="font-serif text-xl md:text-2xl text-charcoal-dark leading-relaxed whitespace-pre-wrap">
+                                        {selectedVerse.sanskrit || "Sanskrit text unavailable."}
+                                    </p>
+                                </div>
+                            ) : (
+                                <div className="bg-white/60 rounded-2xl p-8 border-l-4 border-saffron-accent shadow-sm min-h-[200px] flex items-center justify-center">
+                                    <p className="serif text-xl md:text-2xl italic text-charcoal-dark leading-relaxed w-full">
+                                        <span className="font-bold text-xs text-stone-500 mr-2 not-italic uppercase block mb-2">{selectedVerse.speaker}</span>
+                                        "{selectedVerse.text}"
                                     </p>
                                 </div>
                             )}
-
-                            <div className="bg-white/60 rounded-2xl p-8 border-l-4 border-saffron-accent shadow-sm">
-                                <p className="serif text-xl md:text-2xl italic text-charcoal-dark leading-relaxed">
-                                    <span className="font-bold text-xs text-stone-500 mr-2 not-italic uppercase block mb-2">{selectedVerse.speaker}</span>
-                                    "{selectedVerse.text}"
-                                </p>
-                            </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <div className="md:col-span-2 bg-white/40 rounded-2xl p-6 border border-stone-warm/50">
@@ -515,71 +514,17 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired }) => {
                 document.body
             )}
 
-            {/* Hidden Share Card Staging Area */}
-            <div className="fixed top-0 left-0 -z-50 opacity-0 pointer-events-none" aria-hidden="true">
-                <div
-                    ref={shareRef}
-                    style={{
-                        width: '600px',
-                        backgroundColor: '#F5F5F0',
-                        padding: '48px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        textAlign: 'center',
-                        border: '8px double #D8CBB5'
+            {showShareModal && verseToShare && (
+                <ShareModal
+                    verse={verseToShare}
+                    onClose={() => {
+                        setShowShareModal(false);
+                        setVerseToShare(null);
                     }}
-                >
-                    <div style={{ marginBottom: '24px', opacity: 0.9 }}>
-                        <img
-                            src="/logo.png"
-                            alt="GitaLens"
-                            style={{
-                                height: '80px',
-                                width: 'auto',
-                                margin: '0 auto',
-                                display: 'block'
-                            }}
-                        />
-                    </div>
-
-                    {selectedVerse && (
-                        <>
-                            <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#C2A15F', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '32px' }}>
-                                {selectedVerse.reference}
-                            </h3>
-                            {selectedVerse.sanskrit && (
-                                <p style={{
-                                    fontFamily: '"Playfair Display", serif',
-                                    fontSize: '22px',
-                                    color: '#78716c',
-                                    lineHeight: 1.8,
-                                    marginBottom: '24px',
-                                    padding: '0 20px',
-                                    whiteSpace: 'pre-wrap'
-                                }}>
-                                    {selectedVerse.sanskrit}
-                                </p>
-                            )}
-                            <p style={{ fontFamily: '"Playfair Display", serif', fontSize: '30px', fontStyle: 'italic', color: '#262626', lineHeight: 1.6, marginBottom: '24px', padding: '0 32px' }}>
-                                "{selectedVerse.text}"
-                            </p>
-
-                            <div style={{ width: '40px', height: '1px', backgroundColor: '#C2A15F', marginBottom: '24px', opacity: 0.5 }}></div>
-
-                            <p style={{ fontSize: '14px', fontFamily: 'Inter, sans-serif', color: '#57534e', lineHeight: 1.6, marginBottom: '32px', maxWidth: '480px', fontStyle: 'italic' }}>
-                                {/* @ts-ignore */}
-                                {(reflectionsData as Record<string, string>)[`${selectedVerse.chapter}.${selectedVerse.verse}`] || selectedVerse.reflection || "Insight pending..."}
-                            </p>
-
-                            <p style={{ fontSize: '12px', fontWeight: 'bold', color: '#a8a29e', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-                                {selectedVerse.speaker}
-                            </p>
-                        </>
-                    )}
-                </div>
-            </div>
+                    // @ts-ignore
+                    customReflection={(reflectionsData as Record<string, string>)[`${verseToShare.chapter}.${verseToShare.verse}`]}
+                />
+            )}
         </div>
     );
 };

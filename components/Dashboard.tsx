@@ -8,20 +8,24 @@ import html2canvas from 'html2canvas';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 
+import InnerCompass from './InnerCompass';
+import ShareModal from './ShareModal';
+// @ts-ignore
+import reflectionsData from '../src/data/ai_reflections.json';
+
 interface DashboardProps {
   onNavigate: (view: View) => void;
   onProgressUpdate: (progress: UserProgress) => void;
   onAuthRequired: (mode: 'login' | 'signup') => void;
   progress: UserProgress;
 }
-
 const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onAuthRequired, progress }) => {
   const { user } = useAuth();
   const [showReflection, setShowReflection] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [isSharing, setIsSharing] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
-  const shareRef = useRef<HTMLDivElement>(null);
+  const [hasCheckedIn, setHasCheckedIn] = useState(false);
+  const [showShareModal, setShowShareModal] = useState(false);
 
   const dailyVerse = useMemo(() => {
     return getRandomFamousVerse();
@@ -33,7 +37,15 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
     } else {
       setIsBookmarked(false);
     }
+    checkDailyCheckIn();
   }, [dailyVerse.reference, user]);
+
+  const checkDailyCheckIn = () => {
+    const checkIns = storageService.getInnerCheckIns();
+    const today = new Date().toISOString().split('T')[0];
+    const todaysCheckIn = checkIns.find(c => c.date.split('T')[0] === today);
+    setHasCheckedIn(!!todaysCheckIn);
+  };
 
   const checkSupabaseBookmark = async () => {
     try {
@@ -78,7 +90,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
 
   const handleCopy = async (e: React.MouseEvent) => {
     e.stopPropagation();
-    const text = `"${dailyVerse.text}"\n\n${dailyVerse.reflection}\n\n- ${dailyVerse.reference}`;
+    const text = `"${dailyVerse.text}"\n\n${dailyVerse.reflection} \n\n - ${dailyVerse.reference} `;
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
@@ -88,69 +100,9 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
     }
   };
 
-  const handleShare = async (e: React.MouseEvent) => {
+  const handleShare = (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (!shareRef.current || isSharing) return;
-
-    setIsSharing(true);
-
-    const safetyTimeout = setTimeout(() => {
-      if (isSharing) {
-        setIsSharing(false);
-        console.error('Share operation timed out');
-      }
-    }, 10000);
-
-    try {
-      await new Promise(resolve => setTimeout(resolve, 300)); // Wait for ref
-
-      const canvas = await html2canvas(shareRef.current, {
-        backgroundColor: '#F5F5F0',
-        scale: 2,
-        logging: false,
-        allowTaint: true,
-        useCORS: true,
-      });
-
-      const fileName = `gitalens-daily-${new Date().toISOString().split('T')[0]}.png`;
-
-      if (navigator.share && navigator.canShare) {
-        try {
-          const blob = await new Promise<Blob | null>(resolve => canvas.toBlob(resolve, 'image/png'));
-          if (blob) {
-            const file = new File([blob], fileName, { type: 'image/png' });
-            if (navigator.canShare({ files: [file] })) {
-              await navigator.share({
-                title: 'Daily Wisdom from GitaLens',
-                text: `"${dailyVerse.text}"`,
-                files: [file],
-              });
-              clearTimeout(safetyTimeout);
-              setIsSharing(false);
-              return;
-            }
-          }
-        } catch (shareError) {
-          console.warn('Native share failed or cancelled:', shareError);
-        }
-      }
-
-      // Fallback
-      const dataUrl = canvas.toDataURL('image/png');
-      const link = document.createElement('a');
-      link.download = fileName;
-      link.href = dataUrl;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-
-    } catch (error) {
-      console.error('Error in handleShare:', error);
-      alert('Could not generate share image. You can still copy the text!');
-    } finally {
-      clearTimeout(safetyTimeout);
-      setIsSharing(false);
-    }
+    setShowShareModal(true);
   };
 
   return (
@@ -162,6 +114,12 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
           className="h-48 w-auto mx-auto object-contain select-none mix-blend-multiply"
         />
       </div>
+
+      {!hasCheckedIn && (
+        <div className="w-full">
+          <InnerCompass onComplete={() => setHasCheckedIn(true)} />
+        </div>
+      )}
 
       <motion.button
         whileHover={{ scale: 1.02, y: -2 }}
@@ -182,12 +140,33 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
         <div className="w-full bg-stone-warm h-1.5 rounded-full overflow-hidden">
           <div
             className="bg-olive h-full transition-all duration-1000 ease-out"
-            style={{ width: `${Math.min((progress.reflection_days % 30) / 30 * 100, 100)}%` }}
+            style={{ width: `${Math.min((progress.reflection_days % 30) / 30 * 100, 100)}% ` }}
           />
         </div>
       </section>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        {hasCheckedIn && (
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={() => onNavigate(View.INNER_COMPASS)}
+            className="glass-card w-full flex flex-col items-center justify-center p-6 rounded-2xl text-center"
+          >
+            <span className="text-base font-medium text-charcoal">Inner Compass</span>
+            <p className="text-stone-500/80 text-[10px] uppercase tracking-tighter mt-1">Daily Pattern</p>
+          </motion.button>
+        )}
+
+        <motion.button
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          onClick={() => onNavigate(View.LENS_PRACTICE)}
+          className="glass-card w-full flex flex-col items-center justify-center p-6 rounded-2xl text-center"
+        >
+          <span className="text-base font-medium text-charcoal">Lens Practice</span>
+          <p className="text-stone-500/80 text-[10px] uppercase tracking-tighter mt-1">Shift perspective</p>
+        </motion.button>
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
@@ -211,11 +190,11 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => onNavigate(View.HISTORY)}
+          onClick={() => onNavigate(View.CLARITY_CHAIN)}
           className="glass-card w-full flex flex-col items-center justify-center p-6 rounded-2xl text-center"
         >
-          <span className="text-base font-medium text-charcoal">History</span>
-          <p className="text-stone-500/80 text-[10px] uppercase tracking-tighter mt-1">Past Guidance</p>
+          <span className="text-base font-medium text-charcoal">Clarity Chain</span>
+          <p className="text-stone-500/80 text-[10px] uppercase tracking-tighter mt-1">Untangle Stress</p>
         </motion.button>
       </div>
 
@@ -238,7 +217,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
           {showReflection && (
             <div className="bg-white/50 rounded-xl p-4 border-l-2 border-saffron-accent animate-in fade-in slide-in-from-top-2 duration-300">
               <p className="text-[#5A5246] text-sm leading-relaxed italic">
-                {dailyVerse.reflection}
+                {(reflectionsData as Record<string, string>)[`${dailyVerse.chapter}.${dailyVerse.verse}`] || dailyVerse.reflection || "Take a moment to reflect on these words deeply. Let them resonate within you."}
               </p>
             </div>
           )}
@@ -262,63 +241,23 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
             </button>
             <button
               onClick={handleShare}
-              disabled={isSharing}
-              className="p-2 rounded-full bg-white/40 hover:bg-white/70 text-stone-600 transition-colors focus:outline-none disabled:opacity-50"
-              title="Share Image"
+              className="p-2 rounded-full bg-white/40 hover:bg-white/70 text-stone-600 transition-colors focus:outline-none"
+              title="Share Wisdom"
             >
-              {isSharing ? <Loader2 size={16} className="animate-spin" /> : <Share2 size={16} />}
+              <Share2 size={16} />
             </button>
           </div>
         </div>
       </motion.section>
 
-      {/* Hidden Share Card Staging Area */}
-      <div className="fixed top-0 left-0 -z-50 opacity-0 pointer-events-none" aria-hidden="true">
-        <div
-          ref={shareRef}
-          style={{
-            width: '600px',
-            backgroundColor: '#F5F5F0',
-            padding: '48px',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            textAlign: 'center',
-            border: '8px double #D8CBB5'
-          }}
-        >
-          <div style={{ marginBottom: '24px', opacity: 0.9 }}>
-            <img
-              src="/logo.png"
-              alt="GitaLens"
-              style={{
-                height: '80px',
-                width: 'auto',
-                margin: '0 auto',
-                display: 'block'
-              }}
-            />
-          </div>
-
-          <h3 style={{ fontSize: '18px', fontWeight: 'bold', color: '#C2A15F', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '32px' }}>
-            {dailyVerse.reference}
-          </h3>
-          <p style={{ fontFamily: '"Playfair Display", serif', fontSize: '30px', fontStyle: 'italic', color: '#262626', lineHeight: 1.6, marginBottom: '24px', padding: '0 32px' }}>
-            "{dailyVerse.text}"
-          </p>
-
-          <div style={{ width: '40px', height: '1px', backgroundColor: '#C2A15F', marginBottom: '24px', opacity: 0.5 }}></div>
-
-          <p style={{ fontSize: '14px', fontFamily: 'Inter, sans-serif', color: '#57534e', lineHeight: 1.6, marginBottom: '32px', maxWidth: '480px', fontStyle: 'italic' }}>
-            {dailyVerse.reflection}
-          </p>
-
-          <p style={{ fontSize: '12px', fontWeight: 'bold', color: '#a8a29e', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-            Daily Wisdom
-          </p>
-        </div>
-      </div>
+      {showShareModal && (
+        <ShareModal
+          verse={dailyVerse}
+          // @ts-ignore
+          customReflection={(reflectionsData as Record<string, string>)[`${dailyVerse.chapter}.${dailyVerse.verse}`]}
+          onClose={() => setShowShareModal(false)}
+        />
+      )}
     </div>
   );
 };

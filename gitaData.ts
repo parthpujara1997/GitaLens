@@ -1,4 +1,6 @@
 import { GitaVerse, GitaChapter, Theme } from './types';
+// @ts-ignore
+import reflectionsData from './src/data/ai_reflections.json';
 
 export const THEMES: Theme[] = [
     { id: 'duty', name: 'Duty', description: 'Understanding and performing one\'s responsibilities' },
@@ -397,7 +399,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.25 In front of Bhishma and Drona and all the rulers of the earth, he said, O Partha, behold these Kurus assembled here.",
         "reflection": "",
         "themes": [],
-        "speaker": "Arjuna",
+        "speaker": "Krishna",
         "sanskrit": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्।\n\nउवाच पार्थ पश्यैतान्समवेतान्कुरूनिति।।1.25।।"
     },
     {
@@ -430,7 +432,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.28 Overcome by supreme pity, he spoke thus. Arjuna said: Seeing my own people standing here eager to fight, O Krishna.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाच\n\nकृपया परयाऽऽविष्टो विषीदन्निदमब्रवीत्।\n\nदृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्।।1.28।।"
     },
     {
@@ -441,7 +443,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.29 My limbs fail, my mouth is parched, my body trembles, and my hair stands on end.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति।\n\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते।।1.29।।"
     },
     {
@@ -452,7 +454,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.30 The Gandiva slips from my hand, my skin burns, I am unable to stand steady, and my mind seems to whirl.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते।\n\nन च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः।।1.30।।"
     },
     {
@@ -463,7 +465,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.31 I see adverse omens, O Keshava, and I see no good in slaying my own people in battle.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "निमित्तानि च पश्यामि विपरीतानि केशव।\n\nन च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे।।1.31।।"
     },
     {
@@ -474,7 +476,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.32 I do not desire victory, O Krishna, nor kingdom, nor pleasures. Of what use is kingdom to us, O Govinda, or enjoyment, or even life?",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च।\n\nकिं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा।।1.32।।"
     },
     {
@@ -485,7 +487,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.33 Those for whose sake we desire kingdom, enjoyments, and pleasures stand here in battle, having renounced life and wealth.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च।\n\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च।।1.33।।"
     },
     {
@@ -496,7 +498,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.34 Teachers, fathers, sons, grandfathers, maternal uncles, fathers-in-law, grandsons, brothers-in-law, and other relatives.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "आचार्याः पितरः पुत्रास्तथैव च पितामहाः।\n\nमातुलाः श्चशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा।।1.34।।"
     },
     {
@@ -507,7 +509,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.35 These I do not wish to kill, O Madhusudana, even if they kill me, not even for the sovereignty of the three worlds, how much less for the sake of the earth.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन।\n\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते।।1.35।।"
     },
     {
@@ -518,7 +520,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.36 Having slain the sons of Dhritarashtra, what joy would be ours, O Janardana? Sin alone would cling to us by killing these aggressors.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन।\n\nपापमेवाश्रयेदस्मान्हत्वैतानाततायिनः।।1.36।।"
     },
     {
@@ -529,7 +531,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.37 Therefore we ought not to kill the sons of Dhritarashtra, our own kinsmen. How can we be happy, O Madhava, after killing our own people?",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान्।\n\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव।।1.37।।"
     },
     {
@@ -540,7 +542,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.38 Though they, with minds overpowered by greed, see no fault in the destruction of families or sin in betrayal of friends.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः।\n\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्।।1.38।।"
     },
     {
@@ -551,7 +553,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.39 Why should we not know to turn away from this sin, O Janardana, we who clearly see the evil arising from the destruction of families?",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्।\n\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन।।1.39।।"
     },
     {
@@ -562,7 +564,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.40 With the destruction of a family, its ancient duties perish. When duty is destroyed, lawlessness overcomes the whole family.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः।\n\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत।।1.40।।"
     },
     {
@@ -573,7 +575,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.41 When lawlessness prevails, O Krishna, the women of the family become corrupted. When women are corrupted, O descendant of Vrishni, social confusion arises.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः।\n\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः।।1.41।।"
     },
     {
@@ -584,7 +586,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.42 This confusion leads to hell for the destroyers of the family and the family itself. Their ancestors fall, deprived of offerings of food and water.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "सङ्करो नरकायैव कुलघ्नानां कुलस्य च।\n\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः।।1.42।।"
     },
     {
@@ -595,7 +597,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.43 By these evils of the destroyers of families, which cause social confusion, the eternal duties of caste and family are ruined.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः।\n\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः।।1.43।।"
     },
     {
@@ -606,7 +608,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.44 We have heard, O Janardana, that those men whose family duties are destroyed dwell in hell for an indefinite time.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन।\n\nनरकेऽनियतं वासो भवतीत्यनुशुश्रुम।।1.44।।"
     },
     {
@@ -617,7 +619,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.45 Alas, we are resolved to commit a great sin, in that, out of greed for kingdom and pleasure, we are prepared to kill our own people.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "अहो बत महत्पापं कर्तुं व्यवसिता वयम्।\n\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः।।1.45।।"
     },
     {
@@ -628,7 +630,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "1.46 If the sons of Dhritarashtra, weapons in hand, should kill me in battle while I am unresisting and unarmed, that would be better for me.",
         "reflection": "",
         "themes": [],
-        "speaker": "Sanjaya",
+        "speaker": "Arjuna",
         "sanskrit": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः।\n\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्।।1.46।।"
     },
     {
@@ -639,7 +641,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "2.1 Sanjaya said: Seeing Arjuna overwhelmed by compassion, his eyes filled with tears and his mind troubled, Madhusudana spoke these words.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "सञ्जय उवाच\n\nतं तथा कृपयाऽविष्टमश्रुपूर्णाकुलेक्षणम्।\n\nविषीदन्तमिदं वाक्यमुवाच मधुसूदनः।।2.1।।"
     },
     {
@@ -672,7 +674,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "2.4 Arjuna said: How shall I fight in battle with arrows against Bhishma and Drona, O Madhusudana, who are worthy of reverence, O slayer of foes?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाच\n\nकथं भीष्ममहं संख्ये द्रोणं च मधुसूदन।\n\nइषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन।।2.4।।"
     },
     {
@@ -683,7 +685,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "2.5 Better indeed is it to live in this world by begging than to slay these venerable teachers. By killing them, though they seek worldly gain, I would enjoy pleasures stained with blood.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "गुरूनहत्वा हि महानुभावान्\n\nश्रेयो भोक्तुं भैक्ष्यमपीह लोके।\n\nहत्वार्थकामांस्तु गुरूनिहैव\n\nभुञ्जीय भोगान् रुधिरप्रदिग्धान्।।2.5।।"
     },
     {
@@ -694,7 +696,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "2.6 Nor do we know which is better for us, whether we should conquer them or they should conquer us. Those sons of Dhritarashtra, having slain whom we would not wish to live, stand before us in battle.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयो\n\nयद्वा जयेम यदि वा न��� जयेयुः।\n\nयानेव हत्वा न जिजीविषाम\n\nस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः।।2.6।।"
     },
     {
@@ -705,7 +707,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "2.7 My nature is overpowered by the fault of pity, and my mind is confused regarding duty. I ask You clearly, tell me what is truly good for me. I am Your disciple. Instruct me, for I have taken refuge in You.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "कार्पण्���दोषोपहतस्वभावः\n\nपृच्छामि त्वां धर्मसंमूढचेताः।\n\nयच्छ्रेयः स्यान्निश्िचतं ब्रूहि तन्मे\n\nशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्।।2.7।।"
     },
     {
@@ -716,7 +718,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "2.8 I see nothing that can remove this sorrow which dries up my senses, even if I were to obtain an unrivaled and prosperous kingdom on earth, or even sovereignty over the gods.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "न हि प्रपश्यामि ममापनुद्या\n\nद्यच्छोकमुच्छोषणमिन्द्रियाणाम्।\n\nअवाप्य भूमावसपत्नमृद्धम्\n\nराज्यं सुराणामपि चाधिपत्यम्।।2.8।।"
     },
     {
@@ -727,7 +729,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "2.9 Sanjaya said: Having spoken thus to Hrishikesha, Arjuna said to Govinda, “I will not fight,” and became silent.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "सञ्जय उवाच\n\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप।\n\nन योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह।।2.9।।"
     },
     {
@@ -738,7 +740,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "2.10 O Bharata, Hrishikesha spoke these words, as if smiling, to Arjuna who was grieving, between the two armies.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "तमुवाच हृषीकेशः प्रहसन्निव भारत।\n\nसेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः।।2.10।।"
     },
     {
@@ -1234,7 +1236,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "2.54 Arjuna said: What is the description of one of steady wisdom, O Keshava, who is established in contemplation? How does such a person speak, sit, and move?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाच\n\nस्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव।\n\nस्थितधीः किं प्रभाषेत किमासीत व्रजेत किम्।।2.54।।"
     },
     {
@@ -1451,7 +1453,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "3.1 Arjuna said: If You consider knowledge superior to action, O Janardana, then why do You urge me to engage in this terrible action, O Keshava?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाच\n\nज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन।\n\nतत्किं कर्मणि घोरे मां नियोजयसि केशव।।3.1।।"
     },
     {
@@ -1462,7 +1464,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "3.2 With words that seem mixed, You confuse my understanding. Tell me decisively the one path by which I may attain the highest good.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे।\n\nतदेकं वद निश्िचत्य येन श्रेयोऽहमाप्नुयाम्।।3.2।।"
     },
     {
@@ -1848,7 +1850,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "3.36 Arjuna said: Then by what is a person driven to commit sin, O descendant of Vrishni, even unwillingly, as if compelled by force?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाच\n\nअथ केन प्रयुक्तोऽयं पापं चरति पूरुषः।\n\nअनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः।।3.36।।"
     },
     {
@@ -1969,7 +1971,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "4.4 Arjuna said: Later was Your birth, and earlier the birth of Vivasvan. How am I to understand that You taught this in the beginning?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाच\n\nअपरं भवतो जन्म परं जन्म विवस्वतः।\n\nकथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति।।4.4।।"
     },
     {
@@ -3104,7 +3106,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "6.34 For the mind is restless, O Krishna, turbulent, strong, and obstinate. I consider its control to be as difficult as that of the wind.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्।\n\nतस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्।।6.34।।"
     },
     {
@@ -3141,7 +3143,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "6.37 Arjuna said: One who lacks self-control but is possessed of faith, whose mind has strayed from yoga, not attaining perfection in yoga, what path does he follow, O Krishna?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाच\n\nअयतिः श्रद्धयोपेतो योगाच्चलितमानसः।\n\nअप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति।।6.37।।"
     },
     {
@@ -3152,7 +3154,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "6.38 Does he not perish like a riven cloud, O mighty-armed, fallen from both, without support, deluded on the path to Brahman?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति।\n\nअप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि।।6.38।।"
     },
     {
@@ -3163,7 +3165,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "6.39 This doubt of mine, O Krishna, You ought to dispel completely. For none other than You can be the remover of this doubt.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः।\n\nत्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते।।6.39।।"
     },
     {
@@ -4407,7 +4409,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "10.12 Arjuna said: You are the supreme Brahman, the supreme abode, the supreme purifier, the eternal divine Person, the primal God, unborn and all-pervading.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाच\n\nपरं ब्रह्म परं धाम पवित्रं परमं भवान्।\n\nपुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम्।।10.12।।"
     },
     {
@@ -4418,7 +4420,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "10.13 All the sages declare You thus, and the divine sage Narada, as well as Asita, Devala, and Vyasa. You Yourself also tell me so.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "आहुस्त्वामृषयः सर्वे देवर्षिर्नारदस्तथा।\n\nअसितो देवलो व्यासः स्वयं चैव ब्रवीषि मे।।10.13।।"
     },
     {
@@ -4429,7 +4431,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "10.14 I hold all this to be true which You tell me, O Keshava. Neither the gods nor the demons know Your manifestation, O Blessed Lord.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "सर्वमेतदृतं मन्ये यन्मां वदसि केशव।\n\nन हि ते भगवन् व्यक्ितं विदुर्देवा न दानवाः।।10.14।।"
     },
     {
@@ -4440,7 +4442,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "10.15 You Yourself know Yourself by Yourself, O Supreme Person, source of beings, Lord of beings, God of gods, ruler of the universe.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "स्वयमेवात्मनाऽत्मानं वेत्थ त्वं पुरुषोत्तम।\n\nभूतभावन भूतेश देवदेव जगत्पते।।10.15।।"
     },
     {
@@ -4451,7 +4453,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "10.16 Be pleased to declare completely Your divine manifestations by which You pervade these worlds and abide in them.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतयः।\n\nयाभिर्विभूतिभिर्लोकानिमांस्त्वं व्याप्य तिष्ठसि।।10.16।।"
     },
     {
@@ -4462,7 +4464,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "10.17 How may I know You, O Yogin, by constantly contemplating You? In what aspects are You to be contemplated by me, O Blessed Lord?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन्।\n\nकेषु केषु च भावेषु चिन्त्योऽसि भगवन्मया।।10.17।।"
     },
     {
@@ -4473,7 +4475,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "10.18 Describe to me again in detail Your yoga and Your manifestations, O Janardana, for I am never satiated in hearing Your nectar-like words.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "विस्तरेणात्मनो योगं विभूतिं च जनार्दन।\n\nभूयः कथय तृप्तिर्हि श्रृण्वतो नास्ति मेऽमृतम्।।10.18।।"
     },
     {
@@ -4759,7 +4761,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.2 I have heard from You in detail, O lotus-eyed One, of the origin and dissolution of beings, and also of Your imperishable greatness.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "भवाप्ययौ हि भूतानां श्रुतौ विस्तरशो मया।\n\nत्वत्तः कमलपत्राक्ष माहात्म्यमपि चाव्ययम्।।11.2।।"
     },
     {
@@ -4770,7 +4772,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.3 Thus it is, as You have declared Yourself, O Supreme Lord. I desire to see Your sovereign form, O Supreme Person.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "एवमेतद्यथात्थ त्वमात्मानं परमेश्वर।\n\nद्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम।।11.3।।"
     },
     {
@@ -4781,7 +4783,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.4 If You think that it is possible for me to see it, O Lord, then show me Your imperishable Self, O Lord of yoga.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "मन्यसे यदि तच्छक्यं मया द्रष्टुमिति प्रभो।\n\nयोगेश्वर ततो मे त्वं दर्शयाऽत्मानमव्ययम्।।11.4।।"
     },
     {
@@ -4836,7 +4838,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.9 Sanjaya said: Having spoken thus, O king, Hari, the great Lord of yoga, showed to Partha His supreme sovereign form.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "सञ्जय उवाच\n\nएवमुक्त्वा ततो राजन्महायोगेश्वरो हरिः।\n\nदर्शयामास पार्थाय परमं रूपमैश्वरम्।।11.9।।"
     },
     {
@@ -4847,7 +4849,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.10 With many mouths and eyes, many wondrous sights, adorned with many divine ornaments, holding many uplifted divine weapons.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "अनेकवक��त्रनयनमनेकाद्भुतदर्शनम्।\n\nअनेकदिव्याभरणं दिव्यानेकोद्यतायुधम्।।11.10।।"
     },
     {
@@ -4858,7 +4860,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.11 Wearing divine garlands and garments, anointed with divine fragrances, the all-wondrous, divine, infinite One, facing all directions.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "दिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम्।\n\nसर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम्।।11.11।।"
     },
     {
@@ -4869,7 +4871,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.12 If the splendor of a thousand suns were to rise at once in the sky, that might resemble the splendor of that great Being.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता।\n\nयदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः।।11.12।।"
     },
     {
@@ -4880,7 +4882,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.13 There, in the body of the God of gods, Arjuna then beheld the entire universe, divided in many ways, gathered together in one place.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "तत्रैकस्थं जगत्कृत्स्नं प्रविभक्तमनेकधा।\n\nअपश्यद्देवदेवस्य शरीरे पाण्डवस्तदा।।11.13।।"
     },
     {
@@ -4891,7 +4893,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.14 Then Dhananjaya, filled with wonder and with hair standing on end, bowed his head to the Lord and spoke with joined palms.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "ततः स विस्मयाविष्टो हृष्टरोमा धनञ्जयः।\n\nप्रणम्य शिरसा देवं कृताञ्जलिरभाषत।।11.14।।"
     },
     {
@@ -4913,7 +4915,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.16 I see You with many arms, bellies, mouths, and eyes, infinite in form on every side. I see neither end nor middle nor beginning of You, O Lord of the universe, O Universal Form.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अनेकबाहूदरवक्त्रनेत्रं\n\nपश्यामि त्वां सर्वतोऽनन्तरूपम्।\n\nनान्तं न मध्यं न पुनस्तवादिं\n\nपश्यामि विश्वेश्वर विश्वरूप।।11.16।।"
     },
     {
@@ -4924,7 +4926,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.17 I see You crowned, wielding mace and discus, a mass of radiance shining everywhere, hard to behold, blazing all around like fire or the sun, immeasurable.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "किरीटिनं गदिनं चक्रिणं च\n\nतेजोराशिं सर्वतोदीप्तिमन्तम्।\n\nपश्यामि त्वां दुर्निरीक्ष्यं समन्ता\n\nद्दीप्तानलार्कद्युतिमप्रमेयम्।।11.17।।"
     },
     {
@@ -4935,7 +4937,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.18 You are the imperishable, the supreme object of knowledge. You are the ultimate resting place of this universe. You are the eternal guardian of the everlasting law. You are the ancient Person, I believe.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "त्वमक्षरं परमं वेदितव्यं\n\nत्वमस्य विश्वस्य परं निधानम्।\n\nत्वमव्ययः शाश्वतधर्मगोप्ता\n\nसनातनस्त्वं पुरुषो मतो मे।।11.18।।"
     },
     {
@@ -4946,7 +4948,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.19 I see You without beginning, middle, or end, infinite in power, of endless arms, with the sun and moon as Your eyes, with blazing fire as Your mouth, heating the universe with Your radiance.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अनादिमध्यान्तमनन्तवीर्य\n\nमनन्तबाहुं शशिसूर्यनेत्रम्।\n\nपश्यामि त्वां दीप्तहुताशवक्त्रम्\n\nस्वतेजसा विश्वमिदं तपन्तम्।।11.19।।"
     },
     {
@@ -4957,7 +4959,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.20 This space between heaven and earth and all the quarters are pervaded by You alone. Seeing this wondrous and terrible form of Yours, the three worlds tremble, O great-souled One.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "द्यावापृथिव्योरिदमन्तरं हि\n\nव्याप्तं त्वयैकेन दिशश्च सर्वाः।\n\nदृष्ट्वाऽद्भुतं रूपमुग्रं तवेदं\n\nलोकत्रयं प्रव्यथितं महात्मन्।।11.20।।"
     },
     {
@@ -4968,7 +4970,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.21 Indeed, these hosts of gods enter You. Some, afraid, praise You with folded hands. Hosts of great sages and perfected beings say, ‘May there be peace,’ and praise You with abundant hymns.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अमी हि त्वां सुरसङ्घाः विशन्ति\n\nकेचिद्भीताः प्राञ्जलयो गृणन्ति।\n\nस्वस्तीत्युक्त्वा महर्षिसिद्धसङ्घाः\n\nस्तुवन्ति त्वां स्तुतिभिः पुष्कलाभिः।।11.21।।"
     },
     {
@@ -4979,7 +4981,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.22 The Rudras, Adityas, Vasus, Sadhyas, Vishvedevas, the Ashvins, Maruts, ancestors, Gandharvas, Yakshas, Asuras, and Siddhas all gaze upon You in amazement.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "रुद्रादित्या वसवो ये च साध्या\n\nविश्वेऽश्िवनौ मरुतश्चोष्मपाश्च।\n\nगन्धर्वयक्षासुरसिद्धसङ्घा\n\nवीक्षन्ते त्वां विस्मिताश्चैव सर्वे।।11.22।।"
     },
     {
@@ -4990,7 +4992,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.23 Seeing Your great form with many mouths and eyes, many arms, thighs, and feet, many bellies and fearful fangs, the worlds tremble, and so do I, O mighty-armed.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "रूपं महत्ते बहुवक्त्रनेत्रं\n\nमहाबाहो बहुबाहूरुपादम्।\n\nबहूदरं बहुदंष्ट्राकरालं\n\nदृष्ट्वा लोकाः प्रव्यथितास्तथाऽहम्।।11.23।।"
     },
     {
@@ -5001,7 +5003,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.24 Seeing You touching the sky, blazing with many colors, with wide-open mouths and large, fiery eyes, my inner self trembles. I find neither firmness nor peace, O Vishnu.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "नभःस्पृशं दीप्तमनेकवर्णं\n\nव्यात्ताननं दीप्तविशालनेत्रम्।\n\nदृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा\n\nधृतिं न विन्दामि शमं च विष्णो।।11.24।।"
     },
     {
@@ -5012,7 +5014,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.25 Seeing Your mouths with fearful fangs, blazing like the fires of destruction, I know not the directions nor do I find peace. Be gracious, O Lord of gods, O abode of the universe.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "दंष्ट्राकरालानि च ते मुखानि\n\nदृष्ट्वैव कालानलसन्निभानि।\n\nदिशो न जाने न लभे च शर्म\n\nप्रसीद देवेश जगन्निवास।।11.25।।"
     },
     {
@@ -5023,7 +5025,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.26 All the sons of Dhritarashtra, together with hosts of kings, Bhishma, Drona, and Karna, and also the foremost warriors on our side.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अमी च त्वां धृतराष्ट्रस्य पुत्राः\n\nसर्वे सहैवावनिपालसङ्घैः।\n\nभीष्मो द्रोणः सूतपुत्रस्तथाऽसौ\n\nसहास्मदीयैरपि योधमुख्यैः।।11.26।।"
     },
     {
@@ -5034,7 +5036,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.27 They are entering Your mouths with fearful fangs, rushing headlong. Some are seen caught between the teeth, with their heads crushed.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "वक्त्राणि ते त्वरमाणा विशन्ति\n\nदंष्ट्राकरालानि भयानकानि।\n\nकेचिद्विलग्ना दशनान्तरेषु\n\nसंदृश्यन्ते चूर्णितैरुत्तमाङ्गैः।।11.27।।"
     },
     {
@@ -5045,7 +5047,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.28 As many torrents of rivers flow swiftly toward the ocean, so these heroes of the human world enter Your blazing mouths.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "यथा नदीनां बहवोऽम्बुवेगाः\n\nसमुद्रमेवाभिमुखाः द्रवन्ति।\n\nतथा तवामी नरलोकवीरा\n\nविशन्ति वक्त्राण्यभिविज्वलन्ति।।11.28।।"
     },
     {
@@ -5056,7 +5058,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.29 As moths rush into a blazing fire to their destruction, so also do these beings rush into Your mouths to their destruction.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "यथा प्रदीप्तं ज्वलनं पतङ्गा\n\nविशन्ति नाशाय समृद्धवेगाः।\n\nतथैव नाशाय विशन्ति लोका\n\nस्तवापि वक्त्राणि समृद्धवेगाः।।11.29।।"
     },
     {
@@ -5067,7 +5069,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.30 You lick up all the worlds on every side with Your flaming mouths, filling the entire universe with radiance. Your fierce rays scorch, O Vishnu.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "लेलिह्यसे ग्रसमानः समन्ता\n\nल्लोकान्समग्रान्वदनैर्ज्वलद्भिः।\n\nतेजोभिरापूर्य जगत्समग्रं\n\nभासस्तवोग्राः प्रतपन्ति विष्णो।।11.30।।"
     },
     {
@@ -5078,7 +5080,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.31 Tell me who You are in this fierce form. Salutations to You, O supreme God. Be gracious. I desire to know You, the original One, for I do not understand Your purpose.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "आख्याहि मे को भवानुग्ररूपो\n\nनमोऽस्तु ते देववर प्रसीद।\n\nविज्ञातुमिच्छामि भवन्तमाद्यं\n\nन हि प्रजानामि तव प्रवृत्तिम्।।11.31।।"
     },
     {
@@ -5122,7 +5124,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.35 Sanjaya said: Hearing these words of Keshava, the crowned one, trembling, bowed with joined palms, and again addressed Krishna in a faltering voice, overwhelmed with fear, and prostrated himself.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "सञ्जय उवाच\n\nएतच्छ्रुत्वा वचनं केशवस्य\n\nकृताञ्जलिर्वेपमानः किरीटी।\n\nनमस्कृत्वा भूय एवाह कृष्णं\n\nसगद्गदं भीतभीतः प्रणम्य।।11.35।।"
     },
     {
@@ -5144,7 +5146,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.37 Why should they not bow to You, O great-souled One, greater than Brahma, the original creator? O infinite One, O Lord of gods, O abode of the universe, You are the imperishable, the being and the non-being, and that which is beyond both.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "कस्माच्च ते न नमेरन्महात्मन्\n\nगरीयसे ब्रह्मणोऽप्यादिकर्त्रे।\n\nअनन्त देवेश जगन्निवास\n\nत्वमक्षरं सदसत्तत्परं यत्।।11.37।।"
     },
     {
@@ -5155,7 +5157,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.38 You are the primal God, the ancient Person. You are the supreme resting place of this universe. You are the knower and that which is to be known, and the supreme abode. By You this universe is pervaded, O One of infinite form.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "त्वमादिदेवः पुरुषः पुराण\n\nस्त्वमस्य विश्वस्य परं निधानम्।\n\nवेत्तासि वेद्यं च परं च धाम\n\nत्वया ततं विश्वमनन्तरूप।।11.38।।"
     },
     {
@@ -5166,7 +5168,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.39 You are Vayu, Yama, Agni, Varuna, the moon, the progenitor, and the great-grandsire. Salutations, salutations to You a thousand times, and again salutations to You.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "वायुर्यमोऽग्निर्वरुणः शशाङ्कः\n\nप्रजापतिस्त्वं प्रपितामहश्च।\n\nनमो नमस्तेऽस्तु सहस्रकृत्वः\n\nपुनश्च भूयोऽपि नमो नमस्ते।।11.39।।"
     },
     {
@@ -5177,7 +5179,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.40 Salutations to You from the front and from behind. Salutations to You on all sides, O All. Infinite in power and boundless in might, You pervade all. Therefore You are all.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "नमः पुरस्तादथ पृष्ठतस्ते\n\nनमोऽस्तु ते सर्वत एव सर्व।\n\nअनन्तवीर्यामितविक्रमस्त्वं\n\nसर्वं समाप्नोषि ततोऽसि सर्वः।।11.40।।"
     },
     {
@@ -5188,7 +5190,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.41 Thinking of You as a friend, whatever I have said rashly, saying, ‘O Krishna, O Yadava, O friend,’ not knowing this greatness of Yours, out of carelessness or affection.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "सखेति मत्वा प्रसभं यदुक्तं\n\nहे कृष्ण हे यादव हे सखेति।\n\nअजानता महिमानं तवेदं\n\nमया प्रमादात्प्रणयेन वापि।।11.41।।"
     },
     {
@@ -5199,7 +5201,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.42 And whatever disrespect I have shown You in jest, while playing, resting, sitting, or eating, when alone or in company, that I ask forgiveness of You, O immeasurable One.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "यच्चावहासार्थमसत्कृतोऽसि\n\nविहारशय्यासनभोजनेषु।\n\nएकोऽथवाप्यच्युत तत्समक्षं\n\nतत्क्षामये त्वामहमप्रमेयम्।।11.42।।"
     },
     {
@@ -5210,7 +5212,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.43 You are the father of this moving and unmoving world. You are its venerable teacher and worthy of worship. There is none equal to You, how then could there be another greater, even in the three worlds, O Being of incomparable power?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "पितासि लोकस्य चराचरस्य\n\nत्वमस्य पूज्यश्च गुरुर्गरीयान्।\n\nन त्वत्समोऽस्त्यभ्यधिकः कुतोऽन्यो\n\nलोकत्रयेऽप्यप्रतिमप्रभाव।।11.43।।"
     },
     {
@@ -5221,7 +5223,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.44 Therefore, bowing down and prostrating my body, I seek Your grace, O adorable Lord. As a father forgives a son, a friend a friend, or a beloved a lover, so should You forgive me, O God.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "तस्मात्प्रणम्य प्रणिधाय कायं\n\nप्रसादये त्वामहमीशमीड्यम्।\n\nपितेव पुत्रस्य सखेव सख्युः\n\nप्रियः प्रियायार्हसि देव सोढुम्।।11.44।।"
     },
     {
@@ -5232,7 +5234,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.45 I am delighted at seeing what has never been seen before, yet my mind is distressed with fear. Show me that form of Yours, O Lord of gods, O abode of the universe. Be gracious.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अदृष्टपूर्वं हृषितोऽस्मि दृष्ट्वा\n\nभयेन च प्रव्यथितं मनो मे।\n\nतदेव मे दर्शय देव रूपं\n\nप्रसीद देवेश जगन्निवास।।11.45।।"
     },
     {
@@ -5243,7 +5245,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.46 I desire to see You as before, crowned, bearing the mace and discus, in that same four-armed form, O thousand-armed One, O Universal Form.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "किरीटिनं गदिनं चक्रहस्त\n\nमिच्छामि त्वां द्रष्टुमहं तथैव।\n\nतेनैव रूपेण चतुर्भुजेन\n\nसहस्रबाहो भव विश्वमूर्ते।।11.46।।"
     },
     {
@@ -5287,7 +5289,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "11.50 Sanjaya said: Having thus spoken to Arjuna, Vasudeva showed him again His own form, and comforting the frightened one, He assumed His gentle form.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "सञ्जय उवाच\n\nइत्यर्जुनं वासुदेवस्तथोक्त्वा\n\nस्वकं रूपं दर्शयामास भूयः।\n\nआश्वासयामास च भीतमेनं\n\nभूत्वा पुनः सौम्यवपुर्महात्मा।।11.50।।"
     },
     {
@@ -5340,7 +5342,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "verse": 55,
         "reference": "Chapter 11, Verse 55",
         "text": "11.55 One who performs actions for Me, who regards Me as the supreme goal, who is devoted to Me, free from attachment, and without enmity toward any being, comes to Me, O son of Pandu.",
-        "reflection": "",
+        "reflection": "This verse encapsulates the essence of the Gita: make your life an offering. When every action is dedicated to the Divine without attachment to the result, you find true freedom and peace.",
         "themes": [],
         "speaker": "Krishna",
         "sanskrit": "मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः।\n\nनिर्वैरः सर्वभूतेषु यः स मामेति पाण्डव।।11.55।।"
@@ -5353,7 +5355,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "12.1 Arjuna said: Those devotees who, ever steadfast, thus worship You, and those also who worship the imperishable, the unmanifest which of these are better versed in yoga?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाचएवं सततयुक्ता ये भक्तास्त्वां पर्युपासते।येचाप्यक्षरमव्यक्तं तेषां के योगवित्तमाः।।12.1।।"
     },
     {
@@ -5578,10 +5580,12 @@ export const GITA_VERSES: GitaVerse[] = [
         "chapter": 13,
         "verse": 1,
         "reference": "Chapter 13, Verse 1",
-        "text": "13.1 The Blessed Lord said: This body, O son of Kunti, is called the field. He who knows it is called the knower of the field by those who understand.",
+        "text": "13.1 Arjuna said: Prakriti (Nature) and Purusha (Spirit), the Field and the Knower of the Field, knowledge and that which is to be known—I wish to know these, O Keshava.",
         "reflection": "",
-        "themes": [],
-        "speaker": "Krishna",
+        "themes": [
+            "knowledge"
+        ],
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाच\n\nप्रकृतिं पुरुषं चैव क्षेत्रं क्षेत्रज्ञमेव च।\n\nएतद्वेदितुमिच्छामि ज्ञानं ज्ञेयं च केशव।।13.1।।"
     },
     {
@@ -5589,7 +5593,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "chapter": 13,
         "verse": 2,
         "reference": "Chapter 13, Verse 2",
-        "text": "13.2 Know Me also, O Bharata, as the knower of the field in all fields. The knowledge of the field and the knower of the field is considered by Me to be true knowledge.",
+        "text": "13.2 The Blessed Lord said: This body, O son of Kunti, is called the field. He who knows it is called the knower of the field by those who understand.",
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
@@ -5600,7 +5604,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "chapter": 13,
         "verse": 3,
         "reference": "Chapter 13, Verse 3",
-        "text": "13.3 What that field is, and of what nature, what its modifications are and from what it arises, and who He is and what His powers are, hear from Me briefly.",
+        "text": "13.3 Know Me also, O Bharata, as the knower of the field in all fields. The knowledge of the field and the knower of the field is considered by Me to be true knowledge.",
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
@@ -5611,7 +5615,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "chapter": 13,
         "verse": 4,
         "reference": "Chapter 13, Verse 4",
-        "text": "13.4 This has been sung by the sages in many ways, in various distinctive hymns, and also in the reasoned and definitive aphorisms of the Brahma Sutras.",
+        "text": "13.4 What that field is, and of what nature, what its modifications are and from what it arises, and who He is and what His powers are, hear from Me briefly.",
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
@@ -5622,7 +5626,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "chapter": 13,
         "verse": 5,
         "reference": "Chapter 13, Verse 5",
-        "text": "13.5 The great elements, egoism, intellect, and also the unmanifest; the ten senses and the one, and the five objects of the senses.",
+        "text": "13.5 This has been sung by the sages in many ways, in various distinctive hymns, and also in the reasoned and definitive aphorisms of the Brahma Sutras.",
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
@@ -5633,11 +5637,11 @@ export const GITA_VERSES: GitaVerse[] = [
         "chapter": 13,
         "verse": 6,
         "reference": "Chapter 13, Verse 6",
-        "text": "13.6 Desire, hatred, pleasure, pain, the aggregate, consciousness, and firmness. Thus the field has been declared briefly with its modifications.",
+        "text": "13.6 The great elements, egoism, intellect, and also the unmanifest; the ten senses and the one, and the five objects of the senses. Desire, hatred, pleasure, pain, the aggregate, consciousness, and firmness. Thus the field has been declared briefly with its modifications.",
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "महाभूतान्यहङ्कारो बुद्धिरव्यक्तमेव च।इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः।।13.6।।"
+        "sanskrit": "महाभूतान्यहङ्कारो बुद्धिरव्यक्तमेव च।इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः।।13.6।। इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः।एतत्क्षेत्रं समासेन सविकारमुदाहृतम्।।13.7।।"
     },
     {
         "id": "13-7",
@@ -5648,7 +5652,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः।एतत्क्षेत्रं समासेन सविकारमुदाहृतम्।।13.7।।"
+        "sanskrit": "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्।आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः।।13.8।।"
     },
     {
         "id": "13-8",
@@ -5663,7 +5667,7 @@ export const GITA_VERSES: GitaVerse[] = [
             "action"
         ],
         "speaker": "Krishna",
-        "sanskrit": "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्।आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः।।13.8।।"
+        "sanskrit": "इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च।जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम्।।13.9।।"
     },
     {
         "id": "13-9",
@@ -5674,7 +5678,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च।जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम्।।13.9।।"
+        "sanskrit": "असक्ितरनभिष्वङ्गः पुत्रदारगृहादिषु।नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु।।13.10।।"
     },
     {
         "id": "13-10",
@@ -5685,7 +5689,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "असक्ितरनभिष्वङ्गः पुत्रदारगृहादिषु।नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु।।13.10।।"
+        "sanskrit": "मयि चानन्ययोगेन भक्ितरव्यभिचारिणी।विविक्तदेशसेवित्वमरतिर्जनसंसदि।।13.11।।"
     },
     {
         "id": "13-11",
@@ -5696,7 +5700,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मयि चानन्ययोगेन भक्ितरव्यभिचारिणी।विविक्तदेशसेवित्वमरतिर्जनसंसदि।।13.11।।"
+        "sanskrit": "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम्।एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोन्यथा।।13.12।।"
     },
     {
         "id": "13-12",
@@ -5707,7 +5711,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम्।एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोन्यथा।।13.12।।"
+        "sanskrit": "ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वाऽमृतमश्नुते।अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते।।13.13।।"
     },
     {
         "id": "13-13",
@@ -5718,7 +5722,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वाऽमृतमश्नुते।अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते।।13.13।।"
+        "sanskrit": "सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम्।सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति।।13.14।।"
     },
     {
         "id": "13-14",
@@ -5729,7 +5733,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम्।सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति।।13.14।।"
+        "sanskrit": "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम्।असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च।।13.15।।"
     },
     {
         "id": "13-15",
@@ -5740,7 +5744,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम्।असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च।।13.15।।"
+        "sanskrit": "बहिरन्तश्च भूतानामचरं चरमेव च।सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत्।।13.16।।"
     },
     {
         "id": "13-16",
@@ -5751,7 +5755,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बहिरन्तश्च भूतानामचरं चरमेव च।सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत्।।13.16।।"
+        "sanskrit": "अविभक्तं च भूतेषु विभक्तमिव च स्थितम्।भूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च।।13.17।।"
     },
     {
         "id": "13-17",
@@ -5762,7 +5766,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अविभक्तं च भूतेषु विभक्तमिव च स्थितम्।भूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च।।13.17।।"
+        "sanskrit": "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते।ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम्।।13.18।।"
     },
     {
         "id": "13-18",
@@ -5773,7 +5777,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते।ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम्।।13.18।।"
+        "sanskrit": "इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः।मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते।।13.19।।"
     },
     {
         "id": "13-19",
@@ -5784,7 +5788,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः।मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते।।13.19।।"
+        "sanskrit": "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि।विकारांश्च गुणांश्चैव विद्धि प्रकृतिसंभवान्।।13.20।।"
     },
     {
         "id": "13-20",
@@ -5795,7 +5799,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि।विकारांश्च गुणांश्चैव विद्धि प्रकृतिसंभवान्।।13.20।।"
+        "sanskrit": "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते।पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते।।13.21।।"
     },
     {
         "id": "13-21",
@@ -5806,7 +5810,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते।पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते।।13.21।।"
+        "sanskrit": "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान्।कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु।।13.22।।"
     },
     {
         "id": "13-22",
@@ -5817,7 +5821,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान्।कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु।।13.22।।"
+        "sanskrit": "उपद्रष्टाऽनुमन्ता च भर्ता भोक्ता महेश्वरः।परमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः।।13.23।।"
     },
     {
         "id": "13-23",
@@ -5828,7 +5832,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "उपद्रष्टाऽनुमन्ता च भर्ता भोक्ता महेश्वरः।परमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः।।13.23।।"
+        "sanskrit": "य एवं वेत्ति पुरुषं प्रकृतिं च गुणैःसह।सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते।।13.24।।"
     },
     {
         "id": "13-24",
@@ -5839,7 +5843,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "य एवं वेत्ति पुरुषं प्रकृतिं च गुणैःसह।सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते।।13.24।।"
+        "sanskrit": "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना।अन्ये सांख्येन योगेन कर्मयोगेन चापरे।।13.25।।"
     },
     {
         "id": "13-25",
@@ -5850,7 +5854,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना।अन्ये सांख्येन योगेन कर्मयोगेन चापरे।।13.25।।"
+        "sanskrit": "अन्ये त्वेवमजानन्तः श्रुत्वाऽन्येभ्य उपासते।तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः।।13.26।।"
     },
     {
         "id": "13-26",
@@ -5861,7 +5865,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अन्ये त्वेवमजानन्तः श्रुत्वाऽन्येभ्य उपासते।तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः।।13.26।।"
+        "sanskrit": "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम्।क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ।।13.27।।"
     },
     {
         "id": "13-27",
@@ -5872,7 +5876,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम्।क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ।।13.27।।"
+        "sanskrit": "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम्।विनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति।।13.28।।"
     },
     {
         "id": "13-28",
@@ -5883,7 +5887,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम्।विनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति।।13.28।।"
+        "sanskrit": "समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम्।न हिनस्त्यात्मनाऽऽत्मानं ततो याति परां गतिम्।।13.29।।"
     },
     {
         "id": "13-29",
@@ -5894,7 +5898,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम्।न हिनस्त्यात्मनाऽऽत्मानं ततो याति परां गतिम्।।13.29।।"
+        "sanskrit": "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः।यः पश्यति तथाऽऽत्मानमकर्तारं स पश्यति।।13.30।।"
     },
     {
         "id": "13-30",
@@ -5905,7 +5909,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः।यः पश्यति तथाऽऽत्मानमकर्तारं स पश्यति।।13.30।।"
+        "sanskrit": "यदा भूतपृथग्भावमेकस्थमनुपश्यति।तत एव च विस्तारं ब्रह्म सम्पद्यते तदा।।13.31।।"
     },
     {
         "id": "13-31",
@@ -5916,7 +5920,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदा भूतपृथग्भावमेकस्थमनुपश्यति।तत एव च विस्तारं ब्रह्म सम्पद्यते तदा।।13.31।।"
+        "sanskrit": "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः।शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते।���13.32।।"
     },
     {
         "id": "13-32",
@@ -5927,7 +5931,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः।शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते।���13.32।।"
+        "sanskrit": "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते।सर्वत्रावस्थितो देहे तथाऽऽत्मा नोपलिप्यते।।13.33।।"
     },
     {
         "id": "13-33",
@@ -5938,7 +5942,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते।सर्वत्रावस्थितो देहे तथाऽऽत्मा नोपलिप्यते।।13.33।।"
+        "sanskrit": "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः।क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत।।13.34।।"
     },
     {
         "id": "13-34",
@@ -5949,7 +5953,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः।क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत।।13.34।।"
+        "sanskrit": "क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा।भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम्।।13.34।।"
     },
     {
         "id": "14-1",
@@ -6179,7 +6183,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "14.21 Arjuna said: By what marks is one known who has transcended these three qualities, O Lord? What is his conduct, and how does he transcend these three qualities?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाचकैर्लिंगैस्त्रीन्गुणानेतानतीतो भवति प्रभो।किमाचारः कथं चैतांस्त्रीन्गुणानतिवर्तते।।14.21।।"
     },
     {
@@ -6752,7 +6756,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "17.1 Arjuna said: Those who disregard the injunctions of scripture yet worship with faith, O Krishna what is their condition? Is it sattva, rajas, or tamas?",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाचये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयाऽन्विताः।तेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तमः।।17.1।।"
     },
     {
@@ -7060,7 +7064,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "18.1 Arjuna said: O mighty-armed one, I wish to understand clearly the true nature of renunciation and of relinquishment, O Hrishikesha, slayer of Keshin.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाच\n\nसंन्यासस्य महाबाहो तत्त्वमिच्छामि वेदितुम्।\n\nत्यागस्य च हृषीकेश पृथक्केशिनिषूदन।।18.1।।"
     },
     {
@@ -7864,7 +7868,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "18.73 Arjuna said: My delusion is destroyed; I have regained memory through Your grace, O Achyuta. I stand firm, free from doubt, and shall act according to Your word.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Arjuna",
         "sanskrit": "अर्जुन उवाचनष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत।स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव।।18.73।।"
     },
     {
@@ -7875,7 +7879,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "18.74 Sanjaya said: Thus I heard this wondrous dialogue between Vasudeva and the great-souled Partha, which makes the hair stand on end.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "सञ्जय उवाचइत्यहं वासुदेवस्य पार्थस्य च महात्मनः।संवादमिममश्रौषमद्भुतं रोमहर्षणम्।।18.74।।"
     },
     {
@@ -7886,7 +7890,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "18.75 Through the grace of Vyasa, I heard this supreme and secret yoga directly from Krishna, the Lord of Yoga, Himself speaking.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "व्यासप्रसादाच्छ्रुतवानेतद्गुह्यमहं परम्।योगं योगेश्वरात्कृष्णात्साक्षात्कथयतः स्वयम्।।18.75।।"
     },
     {
@@ -7897,7 +7901,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "18.76 O King, remembering again and again this wondrous and sacred dialogue between Krishna and Arjuna, I rejoice repeatedly.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "राजन्संस्मृत्य संस्मृत्य संवादमिममद्भुतम्।केशवार्जुनयोः पुण्यं हृष्यामि च मुहुर्मुहुः।।18.76।।"
     },
     {
@@ -7908,7 +7912,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "text": "18.77 And remembering again and again that exceedingly marvelous form of Hari, great is my wonder, O King, and I rejoice again and again.",
         "reflection": "",
         "themes": [],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "तच्च संस्मृत्य संस्मृत्य रूपमत्यद्भुतं हरेः।\n\nविस्मयो मे महान् राजन् हृष्यामि च पुनः पुनः।।18.77।।"
     },
     {
@@ -7923,7 +7927,7 @@ export const GITA_VERSES: GitaVerse[] = [
             "action",
             "courage"
         ],
-        "speaker": "Krishna",
+        "speaker": "Sanjaya",
         "sanskrit": "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः।\n\nतत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम।।18.78।"
     }
 ];
@@ -7981,3 +7985,16 @@ export const getRandomFamousVerse = (): GitaVerse => {
 
     return verse;
 };
+
+// Initialize reflections from AI data
+(GITA_VERSES as any[]).forEach(verse => {
+    // Check if reflection is missing or empty
+    if (!verse.reflection || verse.reflection.trim() === '') {
+        const key = `${verse.chapter}.${verse.verse}`; // e.g. "1.1"
+        const reflection = (reflectionsData as Record<string, string>)[key];
+        if (reflection) {
+            verse.reflection = reflection;
+        }
+    }
+});
+

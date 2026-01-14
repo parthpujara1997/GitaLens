@@ -8,6 +8,9 @@ import Settings from './components/Settings';
 import Favorites from './components/Favorites';
 import HistoryView from './components/History';
 import Library from './components/Library';
+import LensPractice from './components/LensPractice';
+import ClarityChain from './components/ClarityChain';
+import InnerCompass from './components/InnerCompass';
 import Navigation from './components/Navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useAuth } from './contexts/AuthContext';
@@ -23,8 +26,19 @@ const App: React.FC = () => {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authMode, setAuthMode] = useState<'login' | 'signup' | 'update-password'>('login');
   const [chatSession, setChatSession] = useState<{ role: 'user' | 'ai'; content: string }[]>([]);
+  const [navigationParams, setNavigationParams] = useState<any>(null);
 
   React.useEffect(() => {
+    // Check for deep link
+    const params = new URLSearchParams(window.location.search);
+    const vid = params.get('vid');
+    if (vid) {
+      setNavigationParams({ verseId: vid });
+      setCurrentView(View.LIBRARY);
+      // Optional: clear query param to avoid sticky state on refresh?
+      // window.history.replaceState({}, '', window.location.pathname);
+    }
+
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
       if (event === 'PASSWORD_RECOVERY') {
         setAuthMode('update-password');
@@ -109,7 +123,7 @@ const App: React.FC = () => {
     }
   };
 
-  const handleNavigate = (view: View) => {
+  const handleNavigate = (view: View, params?: any) => {
     // If not logged in, handle guest progress increment on dashboard navigation
     if (!user && view === View.DASHBOARD) {
       const updated = storageService.updateProgress();
@@ -123,6 +137,7 @@ const App: React.FC = () => {
       return;
     }
 
+    setNavigationParams(params || null);
     setCurrentView(view);
   };
 
@@ -239,6 +254,7 @@ const App: React.FC = () => {
                 <Library
                   onBack={() => setCurrentView(View.DASHBOARD)}
                   onAuthRequired={(mode) => { setAuthMode(mode); setIsAuthModalOpen(true); }}
+                  initialVerseId={navigationParams?.verseId}
                 />
               )}
               {currentView === View.FAVORITES && (
@@ -252,6 +268,31 @@ const App: React.FC = () => {
                   onBack={() => setCurrentView(View.DASHBOARD)}
                   onAuthRequired={(mode) => { setAuthMode(mode); setIsAuthModalOpen(true); }}
                 />
+              )}
+              {currentView === View.LENS_PRACTICE && (
+                <LensPractice
+                  onBack={() => setCurrentView(View.DASHBOARD)}
+                  onNavigate={handleNavigate}
+                />
+              )}
+              {currentView === View.CLARITY_CHAIN && (
+                <ClarityChain
+                  onBack={() => setCurrentView(View.DASHBOARD)}
+                  onNavigate={handleNavigate}
+                />
+              )}
+              {currentView === View.INNER_COMPASS && (
+                <div className="w-full">
+                  <button
+                    onClick={() => setCurrentView(View.DASHBOARD)}
+                    className="mb-6 flex items-center space-x-2 text-stone-500 hover:text-charcoal transition-colors uppercase tracking-widest text-[10px]"
+                  >
+                    <span>← Back to Dashboard</span>
+                  </button>
+                  {/* Reuse the component, it handles its own state */}
+                  {/* Ideally this would show history/patterns in the future */}
+                  <InnerCompass />
+                </div>
               )}
               {currentView === View.SETTINGS && (
                 <Settings settings={settings} onUpdate={handleUpdateSettings} onBack={() => setCurrentView(View.DASHBOARD)} />

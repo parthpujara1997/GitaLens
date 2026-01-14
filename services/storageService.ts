@@ -1,5 +1,5 @@
 
-import { UserProgress, JournalEntry, AppSettings, LanguageLevel } from '../types';
+import { UserProgress, JournalEntry, AppSettings, LanguageLevel, InnerCheckIn } from '../types';
 
 const PROGRESS_KEY = 'gitalens_progress';
 const JOURNAL_KEY = 'gitalens_journal';
@@ -93,5 +93,25 @@ export const storageService = {
       summary
     };
     localStorage.setItem(HISTORY_KEY, JSON.stringify([newSummary, ...history]));
+  },
+
+  // Inner Compass
+  getInnerCheckIns: (): InnerCheckIn[] => {
+    const data = localStorage.getItem('gitalens_inner_compass');
+    return data ? JSON.parse(data) : [];
+  },
+
+  saveInnerCheckIn: (checkIn: InnerCheckIn) => {
+    const checkIns = storageService.getInnerCheckIns();
+    const today = checkIn.date.split('T')[0];
+    const existingIndex = checkIns.findIndex(c => c.date.split('T')[0] === today);
+
+    if (existingIndex > -1) {
+      checkIns[existingIndex] = checkIn;
+    } else {
+      checkIns.unshift(checkIn);
+    }
+
+    localStorage.setItem('gitalens_inner_compass', JSON.stringify(checkIns));
   }
 };
