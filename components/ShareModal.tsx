@@ -58,6 +58,8 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
     const [shareLink, setShareLink] = useState<string | null>(null);
     const [linkCopied, setLinkCopied] = useState(false);
 
+    // Language State
+    const [language, setLanguage] = useState<'EN' | 'SA'>('EN');
 
     // Pre-generate image on modal open for faster sharing
     useEffect(() => {
@@ -65,7 +67,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
         if (typeof navigator !== 'undefined' && navigator.share) {
             setCanShareNative(true);
         }
-    }, []);
+    }, [language]); // Regenerate when language changes
 
     const generateImage = async () => {
         if (!cardRef.current) return;
@@ -249,6 +251,24 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
                     </button>
                 </div>
 
+                {/* Language Toggle */}
+                <div className="px-6 pt-6 pb-2 flex justify-center bg-stone-50">
+                    <div className="flex bg-stone-200/50 p-1 rounded-xl w-full max-w-[200px]">
+                        <button
+                            onClick={() => setLanguage('EN')}
+                            className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-bold transition-all ${language === 'EN' ? 'bg-white text-saffron-accent shadow-sm' : 'text-stone-500 hover:text-stone-700'}`}
+                        >
+                            ENGLISH
+                        </button>
+                        <button
+                            onClick={() => setLanguage('SA')}
+                            className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-bold transition-all ${language === 'SA' ? 'bg-white text-saffron-accent shadow-sm' : 'text-stone-500 hover:text-stone-700'}`}
+                        >
+                            SANSKRIT
+                        </button>
+                    </div>
+                </div>
+
                 {/* Hidden Capture Area - Fixed off-screen to avoid cropping/clipping issues */}
                 <div
                     style={{
@@ -272,29 +292,72 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
                             textAlign: 'center',
                             border: '12px solid white', // Thick border for premium feel
                             boxSizing: 'border-box',
+                            position: 'relative', // Added
+                            overflow: 'hidden'    // Added
                         }}
                     >
+                        {/* Subtle Background Watermark */}
+                        <img
+                            src="/logo.png"
+                            alt=""
+                            style={{
+                                position: 'absolute',
+                                top: '50%',
+                                left: '50%',
+                                transform: 'translate(-50%, -50%) scale(1.5)',
+                                opacity: 0.04,
+                                pointerEvents: 'none',
+                                zIndex: 0
+                            }}
+                        />
+
                         <img
                             src="/logo.png"
                             alt="GitaLens"
                             crossOrigin="anonymous"
-                            style={{ height: '70px', width: 'auto', marginBottom: '32px', opacity: 0.9 }}
+                            style={{ height: '85px', width: 'auto', marginBottom: '32px', opacity: 0.9, position: 'relative', zIndex: 1 }}
                         />
 
-                        <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: '#C2A15F', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '12px' }}>
+                        <h4 style={{ fontSize: '18px', fontWeight: 'bold', color: '#C2A15F', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '12px', position: 'relative', zIndex: 1 }}>
                             {verse.reference}
                         </h4>
-                        <span style={{ fontSize: '12px', color: '#78716c', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '32px' }}>
+                        <span style={{ fontSize: '12px', color: '#78716c', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '32px', position: 'relative', zIndex: 1 }}>
                             {verse.speaker}
                         </span>
 
-                        <p style={{ fontFamily: 'Georgia, serif', fontSize: '32px', fontStyle: 'italic', color: '#1c1917', lineHeight: 1.5, marginBottom: '32px', padding: '0 24px' }}>
-                            "{verse.text}"
-                        </p>
+                        {language === 'SA' ? (
+                            <p style={{
+                                fontSize: '28px',
+                                color: '#1c1917',
+                                lineHeight: 1.6,
+                                marginBottom: '32px',
+                                padding: '0 24px',
+                                fontWeight: '500',
+                                whiteSpace: 'pre-wrap',
+                                position: 'relative',
+                                zIndex: 1
+                            }}>
+                                {verse.sanskrit || verse.text}
+                            </p>
+                        ) : (
+                            <p style={{
+                                fontFamily: 'Georgia, serif',
+                                fontSize: '32px',
+                                fontStyle: 'italic',
+                                color: '#1c1917',
+                                lineHeight: 1.5,
+                                marginBottom: '32px',
+                                padding: '0 24px',
+                                position: 'relative',
+                                zIndex: 1
+                            }}>
+                                "{verse.text}"
+                            </p>
+                        )}
 
-                        <div style={{ width: '60px', height: '2px', backgroundColor: '#C2A15F', marginBottom: '32px', opacity: 0.6 }} />
+                        <div style={{ width: '60px', height: '2px', backgroundColor: '#C2A15F', marginBottom: '32px', opacity: 0.6, position: 'relative', zIndex: 1 }} />
 
-                        <p style={{ fontSize: '15px', color: '#57534e', lineHeight: 1.8, maxWidth: '500px', fontStyle: 'italic', paddingBottom: '20px' }}>
+                        <p style={{ fontSize: '15px', color: '#57534e', lineHeight: 1.8, maxWidth: '500px', fontStyle: 'italic', paddingBottom: '20px', position: 'relative', zIndex: 1 }}>
                             {customReflection || verse.reflection || ""}
                         </p>
                     </div>
