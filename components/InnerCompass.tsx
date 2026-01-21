@@ -7,11 +7,13 @@ import { Check } from 'lucide-react';
 
 interface InnerCompassProps {
     onComplete?: () => void;
+    isAuthenticated: boolean;
+    onAuthRequired: (mode: 'login' | 'signup') => void;
 }
 
 type Step = 'GREETING' | 'STATE_SELECTION' | 'DIRECTION_SELECTION' | 'REFLECTION' | 'PAUSE' | 'COMPLETED';
 
-const InnerCompass: React.FC<InnerCompassProps> = ({ onComplete }) => {
+const InnerCompass: React.FC<InnerCompassProps> = ({ onComplete, isAuthenticated, onAuthRequired }) => {
     const [step, setStep] = useState<Step>('GREETING');
     const [timeBand, setTimeBand] = useState<TimeBand>(TimeBand.MIDDAY);
     const [selectedState, setSelectedState] = useState<InnerState | null>(null);
@@ -213,7 +215,13 @@ const InnerCompass: React.FC<InnerCompassProps> = ({ onComplete }) => {
                     >
                         <h3 className="serif text-2xl text-charcoal mb-6">{getGreeting()}</h3>
                         <button
-                            onClick={() => setStep('STATE_SELECTION')}
+                            onClick={() => {
+                                if (!isAuthenticated) {
+                                    onAuthRequired('signup');
+                                    return;
+                                }
+                                setStep('STATE_SELECTION');
+                            }}
                             className="bg-clay text-white px-6 py-2 rounded-xl text-sm font-medium hover:bg-clay-hover transition-colors"
                         >
                             Begin Check-in

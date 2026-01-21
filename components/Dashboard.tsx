@@ -103,7 +103,19 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
 
   const handleShare = (e: React.MouseEvent) => {
     e.stopPropagation();
+    if (!user) {
+      onAuthRequired('signup');
+      return;
+    }
     setShowShareModal(true);
+  };
+
+  const handleProtectedNavigate = (view: View) => {
+    if (!user) {
+      onAuthRequired('signup');
+      return;
+    }
+    onNavigate(view);
   };
 
   // Dynamic time-based greeting
@@ -193,7 +205,11 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
       {/* Inner Compass Check-in */}
       {!hasCheckedIn && (
         <div className="w-full">
-          <InnerCompass onComplete={() => setHasCheckedIn(true)} />
+          <InnerCompass
+            onComplete={() => setHasCheckedIn(true)}
+            isAuthenticated={!!user}
+            onAuthRequired={onAuthRequired}
+          />
         </div>
       )}
 
@@ -201,7 +217,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
       <motion.button
         whileHover={{ scale: 1.02, y: -2 }}
         whileTap={{ scale: 0.98 }}
-        onClick={() => onNavigate(View.GUIDANCE)}
+        onClick={() => handleProtectedNavigate(View.GUIDANCE)}
         className="group relative w-full flex flex-col items-center justify-center p-10 bg-indigo text-[#F2EFE9] rounded-3xl shadow-lg hover:shadow-xl transition-all text-center overflow-hidden"
       >
         <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -218,7 +234,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => onNavigate(View.INNER_COMPASS)}
+              onClick={() => handleProtectedNavigate(View.INNER_COMPASS)}
               className="glass-card w-full flex flex-col items-center justify-center p-5 rounded-2xl text-center"
             >
               <span className="text-sm font-medium text-charcoal">Inner Compass</span>
@@ -250,7 +266,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
                 animate={{ opacity: 1, y: 0 }}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                onClick={() => onNavigate(View.LENS_PRACTICE)}
+                onClick={() => handleProtectedNavigate(View.LENS_PRACTICE)}
                 className="glass-card w-full flex flex-col items-center justify-center p-5 rounded-2xl text-center bg-white/60"
               >
                 <span className="text-sm font-medium text-charcoal">Lens</span>
@@ -264,7 +280,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 data-tour="dashboard-card-clarity"
-                onClick={() => onNavigate(View.CLARITY_CHAIN)}
+                onClick={() => handleProtectedNavigate(View.CLARITY_CHAIN)}
                 className="glass-card w-full flex flex-col items-center justify-center p-5 rounded-2xl text-center bg-white/60"
               >
                 <span className="text-sm font-medium text-charcoal">Clarity Chain</span>
@@ -294,7 +310,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            onClick={() => onNavigate(View.LIBRARY)}
+            onClick={() => handleProtectedNavigate(View.LIBRARY)}
             className="glass-card w-full flex flex-col items-center justify-center p-4 rounded-2xl text-center"
           >
             <span className="text-sm font-medium text-charcoal">Library</span>
@@ -303,7 +319,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            onClick={() => onNavigate(View.JOURNAL)}
+            onClick={() => handleProtectedNavigate(View.JOURNAL)}
             className="glass-card w-full flex flex-col items-center justify-center p-4 rounded-2xl text-center"
           >
             <span className="text-sm font-medium text-clay-hover">Journal</span>

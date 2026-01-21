@@ -133,8 +133,15 @@ const App: React.FC = () => {
       setProgress(updated);
     }
 
-    // Restrict Guidance to signed-in users (Journal is now open for guests to write)
-    if (!user && view === View.GUIDANCE) {
+    // Restrict Protected Features to signed-in users
+    if (!user && (
+      view === View.GUIDANCE ||
+      view === View.JOURNAL ||
+      view === View.INNER_COMPASS ||
+      view === View.LENS_PRACTICE ||
+      view === View.CLARITY_CHAIN ||
+      view === View.LIBRARY
+    )) {
       setAuthMode('signup');
       setIsAuthModalOpen(true);
       return;
@@ -306,7 +313,10 @@ const App: React.FC = () => {
                     </button>
                     {/* Reuse the component, it handles its own state */}
                     {/* Ideally this would show history/patterns in the future */}
-                    <InnerCompass />
+                    <InnerCompass
+                      isAuthenticated={!!user}
+                      onAuthRequired={(mode) => { setAuthMode(mode); setIsAuthModalOpen(true); }}
+                    />
                   </div>
                 )}
 
