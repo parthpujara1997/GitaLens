@@ -874,7 +874,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "verse": 22,
         "reference": "Chapter 2, Verse 22",
         "text": "2.22 As a person casts off worn-out garments and puts on new ones, so the embodied soul casts off worn-out bodies and enters new ones.",
-        "reflection": "",
+        "reflection": "By comparing bodies to clothes, Krishna locates identity in the soul rather than the body. Grief and fear arise when permanence is wrongly assigned to what is meant to change.",
         "themes": [],
         "speaker": "Krishna",
         "sanskrit": "वासांसि जीर्णानि यथा विहाय\n\nनवानि गृह्णाति नरोऽपराणि।\n\nतथा शरीराणि विहाय जीर्णा\n\nन्यन्यानि संयाति नवानि देही।।2.22।।"
@@ -7963,6 +7963,12 @@ export const FAMOUS_VERSE_IDS = [
 ];
 
 export const getRandomFamousVerse = (): GitaVerse => {
+    // Filter FAMOUS_VERSE_IDS to only include Krishna verses
+    const krishnaFamousIds = FAMOUS_VERSE_IDS.filter(id => {
+        const v = GITA_VERSES.find(verse => verse.id === id);
+        return v?.speaker === 'Krishna';
+    });
+
     // Get today's date to seed the random selection (so it stays same for the day)
     // Actually, user might want a new one every refresh or every day. 
     // Let's stick to true random for now, or day-based if strict "Verse of the Day".
@@ -7975,8 +7981,8 @@ export const getRandomFamousVerse = (): GitaVerse => {
     const dayOfYear = Math.floor(diff / oneDay);
 
     // Use dayOfYear to pick an index, wrapping around
-    const index = dayOfYear % FAMOUS_VERSE_IDS.length;
-    const verseId = FAMOUS_VERSE_IDS[index];
+    const index = dayOfYear % krishnaFamousIds.length;
+    const verseId = krishnaFamousIds[index];
 
     const verse = GITA_VERSES.find(v => v.id === verseId);
 

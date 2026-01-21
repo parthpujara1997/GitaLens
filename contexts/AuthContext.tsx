@@ -6,6 +6,7 @@ interface AuthContextType {
     user: User | null;
     session: Session | null;
     loading: boolean;
+    isAdmin: boolean;
     signOut: () => Promise<void>;
 }
 
@@ -15,20 +16,30 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const [user, setUser] = useState<User | null>(null);
     const [session, setSession] = useState<Session | null>(null);
     const [loading, setLoading] = useState(true);
+    const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
         // Get initial session
         supabase.auth.getSession().then(({ data: { session } }) => {
             setSession(session);
             setUser(session?.user ?? null);
-            setLoading(false);
+            if (session?.user) {
+                checkAdminStatus(session.user.id);
+            } else {
+                setLoading(false);
+            }
         });
 
         // Listen for auth changes
         const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
             setSession(session);
             setUser(session?.user ?? null);
-            setLoading(false);
+            if (session?.user) {
+                checkAdminStatus(session.user.id);
+            } else {
+                setIsAdmin(false);
+                setLoading(false);
+            }
         });
 
         return () => {
@@ -36,14 +47,34 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         };
     }, []);
 
+    const checkAdminStatus = async (userId: string) => {
+        try {
+            const { data, error } = await supabase
+                .from('profiles')
+                .select('is_admin')
+                .eq('id', userId)
+                .single();
+
+            if (data) {
+                setIsAdmin(!!data.is_admin);
+            }
+        } catch (err) {
+            console.error('Error checking admin status:', err);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     const signOut = async () => {
         await supabase.auth.signOut();
+        setIsAdmin(false);
     };
 
     const value = {
         user,
         session,
         loading,
+        isAdmin,
         signOut,
     };
 

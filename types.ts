@@ -23,6 +23,7 @@ export interface GitaVerse {
   reflection: string;
   themes: string[];
   speaker: 'Krishna' | 'Arjuna' | 'Sanjaya' | 'Dhritarashtra';
+  hindi?: string;
 }
 
 export interface GitaChapter {
@@ -41,6 +42,13 @@ export interface Theme {
 export interface UserProgress {
   reflection_days: number;
   last_visit_date: string | null;
+}
+
+export interface UserProfile extends UserProgress {
+  id: string;
+  email?: string;
+  full_name?: string;
+  is_admin?: boolean; // New flag for admin access
 }
 
 export interface JournalEntry {
@@ -68,6 +76,11 @@ export interface Lens {
   attentionPrompt: string;
   closureLine: string;
   verseId: string;
+  labelHindi?: string;
+  groundingTextHindi?: string;
+  orientationLineHindi?: string;
+  attentionPromptHindi?: string;
+  closureLineHindi?: string;
 }
 
 export enum View {
@@ -80,7 +93,10 @@ export enum View {
   HISTORY = 'HISTORY',
   LENS_PRACTICE = 'LENS_PRACTICE',
   CLARITY_CHAIN = 'CLARITY_CHAIN',
-  INNER_COMPASS = 'INNER_COMPASS'
+  INNER_COMPASS = 'INNER_COMPASS',
+  BLOG = 'BLOG',
+  BLOG_ADMIN = 'BLOG_ADMIN',
+  ACCOUNT = 'ACCOUNT'
 }
 
 export enum LanguageLevel {

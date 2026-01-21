@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, X, ArrowDown } from 'lucide-react';
+import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'framer-motion';
+import { ArrowLeft, X } from 'lucide-react';
 import { View } from '../types';
 
 interface ClarityChainProps {
@@ -18,6 +18,16 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
         impact: ''
     });
     const [activeBlock, setActiveBlock] = useState<'situation' | 'meaning' | 'impact' | null>(null);
+    const [isBroken, setIsBroken] = useState(false);
+
+    // Motion values for the draggable tile
+    const x = useMotionValue(0);
+    const y = useMotionValue(0);
+
+    // Spring physics for smoother connector movement
+    const springConfig = { damping: 25, stiffness: 200 };
+    const springX = useSpring(x, springConfig);
+    const springY = useSpring(y, springConfig);
 
     const handleNext = () => {
         if (step === 'SITUATION') setStep('MEANING');
@@ -28,7 +38,7 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
     const getStepTitle = () => {
         switch (step) {
             case 'SITUATION': return 'What happened?';
-            case 'MEANING': return 'What did this feel like to you?';
+            case 'MEANING': return 'What was the takeaway?';
             case 'IMPACT': return 'How did this affect you?';
             default: return 'The Chain';
         }
@@ -37,7 +47,7 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
     const getHelperText = () => {
         switch (step) {
             case 'SITUATION': return 'Just describe the situation itself.';
-            case 'MEANING': return 'This is about what the situation came to mean for you.';
+            case 'MEANING': return 'This is the interpretation or story you added to the facts.';
             case 'IMPACT': return 'Emotionally or in what you did next.';
             default: return '';
         }
@@ -46,21 +56,37 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
     const getExamples = () => {
         switch (step) {
             case 'SITUATION': return ['“My manager criticized my presentation”', '“My partner didn’t reply all day”', '“I missed a deadline”'];
-            case 'MEANING': return ['“It felt like I wasn’t good enough”', '“It felt disrespectful”', '“It felt like things were going downhill”'];
+            case 'MEANING': return ['“The takeaway was that I wasn’t good enough”', '“I interpreted it as a lack of respect”', '“My story was that things are failing”'];
             case 'IMPACT': return ['“I felt anxious and avoided speaking”', '“I became angry and shut down”', '“I couldn’t focus afterward”'];
             default: return [];
         }
     };
 
+    const handleDragEnd = (_: any, info: any) => {
+        const distance = Math.hypot(info.offset.x, info.offset.y);
+        // Break threshold
+        if (distance > 100) {
+            setIsBroken(true);
+        }
+    };
+
     const renderInputScreen = (currentInput: string, field: keyof typeof inputs) => (
         <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            key={field}
+            initial={{ opacity: 0, y: 30 }} // Slower, deeper entrance
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            exit={{ opacity: 0, y: -20, transition: { duration: 0.3 } }}
+            transition={{ duration: 1.2, ease: "easeOut" }} // SLOW entrance for inputs
             className="flex-grow flex flex-col px-6 pb-6 space-y-6 pt-8"
         >
             <div className="space-y-2 text-center">
-                <h2 className="text-2xl md:text-3xl font-serif text-charcoal">{getStepTitle()}</h2>
+                {/* Morphing Title with layoutId */}
+                <motion.h2
+                    layoutId="clarity-chain-title"
+                    className="text-2xl md:text-3xl font-serif text-charcoal"
+                >
+                    {getStepTitle()}
+                </motion.h2>
                 <p className="text-stone-500 text-sm max-w-sm mx-auto">{getHelperText()}</p>
             </div>
 
@@ -86,8 +112,8 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
                     onClick={handleNext}
                     disabled={!inputs[field].trim()}
                     className={`w-full py-4 rounded-full font-medium transition-all ${inputs[field].trim()
-                            ? 'bg-charcoal text-[#F2EFE9] shadow-lg hover:shadow-xl hover:-translate-y-0.5'
-                            : 'bg-stone-200 text-stone-400 cursor-not-allowed'
+                        ? 'bg-charcoal text-[#F2EFE9] shadow-lg hover:shadow-xl hover:-translate-y-0.5'
+                        : 'bg-stone-200 text-stone-400 cursor-not-allowed'
                         }`}
                 >
                     Continue
@@ -95,6 +121,76 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
             </div>
         </motion.div>
     );
+
+    // Connector Component
+    const Connector = ({ isTop, height = 64 }: { isTop: boolean, height?: number }) => {
+
+        // Use PIXEL coordinates relative to the center origin (0, 0)
+        // Since we center the SVG in the parent, (0,0) is top-center or similar.
+        // Actually, let's use a simpler path: M 0 0 L x y
+        const path = useTransform([springX, springY], ([latestX, latestY]) => {
+            if (isTop) {
+                // From Top (0, 0) to Bottom (latestX, height + latestY)
+                return `M 0 0 L ${latestX} ${height + (latestY as number)}`;
+            } else {
+                // From Top (latestX, latestY) to Bottom (0, height)
+                return `M ${latestX} ${latestY} L 0 ${height}`;
+            }
+        });
+
+        const strokeWidth = useTransform([springX, springY], ([latestX, latestY]) => {
+            const dist = Math.hypot(latestX as number, latestY as number);
+            return Math.max(1, 2 - (dist / 40));
+        });
+
+        const opacity = useTransform([springX, springY], ([latestX, latestY]) => {
+            const dist = Math.hypot(latestX as number, latestY as number);
+            return Math.max(0.2, 1 - (dist / 150));
+        });
+
+        return (
+            // Centered container logic:
+            // The div is w-full, but we put the SVG absolutely centered.
+            <div className={`relative w-full z-0 pointer-events-none`} style={{ height }}>
+                <AnimatePresence>
+                    {!isBroken && (
+                        <motion.svg
+                            key="connector-line"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0, transition: { duration: 0.2 } }}
+                            transition={{ duration: 1.5, delay: isTop ? 1.5 : 3.5 }} // Very slow appearance
+                            // Absolute positioning centered: left-1/2, overflow visible
+                            className="absolute left-1/2 top-0 overflow-visible"
+                            style={{ width: "2px", height: "100%" }} // Minimal width, rely on overflow
+                        >
+                            <motion.path
+                                d={path}
+                                stroke="#1a1a1a"
+                                strokeWidth={strokeWidth}
+                                strokeOpacity={opacity}
+                                strokeLinecap="round"
+                                fill="none"
+                            />
+                        </motion.svg>
+                    )}
+                </AnimatePresence>
+                {/* Label */}
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: isBroken ? 0 : 1 }}
+                    transition={{ delay: isTop ? 1.8 : 3.8, duration: 1.2 }}
+                    className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
+                     bg-[#F2EFE9] px-3 py-1 text-[10px] uppercase tracking-widest font-bold z-10 
+                     ${activeBlock === 'meaning' ? 'text-black' : 'text-stone-400'}
+                    `}
+                >
+                    {isTop ? 'Interpreted As' : 'Which Led To'}
+                </motion.div>
+            </div>
+        );
+    }
+
 
     return (
         <div className="min-h-[80vh] flex flex-col relative max-w-2xl mx-auto w-full">
@@ -120,24 +216,24 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
                         key="reveal"
                         className="flex-grow flex flex-col items-center px-6 pb-12 pt-4"
                     >
-                        <div className="w-full max-w-md space-y-0 relative">
+                        <div className="w-full max-w-md space-y-0 relative flex flex-col items-center">
 
                             {/* Block 1: Situation */}
                             <motion.div
-                                initial={{ opacity: 0, y: 20 }}
+                                initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8 }}
-                                onClick={() => setActiveBlock('situation')}
-                                className={`relative z-10 p-6 rounded-2xl border transition-all cursor-pointer ${activeBlock === 'situation'
-                                        ? 'bg-white border-charcoal shadow-md scale-[1.02]'
-                                        : 'bg-white/60 border-stone-warm/50 hover:bg-white/80'
+                                transition={{ duration: 1.5, ease: "easeOut" }} // SLOW entrance
+                                onClick={() => !isBroken && setActiveBlock('situation')}
+                                className={`relative z-10 p-6 rounded-2xl border transition-all cursor-pointer w-full ${activeBlock === 'situation'
+                                    ? 'bg-white border-black shadow-md scale-[1.02]'
+                                    : 'bg-white/60 border-stone-warm/50 hover:bg-white/80'
                                     }`}
                             >
                                 <span className="text-[10px] uppercase tracking-widest text-stone-400 font-bold block mb-2">The Situation</span>
-                                <p className="text-charcoal text-lg">{inputs.situation}</p>
+                                <p className="text-black text-lg">{inputs.situation}</p>
 
                                 <AnimatePresence>
-                                    {activeBlock === 'situation' && (
+                                    {activeBlock === 'situation' && !isBroken && (
                                         <motion.div
                                             initial={{ opacity: 0, height: 0 }}
                                             animate={{ opacity: 1, height: 'auto' }}
@@ -153,107 +249,147 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
                             </motion.div>
 
                             {/* Connector 1 */}
-                            <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 0.8, duration: 0.8 }}
-                                className="h-16 flex items-center justify-center relative -my-1 z-0"
-                            >
-                                <div className={`w-0.5 h-full transition-colors ${activeBlock === 'meaning' ? 'bg-charcoal' : 'bg-stone-300'}`} />
-                                <div className={`absolute bg-[#F2EFE9] px-3 py-1 text-[10px] uppercase tracking-widest font-bold transition-colors ${activeBlock === 'meaning' ? 'text-charcoal' : 'text-stone-400'}`}>
-                                    Interpreted As
+                            <Connector isTop={true} height={80} />
+
+                            {/* Block 2: Meaning (Draggable) */}
+                            <AnimatePresence>
+                                {!isBroken && (
+                                    <motion.div
+                                        key="meaning"
+                                        initial={{ opacity: 0, y: 30 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        // Keep exit fast (0.2s) as requested ("nailed it")
+                                        exit={{ opacity: 0, transition: { duration: 0.2 } }}
+                                        transition={{
+                                            delay: 2.0, // SLOW delay
+                                            duration: 1.5, // SLOW entrance
+                                            ease: "easeOut"
+                                        }}
+                                        style={{ x, y, zIndex: 50 }}
+                                        drag
+                                        dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                                        dragElastic={0.2}
+                                        onDragEnd={handleDragEnd}
+                                        whileTap={{ cursor: "grabbing" }}
+                                        onClick={() => setActiveBlock('meaning')}
+                                        className={`relative p-6 rounded-2xl border-[1.5px] transition-all cursor-grab w-full bg-black border-black shadow-xl scale-[1.03]`}
+                                    >
+                                        <span className="text-[10px] uppercase tracking-widest text-stone-500 font-bold block mb-2">What It Came to Mean</span>
+                                        <p className="text-white text-xl font-medium serif italic">"{inputs.meaning}"</p>
+                                        <p className="text-[10px] text-gray-400 mt-4 text-center select-none opacity-80">
+                                            Drag away to break the chain
+                                        </p>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+
+                            {isBroken && (
+                                <div className="w-full opacity-0 pointer-events-none" aria-hidden="true">
+                                    <div className="p-6 rounded-2xl border-[1.5px]">
+                                        <span className="text-[10px] uppercase tracking-widest block mb-2">Spacer</span>
+                                        <p className="text-xl font-medium serif italic">"{inputs.meaning}"</p>
+                                        <p className="text-[10px] mt-4">Spacer</p>
+                                    </div>
                                 </div>
-                            </motion.div>
-
-                            {/* Block 2: Meaning */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 1.6, duration: 0.8 }}
-                                onClick={() => setActiveBlock('meaning')}
-                                className={`relative z-10 p-6 rounded-2xl border-[1.5px] transition-all cursor-pointer ${activeBlock === 'meaning'
-                                        ? 'bg-white border-charcoal shadow-lg scale-[1.03]'
-                                        : 'bg-white border-stone-warm hover:shadow-md'
-                                    }`}
-                            >
-                                <span className="text-[10px] uppercase tracking-widest text-saffron-deep font-bold block mb-2">What It Came to Mean</span>
-                                <p className="text-charcoal text-xl font-medium serif italic">"{inputs.meaning}"</p>
-
-                                <AnimatePresence>
-                                    {activeBlock === 'meaning' && (
-                                        <motion.div
-                                            initial={{ opacity: 0, height: 0 }}
-                                            animate={{ opacity: 1, height: 'auto' }}
-                                            exit={{ opacity: 0, height: 0 }}
-                                            className="overflow-hidden"
-                                        >
-                                            <p className="text-xs text-stone-500 mt-3 pt-3 border-t border-stone-100 italic">
-                                                This is where meaning shaped what followed. Different meanings here can change the outcome.
-                                            </p>
-                                        </motion.div>
-                                    )}
-                                </AnimatePresence>
-                            </motion.div>
+                            )}
 
                             {/* Connector 2 */}
                             <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 2.4, duration: 0.8 }}
-                                className="h-16 flex items-center justify-center relative -my-1 z-0"
+                                className="w-full relative z-0"
                             >
-                                <div className={`w-0.5 h-full transition-colors ${activeBlock === 'meaning' ? 'bg-charcoal' : 'bg-stone-300'}`} />
-                                <div className={`absolute bg-[#F2EFE9] px-3 py-1 text-[10px] uppercase tracking-widest font-bold transition-colors ${activeBlock === 'meaning' ? 'text-charcoal' : 'text-stone-400'}`}>
-                                    Which Led To
-                                </div>
+                                <Connector isTop={false} height={80} />
                             </motion.div>
 
-                            {/* Block 3: Impact */}
+                            {/* Block 3: Impact / Reframed View */}
                             <motion.div
-                                initial={{ opacity: 0, y: 20 }}
+                                initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 3.2, duration: 0.8 }}
-                                onClick={() => setActiveBlock('impact')}
-                                className={`relative z-10 p-6 rounded-2xl border transition-all cursor-pointer ${activeBlock === 'impact'
-                                        ? 'bg-white border-charcoal shadow-md scale-[1.02]'
-                                        : 'bg-white/60 border-stone-warm/50 hover:bg-white/80'
+                                transition={{
+                                    delay: 4.0, // SLOW delay
+                                    duration: 1.5, // SLOW entrance
+                                    ease: "easeOut"
+                                }}
+                                onClick={() => !isBroken && setActiveBlock('impact')}
+                                className={`relative z-10 p-6 rounded-2xl border transition-all cursor-pointer w-full 
+                                    ${!isBroken
+                                        ? (activeBlock === 'impact' ? 'bg-white border-black shadow-md scale-[1.02]' : 'bg-white/60 border-stone-warm/50 hover:bg-white/80')
+                                        : 'bg-white/60 border-stone-warm/50'
                                     }`}
                             >
-                                <span className="text-[10px] uppercase tracking-widest text-stone-400 font-bold block mb-2">What Followed</span>
-                                <p className="text-charcoal text-lg">{inputs.impact}</p>
-
-                                <AnimatePresence>
-                                    {activeBlock === 'impact' && (
+                                <AnimatePresence mode="wait">
+                                    {!isBroken ? (
                                         <motion.div
-                                            initial={{ opacity: 0, height: 0 }}
-                                            animate={{ opacity: 1, height: 'auto' }}
-                                            exit={{ opacity: 0, height: 0 }}
-                                            className="overflow-hidden"
+                                            key="impact_content"
+                                            initial={{ opacity: 0 }}
+                                            animate={{ opacity: 1 }}
+                                            exit={{ opacity: 0 }}
+                                            transition={{ duration: 0.3 }}
+                                            className="w-full"
                                         >
-                                            <p className="text-xs text-stone-500 mt-3 pt-3 border-t border-stone-100">
-                                                This shows how the meaning influenced your response.
+                                            <span className="text-[10px] uppercase tracking-widest text-stone-400 font-bold block mb-2">What Followed</span>
+                                            <p className="text-black text-lg">{inputs.impact}</p>
+                                        </motion.div>
+                                    ) : (
+                                        <motion.div
+                                            key="reframed_content"
+                                            initial={{ opacity: 0 }}
+                                            animate={{ opacity: 1 }}
+                                            transition={{ duration: 0.5, delay: 0.1 }}
+                                            className="text-center py-1 w-full"
+                                        >
+                                            <p className="text-stone-600 text-sm italic leading-relaxed">
+                                                "Without this meaning, the chain is broken. How else could you see this?"
                                             </p>
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
                             </motion.div>
+
+                            {/* Reconnect Action - Outside the tile */}
+                            <AnimatePresence>
+                                {isBroken && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: -10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0 }}
+                                        className="mt-6"
+                                    >
+                                        <button
+                                            onClick={() => {
+                                                setIsBroken(false);
+                                                x.set(0);
+                                                y.set(0);
+                                            }}
+                                            className="px-6 py-2 bg-charcoal hover:bg-black text-[10px] font-bold uppercase tracking-widest text-white rounded-full transition-colors shadow-lg"
+                                        >
+                                            Reconnect Chain
+                                        </button>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
 
                         </div>
 
                         <motion.p
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 4.5, duration: 1 }}
+                            transition={{ delay: 5.5, duration: 1.5 }}
                             className="text-stone-500 text-sm text-center mt-12 max-w-xs leading-relaxed italic"
                         >
-                            Situations don’t directly create pressure.<br />
-                            The meaning added in between shapes what follows.
+                            {!isBroken ? (
+                                <>
+                                    Situations don’t directly create pressure.<br />
+                                    The meaning added in between shapes what follows.
+                                </>
+                            ) : (
+                                "When the interpretation is removed, the inevitable outcome disappears."
+                            )}
                         </motion.p>
 
                         <motion.button
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 5 }}
+                            transition={{ delay: 6.0 }}
                             onClick={onBack}
                             className="mt-8 text-xs font-bold uppercase tracking-widest text-stone-400 hover:text-charcoal transition-colors"
                         >

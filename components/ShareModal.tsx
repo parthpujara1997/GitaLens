@@ -4,6 +4,8 @@ import html2canvas from 'html2canvas';
 import { socialService } from '../services/socialService';
 import { X, Download, Loader2, Check, Link as LinkIcon, Share2 } from 'lucide-react';
 import { GitaVerse } from '../types';
+// @ts-ignore
+import hindiVerses from '../src/data/hindiVerses.json';
 
 interface ShareModalProps {
     verse: GitaVerse;
@@ -59,7 +61,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
     const [linkCopied, setLinkCopied] = useState(false);
 
     // Language State
-    const [language, setLanguage] = useState<'EN' | 'SA'>('EN');
+    const [language, setLanguage] = useState<'EN' | 'SA' | 'HI'>('EN');
 
     // Pre-generate image on modal open for faster sharing
     useEffect(() => {
@@ -253,7 +255,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
 
                 {/* Language Toggle */}
                 <div className="px-6 pt-6 pb-2 flex justify-center bg-stone-50">
-                    <div className="flex bg-stone-200/50 p-1 rounded-xl w-full max-w-[200px]">
+                    <div className="flex bg-stone-200/50 p-1 rounded-xl w-full max-w-[280px]">
                         <button
                             onClick={() => setLanguage('EN')}
                             className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-bold transition-all ${language === 'EN' ? 'bg-white text-saffron-accent shadow-sm' : 'text-stone-500 hover:text-stone-700'}`}
@@ -265,6 +267,12 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
                             className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-bold transition-all ${language === 'SA' ? 'bg-white text-saffron-accent shadow-sm' : 'text-stone-500 hover:text-stone-700'}`}
                         >
                             SANSKRIT
+                        </button>
+                        <button
+                            onClick={() => setLanguage('HI')}
+                            className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-bold transition-all ${language === 'HI' ? 'bg-white text-saffron-accent shadow-sm' : 'text-stone-500 hover:text-stone-700'}`}
+                        >
+                            HINDI
                         </button>
                     </div>
                 </div>
@@ -338,6 +346,21 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
                                 zIndex: 1
                             }}>
                                 {verse.sanskrit || verse.text}
+                            </p>
+                        ) : language === 'HI' ? (
+                            <p style={{
+                                fontSize: '28px',
+                                color: '#1c1917',
+                                lineHeight: 1.6,
+                                marginBottom: '32px',
+                                padding: '0 24px',
+                                fontWeight: '500',
+                                whiteSpace: 'pre-wrap',
+                                position: 'relative',
+                                zIndex: 1
+                            }}>
+                                {/* @ts-ignore */}
+                                {(hindiVerses as Record<string, string>)[`${verse.chapter}-${verse.verse}`] || "Hindi translation unavailable."}
                             </p>
                         ) : (
                             <p style={{
@@ -437,7 +460,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
                     <button
                         onClick={handleDownloadImage}
                         disabled={!generatedImageUrl}
-                        className={`w-full flex items-center justify-center gap-2 ${canShareNative ? 'bg-stone-50 text-stone-400 hover:bg-stone-100' : 'bg-charcoal text-white hover:bg-black'} rounded-xl py-3.5 font-medium transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed`}
+                        className={`w-full flex items-center justify-center gap-2 ${canShareNative ? 'bg-stone-100 text-stone-600 hover:bg-stone-200' : 'bg-charcoal text-white hover:bg-black'} rounded-xl py-3.5 font-medium transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed`}
                     >
                         {downloadComplete ? (
                             <>

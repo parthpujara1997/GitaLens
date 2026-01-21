@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from '../types';
-import { Home, Compass, PenLine, Settings, Heart, History, BookOpen, LucideIcon } from 'lucide-react';
+import { Home, Compass, PenLine, Settings, Heart, History, BookOpen, LucideIcon, User, Feather } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 import { useAuth } from '../contexts/AuthContext';
@@ -18,24 +18,19 @@ interface NavItem {
 }
 
 const Navigation: React.FC<NavigationProps> = ({ activeView, onNavigate, orientation }) => {
-  const { user } = useAuth();
+  const { user, isAdmin } = useAuth();
 
   const allItems: NavItem[] = [
     { view: View.DASHBOARD, label: 'Home', icon: Home },
     { view: View.GUIDANCE, label: 'Guidance', icon: Compass },
-    { view: View.JOURNAL, label: 'Journal', icon: PenLine },
+
     { view: View.LIBRARY, label: 'Library', icon: BookOpen },
-    { view: View.FAVORITES, label: 'Favorites', icon: Heart },
-    { view: View.HISTORY, label: 'History', icon: History },
-    { view: View.SETTINGS, label: 'Settings', icon: Settings },
+    { view: View.BLOG, label: 'Insights', icon: Feather },
+    ...(isAdmin ? [{ view: View.BLOG_ADMIN, label: 'Admin', icon: Settings }] : []),
+    { view: View.ACCOUNT, label: 'Account', icon: User },
   ];
 
-  const items = allItems.filter(item => {
-    if (!user && (item.view === View.FAVORITES || item.view === View.HISTORY)) {
-      return false;
-    }
-    return true;
-  });
+  const items = allItems;
 
   if (orientation === 'vertical') {
     return (
@@ -46,6 +41,12 @@ const Navigation: React.FC<NavigationProps> = ({ activeView, onNavigate, orienta
           return (
             <button
               key={item.view}
+              data-tour={
+                item.view === View.GUIDANCE ? 'nav-guidance' :
+                  item.view === View.JOURNAL ? 'nav-journal' :
+                    item.view === View.LIBRARY ? 'nav-library' :
+                      undefined
+              }
               onClick={() => onNavigate(item.view)}
               className="group relative flex items-center space-x-3 px-4 py-3 rounded-xl transition-all"
             >
@@ -79,6 +80,13 @@ const Navigation: React.FC<NavigationProps> = ({ activeView, onNavigate, orienta
         return (
           <button
             key={item.view}
+            data-tour={
+              item.view === View.GUIDANCE ? 'nav-guidance' :
+                item.view === View.JOURNAL ? 'nav-journal' :
+                  item.view === View.LIBRARY ? 'nav-library' :
+                    item.view === View.CLARITY_CHAIN ? 'nav-lens-practice' : // Mapped to Clarity Chain step
+                      undefined
+            }
             onClick={() => onNavigate(item.view)}
             className="relative flex flex-col items-center justify-center min-w-[60px] flex-1 h-full space-y-1"
           >

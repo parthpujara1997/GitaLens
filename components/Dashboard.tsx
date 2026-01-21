@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { View, UserProgress } from '../types';
 import { storageService } from '../services/storageService';
 import { getRandomFamousVerse } from '../gitaData';
-import { Share2, Copy, Check, Loader2, Heart, Scroll } from 'lucide-react';
+import { Share2, Copy, Check, Loader2, Heart, Scroll, X, ChevronUp } from 'lucide-react';
 import html2canvas from 'html2canvas';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
@@ -26,6 +26,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
   const [isBookmarked, setIsBookmarked] = useState(false);
   const [hasCheckedIn, setHasCheckedIn] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
+  const [showBriefPractices, setShowBriefPractices] = useState(false);
 
   const dailyVerse = useMemo(() => {
     return getRandomFamousVerse();
@@ -105,102 +106,41 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
     setShowShareModal(true);
   };
 
+  // Dynamic time-based greeting
+  const getGreeting = () => {
+    const hour = new Date().getHours();
+    const name = user?.user_metadata?.full_name?.split(' ')[0] || user?.email?.split('@')[0] || '';
+    const nameStr = name ? `, ${name}` : '';
+
+    if (hour >= 5 && hour < 12) return `A moment of peace this morning${nameStr}`;
+    if (hour >= 12 && hour < 17) return `A moment of peace this afternoon${nameStr}`;
+    if (hour >= 17 && hour < 21) return `A moment of calm this evening${nameStr}`;
+    return `A moment of stillness tonight${nameStr}`;
+  };
+
   return (
     <div className="flex flex-col items-center space-y-8 animate-in fade-in duration-700 w-full max-w-xl mx-auto pb-10">
-      <div className="text-center pt-2 pb-1">
+      <div className="text-center pt-2 pb-1 space-y-2">
         <img
           src="/logo.png"
           alt="GitaLens"
-          className="h-48 w-auto mx-auto object-contain select-none mix-blend-multiply"
+          className="h-36 w-auto mx-auto object-contain select-none mix-blend-multiply"
         />
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 0.3, ease: 'easeOut' }}
+          className="text-stone-500 text-sm font-light italic"
+        >
+          {getGreeting()}
+        </motion.p>
       </div>
 
-      {!hasCheckedIn && (
-        <div className="w-full">
-          <InnerCompass onComplete={() => setHasCheckedIn(true)} />
-        </div>
-      )}
-
-      <motion.button
-        whileHover={{ scale: 1.02, y: -2 }}
-        whileTap={{ scale: 0.98 }}
-        onClick={() => onNavigate(View.GUIDANCE)}
-        className="group relative w-full flex flex-col items-center justify-center p-10 bg-indigo text-[#F2EFE9] rounded-3xl shadow-lg hover:shadow-xl transition-all text-center overflow-hidden"
-      >
-        <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-        <span className="text-2xl font-medium serif mb-2 relative z-10">What’s troubling you right now?</span>
-        <p className="text-[#F2EFE9]/70 text-sm font-light relative z-10">Act with clarity, guided by the Gita</p>
-      </motion.button>
-
-      <section className="w-full space-y-3 px-4">
-        <div className="flex justify-between items-end">
-          <p className="text-[#6B6B63] text-xs uppercase tracking-widest font-semibold">Reflection Rhythm</p>
-          <p className="text-charcoal font-medium text-sm">{progress.reflection_days} days</p>
-        </div>
-        <div className="w-full bg-stone-warm h-1.5 rounded-full overflow-hidden">
-          <div
-            className="bg-olive h-full transition-all duration-1000 ease-out"
-            style={{ width: `${Math.min((progress.reflection_days % 30) / 30 * 100, 100)}% ` }}
-          />
-        </div>
-      </section>
-
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
-        {hasCheckedIn && (
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={() => onNavigate(View.INNER_COMPASS)}
-            className="glass-card w-full flex flex-col items-center justify-center p-6 rounded-2xl text-center"
-          >
-            <span className="text-base font-medium text-charcoal">Inner Compass</span>
-            <p className="text-stone-500/80 text-[10px] uppercase tracking-tighter mt-1">Daily Pattern</p>
-          </motion.button>
-        )}
-
-        <motion.button
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          onClick={() => onNavigate(View.LENS_PRACTICE)}
-          className="glass-card w-full flex flex-col items-center justify-center p-6 rounded-2xl text-center"
-        >
-          <span className="text-base font-medium text-charcoal">Lens Practice</span>
-          <p className="text-stone-500/80 text-[10px] uppercase tracking-tighter mt-1">Shift perspective</p>
-        </motion.button>
-        <motion.button
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          onClick={() => onNavigate(View.LIBRARY)}
-          className="glass-card w-full flex flex-col items-center justify-center p-6 rounded-2xl text-center"
-        >
-          <span className="text-base font-medium text-charcoal">Library</span>
-          <p className="text-stone-500/80 text-[10px] uppercase tracking-tighter mt-1">Explore Gita</p>
-        </motion.button>
-
-        <motion.button
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          onClick={() => onNavigate(View.JOURNAL)}
-          className="glass-card w-full flex flex-col items-center justify-center p-6 rounded-2xl text-center"
-        >
-          <span className="text-base font-medium text-clay-hover">Journal</span>
-          <p className="text-stone-500/80 text-[10px] uppercase tracking-tighter mt-1">Record thoughts</p>
-        </motion.button>
-
-        <motion.button
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          onClick={() => onNavigate(View.CLARITY_CHAIN)}
-          className="glass-card w-full flex flex-col items-center justify-center p-6 rounded-2xl text-center"
-        >
-          <span className="text-base font-medium text-charcoal">Clarity Chain</span>
-          <p className="text-stone-500/80 text-[10px] uppercase tracking-tighter mt-1">Untangle Stress</p>
-        </motion.button>
-      </div>
-
+      {/* HERO: Daily Verse Card - MOVED TO TOP */}
       <motion.section
         layout
         role="button"
+        data-tour="daily-verse-card"
         className="group relative w-full bg-sandalwood/40 border border-sandalwood-border/50 rounded-2xl p-6 transition-all hover:bg-sandalwood/60 cursor-pointer"
         onClick={() => setShowReflection(!showReflection)}
       >
@@ -250,15 +190,156 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
         </div>
       </motion.section>
 
-      {showShareModal && (
-        <ShareModal
-          verse={dailyVerse}
-          // @ts-ignore
-          customReflection={(reflectionsData as Record<string, string>)[`${dailyVerse.chapter}.${dailyVerse.verse}`]}
-          onClose={() => setShowShareModal(false)}
-        />
+      {/* Inner Compass Check-in */}
+      {!hasCheckedIn && (
+        <div className="w-full">
+          <InnerCompass onComplete={() => setHasCheckedIn(true)} />
+        </div>
       )}
-    </div>
+
+      {/* GUIDANCE CTA - Prominent */}
+      <motion.button
+        whileHover={{ scale: 1.02, y: -2 }}
+        whileTap={{ scale: 0.98 }}
+        onClick={() => onNavigate(View.GUIDANCE)}
+        className="group relative w-full flex flex-col items-center justify-center p-10 bg-indigo text-[#F2EFE9] rounded-3xl shadow-lg hover:shadow-xl transition-all text-center overflow-hidden"
+      >
+        <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+        <span className="text-2xl font-medium serif mb-2 relative z-10">What is on your mind?</span>
+        <p className="text-[#F2EFE9]/70 text-sm font-light relative z-10">Act with clarity, guided by the Gita</p>
+      </motion.button>
+
+
+      {/* PRACTICES SECTION */}
+      <section className="w-full space-y-3">
+        <p className="text-[#6B6B63] text-[10px] uppercase tracking-widest font-semibold px-1">Reflective Practices</p>
+        <div className="grid grid-cols-2 gap-3">
+          {hasCheckedIn && (
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => onNavigate(View.INNER_COMPASS)}
+              className="glass-card w-full flex flex-col items-center justify-center p-5 rounded-2xl text-center"
+            >
+              <span className="text-sm font-medium text-charcoal">Inner Compass</span>
+              <p className="text-stone-500/80 text-[9px] uppercase tracking-tighter mt-1">Daily Pattern</p>
+            </motion.button>
+          )}
+
+          {!showBriefPractices ? (
+            <motion.button
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => setShowBriefPractices(true)}
+              className="glass-card w-full flex flex-col items-center justify-center p-5 rounded-2xl text-center relative overflow-hidden group"
+            >
+              <div className="absolute inset-0 bg-stone-100/50 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="flex -space-x-2 mb-2 opacity-50">
+                <div className="w-2 h-2 rounded-full bg-stone-400" />
+                <div className="w-2 h-2 rounded-full bg-stone-400" />
+              </div>
+              <span className="text-sm font-medium text-charcoal">Brief Practices</span>
+              <p className="text-stone-500/80 text-[9px] uppercase tracking-tighter mt-1">Quick Tools</p>
+            </motion.button>
+          ) : (
+            <>
+              <motion.button
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => onNavigate(View.LENS_PRACTICE)}
+                className="glass-card w-full flex flex-col items-center justify-center p-5 rounded-2xl text-center bg-white/60"
+              >
+                <span className="text-sm font-medium text-charcoal">Lens</span>
+                <p className="text-stone-500/80 text-[9px] uppercase tracking-tighter mt-1">Shift perspective</p>
+              </motion.button>
+
+              <motion.button
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                data-tour="dashboard-card-clarity"
+                onClick={() => onNavigate(View.CLARITY_CHAIN)}
+                className="glass-card w-full flex flex-col items-center justify-center p-5 rounded-2xl text-center bg-white/60"
+              >
+                <span className="text-sm font-medium text-charcoal">Clarity Chain</span>
+                <p className="text-stone-500/80 text-[9px] uppercase tracking-tighter mt-1">Untangle Stress</p>
+              </motion.button>
+
+              <motion.button
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                whileHover={{ scale: 1.01, backgroundColor: 'rgba(245, 245, 244, 0.8)' }}
+                whileTap={{ scale: 0.99 }}
+                onClick={() => setShowBriefPractices(false)}
+                className="col-span-2 flex items-center justify-center py-2 rounded-xl bg-stone-100/40 text-stone-400 hover:text-stone-600 transition-all cursor-pointer mt-1"
+              >
+                <ChevronUp size={16} className="mr-1.5" />
+                <span className="text-[10px] uppercase tracking-widest font-medium">Collapse</span>
+              </motion.button>
+            </>
+          )}
+        </div>
+      </section>
+
+      {/* LEARNING SECTION */}
+      <section className="w-full space-y-3">
+        <p className="text-[#6B6B63] text-[10px] uppercase tracking-widest font-semibold px-1">Path of Learning</p>
+        <div className="grid grid-cols-3 gap-3">
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={() => onNavigate(View.LIBRARY)}
+            className="glass-card w-full flex flex-col items-center justify-center p-4 rounded-2xl text-center"
+          >
+            <span className="text-sm font-medium text-charcoal">Library</span>
+            <p className="text-stone-500/80 text-[8px] uppercase tracking-tighter mt-1">Explore Gita</p>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={() => onNavigate(View.JOURNAL)}
+            className="glass-card w-full flex flex-col items-center justify-center p-4 rounded-2xl text-center"
+          >
+            <span className="text-sm font-medium text-clay-hover">Journal</span>
+            <p className="text-stone-500/80 text-[8px] uppercase tracking-tighter mt-1">Record thoughts</p>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            onClick={() => onNavigate(View.BLOG)}
+            className="glass-card w-full flex flex-col items-center justify-center p-4 rounded-2xl text-center"
+          >
+            <span className="text-sm font-medium text-charcoal">Insights</span>
+            <p className="text-stone-500/80 text-[8px] uppercase tracking-tighter mt-1">Read Articles</p>
+          </motion.button>
+        </div>
+      </section>
+
+      {/* JOURNEY COUNTER - Moved to footer for better visual balance */}
+      <div className="w-full text-center pt-8 pb-2 opacity-60 hover:opacity-100 transition-opacity cursor-default">
+        <p className="text-stone-400 text-[10px] uppercase tracking-widest mb-1">Your Journey</p>
+        <p className="text-charcoal font-serif text-lg">
+          {progress.reflection_days} <span className="text-sm text-stone-500 font-light">Days</span>
+        </p>
+      </div>
+
+      {
+        showShareModal && (
+          <ShareModal
+            verse={dailyVerse}
+            // @ts-ignore
+            customReflection={(reflectionsData as Record<string, string>)[`${dailyVerse.chapter}.${dailyVerse.verse}`]}
+            onClose={() => setShowShareModal(false)}
+          />
+        )
+      }
+    </div >
   );
 };
 

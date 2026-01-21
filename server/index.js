@@ -274,36 +274,33 @@ Simply apply it.
 
 app.post("/api/guidance", async (req, res) => {
   try {
-    const { userInput, systemInstruction, history } = req.body;
+    const { message, history } = req.body;
 
-    const words = userInput.trim().split(/\s+/);
+    // Check for single-word profanity (basic guardrail)
+    const words = message.trim().split(/\s+/);
     const curses = ['fuck', 'shit', 'asshole', 'bitch'];
-
     if (words.length === 1 && curses.includes(words[0].toLowerCase())) {
       return res.json({
         text: "Please share what is on your mind so I can offer a steadier perspective."
       });
     }
 
-    const conversationHistory = (history || []).map(h => ({
-      role: h.role === 'user' ? 'user' : 'model',
-      parts: [{ text: h.content }]
+    const userInput = message;
+
+    // Map history to the format Gemini expects
+    const conversationHistory = history.map(msg => ({
+      role: msg.role === 'ai' ? 'model' : 'user',
+      parts: [{ text: msg.content }]
     }));
 
-    // Extract language level from systemInstruction
-    const levelMatch = systemInstruction.match(/Language: (\w+)/);
-    const level = levelMatch ? levelMatch[1] : 'MODERN';
-
     const prompt = `
-      CURRENT LANGUAGE MODE: ${level}
-      
       User query: "${userInput}"
       
       Assess the user's needs and respond accordingly. If a specific Bhagavad Gita verse powerfully speaks to this situation, you may reference it naturally (include chapter and verse number). The UI will automatically show a "Read related verse" button when you include a verse reference.
     `;
 
-    const result = await ai.models.generateContent({
-      model: "models/gemini-2.5-pro",
+    const result = await ai.models.generateContentStream({
+      model: "gemini-2.5-pro",
       contents: [...conversationHistory, { role: 'user', parts: [{ text: prompt }] }],
       config: {
         systemInstruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },
@@ -311,14 +308,26 @@ app.post("/api/guidance", async (req, res) => {
       },
     });
 
-    const text = result.text || "I am unable to provide clarity at this moment.";
+    // Set headers for streaming
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    res.setHeader('Transfer-Encoding', 'chunked');
 
-    res.json({ text });
+    for await (const chunk of result) {
+      const chunkText = chunk.text;
+      res.write(chunkText);
+    }
+
+    res.end();
 
   } catch (error) {
     console.error("Gemini error (full):", error);
     console.error("Gemini error message:", error.message);
-    console.error("Gemini error stack:", error.stack);
+
+    // Log to file for debugging
+    import('fs').then(fs => {
+      fs.appendFileSync('error.log', `${new Date().toISOString()} - ${error.message}\n${JSON.stringify(error, null, 2)}\n\n`);
+    }).catch(err => console.error("Failed to log to file", err));
+
     res.status(500).json({ error: "Gemini request failed" });
   }
 });

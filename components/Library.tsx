@@ -8,6 +8,8 @@ import { GitaVerse } from '../types';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 import reflectionsData from '../src/data/ai_reflections.json';
+// @ts-ignore
+import hindiVerses from '../src/data/hindiVerses.json';
 
 import ShareModal from './ShareModal';
 
@@ -26,11 +28,15 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
     const [selectedVerse, setSelectedVerse] = useState<GitaVerse | null>(null);
     const [bookmarkedVerses, setBookmarkedVerses] = useState<Set<string>>(new Set());
 
-    // Sharing state
+    // Search State
+    const [searchQuery, setSearchQuery] = useState('');
+    const [isSearching, setIsSearching] = useState(false);
+
     // Sharing state
     const [showShareModal, setShowShareModal] = useState(false);
     const [verseToShare, setVerseToShare] = useState<GitaVerse | null>(null);
-    const [language, setLanguage] = useState<'EN' | 'SA'>('EN');
+    // Language state for Verse Detail View
+    const [language, setLanguage] = useState<'EN' | 'SA' | 'HI'>('EN');
 
 
     useEffect(() => {
@@ -106,6 +112,68 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
         setVerseToShare(verse);
         setShowShareModal(true);
     };
+
+    // Filter verses based on search query
+    const filteredVerses = searchQuery.trim() === '' ? [] : GITA_VERSES.filter(verse =>
+        verse.text.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        verse.reference.includes(searchQuery) ||
+        verse.speaker.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    const renderSearchResults = () => (
+        <div className="space-y-4">
+            <div className="flex items-center justify-between mb-2">
+                <h3 className="text-sm font-semibold text-stone-500 uppercase tracking-widest">
+                    Search Results ({filteredVerses.length})
+                </h3>
+                <button
+                    onClick={() => { setSearchQuery(''); setIsSearching(false); }}
+                    className="text-xs text-saffron-accent hover:underline"
+                >
+                    Clear Search
+                </button>
+            </div>
+
+            {filteredVerses.length === 0 ? (
+                <div className="text-center py-12 bg-white/50 rounded-2xl border border-stone-warm/50">
+                    <Search className="mx-auto text-stone-300 mb-3" size={32} />
+                    <p className="text-stone-500 font-medium">No verses found</p>
+                    <p className="text-stone-400 text-sm mt-1">Try searching for keywords like "duty", "peace", or "meditation"</p>
+                </div>
+            ) : (
+                <div className="grid grid-cols-1 gap-3">
+                    {filteredVerses.map(verse => (
+                        <motion.div
+                            key={verse.id}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="bg-white rounded-xl p-4 border border-stone-warm hover:border-saffron-accent/30 transition-all cursor-pointer group shadow-sm"
+                            onClick={() => setSelectedVerse(verse)}
+                        >
+                            <div className="flex items-start justify-between mb-2">
+                                <span className="text-xs font-bold text-saffron-accent uppercase tracking-wider">
+                                    {verse.reference} • {CHAPTERS.find(c => c.number === verse.chapter)?.name}
+                                </span>
+                                <button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleBookmark(verse);
+                                    }}
+                                    className={`p-1.5 rounded-full transition-colors ${bookmarkedVerses.has(verse.reference) ? 'text-red-500 bg-red-50' : 'text-stone-400 hover:text-red-500 hover:bg-red-50'}`}
+                                >
+                                    <Heart size={14} fill={bookmarkedVerses.has(verse.reference) ? 'currentColor' : 'none'} />
+                                </button>
+                            </div>
+                            <p className="text-sm text-charcoal leading-relaxed line-clamp-2 group-hover:line-clamp-none transition-all">
+                                <span className="font-bold text-xs text-stone-500 mr-1 uppercase">{verse.speaker}:</span>
+                                {verse.text}
+                            </p>
+                        </motion.div>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
 
     const renderChapterView = () => (
         <div className="space-y-3">
@@ -199,8 +267,9 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
                         </AnimatePresence>
                     </motion.div>
                 );
-            })}
-        </div>
+            })
+            }
+        </div >
     );
 
     const renderThemeView = () => (
@@ -316,38 +385,65 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
                     <BookOpen size={64} strokeWidth={1} className="text-stone-300 hidden md:block" />
                 </div>
 
-                {/* Tab Navigation */}
-                <div className="flex space-x-2 bg-stone-100 p-1.5 rounded-xl border border-stone-200 w-full md:w-auto inline-flex">
-                    <button
-                        onClick={() => {
-                            setViewMode('chapters');
-                            setSelectedTheme(null);
+                {/* Search Bar */}
+                <div className="relative w-full max-w-md">
+                    <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
+                        <Search className="h-4 w-4 text-stone-400" />
+                    </div>
+                    <input
+                        type="text"
+                        placeholder="Search by keyword, verse (2.47), or speaker..."
+                        value={searchQuery}
+                        onChange={(e) => {
+                            setSearchQuery(e.target.value);
+                            setIsSearching(e.target.value.length > 0);
                         }}
-                        className={`px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide transition-all ${viewMode === 'chapters'
-                            ? 'bg-white text-charcoal shadow-sm ring-1 ring-black/5'
-                            : 'text-stone-500 hover:text-charcoal'
-                            }`}
-                    >
-                        Chapters
-                    </button>
-                    <button
-                        onClick={() => {
-                            setViewMode('themes');
-                            setExpandedChapter(null);
-                        }}
-                        className={`px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide transition-all ${viewMode === 'themes'
-                            ? 'bg-white text-charcoal shadow-sm ring-1 ring-black/5'
-                            : 'text-stone-500 hover:text-charcoal'
-                            }`}
-                    >
-                        Themes
-                    </button>
+                        className="w-full pl-10 pr-4 py-3 bg-white border border-stone-warm rounded-xl text-charcoal placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-saffron-accent/20 focus:border-saffron-accent/50 transition-all shadow-sm"
+                    />
+                    {searchQuery && (
+                        <button
+                            onClick={() => { setSearchQuery(''); setIsSearching(false); }}
+                            className="absolute inset-y-0 right-3 flex items-center text-stone-400 hover:text-stone-600"
+                        >
+                            <X size={16} />
+                        </button>
+                    )}
                 </div>
+
+                {!isSearching && (
+                    /* Tab Navigation */
+                    <div className="flex space-x-2 bg-stone-100 p-1.5 rounded-xl border border-stone-200 w-full md:w-auto inline-flex">
+                        <button
+                            onClick={() => {
+                                setViewMode('chapters');
+                                setSelectedTheme(null);
+                            }}
+                            className={`px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide transition-all ${viewMode === 'chapters'
+                                ? 'bg-white text-charcoal shadow-sm ring-1 ring-black/5'
+                                : 'text-stone-500 hover:text-charcoal'
+                                }`}
+                        >
+                            Chapters
+                        </button>
+                        <button
+                            onClick={() => {
+                                setViewMode('themes');
+                                setExpandedChapter(null);
+                            }}
+                            className={`px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide transition-all ${viewMode === 'themes'
+                                ? 'bg-white text-charcoal shadow-sm ring-1 ring-black/5'
+                                : 'text-stone-500 hover:text-charcoal'
+                                }`}
+                        >
+                            Themes
+                        </button>
+                    </div>
+                )}
             </div>
 
             {/* Content */}
             <div className="pb-12 min-h-[60vh]">
-                {viewMode === 'chapters' ? renderChapterView() : renderThemeView()}
+                {isSearching ? renderSearchResults() : (viewMode === 'chapters' ? renderChapterView() : renderThemeView())}
             </div>
 
             {/* Verse Detail Modal */}
@@ -394,7 +490,7 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
                     <div
                         key={selectedVerse.id}
                         onClick={(e) => e.stopPropagation()}
-                        className="bg-[#EFE6D8] border border-[#D8CBB5] rounded-3xl p-8 md:p-10 max-w-4xl w-full max-h-[85vh] overflow-y-auto shadow-2xl relative flex flex-col mx-12"
+                        className="bg-[#EFE6D8] border border-[#D8CBB5] rounded-3xl p-5 md:p-10 max-w-4xl w-full max-h-[85vh] overflow-y-auto shadow-2xl relative flex flex-col mx-0 md:mx-12"
                     >
                         <div className="flex items-start justify-between mb-6">
                             <div>
@@ -450,6 +546,15 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
                                     >
                                         SANSKRIT
                                     </button>
+                                    <button
+                                        onClick={() => setLanguage('HI')}
+                                        className={`px-6 py-2 rounded-lg text-xs font-bold transition-all ${language === 'HI'
+                                            ? 'bg-white text-orange-600 shadow-sm'
+                                            : 'text-stone-400 hover:text-stone-600'
+                                            }`}
+                                    >
+                                        HINDI
+                                    </button>
                                 </div>
                             </div>
 
@@ -458,6 +563,13 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
                                 <div className="bg-white/60 rounded-2xl p-8 border-l-4 border-saffron-accent shadow-sm min-h-[200px] flex items-center justify-center text-center">
                                     <p className="font-serif text-xl md:text-2xl text-charcoal-dark leading-relaxed whitespace-pre-wrap">
                                         {selectedVerse.sanskrit || "Sanskrit text unavailable."}
+                                    </p>
+                                </div>
+                            ) : language === 'HI' ? (
+                                <div className="bg-white/60 rounded-2xl p-8 border-l-4 border-saffron-accent shadow-sm min-h-[200px] flex items-center justify-center text-center">
+                                    <p className="font-serif text-xl md:text-2xl text-charcoal-dark leading-relaxed whitespace-pre-wrap">
+                                        {/* @ts-ignore */}
+                                        {(hindiVerses as Record<string, string>)[`${selectedVerse.chapter}-${selectedVerse.verse}`] || "Hindi translation unavailable."}
                                     </p>
                                 </div>
                             ) : (

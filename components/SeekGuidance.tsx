@@ -27,6 +27,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
   const [shouldSave, setShouldSave] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [readingVerse, setReadingVerse] = useState<{ chapter: number; verse: number } | null>(null);
+  const [streamingContent, setStreamingContent] = useState('');
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -42,16 +43,17 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
     setShowLevelMenu(false);
   };
 
-  const callBackend = async (text: string, historyOverride?: typeof messages) => {
-    const response = await getGuidance(
+  const callBackend = async (text: string, historyOverride?: typeof messages, onChunk?: (chunk: string) => void) => {
+    const responseText = await getGuidance(
       text,
       `Language: ${settings.languageLevel}`,
       (historyOverride || messages).map(m => ({
         role: m.role,
         content: m.content
-      }))
+      })),
+      onChunk
     );
-    return response.text;
+    return responseText;
   };
 
   const endSession = async () => {
@@ -69,13 +71,20 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
     const summary = lastAI.slice(0, 200) + (lastAI.length > 200 ? '...' : '');
 
     if (user) {
-      await supabase.from('history').insert({
+      const { error } = await supabase.from('history').insert({
         user_id: user.id,
         topic,
         summary,
         messages: messages, // Saving full conversation
         date: new Date().toISOString()
       });
+
+      if (error) {
+        console.error('Supabase save error:', error);
+        alert(`Failed to save history: ${error.message} (${error.details}, ${error.hint})`);
+        return;
+      }
+
       onNavigate('HISTORY');
     } else {
       // Guests don't save history session data anymore to maintain exclusivity
@@ -111,13 +120,23 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
     }
 
     setLoading(true);
+    setStreamingContent('');
 
     try {
-      const aiText = await callBackend(messageToSend);
-      onUpdateMessages([...messages, { role: 'user', content: messageToSend }, { role: 'ai', content: aiText }]);
+      // Add user message immediately
+      const newHistory = [...messages, { role: 'user', content: messageToSend } as const];
+      onUpdateMessages(newHistory);
+
+      const aiText = await callBackend(messageToSend, newHistory, (chunk) => {
+        setStreamingContent(prev => prev + chunk);
+      });
+
+      // When done, replace streaming content with final message
+      onUpdateMessages([...newHistory, { role: 'ai', content: aiText }]);
+      setStreamingContent('');
     } catch {
       onUpdateMessages([
-        ...messages,
+        ...messages, // Fallback to original messages + user message + error
         { role: 'user', content: messageToSend },
         { role: 'ai', content: 'Unable to reach the guidance service.' }
       ]);
@@ -242,7 +261,19 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
 
 
 
-        {loading && (
+        {/* Streaming Message Bubble */}
+        {loading && streamingContent && (
+          <div className="flex flex-col items-start space-y-2">
+            <div className="max-w-[85%] rounded-2xl px-5 py-4 border bg-white text-charcoal shadow-sm border-stone-warm/30">
+              <p className="text-sm whitespace-pre-wrap leading-relaxed">
+                {streamingContent}
+                <span className="inline-block w-1.5 h-3 ml-1 bg-stone-400 animate-pulse" />
+              </p>
+            </div>
+          </div>
+        )}
+
+        {loading && !streamingContent && (
           <div className="flex justify-start">
             <div className={`bg-white/50 backdrop-blur-sm rounded-2xl px-5 py-4 border border-stone-warm/30 ${loading ? 'animate-pulse' : ''}`}>
               <div className="flex space-x-1">

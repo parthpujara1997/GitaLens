@@ -36,9 +36,18 @@ const InnerCompass: React.FC<InnerCompassProps> = ({ onComplete }) => {
     const getGreeting = () => {
         switch (timeBand) {
             case TimeBand.EARLY: return "How is today starting for you?";
-            case TimeBand.MIDDAY: return "How is your day feeling right now?";
+            case TimeBand.MIDDAY: return "How is your day unfolding?";
             case TimeBand.LATE: return "How is your day going so far?";
-            case TimeBand.NIGHT: return "How are things sitting with you right now?";
+            case TimeBand.NIGHT: return "How are things sitting with you?";
+        }
+    };
+
+    const getMovingOnText = () => {
+        switch (timeBand) {
+            case TimeBand.EARLY: return "Before moving on, notice what is actually required of you today.";
+            case TimeBand.MIDDAY: return "Before moving back, notice if you need to adjust your pace for the afternoon.";
+            case TimeBand.LATE: return "As the day winds down, notice what can be left for tomorrow.";
+            case TimeBand.NIGHT: return "Before rest, allow yourself to release the weight of today.";
         }
     };
 
@@ -271,7 +280,7 @@ const InnerCompass: React.FC<InnerCompassProps> = ({ onComplete }) => {
                         </p>
                         <div className="w-16 h-[1px] bg-stone-300 mx-auto my-6" />
                         <p className="text-stone-500 text-sm mb-6">
-                            Before moving on, notice what is actually required of you today.
+                            {getMovingOnText()}
                         </p>
                         <button
                             onClick={handlePauseComplete}

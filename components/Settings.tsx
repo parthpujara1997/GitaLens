@@ -1,14 +1,18 @@
 
 import React from 'react';
 import { AppSettings, LanguageLevel } from '../types';
+import { useTour } from '../contexts/TourContext';
+import { Sparkles } from 'lucide-react'; // Assuming Sparkles icon is available
 
 interface SettingsProps {
   settings: AppSettings;
   onUpdate: (settings: AppSettings) => void;
   onBack: () => void;
+  onRestartTour?: () => void;
 }
 
-const Settings: React.FC<SettingsProps> = ({ settings, onUpdate, onBack }) => {
+const Settings: React.FC<SettingsProps> = ({ settings, onUpdate, onBack, onRestartTour }) => {
+  const { startTour } = useTour();
   const levels = [
     { id: LanguageLevel.MODERN, label: 'Modern', desc: 'Clear, grounded, contemporary language.' },
     { id: LanguageLevel.ORIGINAL, label: 'Original', desc: 'Profound, nuanced, and poetic.' },
@@ -51,8 +55,34 @@ const Settings: React.FC<SettingsProps> = ({ settings, onUpdate, onBack }) => {
             ))}
           </div>
         </section>
-      </div>
-    </div>
+
+
+        <section className="bg-stone-neutral border border-stone-warm rounded-2xl p-6 shadow-sm">
+          <div className="flex items-center justify-between">
+            <div>
+              <h3 className="text-[10px] font-bold uppercase tracking-widest text-stone-600 mb-1">Guided Tour</h3>
+              <p className="text-xs text-stone-500">Revisit the introduction to GitaLens.</p>
+            </div>
+            <button
+              onClick={() => {
+                startTour();
+                // Allow a tiny yield to ensure state update propagates, though usually not strictly necessary with React 18 auto-batching, 
+                // but safe to run navigation immediately after state set.
+                if (onRestartTour) {
+                  onRestartTour();
+                } else {
+                  onBack();
+                }
+              }}
+              className="flex items-center space-x-2 px-4 py-2 bg-white border border-stone-warm rounded-xl text-xs font-semibold text-stone-600 hover:text-charcoal hover:shadow-sm transition-all"
+            >
+              <Sparkles size={14} className="text-saffron-deep" />
+              <span>Restart Tour</span>
+            </button>
+          </div>
+        </section>
+      </div >
+    </div >
   );
 };
 
