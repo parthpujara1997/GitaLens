@@ -85,9 +85,10 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
     const getGreeting = () => {
         const hour = today.getHours();
         const name = user?.user_metadata?.full_name?.split(' ')[0] || 'Seeker';
-        if (hour < 12) return `Good Morning, ${name}.`;
-        if (hour < 17) return `Good Afternoon, ${name}.`;
-        return `Good Evening, ${name}.`;
+        if (hour >= 5 && hour < 12) return `Good Morning, ${name}.`;
+        if (hour >= 12 && hour < 17) return `Good Afternoon, ${name}.`;
+        if (hour >= 17 && hour < 22) return `Good Evening, ${name}.`;
+        return `Peaceful Night, ${name}.`;
     };
 
     // Animation variants
