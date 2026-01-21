@@ -4,7 +4,7 @@ import { useTour } from '../../contexts/TourContext';
 import { X, ChevronRight } from 'lucide-react';
 
 const TourOverlay: React.FC = () => {
-    const { isActive, currentStep, nextStep, skipTour, hasSeenTour, startTour } = useTour();
+    const { isActive, currentStep, nextStep, skipTour, hasSeenTour, startTour, currentStepIndex, totalSteps } = useTour();
     const [targetRect, setTargetRect] = useState<{ x: number, y: number, width: number, height: number } | null>(null);
     const [showWelcome, setShowWelcome] = useState(false);
 
@@ -57,8 +57,9 @@ const TourOverlay: React.FC = () => {
     }, [isActive, currentStep]);
 
     // Resize handler
+    // Resize & Scroll handler to keep highlight in sync
     useEffect(() => {
-        const handleResize = () => {
+        const updateRect = () => {
             if (isActive && currentStep) {
                 const element = document.querySelector(`[data-tour="${currentStep.targetId}"]`);
                 if (element) {
@@ -73,8 +74,14 @@ const TourOverlay: React.FC = () => {
                 }
             }
         };
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+
+        window.addEventListener('resize', updateRect);
+        window.addEventListener('scroll', updateRect, { capture: true, passive: true }); // Capture needed for internal scrolling containers
+
+        return () => {
+            window.removeEventListener('resize', updateRect);
+            window.removeEventListener('scroll', updateRect, { capture: true });
+        };
     }, [isActive, currentStep]);
 
 
@@ -137,23 +144,41 @@ const TourOverlay: React.FC = () => {
 
     // Intelligent Positioning Logic
     const isDeskTopSidebar = targetRect.x < 300 && targetRect.height > 400;
+    // Smart Positioning Logic
+    const viewportHeight = window.innerHeight;
+    const estimatedTooltipHeight = 250;
+
+    // Default: Below the target
     let tooltipStyle: React.CSSProperties = isDeskTopSidebar
         ? { left: targetRect.width + 40, top: targetRect.y + 100 }
         : { left: '50%', top: targetRect.y + targetRect.height + 20, transform: 'translateX(-50%)' };
 
-    // Collision Detection
-    const viewportHeight = window.innerHeight;
-    const estimatedTooltipHeight = 250; // Approximated height
+    // Check if it overflows bottom
+    const overflowsBottom = !isDeskTopSidebar && (targetRect.y + targetRect.height + estimatedTooltipHeight > viewportHeight - 20);
 
-    // If it overflows bottom, flip ABOVE the target
-    if (!isDeskTopSidebar && (targetRect.y + targetRect.height + estimatedTooltipHeight > viewportHeight)) {
-        tooltipStyle = {
-            left: '50%',
-            bottom: viewportHeight - targetRect.y + 20, // Position relative to bottom of screen or calculate top
-            transform: 'translateX(-50%)'
-        };
-        // Or simpler: position above target
-        // tooltipStyle = { left: '50%', top: targetRect.y - estimatedTooltipHeight - 20, transform: 'translateX(-50%)' };
+    if (overflowsBottom) {
+        // Try to flip ABOVE
+        // Check if there is space above (need targetRect.y > estimatedHeight + padding)
+        const spaceAbove = targetRect.y > estimatedTooltipHeight + 20;
+
+        if (spaceAbove) {
+            // Flip to above: Position bottom of tooltip at top of target - 20px
+            tooltipStyle = {
+                left: '50%',
+                bottom: viewportHeight - targetRect.y + 20,
+                transform: 'translateX(-50%)'
+            };
+        } else {
+            // No space below AND no space above? (Giant element or small screen)
+            // Center it on screen or pin to bottom of viewport
+            // Let's pin to bottom of viewport with some padding, so it's always visible
+            tooltipStyle = {
+                left: '50%',
+                bottom: 20,
+                transform: 'translateX(-50%)',
+                zIndex: 70 // Ensure it's on top
+            };
+        }
     }
 
     // Mobile specific override (Navigation bar area)
@@ -232,14 +257,12 @@ const TourOverlay: React.FC = () => {
                         </p>
 
                         <div className="flex justify-between items-center">
-                            {/* Dots or Step counter? */}
                             <div className="flex space-x-1.5">
-                                {/* Simple step indicator */}
-                                {['Daily', 'Guide', 'Journal', 'Clarity', 'Lib'].map((_, i) => (
+                                {Array.from({ length: totalSteps }).map((_, i) => (
                                     <div
                                         key={i}
                                         className={`w-1.5 h-1.5 rounded-full transition-colors 
-                                            ${currentStep.title === ['Your Daily Anchor', 'Seek Guidance', 'Journal & Wisdom', 'Clarity Chain', 'The Library'][i]
+                                            ${i === currentStepIndex
                                                 ? 'bg-saffron-deep'
                                                 : 'bg-stone-300'}`}
                                     />
@@ -250,7 +273,7 @@ const TourOverlay: React.FC = () => {
                                 onClick={nextStep}
                                 className="flex items-center space-x-1 px-4 py-2 bg-charcoal text-white text-xs font-bold uppercase tracking-wider rounded-lg hover:bg-black transition-colors"
                             >
-                                <span>Next</span>
+                                <span>{currentStepIndex === totalSteps - 1 ? 'Finish' : 'Next'}</span>
                                 <ChevronRight size={12} />
                             </button>
                         </div>

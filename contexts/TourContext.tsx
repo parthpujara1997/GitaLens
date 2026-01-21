@@ -16,6 +16,7 @@ interface TourContextType {
     nextStep: () => void;
     skipTour: () => void;
     hasSeenTour: boolean;
+    totalSteps: number;
 }
 
 const TOUR_STEPS: TourStep[] = [
@@ -26,22 +27,34 @@ const TOUR_STEPS: TourStep[] = [
         position: 'bottom'
     },
     {
-        targetId: 'nav-guidance',
+        targetId: 'dashboard-card-guidance',
         title: 'Seek Guidance',
         description: 'Wisdom at your fingertips. Ask questions about life, dilemmas, or purpose, and receive guidance rooted directly in the Bhagavad Gita.',
-        position: 'right'
+        position: 'bottom'
     },
     {
-        targetId: 'nav-journal',
-        title: 'Journal & Wisdom',
-        description: 'Your personal journey. Save verses that resonate and record your own reflections to see how your clarity grows over time.',
-        position: 'right'
+        targetId: 'dashboard-card-compass',
+        title: 'Check-in',
+        description: 'Tune into your inner state. A quick daily check-in to recognize how you are feeling and find your center.',
+        position: 'top'
     },
     {
-        targetId: 'dashboard-card-clarity', // Using Dashboard Card
+        targetId: 'dashboard-card-journal',
+        title: 'Journal & Reflect',
+        description: 'Capture your thoughts. Save verses that resonate and record your own reflections to see how your clarity grows over time.',
+        position: 'top'
+    },
+    {
+        targetId: 'dashboard-card-lens',
+        title: 'Lens Practice',
+        description: 'Shift your perspective. A powerful tool to reframe difficult situations through the lens of Gita\'s wisdom.',
+        position: 'top'
+    },
+    {
+        targetId: 'dashboard-card-clarity',
         title: 'Clarity Chain',
-        description: 'Break the cycle of stress. Use this interactive practice to detach the meaning you\'ve added to a situation and regain your peace.',
-        position: 'right'
+        description: 'Untangle stress. Break down complex emotions step-by-step to detach from the story and regain your peace.',
+        position: 'top'
     },
     {
         targetId: 'nav-library',
@@ -104,7 +117,8 @@ export const TourProvider: React.FC<{ children: React.ReactNode }> = ({ children
             endTour,
             nextStep,
             skipTour,
-            hasSeenTour
+            hasSeenTour,
+            totalSteps: TOUR_STEPS.length
         }}>
             {children}
         </TourContext.Provider>

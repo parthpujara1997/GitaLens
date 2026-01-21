@@ -62,6 +62,14 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
         } else onAuthRequired('login');
     };
 
+    const handleProtectedNavigate = (view: View) => {
+        if (!user) {
+            onAuthRequired('signup');
+            return;
+        }
+        onNavigate(view);
+    };
+
     const handleCopy = async (e: React.MouseEvent) => {
         e.stopPropagation();
         try {
@@ -96,7 +104,7 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
 
     const item = {
         hidden: { opacity: 0, y: 20 },
-        show: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.8 } }
+        show: { opacity: 1, y: 0, transition: { duration: 0.8 } }
     };
 
     return (
@@ -115,6 +123,7 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
             {/* 2. The Daily Scroll (Verse) */}
             <motion.section
                 variants={item}
+                data-tour="daily-verse-card"
                 onClick={() => setShowReflection(!showReflection)}
                 className="relative group cursor-pointer"
             >
@@ -160,7 +169,14 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                         <button onClick={handleCopy} className="p-2 rounded-full text-stone-400 hover:text-stone-600 hover:bg-stone-100 transition-colors">
                             {copied ? <Check size={16} /> : <Copy size={16} />}
                         </button>
-                        <button onClick={(e) => { e.stopPropagation(); setShowShareModal(true); }} className="p-2 rounded-full text-stone-400 hover:text-stone-600 hover:bg-stone-100 transition-colors">
+                        <button onClick={(e) => {
+                            e.stopPropagation();
+                            if (!user) {
+                                onAuthRequired('signup');
+                                return;
+                            }
+                            setShowShareModal(true);
+                        }} className="p-2 rounded-full text-stone-400 hover:text-stone-600 hover:bg-stone-100 transition-colors">
                             <Share2 size={16} />
                         </button>
                     </div>
@@ -170,7 +186,8 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
             {/* 3. The Offering (Conversational Input) */}
             <motion.section variants={item}>
                 <button
-                    onClick={() => onNavigate(View.GUIDANCE)}
+                    data-tour="dashboard-card-guidance"
+                    onClick={() => handleProtectedNavigate(View.GUIDANCE)}
                     className="w-full bg-white group rounded-full p-4 px-6 shadow-sm border border-stone-200 hover:border-saffron-accent/50 hover:shadow-md transition-all duration-300 flex items-center justify-between"
                 >
                     <span className="text-stone-400 text-base font-serif group-hover:text-charcoal transition-colors">
@@ -194,8 +211,9 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                     <ToolCard
                         title="Reflect"
                         subtitle="Daily Journal"
-                        icon={<PenLine size={20} />} // Changed icon import up top if needed
-                        onClick={() => onNavigate(View.JOURNAL)}
+                        icon={<PenLine size={20} />}
+                        onClick={() => handleProtectedNavigate(View.JOURNAL)}
+                        dataTour="dashboard-card-journal"
                     />
 
                     {/* Inner Compass */}
@@ -203,9 +221,10 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                         title="Check-in"
                         subtitle="Inner Compass"
                         icon={<Compass size={20} />}
-                        onClick={() => onNavigate(View.INNER_COMPASS)}
-                        active={!hasCheckedIn} // Highlight if not checked in
+                        onClick={() => handleProtectedNavigate(View.INNER_COMPASS)}
+                        active={!hasCheckedIn}
                         completed={hasCheckedIn}
+                        dataTour="dashboard-card-compass"
                     />
 
                     {/* Lens */}
@@ -213,7 +232,8 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                         title="Reframing"
                         subtitle="Lens Practice"
                         icon={<Wind size={20} />}
-                        onClick={() => onNavigate(View.LENS_PRACTICE)}
+                        onClick={() => handleProtectedNavigate(View.LENS_PRACTICE)}
+                        dataTour="dashboard-card-lens"
                     />
 
                     {/* Clarity */}
@@ -221,7 +241,8 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                         title="Untangle"
                         subtitle="Clarity Chain"
                         icon={<Link size={20} />}
-                        onClick={() => onNavigate(View.CLARITY_CHAIN)}
+                        onClick={() => handleProtectedNavigate(View.CLARITY_CHAIN)}
+                        dataTour="dashboard-card-clarity"
                     />
                 </div>
             </motion.section>
@@ -248,7 +269,7 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
 };
 
 // Helper Sub-component for Tool Cards
-const ToolCard = ({ title, subtitle, icon, onClick, active = false, completed = false, action }: any) => {
+const ToolCard = ({ title, subtitle, icon, onClick, active = false, completed = false, action, dataTour }: any) => {
     // If action is provided (like InnerCompass embedded), we render that or a placeholder. 
     // But for the strip, we might just want buttons.
     // Special handling for InnerCompass: if not checked in, maybe we render it in a modal?
@@ -280,6 +301,7 @@ const ToolCard = ({ title, subtitle, icon, onClick, active = false, completed = 
 
     return (
         <button
+            data-tour={dataTour}
             onClick={onClick || (() => { })}
             className={`relative min-w-[100px] flex-1 flex flex-col items-center justify-center p-4 rounded-2xl border transition-all duration-300
             ${active

@@ -84,7 +84,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeView, onNavigate, orienta
               item.view === View.GUIDANCE ? 'nav-guidance' :
                 item.view === View.JOURNAL ? 'nav-journal' :
                   item.view === View.LIBRARY ? 'nav-library' :
-                    item.view === View.CLARITY_CHAIN ? 'nav-lens-practice' : // Mapped to Clarity Chain step
+                    item.view === View.CLARITY_CHAIN ? 'nav-clarity-chain' :
                       undefined
             }
             onClick={() => onNavigate(item.view)}
