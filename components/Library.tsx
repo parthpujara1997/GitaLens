@@ -109,6 +109,10 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
     };
 
     const handleShare = (verse: GitaVerse) => {
+        if (!user) {
+            onAuthRequired('signup');
+            return;
+        }
         setVerseToShare(verse);
         setShowShareModal(true);
     };
