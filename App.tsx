@@ -139,8 +139,7 @@ const App: React.FC = () => {
       view === View.JOURNAL ||
       view === View.INNER_COMPASS ||
       view === View.LENS_PRACTICE ||
-      view === View.CLARITY_CHAIN ||
-      view === View.LIBRARY
+      view === View.CLARITY_CHAIN
     )) {
       setAuthMode('signup');
       setIsAuthModalOpen(true);

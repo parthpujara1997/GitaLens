@@ -310,7 +310,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            onClick={() => handleProtectedNavigate(View.LIBRARY)}
+            onClick={() => onNavigate(View.LIBRARY)}
             className="glass-card w-full flex flex-col items-center justify-center p-4 rounded-2xl text-center"
           >
             <span className="text-sm font-medium text-charcoal">Library</span>
