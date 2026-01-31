@@ -8,7 +8,7 @@ import html2canvas from 'html2canvas';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 
-import InnerCompass from './InnerCompass';
+
 import ShareModal from './ShareModal';
 // @ts-ignore
 import reflectionsData from '../src/data/ai_reflections.json';
@@ -24,7 +24,6 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
   const [showReflection, setShowReflection] = useState(false);
   const [copied, setCopied] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
-  const [hasCheckedIn, setHasCheckedIn] = useState(false);
   const [showShareModal, setShowShareModal] = useState(false);
   const [showBriefPractices, setShowBriefPractices] = useState(false);
 
@@ -38,15 +37,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
     } else {
       setIsBookmarked(false);
     }
-    checkDailyCheckIn();
   }, [dailyVerse.reference, user]);
-
-  const checkDailyCheckIn = () => {
-    const checkIns = storageService.getInnerCheckIns();
-    const today = new Date().toISOString().split('T')[0];
-    const todaysCheckIn = checkIns.find(c => c.date.split('T')[0] === today);
-    setHasCheckedIn(!!todaysCheckIn);
-  };
 
   const checkSupabaseBookmark = async () => {
     try {
@@ -55,7 +46,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
         .select('id')
         .eq('user_id', user?.id)
         .eq('verse_id', dailyVerse.reference)
-        .single();
+        .maybeSingle();
 
       setIsBookmarked(!!data);
     } catch (err) {
@@ -202,16 +193,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
         </div>
       </motion.section>
 
-      {/* Inner Compass Check-in */}
-      {!hasCheckedIn && (
-        <div className="w-full">
-          <InnerCompass
-            onComplete={() => setHasCheckedIn(true)}
-            isAuthenticated={!!user}
-            onAuthRequired={onAuthRequired}
-          />
-        </div>
-      )}
+
 
       {/* GUIDANCE CTA - Prominent */}
       <motion.button
@@ -230,17 +212,6 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUpdate, onA
       <section className="w-full space-y-3">
         <p className="text-[#6B6B63] text-[10px] uppercase tracking-widest font-semibold px-1">Reflective Practices</p>
         <div className="grid grid-cols-2 gap-3">
-          {hasCheckedIn && (
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => handleProtectedNavigate(View.INNER_COMPASS)}
-              className="glass-card w-full flex flex-col items-center justify-center p-5 rounded-2xl text-center"
-            >
-              <span className="text-sm font-medium text-charcoal">Inner Compass</span>
-              <p className="text-stone-500/80 text-[9px] uppercase tracking-tighter mt-1">Daily Pattern</p>
-            </motion.button>
-          )}
 
           {!showBriefPractices ? (
             <motion.button

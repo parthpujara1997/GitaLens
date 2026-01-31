@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from '../types';
-import { Home, Compass, PenLine, Settings, Heart, History, BookOpen, LucideIcon, User, Feather } from 'lucide-react';
+import { Home, Compass, PenLine, Settings, Heart, History, BookOpen, LucideIcon, User, Feather, Brain } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 import { useAuth } from '../contexts/AuthContext';
@@ -23,8 +23,9 @@ const Navigation: React.FC<NavigationProps> = ({ activeView, onNavigate, orienta
   const allItems: NavItem[] = [
     { view: View.DASHBOARD, label: 'Home', icon: Home },
     { view: View.GUIDANCE, label: 'Guidance', icon: Compass },
-
     { view: View.LIBRARY, label: 'Library', icon: BookOpen },
+
+
     { view: View.BLOG, label: 'Insights', icon: Feather },
     ...(isAdmin ? [{ view: View.BLOG_ADMIN, label: 'Admin', icon: Settings }] : []),
     { view: View.ACCOUNT, label: 'Account', icon: User },
@@ -42,9 +43,9 @@ const Navigation: React.FC<NavigationProps> = ({ activeView, onNavigate, orienta
             <button
               key={item.view}
               data-tour={
-                item.view === View.GUIDANCE ? 'nav-guidance' :
-                  item.view === View.JOURNAL ? 'nav-journal' :
-                    item.view === View.LIBRARY ? 'nav-library' :
+                item.view === View.GUIDANCE ? 'nav-guidance-desktop' :
+                  item.view === View.JOURNAL ? 'nav-journal-desktop' :
+                    item.view === View.LIBRARY ? 'nav-library-desktop' :
                       undefined
               }
               onClick={() => onNavigate(item.view)}
@@ -81,10 +82,10 @@ const Navigation: React.FC<NavigationProps> = ({ activeView, onNavigate, orienta
           <button
             key={item.view}
             data-tour={
-              item.view === View.GUIDANCE ? 'nav-guidance' :
-                item.view === View.JOURNAL ? 'nav-journal' :
-                  item.view === View.LIBRARY ? 'nav-library' :
-                    item.view === View.CLARITY_CHAIN ? 'nav-clarity-chain' :
+              item.view === View.GUIDANCE ? 'nav-guidance-mobile' :
+                item.view === View.JOURNAL ? 'nav-journal-mobile' :
+                  item.view === View.LIBRARY ? 'nav-library-mobile' :
+                    item.view === View.CLARITY_CHAIN ? 'nav-clarity-chain-mobile' :
                       undefined
             }
             onClick={() => onNavigate(item.view)}

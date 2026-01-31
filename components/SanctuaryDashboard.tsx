@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { View, UserProgress } from '../types';
 import { storageService } from '../services/storageService';
 import { getRandomFamousVerse } from '../gitaData';
-import { Share2, Copy, Check, Heart, Compass, Search, ChevronRight, Wind, Link, PenLine } from 'lucide-react'; // Wind for Lens, Link for Chain
+import { Share2, Copy, Check, Heart, Search, ChevronRight, Wind, Link, PenLine, Sparkles } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
-import InnerCompass from './InnerCompass';
+
 import ShareModal from './ShareModal';
 // @ts-ignore
 import reflectionsData from '../src/data/ai_reflections.json';
@@ -23,7 +23,6 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
     const [showReflection, setShowReflection] = useState(false);
     const [copied, setCopied] = useState(false);
     const [isBookmarked, setIsBookmarked] = useState(false);
-    const [hasCheckedIn, setHasCheckedIn] = useState(false);
     const [showShareModal, setShowShareModal] = useState(false);
 
     // Daily Verse Logic
@@ -32,19 +31,11 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
     useEffect(() => {
         if (user) checkSupabaseBookmark();
         else setIsBookmarked(false);
-        checkDailyCheckIn();
     }, [dailyVerse.reference, user]);
-
-    const checkDailyCheckIn = () => {
-        const checkIns = storageService.getInnerCheckIns();
-        const today = new Date().toISOString().split('T')[0];
-        const todaysCheckIn = checkIns.find(c => c.date.split('T')[0] === today);
-        setHasCheckedIn(!!todaysCheckIn);
-    };
 
     const checkSupabaseBookmark = async () => {
         try {
-            const { data } = await supabase.from('favorites').select('id').eq('user_id', user?.id).eq('verse_id', dailyVerse.reference).single();
+            const { data } = await supabase.from('favorites').select('id').eq('user_id', user?.id).eq('verse_id', dailyVerse.reference).maybeSingle();
             setIsBookmarked(!!data);
         } catch (err) { console.error(err); }
     };
@@ -120,6 +111,8 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                 <p className="text-[#8C8C80] text-[11px] uppercase tracking-[0.2em] font-medium">{dateString}</p>
                 <h1 className="font-serif text-3xl text-charcoal tracking-tight">{getGreeting()}</h1>
             </motion.header>
+
+
 
             {/* 2. The Daily Scroll (Verse) */}
             <motion.section
@@ -204,10 +197,9 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
             <motion.section variants={item} className="space-y-4">
                 <div className="flex items-center justify-between px-2">
                     <span className="text-[10px] uppercase tracking-widest text-stone-400 font-semibold">Daily Practices</span>
-                    {!hasCheckedIn && <span className="text-[10px] text-saffron-deep font-medium animate-pulse">Start here</span>}
                 </div>
 
-                <div className="flex space-x-3 overflow-x-auto pb-4 px-1 no-scrollbar sm:grid sm:grid-cols-4 sm:space-x-0 sm:gap-4">
+                <div className="flex space-x-3 overflow-x-auto pb-4 px-1 no-scrollbar sm:grid sm:grid-cols-3 sm:space-x-0 sm:gap-4">
                     {/* Reflect */}
                     <ToolCard
                         title="Reflect"
@@ -217,20 +209,9 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                         dataTour="dashboard-card-journal"
                     />
 
-                    {/* Inner Compass */}
-                    <ToolCard
-                        title="Check-in"
-                        subtitle="Inner Compass"
-                        icon={<Compass size={20} />}
-                        onClick={() => handleProtectedNavigate(View.INNER_COMPASS)}
-                        active={!hasCheckedIn}
-                        completed={hasCheckedIn}
-                        dataTour="dashboard-card-compass"
-                    />
-
                     {/* Lens */}
                     <ToolCard
-                        title="Reframing"
+                        title="Reframe"
                         subtitle="Lens Practice"
                         icon={<Wind size={20} />}
                         onClick={() => handleProtectedNavigate(View.LENS_PRACTICE)}

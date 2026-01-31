@@ -352,7 +352,7 @@ app.post("/api/reflection", async (req, res) => {
     `;
 
     const result = await ai.models.generateContent({
-      model: "models/gemini-1.5-flash",
+      model: "gemini-2.5-flash",
       contents: [{ role: 'user', parts: [{ text: prompt }] }],
       config: {
         temperature: 0.3,
@@ -366,6 +366,52 @@ app.post("/api/reflection", async (req, res) => {
   } catch (error) {
     console.error("Gemini reflection error:", error);
     res.status(500).json({ error: "Reflection generation failed", details: error.message });
+  }
+});
+
+app.post("/api/clarity-chain/assess", async (req, res) => {
+  try {
+    const { situation, unhealthyMeaning, unhealthyImpact } = req.body;
+
+    const prompt = `
+      You are GitaLens, a wise and steady guide. A user is working through a "Clarity Chain" practice to reframe an unhealthy interpretation of a situation.
+
+      User's input:
+      - Situation: "${situation}"
+      - Current (Unhealthy) Meaning: "${unhealthyMeaning}"
+      - Current (Negative) Impact: "${unhealthyImpact}"
+
+      Your task is to provide the ONE (1) most appropriate, healthy, Gita-aligned alternative interpretation (meaning) for the EXACT SAME situation. 
+      For this suggested meaning, also provide the likely healthy consequence (impact) it would have.
+
+      Guidelines:
+      - The suggestion MUST be strictly grounded in the specific situation provided.
+      - If the user's input is too vague or short (e.g., "a" or "test") to provide meaningful reframes, offer a short, simple, and honest observation rather than expansive generic wisdom.
+      - The meaning should focus on duty (dharma), detachment (vairagya), equanimity (samatvam), or growth.
+      - The impact should be practical and emotionally steadying.
+      - Tone: Calm, wise, and supportive.
+      - Avoid pop-psychology; use subtle Gita-inspired wisdom.
+
+      Return a raw JSON array containing exactly 1 object (no markdown blocks). 
+      The object must have:
+      1. "healthyMeaning": A concise, powerful reframe (1 sentence).
+      2. "healthyImpact": The steady outcome of this new meaning (1 sentence).
+    `;
+
+    const result = await ai.models.generateContent({
+      model: "gemini-2.5-flash",
+      contents: [{ role: 'user', parts: [{ text: prompt }] }],
+      config: {
+        temperature: 0.7, // Slightly higher for diverse suggestions
+        responseMimeType: "application/json"
+      },
+    });
+
+    res.json(JSON.parse(result.text));
+
+  } catch (error) {
+    console.error("Clarity Chain Assessment error:", error);
+    res.status(500).json({ error: "Assessment failed", details: error.message });
   }
 });
 

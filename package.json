@@ -6,17 +6,24 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "video:start": "remotion preview remotion/index.ts",
+    "video:render": "remotion render remotion/index.ts ReelComposition out/reel.mp4"
   },
   "dependencies": {
     "@google/genai": "^1.34.0",
     "@google/generative-ai": "^0.24.1",
+    "@remotion/cli": "^4.0.414",
+    "@remotion/google-fonts": "^4.0.414",
+    "@remotion/zod-types": "^4.0.414",
     "@supabase/supabase-js": "^2.89.0",
     "framer-motion": "^12.23.26",
     "html2canvas": "^1.4.1",
     "lucide-react": "^0.562.0",
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "remotion": "^4.0.414",
+    "zod": "^3.22.3"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",

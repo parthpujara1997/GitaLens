@@ -93,10 +93,12 @@ export enum View {
   HISTORY = 'HISTORY',
   LENS_PRACTICE = 'LENS_PRACTICE',
   CLARITY_CHAIN = 'CLARITY_CHAIN',
-  INNER_COMPASS = 'INNER_COMPASS',
   BLOG = 'BLOG',
   BLOG_ADMIN = 'BLOG_ADMIN',
-  ACCOUNT = 'ACCOUNT'
+  ACCOUNT = 'ACCOUNT',
+
+
+
 }
 
 export enum LanguageLevel {
@@ -153,3 +155,5 @@ export interface InnerCheckIn {
 export interface AppSettings {
   languageLevel: LanguageLevel;
 }
+
+

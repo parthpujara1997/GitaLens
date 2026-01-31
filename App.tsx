@@ -8,7 +8,10 @@ import Journal from './components/Journal';
 import Library from './components/Library';
 import LensPractice from './components/LensPractice';
 import ClarityChain from './components/ClarityChain';
-import InnerCompass from './components/InnerCompass';
+
+
+
+
 import Account from './components/Account';
 import Blog from './components/Blog';
 import BlogAdmin from './components/BlogAdmin';
@@ -137,7 +140,6 @@ const App: React.FC = () => {
     if (!user && (
       view === View.GUIDANCE ||
       view === View.JOURNAL ||
-      view === View.INNER_COMPASS ||
       view === View.LENS_PRACTICE ||
       view === View.CLARITY_CHAIN
     )) {
@@ -188,7 +190,16 @@ const App: React.FC = () => {
         {/* Main Content Area */}
         <main id="main-content" className="flex-grow flex flex-col md:ml-64 mb-20 md:mb-0 min-h-screen relative overflow-y-auto overflow-x-hidden">
           {/* Top Right Auth Header */}
-          <header className="sticky top-0 right-0 z-30 flex justify-end p-4 md:p-6 pointer-events-none">
+          <header className="sticky top-0 right-0 z-30 flex justify-between md:justify-end items-center p-4 md:p-6 pointer-events-none">
+            {/* Mobile Logo */}
+            <div className="md:hidden pointer-events-auto">
+              <img
+                src="/logo.png"
+                alt="GitaLens"
+                className="h-18 w-auto object-contain mix-blend-multiply"
+              />
+            </div>
+
             <div className="pointer-events-auto flex items-center space-x-3">
               {user ? (
                 <button
@@ -302,22 +313,9 @@ const App: React.FC = () => {
                     onNavigate={handleNavigate}
                   />
                 )}
-                {currentView === View.INNER_COMPASS && (
-                  <div className="w-full">
-                    <button
-                      onClick={() => setCurrentView(View.DASHBOARD)}
-                      className="mb-6 flex items-center space-x-2 text-stone-500 hover:text-charcoal transition-colors uppercase tracking-widest text-[10px]"
-                    >
-                      <span>← Back to Dashboard</span>
-                    </button>
-                    {/* Reuse the component, it handles its own state */}
-                    {/* Ideally this would show history/patterns in the future */}
-                    <InnerCompass
-                      isAuthenticated={!!user}
-                      onAuthRequired={(mode) => { setAuthMode(mode); setIsAuthModalOpen(true); }}
-                    />
-                  </div>
-                )}
+
+
+
 
 
               </motion.div>

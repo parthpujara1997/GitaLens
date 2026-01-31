@@ -2,9 +2,11 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 export interface TourStep {
     targetId: string;
+    mobileTargetId?: string; // Optional: different target for mobile layout
     title: string;
     description: string;
     position?: 'top' | 'bottom' | 'left' | 'right';
+    mobilePosition?: 'top' | 'bottom' | 'left' | 'right'; // Optional: different position for mobile
 }
 
 interface TourContextType {
@@ -57,10 +59,12 @@ const TOUR_STEPS: TourStep[] = [
         position: 'top'
     },
     {
-        targetId: 'nav-library',
+        targetId: 'nav-library-desktop',
+        mobileTargetId: 'nav-library-mobile',
         title: 'The Library',
         description: 'The full path. Explore every chapter and verse of the Gita at your own pace, with translations that speak to modern life.',
-        position: 'right'
+        position: 'right',
+        mobilePosition: 'top'
     }
 ];
 

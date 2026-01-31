@@ -23,8 +23,16 @@ const TourOverlay: React.FC = () => {
             const maxAttempts = 20; // 2 seconds
 
             const findElement = () => {
+                // Detect if we're on mobile based on viewport width
+                const isMobile = window.innerWidth < 768; // md breakpoint
+
+                // Use mobile target if available and we're on mobile
+                const targetId = (isMobile && currentStep.mobileTargetId)
+                    ? currentStep.mobileTargetId
+                    : currentStep.targetId;
+
                 // Find the element by data-tour attribute which matches targetId
-                const element = document.querySelector(`[data-tour="${currentStep.targetId}"]`);
+                const element = document.querySelector(`[data-tour="${targetId}"]`);
 
                 if (element) {
                     // Scroll into view if needed
@@ -61,7 +69,13 @@ const TourOverlay: React.FC = () => {
     useEffect(() => {
         const updateRect = () => {
             if (isActive && currentStep) {
-                const element = document.querySelector(`[data-tour="${currentStep.targetId}"]`);
+                // Detect if we're on mobile based on viewport width
+                const isMobile = window.innerWidth < 768;
+                const targetId = (isMobile && currentStep.mobileTargetId)
+                    ? currentStep.mobileTargetId
+                    : currentStep.targetId;
+
+                const element = document.querySelector(`[data-tour="${targetId}"]`);
                 if (element) {
                     const rect = element.getBoundingClientRect();
                     const padding = 16;
