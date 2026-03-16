@@ -8,6 +8,8 @@ import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 import { getVerse } from '../gitaData';
 
+import FeatureGuide from './FeatureGuide';
+
 interface SeekGuidanceProps {
   settings: AppSettings;
   onNavigate: (view: any) => void;
@@ -212,6 +214,12 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
           </button>
         </div>
       </div>
+
+      <FeatureGuide
+        title="SPIRITUAL COUNSEL"
+        description="Share your dilemma or question. Receive guidance rooted in the eternal wisdom of the Gita, tailored to your moment."
+        featureId="seek-guidance"
+      />
 
       <div ref={scrollRef} className="flex-grow overflow-y-auto p-6 space-y-6 bg-stone-50/30 relative">
         <AnimatePresence>

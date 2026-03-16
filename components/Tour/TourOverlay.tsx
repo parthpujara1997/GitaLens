@@ -113,7 +113,7 @@ const TourOverlay: React.FC = () => {
                         {/* Accents */}
                         <div className="absolute top-0 left-0 w-full h-1 bg-saffron-deep/20" />
 
-                        <h2 className="text-2xl font-serif text-charcoal mb-4">Welcome to GitaLens</h2>
+                        <h2 className="text-2xl font-serif text-charcoal mb-4">Welcome to GitaSight</h2>
                         <p className="text-stone-600 mb-8 leading-relaxed">
                             Would you like a quick tour of how it works?
                         </p>

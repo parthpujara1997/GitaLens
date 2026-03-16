@@ -18,6 +18,8 @@ interface LensPracticeProps {
 
 type Step = 'INTRO' | 'SELECTION' | 'GROUNDING' | 'ORIENTATION' | 'PROMPT' | 'CLOSURE';
 
+import FeatureGuide from './FeatureGuide';
+
 const STORAGE_KEY_INTRO = 'hasSeenLensIntro';
 const STORAGE_KEY_SESSION = 'lensPracticeSession';
 
@@ -84,9 +86,6 @@ const LensPractice: React.FC<LensPracticeProps> = ({
             setInternalLanguage(storedLang);
         }
 
-        // Check if first time
-        const hasSeenIntro = localStorage.getItem(STORAGE_KEY_INTRO);
-
         // Check session storage
         const sessionData = sessionStorage.getItem(STORAGE_KEY_SESSION);
 
@@ -104,9 +103,8 @@ const LensPractice: React.FC<LensPracticeProps> = ({
             } catch (e) {
                 console.error("Failed to restore session", e);
             }
-        } else if (!hasSeenIntro) {
-            setShowIntroOverlay(true);
         }
+        // Removed auto-show of intro overlay in favor of FeatureGuide
     }, [propLanguage]);
 
     // 2. Persist Session
@@ -308,6 +306,13 @@ const LensPractice: React.FC<LensPracticeProps> = ({
 
             {/* Content Area */}
             <div className="flex-grow flex flex-col pt-20">
+                {step === 'SELECTION' && (
+                    <FeatureGuide
+                        title="SHIFTING PERSPECTIVE"
+                        description="See your current struggle through a divine lens. Choose a feeling to discover the verse that transforms it."
+                        featureId="lens-practice"
+                    />
+                )}
                 <AnimatePresence mode="wait">
 
                     {/* SELECTION */}

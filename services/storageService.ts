@@ -1,11 +1,11 @@
 
 import { UserProgress, JournalEntry, AppSettings, LanguageLevel, InnerCheckIn } from '../types';
 
-const PROGRESS_KEY = 'gitalens_progress';
-const JOURNAL_KEY = 'gitalens_journal';
-const SETTINGS_KEY = 'gitalens_settings';
-const FAVORITES_KEY = 'gitalens_favorites';
-const HISTORY_KEY = 'gitalens_history';
+const PROGRESS_KEY = 'gitasight_progress';
+const JOURNAL_KEY = 'gitasight_journal';
+const SETTINGS_KEY = 'gitasight_settings';
+const FAVORITES_KEY = 'gitasight_favorites';
+const HISTORY_KEY = 'gitasight_history';
 
 export const storageService = {
   // ... existing methods ...
@@ -97,7 +97,7 @@ export const storageService = {
 
   // Inner Compass
   getInnerCheckIns: (): InnerCheckIn[] => {
-    const data = localStorage.getItem('gitalens_inner_compass');
+    const data = localStorage.getItem('gitasight_inner_compass');
     return data ? JSON.parse(data) : [];
   },
 
@@ -112,6 +112,6 @@ export const storageService = {
       checkIns.unshift(checkIn);
     }
 
-    localStorage.setItem('gitalens_inner_compass', JSON.stringify(checkIns));
+    localStorage.setItem('gitasight_inner_compass', JSON.stringify(checkIns));
   }
 };

@@ -12,6 +12,7 @@ import reflectionsData from '../src/data/ai_reflections.json';
 import hindiVerses from '../src/data/hindiVerses.json';
 
 import ShareModal from './ShareModal';
+import FeatureGuide from './FeatureGuide';
 
 interface LibraryProps {
     onBack: () => void;
@@ -23,6 +24,7 @@ type ViewMode = 'chapters' | 'themes';
 const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseId }) => {
     const { user } = useAuth();
     const [viewMode, setViewMode] = useState<ViewMode>('chapters');
+    const [isModernView, setIsModernView] = useState(true);
     const [expandedChapter, setExpandedChapter] = useState<number | null>(null);
     const [selectedTheme, setSelectedTheme] = useState<string | null>(null);
     const [selectedVerse, setSelectedVerse] = useState<GitaVerse | null>(null);
@@ -170,7 +172,7 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
                             </div>
                             <p className="text-sm text-charcoal leading-relaxed line-clamp-2 group-hover:line-clamp-none transition-all">
                                 <span className="font-bold text-xs text-stone-500 mr-1 uppercase">{verse.speaker}:</span>
-                                {verse.text}
+                                {isModernView ? (verse.modernText || verse.text) : verse.text}
                             </p>
                         </motion.div>
                     ))}
@@ -251,7 +253,7 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
                                                 </div>
                                                 <p className="text-sm text-charcoal leading-relaxed line-clamp-2 group-hover:line-clamp-none transition-all">
                                                     <span className="font-bold text-xs text-stone-500 mr-1 uppercase">{verse.speaker}:</span>
-                                                    {verse.text}
+                                                    {isModernView ? (verse.modernText || verse.text) : verse.text}
                                                 </p>
                                                 <div className="flex flex-wrap gap-1.5 mt-3">
                                                     {verse.themes.map(theme => (
@@ -325,7 +327,7 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
                                 </div>
                                 <p className="text-sm text-charcoal leading-relaxed italic mb-3">
                                     <span className="font-bold text-xs text-stone-500 mr-1 not-italic uppercase">{verse.speaker}:</span>
-                                    "{verse.text}"
+                                    "{isModernView ? (verse.modernText || verse.text) : verse.text}"
                                 </p>
                                 <p className="text-xs text-stone-600 leading-relaxed">
                                     {verse.reflection}
@@ -366,9 +368,15 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
     );
 
     return (
-        <div className="space-y-6 animate-in fade-in duration-500">
+        <div className="space-y-6 animate-in fade-in duration-500 pt-6">
+            <FeatureGuide
+                title="THE ETERNAL ARCHIVE"
+                description="Explore the complete text. Search by emotion, chapter, or theme to find the verses that speak to you."
+                featureId="library"
+                className="mb-8"
+            />
             {/* Header Section */}
-            <div className="space-y-6 mb-8 pt-4">
+            <div className="space-y-6 mb-8">
                 <div className="flex items-start justify-between">
                     <div className="space-y-8 max-w-2xl">
                         <button
@@ -415,32 +423,56 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
                 </div>
 
                 {!isSearching && (
-                    /* Tab Navigation */
-                    <div className="flex space-x-2 bg-stone-100 p-1.5 rounded-xl border border-stone-200 w-full md:w-auto inline-flex">
-                        <button
-                            onClick={() => {
-                                setViewMode('chapters');
-                                setSelectedTheme(null);
-                            }}
-                            className={`px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide transition-all ${viewMode === 'chapters'
-                                ? 'bg-white text-charcoal shadow-sm ring-1 ring-black/5'
-                                : 'text-stone-500 hover:text-charcoal'
-                                }`}
-                        >
-                            Chapters
-                        </button>
-                        <button
-                            onClick={() => {
-                                setViewMode('themes');
-                                setExpandedChapter(null);
-                            }}
-                            className={`px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide transition-all ${viewMode === 'themes'
-                                ? 'bg-white text-charcoal shadow-sm ring-1 ring-black/5'
-                                : 'text-stone-500 hover:text-charcoal'
-                                }`}
-                        >
-                            Themes
-                        </button>
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 w-full">
+                        {/* Tab Navigation */}
+                        <div className="flex space-x-2 bg-stone-100 p-1.5 rounded-xl border border-stone-200 w-full md:w-auto inline-flex">
+                            <button
+                                onClick={() => {
+                                    setViewMode('chapters');
+                                    setSelectedTheme(null);
+                                }}
+                                className={`px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide transition-all ${viewMode === 'chapters'
+                                    ? 'bg-white text-charcoal shadow-sm ring-1 ring-black/5'
+                                    : 'text-stone-500 hover:text-charcoal'
+                                    }`}
+                            >
+                                Chapters
+                            </button>
+                            <button
+                                onClick={() => {
+                                    setViewMode('themes');
+                                    setExpandedChapter(null);
+                                }}
+                                className={`px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide transition-all ${viewMode === 'themes'
+                                    ? 'bg-white text-charcoal shadow-sm ring-1 ring-black/5'
+                                    : 'text-stone-500 hover:text-charcoal'
+                                    }`}
+                            >
+                                Themes
+                            </button>
+                        </div>
+                        
+                        {/* Translation Toggle */}
+                        <div className="flex items-center space-x-3 bg-white p-1.5 rounded-xl border border-stone-200 shadow-sm self-start md:self-auto">
+                            <button
+                                onClick={() => setIsModernView(true)}
+                                className={`px-4 py-2 rounded-lg text-xs font-bold tracking-wide transition-all ${isModernView
+                                    ? 'bg-stone-800 text-white'
+                                    : 'text-stone-400 hover:text-stone-600'
+                                    }`}
+                            >
+                                MODERN
+                            </button>
+                            <button
+                                onClick={() => setIsModernView(false)}
+                                className={`px-4 py-2 rounded-lg text-xs font-bold tracking-wide transition-all ${!isModernView
+                                    ? 'bg-stone-800 text-white'
+                                    : 'text-stone-400 hover:text-stone-600'
+                                    }`}
+                            >
+                                ORIGINAL
+                            </button>
+                        </div>
                     </div>
                 )}
             </div>
@@ -577,10 +609,32 @@ const Library: React.FC<LibraryProps> = ({ onBack, onAuthRequired, initialVerseI
                                     </p>
                                 </div>
                             ) : (
-                                <div className="bg-white/60 rounded-2xl p-8 border-l-4 border-saffron-accent shadow-sm min-h-[200px] flex items-center justify-center">
-                                    <p className="serif text-xl md:text-2xl italic text-charcoal-dark leading-relaxed w-full">
+                                <div className="bg-white/60 rounded-2xl p-8 border-l-4 border-saffron-accent shadow-sm min-h-[200px] flex items-center justify-center relative">
+                                    {selectedVerse.modernText && (
+                                        <div className="absolute top-4 right-4 flex space-x-2 bg-stone-100 p-1 rounded-lg border border-stone-200">
+                                            <button
+                                                onClick={() => setIsModernView(true)}
+                                                className={`px-3 py-1.5 rounded-md text-[10px] font-bold tracking-wide transition-all ${isModernView
+                                                    ? 'bg-stone-800 text-white shadow-sm'
+                                                    : 'text-stone-400 hover:text-stone-600'
+                                                    }`}
+                                            >
+                                                MODERN
+                                            </button>
+                                            <button
+                                                onClick={() => setIsModernView(false)}
+                                                className={`px-3 py-1.5 rounded-md text-[10px] font-bold tracking-wide transition-all ${!isModernView
+                                                    ? 'bg-stone-800 text-white shadow-sm'
+                                                    : 'text-stone-400 hover:text-stone-600'
+                                                    }`}
+                                            >
+                                                ORIGINAL
+                                            </button>
+                                        </div>
+                                    )}
+                                    <p className={`serif text-xl md:text-2xl italic text-charcoal-dark leading-relaxed w-full ${selectedVerse.modernText ? 'mt-6' : ''}`}>
                                         <span className="font-bold text-xs text-stone-500 mr-2 not-italic uppercase block mb-2">{selectedVerse.speaker}</span>
-                                        "{selectedVerse.text}"
+                                        "{isModernView ? (selectedVerse.modernText || selectedVerse.text) : selectedVerse.text}"
                                     </p>
                                 </div>
                             )}

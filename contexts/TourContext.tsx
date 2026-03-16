@@ -34,12 +34,7 @@ const TOUR_STEPS: TourStep[] = [
         description: 'Wisdom at your fingertips. Ask questions about life, dilemmas, or purpose, and receive guidance rooted directly in the Bhagavad Gita.',
         position: 'bottom'
     },
-    {
-        targetId: 'dashboard-card-compass',
-        title: 'Check-in',
-        description: 'Tune into your inner state. A quick daily check-in to recognize how you are feeling and find your center.',
-        position: 'top'
-    },
+
     {
         targetId: 'dashboard-card-journal',
         title: 'Journal & Reflect',
@@ -76,7 +71,7 @@ export const TourProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const [hasSeenTour, setHasSeenTour] = useState(false);
 
     useEffect(() => {
-        const seen = localStorage.getItem('gitalens_tour_seen');
+        const seen = localStorage.getItem('gitasight_tour_seen');
         if (seen) {
             setHasSeenTour(true);
         } else {
@@ -96,7 +91,7 @@ export const TourProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const endTour = () => {
         setIsActive(false);
         setCurrentStepIndex(0);
-        localStorage.setItem('gitalens_tour_seen', 'true');
+        localStorage.setItem('gitasight_tour_seen', 'true');
         setHasSeenTour(true);
     };
 

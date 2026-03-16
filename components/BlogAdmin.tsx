@@ -88,7 +88,7 @@ const BlogAdmin: React.FC<BlogAdminProps> = ({ onBack }) => {
                 excerpt: currentPost.excerpt || '',
                 content: currentPost.content,
                 category: currentPost.category || 'Mindfulness', // Default
-                author: currentPost.author || 'GitaLens Team',
+                author: currentPost.author || 'GitaSight Team',
                 // updated_at: new Date().toISOString()
             };
 

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { View, UserProgress } from '../types';
 import { storageService } from '../services/storageService';
 import { getRandomFamousVerse } from '../gitaData';
-import { Share2, Copy, Check, Heart, Search, ChevronRight, Wind, Link, PenLine, Sparkles } from 'lucide-react';
+import { Share2, Copy, Check, Heart, Search, ChevronRight, Wind, Link, PenLine } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 
@@ -125,14 +125,16 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                 <div className="absolute inset-0 bg-[#F5F5F0] rounded-2xl -rotate-1 scale-[0.98] transition-transform group-hover:rotate-0 group-hover:scale-100 duration-500 ease-out" />
                 <div className="relative bg-[#FBFBF9] rounded-2xl p-8 shadow-sm border border-[#EBEBE5] flex flex-col items-center text-center space-y-5 transition-shadow group-hover:shadow-md duration-500">
 
-                    <div className="flex items-center space-x-2 opacity-50">
-                        <div className="h-[1px] w-8 bg-saffron-deep" />
-                        <span className="serif text-xs text-saffron-deep">Today's Verse</span>
-                        <div className="h-[1px] w-8 bg-saffron-deep" />
+                    <div className="flex items-center justify-center w-full opacity-60 px-4">
+                        <div className="flex items-center space-x-2">
+                            <div className="h-[1px] w-6 bg-saffron-deep hidden sm:block" />
+                            <span className="serif text-xs text-saffron-deep">Today's Wisdom</span>
+                            <div className="h-[1px] w-6 bg-saffron-deep hidden sm:block" />
+                        </div>
                     </div>
 
                     <p className="font-serif text-xl md:text-2xl text-charcoal/90 leading-relaxed italic">
-                        "{dailyVerse.text}"
+                        "{dailyVerse.modernText || dailyVerse.text}"
                     </p>
 
                     <p className="text-[10px] uppercase tracking-widest text-stone-400 font-semibold">

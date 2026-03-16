@@ -87,7 +87,7 @@ const HistoryView: React.FC<HistoryProps> = ({ onBack, onAuthRequired }) => {
 
                 if (!error) setSummaries([]);
             } else {
-                localStorage.removeItem('gitalens_history');
+                localStorage.removeItem('gitasight_history');
                 setSummaries([]);
             }
         } else if (modalConfig.type === 'SINGLE' && modalConfig.itemId) {

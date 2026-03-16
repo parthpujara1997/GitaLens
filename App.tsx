@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, UserProgress, AppSettings } from './types';
 import { storageService } from './services/storageService';
-import Dashboard from './components/Dashboard';
 import SanctuaryDashboard from './components/SanctuaryDashboard';
 import SeekGuidance from './components/SeekGuidance';
 import Journal from './components/Journal';
@@ -98,7 +97,7 @@ const App: React.FC = () => {
         });
 
         setProgress(initialProgress);
-        localStorage.setItem('gitalens_progress', JSON.stringify(initialProgress));
+        localStorage.setItem('gitasight_progress', JSON.stringify(initialProgress));
       } else if (profile) {
         // Profile exists, use it as the source of truth
         const today = new Date().toISOString().split('T')[0];
@@ -122,7 +121,7 @@ const App: React.FC = () => {
         }
 
         setProgress(finalProgress);
-        localStorage.setItem('gitalens_progress', JSON.stringify(finalProgress));
+        localStorage.setItem('gitasight_progress', JSON.stringify(finalProgress));
       }
     } catch (err) {
       console.error('Error syncing progress:', err);
@@ -178,7 +177,7 @@ const App: React.FC = () => {
             >
               <img
                 src="/logo.png"
-                alt="GitaLens"
+                alt="GitaSight"
                 className="w-56 h-auto object-contain select-none mix-blend-multiply"
               />
             </button>
@@ -195,7 +194,7 @@ const App: React.FC = () => {
             <div className="md:hidden pointer-events-auto">
               <img
                 src="/logo.png"
-                alt="GitaLens"
+                alt="GitaSight"
                 className="h-18 w-auto object-contain mix-blend-multiply"
               />
             </div>
@@ -327,7 +326,7 @@ const App: React.FC = () => {
               "A steadier way to look at life."
             </p>
             <p className="text-[10px] uppercase tracking-[0.2em] text-stone-500 opacity-30">
-              © 2026 GitaLens • All rights reserved
+              © 2026 GitaSight • All rights reserved
             </p>
           </footer>
         </main>

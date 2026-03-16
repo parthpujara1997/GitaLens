@@ -5,8 +5,7 @@ import { AppSettings, View } from '../types';
 import Favorites from './Favorites';
 import HistoryView from './History';
 import Settings from './Settings';
-import CompassPatterns from './CompassPatterns';
-import { User, LogOut, Heart, History, Settings as SettingsIcon, ArrowLeft, Trash2, Activity, Shield } from 'lucide-react';
+import { User, LogOut, Heart, History, Settings as SettingsIcon, ArrowLeft, Trash2, Shield } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 interface AccountProps {
@@ -17,7 +16,7 @@ interface AccountProps {
     onNavigate: (view: View) => void;
 }
 
-type AccountTab = 'profile' | 'favorites' | 'history' | 'settings' | 'patterns';
+type AccountTab = 'profile' | 'favorites' | 'history' | 'settings';
 
 const Account: React.FC<AccountProps> = ({ onBack, onAuthRequired, settings, onUpdateSettings, onNavigate }) => {
     const { user, signOut } = useAuth();
@@ -89,14 +88,6 @@ const Account: React.FC<AccountProps> = ({ onBack, onAuthRequired, settings, onU
                 <span className="font-medium">History</span>
             </button>
             <button
-                onClick={() => setActiveTab('patterns')}
-                className={`w-full flex items-center space-x-3 px-4 py-3 rounded-xl transition-all ${activeTab === 'patterns' ? 'bg-white shadow-sm ring-1 ring-black/5 text-charcoal' : 'text-stone-500 hover:text-charcoal hover:bg-stone-100'
-                    }`}
-            >
-                <Activity size={18} />
-                <span className="font-medium">Patterns</span>
-            </button>
-            <button
                 onClick={() => setActiveTab('settings')}
                 className={`w-full flex items-center space-x-3 px-4 py-3 rounded-xl transition-all ${activeTab === 'settings' ? 'bg-white shadow-sm ring-1 ring-black/5 text-charcoal' : 'text-stone-500 hover:text-charcoal hover:bg-stone-100'
                     }`}
@@ -113,8 +104,6 @@ const Account: React.FC<AccountProps> = ({ onBack, onAuthRequired, settings, onU
                 return <Favorites onBack={() => setActiveTab('profile')} onAuthRequired={onAuthRequired} />;
             case 'history':
                 return <HistoryView onBack={() => setActiveTab('profile')} onAuthRequired={onAuthRequired} />;
-            case 'patterns':
-                return <CompassPatterns />;
             case 'settings':
                 return (
                     <Settings

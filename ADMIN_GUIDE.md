@@ -12,7 +12,7 @@ create table posts (
   slug text not null unique,
   excerpt text,
   content text not null, -- Stores Markdown or HTML
-  author text default 'GitaLens Team',
+  author text default 'GitaSight Team',
   category text,
   image_url text,
   published_at timestamptz default now(),
@@ -68,4 +68,4 @@ For now, the easiest way to write posts is directly in the **Supabase Table Edit
     *   **category**: "Mindfulness"
 4.  Click **Save**.
 
-The app will then fetch these posts. The Admin Panel in GitLens allows you to manage these directly from the app once you are logged in as an admin.
+The app will then fetch these posts. The Admin Panel in GitaSight allows you to manage these directly from the app once you are logged in as an admin.

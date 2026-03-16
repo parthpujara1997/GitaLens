@@ -152,7 +152,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, defaultMode = 'l
                                             <input
                                                 type="email"
                                                 required
-                                                placeholder="seeker@gitalens.ai"
+                                                placeholder="seeker@gitasight.ai"
                                                 value={email}
                                                 autoComplete="email"
                                                 onChange={(e) => setEmail(e.target.value)}

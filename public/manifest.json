@@ -1,6 +1,6 @@
 {
-    "name": "GitaLens",
-    "short_name": "GitaLens",
+    "name": "GitaSight",
+    "short_name": "GitaSight",
     "description": "Find clarity through the timeless teachings of the Bhagavad Gita.",
     "start_url": "/",
     "display": "standalone",

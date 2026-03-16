@@ -110,7 +110,7 @@ const Blog: React.FC<{ onBack: () => void }> = ({ onBack }) => {
                                 {(selectedPost.author || 'G')[0]}
                             </div>
                             <div>
-                                <p className="text-sm font-medium text-charcoal">{selectedPost.author || 'GitaLens Team'}</p>
+                                <p className="text-sm font-medium text-charcoal">{selectedPost.author || 'GitaSight Team'}</p>
                                 <p className="text-xs text-stone-500">
                                     {new Date(selectedPost.created_at).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}
                                 </p>

@@ -111,14 +111,14 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
     const handleNativeShare = async () => {
         if (!generatedImageUrl) return;
 
-        const file = dataURLtoFile(generatedImageUrl, `gitalens-${verse.reference.replace(/\s+/g, '-').toLowerCase()}.png`);
+        const file = dataURLtoFile(generatedImageUrl, `gitasight-${verse.reference.replace(/\s+/g, '-').toLowerCase()}.png`);
 
         if (navigator.share) {
             try {
                 await navigator.share({
                     files: [file],
-                    title: 'GitaLens Verse',
-                    text: `"${verse.text}"\n\n— Bhagavad Gita ${verse.reference}\n\n✨ Shared from GitaLens`,
+                    title: 'GitaSight Verse',
+                    text: `"${verse.modernText || verse.text}"\n\n— Bhagavad Gita ${verse.reference}\n\n✨ Shared from GitaSight`,
                 });
             } catch (error) {
                 if ((error as Error).name !== 'AbortError') {
@@ -160,7 +160,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
         if (!generatedImageUrl) return;
 
         const link = document.createElement('a');
-        link.download = `gitalens-${verse.reference.replace(/\s+/g, '-').toLowerCase()}.png`;
+        link.download = `gitasight-${verse.reference.replace(/\s+/g, '-').toLowerCase()}.png`;
         link.href = generatedImageUrl;
         document.body.appendChild(link);
         link.click();
@@ -181,7 +181,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
         }
         handleDownloadImage(); // Download image first
         // WhatsApp Web doesn't support image attachments via URL, text only
-        const text = encodeURIComponent(`"${verse.text}"\n\n— Bhagavad Gita ${verse.reference}\n\n✨ Shared from GitaLens`);
+        const text = encodeURIComponent(`"${verse.modernText || verse.text}"\n\n— Bhagavad Gita ${verse.reference}\n\n✨ Shared from GitaSight`);
         window.open(`https://web.whatsapp.com/send?text=${text}`, '_blank');
     };
 
@@ -211,7 +211,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
             return;
         }
         handleDownloadImage(); // Download image first
-        const text = encodeURIComponent(`"${verse.text}"\n\n— Bhagavad Gita ${verse.reference}`);
+        const text = encodeURIComponent(`"${verse.modernText || verse.text}"\n\n— Bhagavad Gita ${verse.reference}`);
         window.open(`https://twitter.com/intent/tweet?text=${text}`, '_blank');
     };
 
@@ -321,7 +321,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
 
                         <img
                             src="/logo.png"
-                            alt="GitaLens"
+                            alt="GitaSight"
                             crossOrigin="anonymous"
                             style={{ height: '85px', width: 'auto', marginBottom: '32px', opacity: 0.9, position: 'relative', zIndex: 1 }}
                         />
@@ -374,7 +374,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
                                 position: 'relative',
                                 zIndex: 1
                             }}>
-                                "{verse.text}"
+                                "{verse.modernText || verse.text}"
                             </p>
                         )}
 

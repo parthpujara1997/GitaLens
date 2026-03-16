@@ -2,7 +2,7 @@
 import React from 'react';
 import { AppSettings, LanguageLevel } from '../types';
 import { useTour } from '../contexts/TourContext';
-import { Sparkles } from 'lucide-react'; // Assuming Sparkles icon is available
+import { Leaf } from 'lucide-react'; // Assuming Leaf icon is available
 
 interface SettingsProps {
     settings: AppSettings;
@@ -61,7 +61,7 @@ const Settings: React.FC<SettingsProps> = ({ settings, onUpdate, onBack, onResta
                     <div className="flex items-center justify-between">
                         <div>
                             <h3 className="text-[10px] font-bold uppercase tracking-widest text-stone-600 mb-1">Guided Tour</h3>
-                            <p className="text-xs text-stone-500">Revisit the introduction to GitaLens.</p>
+                            <p className="text-xs text-stone-500">Revisit the introduction to GitaSight.</p>
                         </div>
                         <button
                             onClick={() => {
@@ -76,7 +76,7 @@ const Settings: React.FC<SettingsProps> = ({ settings, onUpdate, onBack, onResta
                             }}
                             className="flex items-center space-x-2 px-4 py-2 bg-white border border-stone-warm rounded-xl text-xs font-semibold text-stone-600 hover:text-charcoal hover:shadow-sm transition-all"
                         >
-                            <Sparkles size={14} className="text-saffron-deep" />
+                            <Leaf size={14} className="text-saffron-deep" />
                             <span>Restart Tour</span>
                         </button>
                     </div>

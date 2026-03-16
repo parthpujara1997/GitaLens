@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'framer-motion';
-import { ArrowLeft, X, Sparkles, Hand, MoveVertical, Edit2 } from 'lucide-react';
+import { ArrowLeft, X, Leaf, Hand, MoveVertical, Edit2 } from 'lucide-react';
 import { View } from '../types';
 
 interface ClarityChainProps {
@@ -20,10 +20,10 @@ const SITUATION_EXAMPLES = [
 ];
 
 const MEANING_EXAMPLES = [
-    "I assumed they are mad at me",
-    "I interpreted it as proof I'm not valued",
-    "I thought I did something wrong",
-    "I concluded I have no self-control"
+    "They are mad at me",
+    "Proof I'm not valued",
+    "I did something wrong",
+    "I have no self-control"
 ];
 
 const IMPACT_EXAMPLES = [
@@ -49,13 +49,11 @@ const FALLBACK_SUGGESTIONS = [
     }
 ];
 
-const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
-    // Check if first time user
-    const [isFirstTime, setIsFirstTime] = useState(() => {
-        return !localStorage.getItem('clarity_chain_seen');
-    });
+import FeatureGuide from './FeatureGuide';
 
-    const [step, setStep] = useState<Step>(isFirstTime ? 'WELCOME' : 'INPUT');
+const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
+    // Removed legacy welcome screen logic in favor of FeatureGuide
+    const [step, setStep] = useState<Step>('INPUT');
     const [inputSubStep, setInputSubStep] = useState(0); // 0: Situation, 1: Meaning, 2: Impact
     const [inputs, setInputs] = useState({
         situation: '',
@@ -99,13 +97,6 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
             && inputs.meaning.trim().length >= minLength
             && inputs.impact.trim().length >= minLength;
         return allFilled;
-    };
-
-    const handleStartPractice = () => {
-        localStorage.setItem('clarity_chain_seen', 'true');
-        setIsFirstTime(false);
-        setStep('INPUT');
-        setInputSubStep(0);
     };
 
     const handleBuildChain = () => {
@@ -275,68 +266,13 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
                     onClick={onBack}
                     className="p-2 rounded-full hover:bg-stone-warm/50 text-stone-600 transition-colors"
                 >
-                    {step === 'WELCOME' || step === 'INPUT' ? <ArrowLeft size={24} /> : <X size={24} />}
+                    {step === 'INPUT' ? <ArrowLeft size={24} /> : <X size={24} />}
                 </button>
                 <span className="text-xs uppercase tracking-widest text-stone-500 font-medium">Clarity Chain</span>
                 <div className="w-10" />
             </div>
 
             <AnimatePresence mode="wait">
-                {/* WELCOME SCREEN */}
-                {step === 'WELCOME' && (
-                    <motion.div
-                        key="welcome"
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="flex-grow flex flex-col items-center justify-center px-6 pb-12 text-center"
-                    >
-                        <motion.div
-                            initial={{ scale: 0.9 }}
-                            animate={{ scale: 1 }}
-                            transition={{ delay: 0.2 }}
-                            className="w-20 h-20 bg-charcoal rounded-full flex items-center justify-center mb-8"
-                        >
-                            <Sparkles className="w-10 h-10 text-white" />
-                        </motion.div>
-
-                        <h1 className="text-3xl font-serif text-charcoal mb-4">When to Use This</h1>
-                        <p className="text-stone-500 mb-8 max-w-sm leading-relaxed">
-                            The Clarity Chain helps you see how your interpretation of an event shapes your experience.
-                        </p>
-
-                        <div className="bg-stone-50 rounded-2xl p-6 mb-8 max-w-sm text-left space-y-3">
-                            <p className="text-sm font-medium text-charcoal">Use it when:</p>
-                            <ul className="space-y-2 text-sm text-stone-600">
-                                <li className="flex items-start gap-3">
-                                    <span className="w-1.5 h-1.5 bg-charcoal rounded-full mt-2 flex-shrink-0" />
-                                    <span>You're ruminating on a situation</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="w-1.5 h-1.5 bg-charcoal rounded-full mt-2 flex-shrink-0" />
-                                    <span>Emotions feel overwhelming or stuck</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="w-1.5 h-1.5 bg-charcoal rounded-full mt-2 flex-shrink-0" />
-                                    <span>You want to challenge negative thoughts</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="w-1.5 h-1.5 bg-charcoal rounded-full mt-2 flex-shrink-0" />
-                                    <span>As a daily reflection practice</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <button
-                            onClick={handleStartPractice}
-                            className="w-full max-w-sm py-4 bg-charcoal text-white rounded-full font-medium hover:bg-black transition-all shadow-lg"
-                        >
-                            Begin Practice
-                        </button>
-                    </motion.div>
-                )}
-
                 {/* PROGRESSIVE INPUT SCREEN */}
                 {step === 'INPUT' && (
                     <motion.div
@@ -347,6 +283,13 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="flex-grow flex flex-col px-6 pb-12 pt-4"
                     >
+                        <FeatureGuide
+                            title="BREAKING THE CHAIN"
+                            description="Separate what happened from what you felt. See how your interpretation shapes your reality."
+                            featureId="clarity-chain"
+                            className="-mt-4 mb-8"
+                        />
+
                         <div className="text-center mb-6">
                             <h2 className="text-2xl md:text-3xl font-serif text-charcoal mb-2">Build Your Chain</h2>
                             <p className="text-stone-500 text-sm max-w-sm mx-auto">
@@ -465,7 +408,7 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
                                         className="bg-stone-50/80 rounded-2xl p-5 border border-stone-100"
                                     >
                                         <div className="flex items-center gap-2 mb-3">
-                                            <Sparkles size={14} className="text-stone-400" />
+                                            <Leaf size={14} className="text-stone-400" />
                                             <span className="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Try an example</span>
                                         </div>
                                         <div className="grid grid-cols-1 gap-2">
@@ -615,7 +558,7 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
                                         transition={{ type: "spring", stiffness: 200 }}
                                         className="absolute -top-3 -right-3 w-10 h-10 bg-green-400 rounded-full flex items-center justify-center shadow-lg"
                                     >
-                                        <Sparkles size={20} className="text-white" />
+                                        <Leaf size={20} className="text-white" />
                                     </motion.div>
                                 )}
 
@@ -923,7 +866,7 @@ const ClarityChain: React.FC<ClarityChainProps> = ({ onBack }) => {
                                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                                 className="w-24 h-24 bg-green-100/50 rounded-full flex items-center justify-center mx-auto"
                             >
-                                <Sparkles className="w-12 h-12 text-green-500" />
+                                <Leaf className="w-12 h-12 text-green-500" />
                             </motion.div>
                             <h2 className="text-3xl font-serif text-green-800">Perspective Shifted</h2>
                             <p className="text-green-700/80 leading-relaxed">

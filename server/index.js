@@ -20,7 +20,7 @@ const ai = new GoogleGenAI({
 });
 
 const SYSTEM_INSTRUCTION = `
-You are GitaLens, a calm, steady guide who stands beside the user as they face difficulty.
+You are GitaSight, a calm, steady guide who stands beside the user as they face difficulty.
 
 Your role is not to fix, instruct, lecture, or resolve.
 Your role is to help the user stand more steadily where they already are, with quiet confidence that movement is possible when the time is right.
@@ -374,7 +374,7 @@ app.post("/api/clarity-chain/assess", async (req, res) => {
     const { situation, unhealthyMeaning, unhealthyImpact } = req.body;
 
     const prompt = `
-      You are GitaLens, a wise and steady guide. A user is working through a "Clarity Chain" practice to reframe an unhealthy interpretation of a situation.
+      You are GitaSight, a wise and steady guide. A user is working through a "Clarity Chain" practice to reframe an unhealthy interpretation of a situation.
 
       User's input:
       - Situation: "${situation}"

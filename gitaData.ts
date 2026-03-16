@@ -136,7 +136,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Dhritarashtra",
-        "sanskrit": "धृतराष्ट्र उवाच\n\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।\n\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।1.1।।"
+        "sanskrit": "धृतराष्ट्र उवाच\n\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।\n\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।1.1।।",
+        "modernText": "Dhritarashtra said: On the field of Kurukshetra, where my sons and the sons of Pandu have gathered ready for battle, what is happening now?"
     },
     {
         "id": "1-2",
@@ -147,7 +148,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "सञ्जय उवाच\n\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा।\n\nआचार्यमुपसङ्गम्य राजा वचनमब्रवीत्।।1.2।।"
+        "sanskrit": "सञ्जय उवाच\n\nदृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा।\n\nआचार्यमुपसङ्गम्य राजा वचनमब्रवीत्।।1.2।।",
+        "modernText": "Sanjaya said: Seeing the army of the Pandavas arranged for battle, King Duryodhana approached his teacher Drona and spoke."
     },
     {
         "id": "1-3",
@@ -158,7 +160,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।\n\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।1.3।।"
+        "sanskrit": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।\n\nव्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।1.3।।",
+        "modernText": "Duryodhana said: Look at this powerful army of the Pandavas, skillfully arranged by your own student, the son of Drupada."
     },
     {
         "id": "1-4",
@@ -169,7 +172,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।\n\nयुयुधानो विराटश्च द्रुपदश्च महारथः।।1.4।।"
+        "sanskrit": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।\n\nयुयुधानो विराटश्च द्रुपदश्च महारथः।।1.4।।",
+        "modernText": "Among them are many great warriors and skilled archers, equal in battle to Bhima and Arjuna."
     },
     {
         "id": "1-5",
@@ -180,7 +184,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्।\n\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः।।1.5���।"
+        "sanskrit": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्।\n\nपुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः।।1.5���।",
+        "modernText": "There are also many renowned fighters such as Dhrishtaketu, Chekitana, the king of Kashi, Purujit, Kuntibhoja, and Shaibya."
     },
     {
         "id": "1-6",
@@ -191,7 +196,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्।\n\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः।।1.6।।"
+        "sanskrit": "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्।\n\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः।।1.6।।",
+        "modernText": "There are brave warriors like Yudhamanyu and Uttamaujas, along with the sons of Draupadi and the son of Subhadra, all mighty fighters."
     },
     {
         "id": "1-7",
@@ -202,7 +208,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम।\n\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते।।1.7।।"
+        "sanskrit": "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम।\n\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते।।1.7।।",
+        "modernText": "But listen also to the leaders of our own army, so that you may understand our strength."
     },
     {
         "id": "1-8",
@@ -213,7 +220,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः।\n\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च।।1.8।।"
+        "sanskrit": "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः।\n\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च।।1.8।।",
+        "modernText": "There are great warriors here as well: yourself, Bhishma, Karna, Kripa, Ashvatthama, Vikarna, and the son of Somadatta."
     },
     {
         "id": "1-9",
@@ -224,7 +232,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः।\n\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः।।1.9।।"
+        "sanskrit": "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः।\n\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः।।1.9।।",
+        "modernText": "Many other brave fighters stand with us, prepared to give their lives, skilled in every form of combat."
     },
     {
         "id": "1-10",
@@ -235,7 +244,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्।\n\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्।।1.10।।"
+        "sanskrit": "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्।\n\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्।।1.10।।",
+        "modernText": "Our army, protected by Bhishma, appears strong, yet the opposing army protected by Bhima seems formidable."
     },
     {
         "id": "1-11",
@@ -246,7 +256,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "अयनेषु च सर्वेषु यथाभागमवस्थिताः।\n\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि।।1.11।।"
+        "sanskrit": "अयनेषु च सर्वेषु यथाभागमवस्थिताः।\n\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि।।1.11।।",
+        "modernText": "Therefore all of you, standing in your positions, must give your full support to protecting Bhishma."
     },
     {
         "id": "1-12",
@@ -257,7 +268,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "तस्य संजनयन्हर्षं कुरुवृद्धः पितामहः।\n\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्।।1.12।।"
+        "sanskrit": "तस्य संजनयन्हर्षं कुरुवृद्धः पितामहः।\n\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्।।1.12।।",
+        "modernText": "Then Bhishma, the great elder of the Kuru dynasty, roared like a lion and blew his conch to encourage Duryodhana."
     },
     {
         "id": "1-13",
@@ -268,7 +280,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "ततः शङ्खाश्च भेर्यश्�� पणवानकगोमुखाः।\n\nसहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्।।1.13।।"
+        "sanskrit": "ततः शङ्खाश्च भेर्यश्�� पणवानकगोमुखाः।\n\nसहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्।।1.13।।",
+        "modernText": "Immediately the battlefield echoed with the sound of conches, drums, horns, and trumpets, creating a thunderous roar."
     },
     {
         "id": "1-14",
@@ -279,7 +292,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ।\n\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः।।1.14।।"
+        "sanskrit": "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ।\n\nमाधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः।।1.14।।",
+        "modernText": "Then Krishna and Arjuna, standing together in their chariot drawn by white horses, blew their conches in response."
     },
     {
         "id": "1-15",
@@ -290,7 +304,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "पाञ्चजन्यं हृषीकेशो देवदत्तं धनंजयः।\n\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः।।1.15।।"
+        "sanskrit": "पाञ्चजन्यं हृषीकेशो देवदत्तं धनंजयः।\n\nपौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः।।1.15।।",
+        "modernText": "Krishna blew the conch Panchajanya, Arjuna blew Devadatta, and Bhima blew his powerful conch Paundra."
     },
     {
         "id": "1-16",
@@ -301,7 +316,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः।\n\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ।।1.16।।"
+        "sanskrit": "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः।\n\nनकुलः सहदेवश्च सुघोषमणिपुष्पकौ।।1.16।।",
+        "modernText": "King Yudhishthira blew Anantavijaya, while Nakula and Sahadeva sounded their conches Sughosha and Manipushpaka."
     },
     {
         "id": "1-17",
@@ -312,7 +328,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "काश्यश्च परमेष्वासः शिखण्डी च महारथः।\n\nधृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः।।1.17।।"
+        "sanskrit": "काश्यश्च परमेष्वासः शिखण्डी च महारथः।\n\nधृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः।।1.17।।",
+        "modernText": "Other great warriors such as the king of Kashi, Shikhandi, Dhrishtadyumna, Virata, and Satyaki also sounded their conches."
     },
     {
         "id": "1-18",
@@ -323,7 +340,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते।\n\nसौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्।।1.18।।"
+        "sanskrit": "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते।\n\nसौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्।।1.18।।",
+        "modernText": "Drupada, the sons of Draupadi, and Abhimanyu all blew their conches, each adding to the rising sound across the battlefield."
     },
     {
         "id": "1-19",
@@ -334,7 +352,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्।\n\nनभश्च पृथिवीं चैव तुमुलो व्यनुनादयन्।।1.19।।"
+        "sanskrit": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्।\n\nनभश्च पृथिवीं चैव तुमुलो व्यनुनादयन्।।1.19।।",
+        "modernText": "The powerful sound echoed through the sky and across the earth, striking fear into the hearts of the sons of Dhritarashtra."
     },
     {
         "id": "1-20",
@@ -345,7 +364,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "अथ व्यवस्थितान् दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः।\n\nप्रवृत्ते शस्त्रसंपाते धनुरुद्यम्य पाण्डवः।।1.20।।"
+        "sanskrit": "अथ व्यवस्थितान् दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः।\n\nप्रवृत्ते शस्त्रसंपाते धनुरुद्यम्य पाण्डवः।।1.20।।",
+        "modernText": "Seeing the armies prepared for battle, Arjuna lifted his bow and spoke to Krishna."
     },
     {
         "id": "1-21",
@@ -356,7 +376,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nहृषीकेशं तदा वाक्यमिदमाह महीपते।\n\nसेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत।।1.21।।"
+        "sanskrit": "अर्जुन उवाच\n\nहृषीकेशं तदा वाक्यमिदमाह महीपते।\n\nसेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत।।1.21।।",
+        "modernText": "Arjuna said: Place my chariot between the two armies so that I may look at those who stand ready to fight."
     },
     {
         "id": "1-22",
@@ -367,7 +388,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्।\n\nकैर्मया सह योद्धव्यमस्मिन्रणसमुद्यमे।।1.22।।"
+        "sanskrit": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्।\n\nकैर्मया सह योद्धव्यमस्मिन्रणसमुद्यमे।।1.22।।",
+        "modernText": "I want to see who has gathered here and with whom I must fight in this great conflict."
     },
     {
         "id": "1-23",
@@ -378,7 +400,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः।\n\nधार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः।।1.23।।"
+        "sanskrit": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः।\n\nधार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः।।1.23।।",
+        "modernText": "Let me see those who have come to support the ambitions of Dhritarashtra’s son."
     },
     {
         "id": "1-24",
@@ -389,7 +412,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "संजय उवाच\n\nएवमुक्तो हृषीकेशो गुडाकेशेन भारत।\n\nसेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्।।1.24।।"
+        "sanskrit": "संजय उवाच\n\nएवमुक्तो हृषीकेशो गुडाकेशेन भारत।\n\nसेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्।।1.24।।",
+        "modernText": "Sanjaya said: Hearing Arjuna’s request, Krishna guided the chariot into the space between the two armies."
     },
     {
         "id": "1-25",
@@ -400,7 +424,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्।\n\nउवाच पार्थ पश्यैतान्समवेतान्कुरूनिति।।1.25।।"
+        "sanskrit": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्।\n\nउवाच पार्थ पश्यैतान्समवेतान्कुरूनिति।।1.25।।",
+        "modernText": "He placed it before the great warriors and said to Arjuna, 'Look upon those gathered here.'"
     },
     {
         "id": "1-26",
@@ -411,7 +436,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "तत्रापश्यत्स्थितान्पार्थः पितृ़नथ पितामहान्।\n\nआचार्यान्मातुलान्भ्रातृ़न्पुत्रान्पौत्रान्सखींस्तथा।।1.26।।"
+        "sanskrit": "तत्रापश्यत्स्थितान्पार्थः पितृ़नथ पितामहान्।\n\nआचार्यान्मातुलान्भ्रातृ़न्पुत्रान्पौत्रान्सखींस्तथा।।1.26।।",
+        "modernText": "Arjuna then saw among the armies his own relatives, teachers, elders, friends, and loved ones standing on both sides."
     },
     {
         "id": "1-27",
@@ -422,7 +448,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि।\n\nतान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्।।1.27।।"
+        "sanskrit": "श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि।\n\nतान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्।।1.27।।",
+        "modernText": "Seeing his entire family gathered for battle, Arjuna was filled with deep compassion."
     },
     {
         "id": "1-28",
@@ -433,7 +460,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nकृपया परयाऽऽविष्टो विषीदन्निदमब्रवीत्।\n\nदृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्।।1.28।।"
+        "sanskrit": "अर्जुन उवाच\n\nकृपया परयाऽऽविष्टो विषीदन्निदमब्रवीत्।\n\nदृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्।।1.28।।",
+        "modernText": "Overcome with sorrow, he spoke to Krishna."
     },
     {
         "id": "1-29",
@@ -444,7 +472,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति।\n\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते।।1.29।।"
+        "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति।\n\nवेपथुश्च शरीरे मे रोमहर्षश्च जायते।।1.29।।",
+        "modernText": "Arjuna said: My limbs feel weak, my mouth is dry, and my body trembles as I look at those standing before me."
     },
     {
         "id": "1-30",
@@ -455,7 +484,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते।\n\nन च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः।।1.30।।"
+        "sanskrit": "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते।\n\nन च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः।।1.30।।",
+        "modernText": "My bow slips from my hand, my skin burns, and my mind feels unsteady and confused."
     },
     {
         "id": "1-31",
@@ -466,7 +496,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "निमित्तानि च पश्यामि विपरीतानि केशव।\n\nन च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे।।1.31।।"
+        "sanskrit": "निमित्तानि च पश्यामि विपरीतानि केशव।\n\nन च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे।।1.31।।",
+        "modernText": "I see no good in killing my own people in this battle."
     },
     {
         "id": "1-32",
@@ -477,7 +508,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च।\n\nकिं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा।।1.32।।"
+        "sanskrit": "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च।\n\nकिं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा।।1.32।।",
+        "modernText": "I do not desire victory, power, or pleasure if the price is the destruction of those I love."
     },
     {
         "id": "1-33",
@@ -488,7 +520,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च।\n\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च।।1.33।।"
+        "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च।\n\nत इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च।।1.33।।",
+        "modernText": "Those for whose sake we seek success and happiness now stand here ready to fight against us."
     },
     {
         "id": "1-34",
@@ -499,7 +532,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "आचार्याः पितरः पुत्रास्तथैव च पितामहाः।\n\nमातुलाः श्चशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा।।1.34।।"
+        "sanskrit": "आचार्याः पितरः पुत्रास्तथैव च पितामहाः।\n\nमातुलाः श्चशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा।।1.34।।",
+        "modernText": "Teachers, fathers, sons, grandfathers, uncles, in-laws, and friends are all here on this battlefield."
     },
     {
         "id": "1-35",
@@ -510,7 +544,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन।\n\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते।।1.35।।"
+        "sanskrit": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन।\n\nअपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते।।1.35।।",
+        "modernText": "I do not wish to harm them, even if they were to attack me. No kingdom or power could justify such a cost."
     },
     {
         "id": "1-36",
@@ -521,7 +556,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन।\n\nपापमेवाश्रयेदस्मान्हत्वैतानाततायिनः।।1.36।।"
+        "sanskrit": "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन।\n\nपापमेवाश्रयेदस्मान्हत्वैतानाततायिनः।।1.36।।",
+        "modernText": "What joy could come from destroying our own people? Only sorrow and regret would remain."
     },
     {
         "id": "1-37",
@@ -532,7 +568,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान्।\n\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव।।1.37।।"
+        "sanskrit": "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान्।\n\nस्वजनं हि कथं हत्वा सुखिनः स्याम माधव।।1.37।।",
+        "modernText": "How could we find happiness after killing those who belong to our own family?"
     },
     {
         "id": "1-38",
@@ -543,7 +580,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः।\n\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्।।1.38।।"
+        "sanskrit": "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः।\n\nकुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्।।1.38।।",
+        "modernText": "They may be blinded by ambition and unable to see the harm they are causing."
     },
     {
         "id": "1-39",
@@ -554,7 +592,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्।\n\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन।।1.39।।"
+        "sanskrit": "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्।\n\nकुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन।।1.39।।",
+        "modernText": "But if we clearly see the consequences, why should we take part in such destruction?"
     },
     {
         "id": "1-40",
@@ -565,7 +604,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः।\n\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत।।1.40।।"
+        "sanskrit": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः।\n\nधर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत।।1.40।।",
+        "modernText": "When families and communities are destroyed, the values and responsibilities that hold them together begin to disappear."
     },
     {
         "id": "1-41",
@@ -576,7 +616,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः।\n\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः।।1.41।।"
+        "sanskrit": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः।\n\nस्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः।।1.41।।",
+        "modernText": "When these values collapse, disorder spreads through society and relationships."
     },
     {
         "id": "1-42",
@@ -587,7 +628,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "सङ्करो नरकायैव कुलघ्नानां कुलस्य च।\n\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः।।1.42।।"
+        "sanskrit": "सङ्करो नरकायैव कुलघ्नानां कुलस्य च।\n\nपतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः।।1.42।।",
+        "modernText": "This breakdown harms both the present generation and those who come after."
     },
     {
         "id": "1-43",
@@ -598,7 +640,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः।\n\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः।।1.43।।"
+        "sanskrit": "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः।\n\nउत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः।।1.43।।",
+        "modernText": "When social order collapses, long-standing traditions and responsibilities fade away."
     },
     {
         "id": "1-44",
@@ -609,7 +652,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन।\n\nनरकेऽनियतं वासो भवतीत्यनुशुश्रुम।।1.44।।"
+        "sanskrit": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन।\n\nनरकेऽनियतं वासो भवतीत्यनुशुश्रुम।।1.44।।",
+        "modernText": "We have heard that when family values are destroyed, society falls into lasting suffering."
     },
     {
         "id": "1-45",
@@ -620,7 +664,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अहो बत महत्पापं कर्तुं व्यवसिता वयम्।\n\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः।।1.45।।"
+        "sanskrit": "अहो बत महत्पापं कर्तुं व्यवसिता वयम्।\n\nयद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः।।1.45।।",
+        "modernText": "Driven by the desire for power and pleasure, we now stand on the edge of harming our own people."
     },
     {
         "id": "1-46",
@@ -631,7 +676,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः।\n\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्।।1.46।।"
+        "sanskrit": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः।\n\nधार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्।।1.46।।",
+        "modernText": "It would be better for me to lay down my weapons and be struck down than to take part in destroying those I love."
     },
     {
         "id": "2-1",
@@ -642,7 +688,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "सञ्जय उवाच\n\nतं तथा कृपयाऽविष्टमश्रुपूर्णाकुलेक्षणम्।\n\nविषीदन्तमिदं वाक्यमुवाच मधुसूदनः।।2.1।।"
+        "sanskrit": "सञ्जय उवाच\n\nतं तथा कृपयाऽविष्टमश्रुपूर्णाकुलेक्षणम्।\n\nविषीदन्तमिदं वाक्यमुवाच मधुसूदनः।।2.1।।",
+        "modernText": "Seeing Arjuna overcome with sorrow and compassion, his eyes filled with tears and his mind troubled, Krishna prepared to guide him."
     },
     {
         "id": "2-2",
@@ -653,7 +700,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nकुतस्त्वा कश्मलमिदं विषमे समुपस्थितम्।\n\nअनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन।।2.2।।"
+        "sanskrit": "श्री भगवानुवाच\n\nकुतस्त्वा कश्मलमिदं विषमे समुपस्थितम्।\n\nअनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन।।2.2।।",
+        "modernText": "Krishna said: Where has this confusion come from at such a critical moment, Arjuna? This weakness does not lead to growth, honor, or a higher life."
     },
     {
         "id": "2-3",
@@ -664,7 +712,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।\n\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप।।2.3।।"
+        "sanskrit": "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।\n\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप।।2.3।।",
+        "modernText": "Do not give in to this inner weakness. It does not suit who you truly are. Rise above this faintheartedness and stand up with courage."
     },
     {
         "id": "2-4",
@@ -675,7 +724,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nकथं भीष्ममहं संख्ये द्रोणं च मधुसूदन।\n\nइषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन।।2.4।।"
+        "sanskrit": "अर्जुन उवाच\n\nकथं भीष्ममहं संख्ये द्रोणं च मधुसूदन।\n\nइषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन।।2.4।।",
+        "modernText": "Arjuna said: How can I raise my weapons against Bhishma and Drona in battle? They are my teachers and worthy of my deepest respect."
     },
     {
         "id": "2-5",
@@ -686,7 +736,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "गुरूनहत्वा हि महानुभावान्\n\nश्रेयो भोक्तुं भैक्ष्यमपीह लोके।\n\nहत्वार्थकामांस्तु गुरूनिहैव\n\nभुञ्जीय भोगान् रुधिरप्रदिग्धान्।।2.5।।"
+        "sanskrit": "गुरूनहत्वा हि महानुभावान्\n\nश्रेयो भोक्तुं भैक्ष्यमपीह लोके।\n\nहत्वार्थकामांस्तु गुरूनिहैव\n\nभुञ्जीय भोगान् रुधिरप्रदिग्धान्।।2.5।।",
+        "modernText": "It would be better to live in this world by begging than to gain power by killing those who guided and taught me. Any success gained through their suffering would feel stained."
     },
     {
         "id": "2-6",
@@ -697,7 +748,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयो\n\nयद्वा जयेम यदि वा न��� जयेयुः।\n\nयानेव हत्वा न जिजीविषाम\n\nस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः।।2.6।।"
+        "sanskrit": "न चैतद्विद्मः कतरन्नो गरीयो\n\nयद्वा जयेम यदि वा न��� जयेयुः।\n\nयानेव हत्वा न जिजीविषाम\n\nस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः।।2.6।।",
+        "modernText": "I cannot even tell what would be better, whether we should defeat them or they defeat us. Those very people whose death would make life meaningless now stand before us in battle."
     },
     {
         "id": "2-7",
@@ -708,7 +760,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "कार्पण्���दोषोपहतस्वभावः\n\nपृच्छामि त्वां धर्मसंमूढचेताः।\n\nयच्छ्रेयः स्यान्निश्िचतं ब्रूहि तन्मे\n\nशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्।।2.7।।"
+        "sanskrit": "कार्पण्���दोषोपहतस्वभावः\n\nपृच्छामि त्वां धर्मसंमूढचेताः।\n\nयच्छ्रेयः स्यान्निश्िचतं ब्रूहि तन्मे\n\nशिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्।।2.7।।",
+        "modernText": "My judgment is clouded and my mind is confused about what is right. I ask you to guide me. I am your student now. Teach me what truly leads to the good."
     },
     {
         "id": "2-8",
@@ -719,7 +772,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "न हि प्रपश्यामि ममापनुद्या\n\nद्यच्छोकमुच्छोषणमिन्द्रियाणाम्।\n\nअवाप्य भूमावसपत्नमृद्धम्\n\nराज्यं सुराणामपि चाधिपत्यम्।।2.8।।"
+        "sanskrit": "न हि प्रपश्यामि ममापनुद्या\n\nद्यच्छोकमुच्छोषणमिन्द्रियाणाम्।\n\nअवाप्य भूमावसपत्नमृद्धम्\n\nराज्यं सुराणामपि चाधिपत्यम्।।2.8।।",
+        "modernText": "Nothing I can imagine, not even great wealth or power, could remove the sorrow that weighs down my spirit."
     },
     {
         "id": "2-9",
@@ -730,7 +784,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "सञ्जय उवाच\n\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप।\n\nन योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह।।2.9।।"
+        "sanskrit": "सञ्जय उवाच\n\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप।\n\nन योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह।।2.9।।",
+        "modernText": "After saying, \"I will not fight,\" Arjuna fell silent, overwhelmed by his inner conflict."
     },
     {
         "id": "2-10",
@@ -741,7 +796,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "तमुवाच हृषीकेशः प्रहसन्निव भारत।\n\nसेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः।।2.10।।"
+        "sanskrit": "तमुवाच हृषीकेशः प्रहसन्निव भारत।\n\nसेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः।।2.10।।",
+        "modernText": "Standing between the two armies, Krishna spoke calmly to Arjuna, who was grieving and confused."
     },
     {
         "id": "2-11",
@@ -752,7 +808,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nअशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे।\n\nगतासूनगतासूंश्च नानुशोचन्ति पण्डिताः।।2.11।।"
+        "sanskrit": "श्री भगवानुवाच\n\nअशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे।\n\nगतासूनगतासूंश्च नानुशोचन्ति पण्डिताः।।2.11।।",
+        "modernText": "Krishna said: You grieve for those who need not be grieved for, yet you speak as though you understand life deeply. The truly wise do not grieve excessively for the living or the dead."
     },
     {
         "id": "2-12",
@@ -763,7 +820,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः।\n\nन चैव न भविष्यामः सर्वे वयमतः परम्।।2.12।।"
+        "sanskrit": "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः।\n\nन चैव न भविष्यामः सर्वे वयमतः परम्।।2.12।।",
+        "modernText": "There was never a time when I did not exist, nor you, nor these people. And there will never be a time when we cease to exist."
     },
     {
         "id": "2-13",
@@ -774,7 +832,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा।\n\nतथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति।।2.13।।"
+        "sanskrit": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा।\n\nतथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति।।2.13।।",
+        "modernText": "Just as the body passes through childhood, youth, and old age, Atman (the soul) continues beyond the body. One who understands this is not confused by change."
     },
     {
         "id": "2-14",
@@ -789,7 +848,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "detachment"
         ],
         "speaker": "Krishna",
-        "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।\n\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत।।2.14।।"
+        "sanskrit": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः।\n\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत।।2.14।।",
+        "modernText": "Pleasure and pain arise from contact with the world through the senses. They come and go like changing seasons. Learn to endure them with patience, knowing they are temporary."
     },
     {
         "id": "2-15",
@@ -800,7 +860,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ।\n\nसमदुःखसुखं धीरं सोऽमृतत्वाय कल्पते।।2.15।।"
+        "sanskrit": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ।\n\nसमदुःखसुखं धीरं सोऽमृतत्वाय कल्पते।।2.15।।",
+        "modernText": "One who remains steady in both pleasure and pain develops deep inner strength. Such a person becomes ready for Moksha (liberation)."
     },
     {
         "id": "2-16",
@@ -811,7 +872,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नासतो विद्यते भावो नाभावो विद्यते सतः।\n\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः।।2.16।।"
+        "sanskrit": "नासतो विद्यते भावो नाभावो विद्यते सतः।\n\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः।।2.16।।",
+        "modernText": "What is unreal has no lasting existence, and what is real never ceases to be. Those who perceive truth understand the difference."
     },
     {
         "id": "2-17",
@@ -822,7 +884,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्।\n\nविनाशमव्ययस्यास्य न कश्चित् कर्तुमर्हति।।2.17।।"
+        "sanskrit": "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्।\n\nविनाशमव्ययस्यास्य न कश्चित् कर्तुमर्हति।।2.17।।",
+        "modernText": "Know that the soul, which pervades all life, is indestructible. Nothing can destroy this eternal essence."
     },
     {
         "id": "2-18",
@@ -833,7 +896,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः।\n\nअनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत।।2.18।।"
+        "sanskrit": "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः।\n\nअनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत।।2.18।।",
+        "modernText": "The body is temporary, but the soul that dwells within it is eternal and indestructible. Understanding this helps remove the fear that clouds action."
     },
     {
         "id": "2-19",
@@ -844,7 +908,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्।\n\nउभौ तौ न विजानीतो नायं हन्ति न हन्यते।।2.19।।"
+        "sanskrit": "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्।\n\nउभौ तौ न विजानीतो नायं हन्ति न हन्यते।।2.19।।",
+        "modernText": "One who believes the soul can kill or be killed does not truly understand. The soul neither destroys nor is destroyed."
     },
     {
         "id": "2-20",
@@ -855,7 +920,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न जायते म्रियते वा कदाचि\n\nन्नायं भूत्वा भविता वा न भूयः।\n\nअजो नित्यः शाश्वतोऽयं पुराणो\n\nन हन्यते हन्यमाने शरीरे।।2.20।।"
+        "sanskrit": "न जायते म्रियते वा कदाचि\n\nन्नायं भूत्वा भविता वा न भूयः।\n\nअजो नित्यः शाश्वतोऽयं पुराणो\n\nन हन्यते हन्यमाने शरीरे।।2.20।।",
+        "modernText": "The soul is never born and never dies. It has always existed and will always exist. It is timeless and cannot be destroyed when the body is destroyed."
     },
     {
         "id": "2-21",
@@ -866,7 +932,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "वेदाविनाशिनं नित्यं य एनमजमव्ययम्।\n\nकथं स पुरुषः पार्थ कं घातयति हन्ति कम्।।2.21।।"
+        "sanskrit": "वेदाविनाशिनं नित्यं य एनमजमव्ययम्।\n\nकथं स पुरुषः पार्थ कं घातयति हन्ति कम्।।2.21।।",
+        "modernText": "One who truly understands the soul as eternal and unchanging cannot see themselves as the ultimate cause of life or death."
     },
     {
         "id": "2-22",
@@ -877,7 +944,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "By comparing bodies to clothes, Krishna locates identity in the soul rather than the body. Grief and fear arise when permanence is wrongly assigned to what is meant to change.",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "वासांसि जीर्णानि यथा विहाय\n\nनवानि गृह्णाति नरोऽपराणि।\n\nतथा शरीराणि विहाय जीर्णा\n\nन्यन्यानि संयाति नवानि देही।।2.22।।"
+        "sanskrit": "वासांसि जीर्णानि यथा विहाय\n\nनवानि गृह्णाति नरोऽपराणि।\n\nतथा शरीराणि विहाय जीर्णा\n\nन्यन्यानि संयाति नवानि देही।।2.22।।",
+        "modernText": "Just as a person discards worn-out clothes and puts on new ones, the soul leaves old bodies and takes on new ones."
     },
     {
         "id": "2-23",
@@ -888,7 +956,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः।\n\nन चैनं क्लेदयन्त्यापो न शोषयति मारुतः।।2.23।।"
+        "sanskrit": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः।\n\nन चैनं क्लेदयन्त्यापो न शोषयति मारुतः।।2.23।।",
+        "modernText": "Weapons cannot cut the soul, fire cannot burn it, water cannot drown it, and wind cannot dry it."
     },
     {
         "id": "2-24",
@@ -899,7 +968,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च।\n\nनित्यः सर्वगतः स्थाणुरचलो���यं सनातनः।।2.24।।"
+        "sanskrit": "अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च।\n\nनित्यः सर्वगतः स्थाणुरचलो���यं सनातनः।।2.24।।",
+        "modernText": "The soul is eternal, stable, and beyond physical harm. It is present everywhere and remains unchanged."
     },
     {
         "id": "2-25",
@@ -910,7 +980,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते।\n\nतस्मादेवं विदित्वैनं नानुशोचितुमर्हसि।।2.25।।"
+        "sanskrit": "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते।\n\nतस्मादेवं विदित्वैनं नानुशोचितुमर्हसि।।2.25।।",
+        "modernText": "Because the soul cannot be seen or grasped by the senses, it is often misunderstood. Yet understanding its nature removes unnecessary sorrow."
     },
     {
         "id": "2-26",
@@ -921,7 +992,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम्।\n\nतथापि त्वं महाबाहो नैवं शोचितुमर्हसि।।2.26।।"
+        "sanskrit": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम्।\n\nतथापि त्वं महाबाहो नैवं शोचितुमर्हसि।।2.26।।",
+        "modernText": "Even if you believed life begins and ends with the body, you would still have no reason to grieve excessively."
     },
     {
         "id": "2-27",
@@ -932,7 +1004,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च।\n\nतस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि।।2.27।।"
+        "sanskrit": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च।\n\nतस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि।।2.27।।",
+        "modernText": "Death is certain for those who are born, and birth follows death. This cycle is part of existence and cannot be avoided."
     },
     {
         "id": "2-28",
@@ -943,7 +1016,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत।\n\nअव्यक्तनिधनान्येव तत्र का परिदेवना।।2.28।।"
+        "sanskrit": "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत।\n\nअव्यक्तनिधनान्येव तत्र का परिदेवना।।2.28।।",
+        "modernText": "All beings begin unseen, appear for a time, and then disappear again. Recognizing this makes excessive grief unnecessary."
     },
     {
         "id": "2-29",
@@ -954,7 +1028,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आश्चर्यवत्पश्यति कश्चिदेन\n\nमाश्चर्यवद्वदति तथैव चान्यः।\n\nआश्चर्यवच्चैनमन्यः श्रृणोति\n\nश्रुत्वाप्येनं वेद न चैव कश्चित्।।2.29।।"
+        "sanskrit": "आश्चर्यवत्पश्यति कश्चिदेन\n\nमाश्चर्यवद्वदति तथैव चान्यः।\n\nआश्चर्यवच्चैनमन्यः श्रृणोति\n\nश्रुत्वाप्येनं वेद न चैव कश्चित्।।2.29।।",
+        "modernText": "Some see the soul as a profound mystery, others speak of it with wonder, and many hear about it yet still struggle to truly understand it."
     },
     {
         "id": "2-30",
@@ -965,7 +1040,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "देही नित्यमवध्योऽयं देहे सर्वस्य भारत।\n\nतस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि।।2.30।।"
+        "sanskrit": "देही नित्यमवध्योऽयं देहे सर्वस्य भारत।\n\nतस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि।।2.30।।",
+        "modernText": "The soul within every living being is eternal and indestructible. Knowing this removes the need for despair."
     },
     {
         "id": "2-31",
@@ -976,7 +1052,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि।\n\nधर्म्याद्धि युद्धाछ्रेयोऽन्यत्क्षत्रियस्य न विद्यते।।2.31।।"
+        "sanskrit": "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि।\n\nधर्म्याद्धि युद्धाछ्रेयोऽन्यत्क्षत्रियस्य न विद्यते।।2.31।।",
+        "modernText": "Consider also your duty. When you clearly understand your responsibility, hesitation fades."
     },
     {
         "id": "2-32",
@@ -987,7 +1064,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम्।\n\nसुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम्।।2.32।।"
+        "sanskrit": "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम्।\n\nसुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम्।।2.32।।",
+        "modernText": "Moments that test courage and character sometimes arrive unexpectedly. Meeting them with integrity opens the path to growth."
     },
     {
         "id": "2-33",
@@ -998,7 +1076,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अथ चैत्त्वमिमं धर्म्यं संग्रामं न करिष्यसि।\n\nततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि।।2.33।।"
+        "sanskrit": "अथ चैत्त्वमिमं धर्म्यं संग्रामं न करिष्यसि।\n\nततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि।।2.33।।",
+        "modernText": "Avoiding your responsibility out of fear or confusion harms both your integrity and your sense of purpose."
     },
     {
         "id": "2-34",
@@ -1009,7 +1088,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम्।\n\nसंभावितस्य चाकीर्तिर्मरणादतिरिच्यते।।2.34।।"
+        "sanskrit": "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम्।\n\nसंभावितस्य चाकीर्तिर्मरणादतिरिच्यते।।2.34।।",
+        "modernText": "For someone who values honor and character, losing self-respect can feel worse than losing everything else."
     },
     {
         "id": "2-35",
@@ -1020,7 +1100,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः।\n\nयेषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम्।।2.35।।"
+        "sanskrit": "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः।\n\nयेषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम्।।2.35।।",
+        "modernText": "Those who once respected your strength may believe you withdrew out of fear."
     },
     {
         "id": "2-36",
@@ -1031,7 +1112,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अवाच्यवादांश्च बहून् वदिष्यन्ति तवाहिताः।\n\nनिन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम्।।2.36।।"
+        "sanskrit": "अवाच्यवादांश्च बहून् वदिष्यन्ति तवाहिताः।\n\nनिन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम्।।2.36।।",
+        "modernText": "Your critics will speak harshly about your choice. Such judgment can be more painful than the challenge itself."
     },
     {
         "id": "2-37",
@@ -1042,7 +1124,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम्।\n\nतस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः।।2.37।।"
+        "sanskrit": "हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम्।\n\nतस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः।।2.37।।",
+        "modernText": "If you face your responsibility and fall, your courage still carries meaning. If you succeed, you gain the world before you. Either way, act with resolve."
     },
     {
         "id": "2-38",
@@ -1053,7 +1136,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।\n\nततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।2.38।।"
+        "sanskrit": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।\n\nततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।2.38।।",
+        "modernText": "Approach action with a balanced mind, seeing gain and loss, success and failure with the same clarity. When your inner state is steady, your actions remain pure."
     },
     {
         "id": "2-39",
@@ -1064,7 +1148,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एषा तेऽभिहिता सांख्ये बुद्धिर्योगे त्विमां श्रृणु।\n\nबुद्ध्यायुक्तो यया पार्थ कर्मबन्धं प्रहास्यसि।।2.39।।"
+        "sanskrit": "एषा तेऽभिहिता सांख्ये बुद्धिर्योगे त्विमां श्रृणु।\n\nबुद्ध्यायुक्तो यया पार्थ कर्मबन्धं प्रहास्यसि।।2.39।।",
+        "modernText": "So far this wisdom has been explained through understanding. Now learn how to live it through disciplined action, which frees a person from attachment to results."
     },
     {
         "id": "2-40",
@@ -1075,7 +1160,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते।\n\nस्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्।।2.40।।"
+        "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते।\n\nस्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्।।2.40।।",
+        "modernText": "No sincere effort on the path of inner discipline is ever wasted. Even a small step in this direction protects the mind from great fear."
     },
     {
         "id": "2-41",
@@ -1086,7 +1172,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन।\n\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्।।2.41।।"
+        "sanskrit": "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन।\n\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्।।2.41।।",
+        "modernText": "A mind guided by wisdom becomes steady and focused. A restless mind, pulled by countless desires, moves endlessly in many directions."
     },
     {
         "id": "2-42",
@@ -1097,7 +1184,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यामिमां पुष्पितां वाचं प्रवदन्त्यविप���्चितः।\n\nवेदवादरताः पार्थ नान्यदस्तीति वादिनः।।2.42।।"
+        "sanskrit": "यामिमां पुष्पितां वाचं प्रवदन्त्यविप���्चितः।\n\nवेदवादरताः पार्थ नान्यदस्तीति वादिनः।।2.42।।",
+        "modernText": "Some people become absorbed in the elaborate promises found in the Vedas (ancient teachings) and believe there is nothing higher."
     },
     {
         "id": "2-43",
@@ -1108,7 +1196,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम्।\n\nक्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति।।2.43।।"
+        "sanskrit": "कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम्।\n\nक्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति।।2.43।।",
+        "modernText": "Driven by desire for pleasure, power, and status, they focus on rituals and rewards rather than deeper understanding."
     },
     {
         "id": "2-44",
@@ -1119,7 +1208,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम्।\n\nव्यवसायात्मिका बुद्धिः समाधौ न विधीयते।।2.44।।"
+        "sanskrit": "भोगैश्वर्यप्रसक्तानां तयापहृतचेतसाम्।\n\nव्यवसायात्मिका बुद्धिः समाधौ न विधीयते।।2.44।।",
+        "modernText": "When the mind becomes absorbed in pleasure, status, and power, it loses the stillness required for true understanding."
     },
     {
         "id": "2-45",
@@ -1130,7 +1220,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन।\n\nनिर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्।।2.45।।"
+        "sanskrit": "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन।\n\nनिर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्।।2.45।।",
+        "modernText": "The Vedas (ancient teachings) often describe life through the forces of nature that shape human behavior. Rise beyond these forces. Remain steady, free from constant craving and the anxiety of gaining and keeping possessions."
     },
     {
         "id": "2-46",
@@ -1141,7 +1232,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यावानर्थ उदपाने सर्वतः संप्लुतोदके।\n\nतावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः।।2.46।।"
+        "sanskrit": "यावानर्थ उदपाने सर्वतः संप्लुतोदके।\n\nतावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः।।2.46।।",
+        "modernText": "For one who understands Brahman (the ultimate reality), the many teachings serve a role similar to a small well when water is abundant everywhere."
     },
     {
         "id": "2-47",
@@ -1156,7 +1248,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "action"
         ],
         "speaker": "Krishna",
-        "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\n\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि।।2.47।।"
+        "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\n\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि।।2.47।।",
+        "modernText": "You are responsible for your actions, but never for the outcomes they produce. Give your full attention to the work itself, without clinging to the results."
     },
     {
         "id": "2-48",
@@ -1171,7 +1264,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "detachment"
         ],
         "speaker": "Krishna",
-        "sanskrit": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।\n\nसिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते।।2.48।।"
+        "sanskrit": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय।\n\nसिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते।।2.48।।",
+        "modernText": "Perform your actions with inner balance. Remain steady in success and failure. This steadiness of mind is Yoga (disciplined union of mind and action)."
     },
     {
         "id": "2-49",
@@ -1182,7 +1276,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय।\n\nबुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः।।2.49।।"
+        "sanskrit": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय।\n\nबुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः।।2.49।।",
+        "modernText": "Actions driven only by the desire for reward keep the mind bound to outcomes. Let wisdom guide your actions instead."
     },
     {
         "id": "2-50",
@@ -1193,7 +1288,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते।\n\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्।।2.50।।"
+        "sanskrit": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते।\n\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्।।2.50।।",
+        "modernText": "When action is guided by clear understanding rather than craving, the mind rises above both success and failure. This is Yoga (disciplined union of mind and action) expressed through action."
     },
     {
         "id": "2-51",
@@ -1204,7 +1300,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः।\n\nजन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम्।।2.51।।"
+        "sanskrit": "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः।\n\nजन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम्।।2.51।।",
+        "modernText": "Those who act with wisdom and let go of attachment to results move beyond cycles of anxiety and dissatisfaction and move toward Moksha (liberation)."
     },
     {
         "id": "2-52",
@@ -1215,7 +1312,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति।\n\nतदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च।।2.52।।"
+        "sanskrit": "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति।\n\nतदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च।।2.52।।",
+        "modernText": "When your understanding moves beyond confusion, you become less disturbed by the countless opinions and doctrines that surround you."
     },
     {
         "id": "2-53",
@@ -1226,7 +1324,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला।\n\nसमाधावचला बुद्धिस्तदा योगमवाप्स्यसि।।2.53।।"
+        "sanskrit": "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला।\n\nसमाधावचला बुद्धिस्तदा योगमवाप्स्यसि।।2.53।।",
+        "modernText": "When the mind stops wavering among competing ideas and becomes steady in deep reflection, true clarity arises."
     },
     {
         "id": "2-54",
@@ -1237,7 +1336,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nस्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव।\n\nस्थितधीः किं प्रभाषेत किमासीत व्रजेत किम्।।2.54।।"
+        "sanskrit": "अर्जुन उवाच\n\nस्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव।\n\nस्थितधीः किं प्रभाषेत किमासीत व्रजेत किम्।।2.54।।",
+        "modernText": "Arjuna said: What does a person of steady wisdom look like? How do they speak, live, and move through the world?"
     },
     {
         "id": "2-55",
@@ -1248,7 +1348,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nप्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान्।\n\nआत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते।।2.55।।"
+        "sanskrit": "श्री भगवानुवाच\n\nप्रजहाति यदा कामान् सर्वान् पार्थ मनोगतान्।\n\nआत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते।।2.55।।",
+        "modernText": "Krishna said: One whose mind has let go of restless desires and finds quiet contentment within the soul is said to possess steady wisdom."
     },
     {
         "id": "2-56",
@@ -1259,7 +1360,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः।\n\nवीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते।।2.56।।"
+        "sanskrit": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः।\n\nवीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते।।2.56।।",
+        "modernText": "Such a person is not shaken by sorrow, does not chase pleasure, and remains free from attachment, fear, and anger."
     },
     {
         "id": "2-57",
@@ -1270,7 +1372,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम्।\n\nनाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता।।2.57।।"
+        "sanskrit": "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम्।\n\nनाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता।।2.57।।",
+        "modernText": "One who moves through life without clinging to what is pleasant or rejecting what is unpleasant keeps their understanding firmly grounded."
     },
     {
         "id": "2-58",
@@ -1281,7 +1384,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः।\n\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।2.58।।"
+        "sanskrit": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः।\n\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।2.58।।",
+        "modernText": "Just as a turtle withdraws its limbs for protection, a wise person can draw the senses inward when needed and remain centered within."
     },
     {
         "id": "2-59",
@@ -1292,7 +1396,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "विषया विनिवर्तन्ते निराहारस्य देहिनः।\n\nरसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते।।2.59।।"
+        "sanskrit": "विषया विनिवर्तन्ते निराहारस्य देहिनः।\n\nरसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते।।2.59।।",
+        "modernText": "Resisting desire may quiet the senses for a time, yet the craving can remain. When deeper understanding awakens, even the craving fades."
     },
     {
         "id": "2-60",
@@ -1303,7 +1408,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः।\n\nइन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः।।2.60।।"
+        "sanskrit": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः।\n\nइन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः।।2.60।।",
+        "modernText": "The senses are powerful and restless. Even a thoughtful person can be carried away by them if the mind is not watchful."
     },
     {
         "id": "2-61",
@@ -1314,7 +1420,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तानि सर्वाणि संयम्य युक्त आसीत मत्परः।\n\nवशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता।।2.61।।"
+        "sanskrit": "तानि सर्वाणि संयम्य युक्त आसीत मत्परः।\n\nवशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता।।2.61।।",
+        "modernText": "When the senses are guided by awareness and discipline, the mind becomes steady and wisdom takes root."
     },
     {
         "id": "2-62",
@@ -1329,7 +1436,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "knowledge"
         ],
         "speaker": "Krishna",
-        "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते।\n\nसङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते।।2.62।।"
+        "sanskrit": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते।\n\nसङ्गात् संजायते कामः कामात्क्रोधोऽभिजायते।।2.62।।",
+        "modernText": "When the mind dwells repeatedly on something, attachment begins to grow. From attachment arises desire, and when desire is blocked, anger follows."
     },
     {
         "id": "2-63",
@@ -1340,7 +1448,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः।\n\nस्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति।।2.63।।"
+        "sanskrit": "क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः।\n\nस्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति।।2.63।।",
+        "modernText": "Anger clouds perception. From this confusion comes loss of judgment, and when judgment collapses, one’s path is easily lost."
     },
     {
         "id": "2-64",
@@ -1351,7 +1460,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्।\n\nआत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति।।2.64।।"
+        "sanskrit": "रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्।\n\nआत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति।।2.64।।",
+        "modernText": "One who moves through the world with disciplined senses, free from attraction and aversion, gradually discovers inner serenity."
     },
     {
         "id": "2-65",
@@ -1362,7 +1472,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रसादे सर्वदुःखानां हानिरस्योपजायते।\n\nप्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते।।2.65।।"
+        "sanskrit": "प्रसादे सर्वदुःखानां हानिरस्योपजायते।\n\nप्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते।।2.65।।",
+        "modernText": "From serenity comes the quieting of inner turmoil. In that calmness, the mind becomes clear and steady."
     },
     {
         "id": "2-66",
@@ -1373,7 +1484,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना।\n\nन चाभावयतः शान्तिरशान्तस्य कुतः सुखम्।।2.66।।"
+        "sanskrit": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना।\n\nन चाभावयतः शान्तिरशान्तस्य कुतः सुखम्।।2.66।।",
+        "modernText": "A restless mind cannot know wisdom. Without wisdom there is no peace, and without peace there can be no lasting happiness."
     },
     {
         "id": "2-67",
@@ -1384,7 +1496,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते।\n\nतदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि।।2.67।।"
+        "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते।\n\nतदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि।।2.67।।",
+        "modernText": "When the mind follows wandering senses, it sweeps away understanding just as strong winds carry a boat off course."
     },
     {
         "id": "2-68",
@@ -1395,7 +1508,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः।\n\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।2.68।।"
+        "sanskrit": "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः।\n\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।2.68।।",
+        "modernText": "When the senses are guided and restrained, wisdom becomes firmly established."
     },
     {
         "id": "2-69",
@@ -1406,7 +1520,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "या निशा सर्वभूतानां तस्यां जागर्ति संयमी।\n\nयस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः।।2.69।।"
+        "sanskrit": "या निशा सर्वभूतानां तस्यां जागर्ति संयमी।\n\nयस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः।।2.69।।",
+        "modernText": "What appears like night to most people is clear awareness to the wise. What others chase in waking life appears empty to one who sees clearly."
     },
     {
         "id": "2-70",
@@ -1421,7 +1536,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "clarity"
         ],
         "speaker": "Krishna",
-        "sanskrit": "आपूर्यमाणमचलप्रतिष्ठं\n\nसमुद्रमापः प्रविशन्ति यद्वत्।\n\nतद्वत्कामा यं प्रविशन्ति सर्वे\n\nस शान्तिमाप्नोति न कामकामी।।2.70।।"
+        "sanskrit": "आपूर्यमाणमचलप्रतिष्ठं\n\nसमुद्रमापः प्रविशन्ति यद्वत्।\n\nतद्वत्कामा यं प्रविशन्ति सर्वे\n\nस शान्तिमाप्नोति न कामकामी।।2.70।।",
+        "modernText": "A peaceful person remains steady even as many desires arise, just as the ocean remains full and unmoved by the rivers that flow into it."
     },
     {
         "id": "2-71",
@@ -1432,7 +1548,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः।\n\nनिर्ममो निरहंकारः स शांतिमधिगच्छति।।2.71।।"
+        "sanskrit": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः।\n\nनिर्ममो निरहंकारः स शांतिमधिगच्छति।।2.71।।",
+        "modernText": "Peace belongs to the one who lets go of craving, possessiveness, and the constant claim of the ego."
     },
     {
         "id": "2-72",
@@ -1443,7 +1560,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति।\n\nस्थित्वाऽस्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति।।2.72।।"
+        "sanskrit": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति।\n\nस्थित्वाऽस्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति।।2.72।।",
+        "modernText": "This is the state of deep spiritual clarity. One who becomes firmly established in it is no longer confused and moves toward Moksha (liberation)."
     },
     {
         "id": "3-1",
@@ -1454,7 +1572,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन।\n\nतत्किं कर्मणि घोरे मां नियोजयसि केशव।।3.1।।"
+        "sanskrit": "अर्जुन उवाच\n\nज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन।\n\nतत्किं कर्मणि घोरे मां नियोजयसि केशव।।3.1।।",
+        "modernText": "Arjuna said: If understanding and wisdom are greater than action, why do you urge me toward such a difficult action?"
     },
     {
         "id": "3-2",
@@ -1465,7 +1584,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे।\n\nतदेकं वद निश्िचत्य येन श्रेयोऽहमाप्नुयाम्।।3.2।।"
+        "sanskrit": "व्यामिश्रेणेव वाक्येन बुद्धिं मोहयसीव मे।\n\nतदेकं वद निश्िचत्य येन श्रेयोऽहमाप्नुयाम्।।3.2।।",
+        "modernText": "Your words seem to point in different directions and leave me confused. Please tell me clearly the one path that truly leads to the highest good."
     },
     {
         "id": "3-3",
@@ -1476,7 +1596,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nलोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ।\n\nज्ञानयोगेन सांख्यानां कर्मयोगेन योगिनाम्।।3.3।।"
+        "sanskrit": "श्री भगवानुवाच\n\nलोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ।\n\nज्ञानयोगेन सांख्यानां कर्मयोगेन योगिनाम्।।3.3।।",
+        "modernText": "Krishna said: There are two natural paths in life. One is the path of deep understanding and contemplation. The other is the path of disciplined action in the world."
     },
     {
         "id": "3-4",
@@ -1487,7 +1608,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते।\n\nन च संन्यसनादेव सिद्धिं समधिगच्छति।।3.4।।"
+        "sanskrit": "न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते।\n\nन च संन्यसनादेव सिद्धिं समधिगच्छति।।3.4।।",
+        "modernText": "A person does not reach freedom by avoiding action. Nor does simply giving things up lead to true fulfillment."
     },
     {
         "id": "3-5",
@@ -1498,7 +1620,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न हि कश्िचत्क्षणमपि जातु तिष्ठत्यकर्मकृत्।\n\nकार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।।3.5।।"
+        "sanskrit": "न हि कश्िचत्क्षणमपि जातु तिष्ठत्यकर्मकृत्।\n\nकार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।।3.5।।",
+        "modernText": "No one can remain without action even for a moment. The forces of nature within us constantly move us to act."
     },
     {
         "id": "3-6",
@@ -1509,7 +1632,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन्।\n\nइन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते।।3.6।।"
+        "sanskrit": "कर्मेन्द्रियाणि संयम्य य आस्ते मनसा स्मरन्।\n\nइन्द्रियार्थान्विमूढात्मा मिथ्याचारः स उच्यते।।3.6।।",
+        "modernText": "One who outwardly restrains action but continues to dwell on desires in the mind lives in self-deception."
     },
     {
         "id": "3-7",
@@ -1520,7 +1644,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन।\n\nकर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते।।3.7।।"
+        "sanskrit": "यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन।\n\nकर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते।।3.7।।",
+        "modernText": "But one who brings the senses under the guidance of the mind and acts with discipline, without attachment, walks a higher path."
     },
     {
         "id": "3-8",
@@ -1531,7 +1656,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः।\n\nशरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः।।3.8।।"
+        "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः।\n\nशरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः।।3.8।।",
+        "modernText": "Perform the responsibilities that belong to you. Action is better than inaction, for even sustaining life requires action."
     },
     {
         "id": "3-9",
@@ -1542,7 +1668,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः।\n\nतदर्थं कर्म कौन्तेय मुक्तसंगः समाचर।।3.9।।"
+        "sanskrit": "यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः।\n\nतदर्थं कर्म कौन्तेय मुक्तसंगः समाचर।।3.9।।",
+        "modernText": "Actions performed only for personal gain bind the mind. But actions offered in a spirit of service and contribution bring freedom."
     },
     {
         "id": "3-10",
@@ -1553,7 +1680,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः।\n\nअनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक्।।3.10।।"
+        "sanskrit": "सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः।\n\nअनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक्।।3.10।।",
+        "modernText": "At the beginning of creation, humanity was given the principle of selfless offering and cooperation. Through this, life would grow and flourish."
     },
     {
         "id": "3-11",
@@ -1564,7 +1692,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "देवान्भावयतानेन ते देवा भावयन्तु वः।\n\nपरस्परं भावयन्तः श्रेयः परमवाप्स्यथ।।3.11।।"
+        "sanskrit": "देवान्भावयतानेन ते देवा भावयन्तु वः।\n\nपरस्परं भावयन्तः श्रेयः परमवाप्स्यथ।।3.11।।",
+        "modernText": "When people support the natural order of life, that same order supports them in return. Through this mutual care, life moves toward harmony."
     },
     {
         "id": "3-12",
@@ -1575,7 +1704,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः।\n\nतैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः।।3.12।।"
+        "sanskrit": "इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः।\n\nतैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः।।3.12।।",
+        "modernText": "Those who receive the gifts of life without contributing back break the natural balance of giving and receiving."
     },
     {
         "id": "3-13",
@@ -1586,7 +1716,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः।\n\nभुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात्।।3.13।।"
+        "sanskrit": "यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः।\n\nभुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात्।।3.13।।",
+        "modernText": "Those who live with gratitude and share what they receive are freed from the burden of selfish living. Those who live only for themselves deepen their own suffering."
     },
     {
         "id": "3-14",
@@ -1597,7 +1728,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः।\n\nयज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः।।3.14।।"
+        "sanskrit": "अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः।\n\nयज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः।।3.14।।",
+        "modernText": "Life depends on nourishment, nourishment depends on nature, and nature flourishes when human action is aligned with balance and responsibility."
     },
     {
         "id": "3-15",
@@ -1608,7 +1740,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम्।\n\nतस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम्।।3.15।।"
+        "sanskrit": "कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम्।\n\nतस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम्।।3.15।।",
+        "modernText": "Right action arises from wisdom preserved in the Vedas (ancient teachings), and those teachings arise from the deeper order of reality. In this way, the sacred order of life is sustained through action."
     },
     {
         "id": "3-16",
@@ -1619,7 +1752,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः।\n\nअघायुरिन्द्रियारामो मोघं पार्थ स जीवति।।3.16।।"
+        "sanskrit": "एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः।\n\nअघायुरिन्द्रियारामो मोघं पार्थ स जीवति।।3.16।।",
+        "modernText": "One who refuses to participate in this cycle of responsibility and contribution, choosing only pleasure and self-interest, lives without purpose."
     },
     {
         "id": "3-17",
@@ -1630,7 +1764,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः।\n\nआत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते।।3.17।।"
+        "sanskrit": "यस्त्वात्मरतिरेव स्यादात्मतृप्तश्च मानवः।\n\nआत्मन्येव च सन्तुष्टस्तस्य कार्यं न विद्यते।।3.17।।",
+        "modernText": "But one who finds fulfillment within the soul, who is inwardly content and complete, no longer depends on external duties for inner satisfaction."
     },
     {
         "id": "3-18",
@@ -1641,7 +1776,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन।\n\nन चास्य सर्वभूतेषु कश्िचदर्थव्यपाश्रयः।।3.18।।"
+        "sanskrit": "नैव तस्य कृतेनार्थो नाकृतेनेह कश्चन।\n\nन चास्य सर्वभूतेषु कश्िचदर्थव्यपाश्रयः।।3.18।।",
+        "modernText": "Such a person gains nothing by acting and loses nothing by not acting, for their peace no longer depends on external outcomes."
     },
     {
         "id": "3-19",
@@ -1656,7 +1792,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "detachment"
         ],
         "speaker": "Krishna",
-        "sanskrit": "तस्मादसक्तः सततं कार्यं कर्म समाचर।\n\nअसक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः।।3.19।।"
+        "sanskrit": "तस्मादसक्तः सततं कार्यं कर्म समाचर।\n\nअसक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः।।3.19।।",
+        "modernText": "Therefore perform your responsibilities without attachment. Through action carried out with this spirit, one moves toward Moksha (liberation)."
     },
     {
         "id": "3-20",
@@ -1667,7 +1804,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कर्मणैव हि संसिद्धिमास्थिता जनकादयः।\n\nलोकसंग्रहमेवापि संपश्यन्कर्तुमर्हसि।।3.20।।"
+        "sanskrit": "कर्मणैव हि संसिद्धिमास्थिता जनकादयः।\n\nलोकसंग्रहमेवापि संपश्यन्कर्तुमर्हसि।।3.20।।",
+        "modernText": "Great leaders of the past reached fulfillment through action. By acting with responsibility, they preserved the balance of the world."
     },
     {
         "id": "3-21",
@@ -1678,7 +1816,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः।\n\nस यत्प्रमाणं कुरुते लोकस्तदनुवर्तते।।3.21।।"
+        "sanskrit": "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः।\n\nस यत्प्रमाणं कुरुते लोकस्तदनुवर्तते।।3.21।।",
+        "modernText": "Whatever a respected person does, others naturally follow. The example they set becomes the path many people take."
     },
     {
         "id": "3-22",
@@ -1689,7 +1828,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन।\n\nनानवाप्तमवाप्तव्यं वर्त एव च कर्मणि।।3.22।।"
+        "sanskrit": "न मे पार्थास्ति कर्तव्यं त्रिषु लोकेषु किञ्चन।\n\nनानवाप्तमवाप्तव्यं वर्त एव च कर्मणि।।3.22।।",
+        "modernText": "Even though there is nothing I personally need to achieve, I continue to act."
     },
     {
         "id": "3-23",
@@ -1700,7 +1840,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः।\n\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः।।3.23।।"
+        "sanskrit": "यदि ह्यहं न वर्तेयं जातु कर्मण्यतन्द्रितः।\n\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः।।3.23।।",
+        "modernText": "If I stopped acting, people everywhere would follow that example."
     },
     {
         "id": "3-24",
@@ -1711,7 +1852,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम्।\n\nसङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः।।3.24।।"
+        "sanskrit": "उत्सीदेयुरिमे लोका न कुर्यां कर्म चेदहम्।\n\nसङ्करस्य च कर्ता स्यामुपहन्यामिमाः प्रजाः।।3.24।।",
+        "modernText": "If those with influence abandoned their responsibilities, confusion would spread and society itself would fall into disorder."
     },
     {
         "id": "3-25",
@@ -1722,7 +1864,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत।\n\nकुर्याद्विद्वांस्तथासक्तश्िचकीर्षुर्लोकसंग्रहम्।।3.25।।"
+        "sanskrit": "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत।\n\nकुर्याद्विद्वांस्तथासक्तश्िचकीर्षुर्लोकसंग्रहम्।।3.25।।",
+        "modernText": "Just as those without understanding act with attachment, the wise should act without attachment, always seeking the welfare of the world."
     },
     {
         "id": "3-26",
@@ -1733,7 +1876,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम्।\n\nजोषयेत्सर्वकर्माणि विद्वान् युक्तः समाचरन्।।3.26।।"
+        "sanskrit": "न बुद्धिभेदं जनयेदज्ञानां कर्मसङ्गिनाम्।\n\nजोषयेत्सर्वकर्माणि विद्वान् युक्तः समाचरन्।।3.26।।",
+        "modernText": "The wise should not create confusion for those who are still attached to action. Instead, they should guide by example and perform actions with discipline."
     },
     {
         "id": "3-27",
@@ -1748,7 +1892,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "surrender"
         ],
         "speaker": "Krishna",
-        "sanskrit": "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः।\n\nअहङ्कारविमूढात्मा कर्ताऽहमिति मन्यते।।3.27।।"
+        "sanskrit": "प्रकृतेः क्रियमाणानि गुणैः कर्माणि सर्वशः।\n\nअहङ्कारविमूढात्मा कर्ताऽहमिति मन्यते।।3.27।।",
+        "modernText": "All actions are carried out by the forces of nature. But the ego convinces a person to believe, 'I alone am the doer.'"
     },
     {
         "id": "3-28",
@@ -1759,7 +1904,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः।\n\nगुणा गुणेषु वर्तन्त इति मत्वा न सज्जते।।3.28।।"
+        "sanskrit": "तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः।\n\nगुणा गुणेषु वर्तन्त इति मत्वा न सज्जते।।3.28।।",
+        "modernText": "One who understands the truth sees that actions arise from the interaction of nature's forces and therefore does not become trapped in attachment."
     },
     {
         "id": "3-29",
@@ -1770,7 +1916,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रकृतेर्गुणसम्मूढाः सज्जन्ते गुणकर्मसु।\n\nतानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत्।।3.29।।"
+        "sanskrit": "प्रकृतेर्गुणसम्मूढाः सज्जन्ते गुणकर्मसु।\n\nतानकृत्स्नविदो मन्दान्कृत्स्नविन्न विचालयेत्।।3.29।।",
+        "modernText": "Those whose understanding is limited become attached to their actions. The wise should guide them gently rather than disturb their progress."
     },
     {
         "id": "3-30",
@@ -1781,7 +1928,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा।\n\nनिराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः।।3.30।।"
+        "sanskrit": "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा।\n\nनिराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः।।3.30।।",
+        "modernText": "Offer your actions to Brahman (the ultimate reality), center your mind in Atman (the soul), and act without desire or possessiveness. Perform your duty without inner conflict."
     },
     {
         "id": "3-31",
@@ -1792,7 +1940,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः।\n\nश्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः।।3.31।।"
+        "sanskrit": "ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः।\n\nश्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः।।3.31।।",
+        "modernText": "Those who follow this teaching with sincerity and trust gradually free themselves from the burden of selfish action."
     },
     {
         "id": "3-32",
@@ -1803,7 +1952,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ये त्वेतदभ्यसूयन्तो नानुतिष्ठन्ति मे मतम्।\n\nसर्वज्ञानविमूढांस्तान्विद्धि नष्टानचेतसः।।3.32।।"
+        "sanskrit": "ये त्वेतदभ्यसूयन्तो नानुतिष्ठन्ति मे मतम्।\n\nसर्वज्ञानविमूढांस्तान्विद्धि नष्टानचेतसः।।3.32।।",
+        "modernText": "But those who reject this wisdom and refuse to follow it remain confused and lose their clarity of judgment."
     },
     {
         "id": "3-33",
@@ -1814,7 +1964,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि।\n\nप्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति।।3.33।।"
+        "sanskrit": "सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि।\n\nप्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति।।3.33।।",
+        "modernText": "Even wise people act according to their nature. All beings follow their nature. Simply forcing restraint cannot fully change this."
     },
     {
         "id": "3-34",
@@ -1825,7 +1976,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ।\n\nतयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ।।3.34।।"
+        "sanskrit": "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ।\n\nतयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ।।3.34।।",
+        "modernText": "Each sense has its natural attractions and dislikes. One should not become controlled by them, for they can block the path of clarity."
     },
     {
         "id": "3-35",
@@ -1840,7 +1992,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "courage"
         ],
         "speaker": "Krishna",
-        "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्।\n\nस्वधर्मे निधनं श्रेयः परधर्मो भयावहः।।3.35।।"
+        "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्।\n\nस्वधर्मे निधनं श्रेयः परधर्मो भयावहः।।3.35।।",
+        "modernText": "It is better to live according to your own path, even imperfectly, than to imitate the path of another perfectly. Living someone else's path brings inner conflict."
     },
     {
         "id": "3-36",
@@ -1851,7 +2004,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nअथ केन प्रयुक्तोऽयं पापं चरति पूरुषः।\n\nअनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः।।3.36।।"
+        "sanskrit": "अर्जुन उवाच\n\nअथ केन प्रयुक्तोऽयं पापं चरति पूरुषः।\n\nअनिच्छन्नपि वार्ष्णेय बलादिव नियोजितः।।3.36।।",
+        "modernText": "Arjuna said: What drives a person to act wrongly, even against their own better judgment, as if pushed by some force?"
     },
     {
         "id": "3-37",
@@ -1862,7 +2016,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nकाम एष क्रोध एष रजोगुणसमुद्भवः।\n\nमहाशनो महापाप्मा विद्ध्येनमिह वैरिणम्।।3.37।।"
+        "sanskrit": "श्री भगवानुवाच\n\nकाम एष क्रोध एष रजोगुणसमुद्भवः।\n\nमहाशनो महापाप्मा विद्ध्येनमिह वैरिणम्।।3.37।।",
+        "modernText": "Krishna said: It is desire, which later turns into anger. Born from restless passion, it consumes the mind and becomes a powerful inner enemy."
     },
     {
         "id": "3-38",
@@ -1873,7 +2028,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "धूमेनाव्रियते वह्निर्यथाऽऽदर्शो मलेन च।\n\nयथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम्।।3.38।।"
+        "sanskrit": "धूमेनाव्रियते वह्निर्यथाऽऽदर्शो मलेन च।\n\nयथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम्।।3.38।।",
+        "modernText": "Just as fire can be hidden by smoke or a mirror by dust, the clarity of the mind can be covered by this force."
     },
     {
         "id": "3-39",
@@ -1884,7 +2040,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा।\n\nकामरूपेण कौन्तेय दुष्पूरेणानलेन च।।3.39।।"
+        "sanskrit": "आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा।\n\nकामरूपेण कौन्तेय दुष्पूरेणानलेन च।।3.39।।",
+        "modernText": "This restless desire clouds wisdom and keeps a person from seeing clearly. Like fire, it is never satisfied."
     },
     {
         "id": "3-40",
@@ -1895,7 +2052,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते।\n\nएतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम्।।3.40।।"
+        "sanskrit": "इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते।\n\nएतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम्।।3.40।।",
+        "modernText": "Desire lives in the senses, the mind, and the intellect. Through these it distorts understanding and confuses the soul."
     },
     {
         "id": "3-41",
@@ -1906,7 +2064,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ।\n\nपाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम्।।3.41।।"
+        "sanskrit": "तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ।\n\nपाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम्।।3.41।।",
+        "modernText": "Therefore begin by bringing the senses under discipline. In doing so, you weaken this force that destroys wisdom and inner clarity."
     },
     {
         "id": "3-42",
@@ -1917,7 +2076,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः।\n\nमनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः।।3.42।।"
+        "sanskrit": "इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः।\n\nमनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः।।3.42।।",
+        "modernText": "The senses are powerful, but the mind is greater than the senses. The intellect is greater than the mind. Beyond even the intellect lies Atman (the soul)."
     },
     {
         "id": "3-43",
@@ -1928,7 +2088,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना।\n\nजहि शत्रुं महाबाहो कामरूपं दुरासदम्।।3.43।।"
+        "sanskrit": "एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना।\n\nजहि शत्रुं महाबाहो कामरूपं दुरासदम्।।3.43।।",
+        "modernText": "Knowing that Atman (the soul) is higher than the intellect, steady the mind through inner awareness and overcome this powerful enemy called desire."
     },
     {
         "id": "4-1",
@@ -1939,7 +2100,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nइमं विवस्वते योगं प्रोक्तवानहमव्ययम्।\n\nविवस्वान् मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत्।।4.1।।"
+        "sanskrit": "श्री भगवानुवाच\n\nइमं विवस्वते योगं प्रोक्तवानहमव्ययम्।\n\nविवस्वान् मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत्।।4.1।।",
+        "modernText": "Krishna said: I first taught this timeless path of inner discipline to Vivasvan. Vivasvan passed it to Manu, and Manu passed it to Ikshvaku."
     },
     {
         "id": "4-2",
@@ -1950,7 +2112,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एवं परम्पराप्राप्तमिमं राजर्षयो विदुः।\n\nस कालेनेह महता योगो नष्टः परन्तप।।4.2।।"
+        "sanskrit": "एवं परम्पराप्राप्तमिमं राजर्षयो विदुः।\n\nस कालेनेह महता योगो नष्टः परन्तप।।4.2।।",
+        "modernText": "In this way the teaching was preserved through a lineage of wise leaders. But over time the understanding of this path faded from the world."
     },
     {
         "id": "4-3",
@@ -1961,7 +2124,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "स एवायं मया तेऽद्य योगः प्रोक्तः पुरातनः।\n\nभक्तोऽसि मे सखा चेति रहस्यं ह्येतदुत्तमम्।।4.3।।"
+        "sanskrit": "स एवायं मया तेऽद्य योगः प्रोक्तः पुरातनः।\n\nभक्तोऽसि मे सखा चेति रहस्यं ह्येतदुत्तमम्।।4.3।।",
+        "modernText": "That same ancient wisdom I now share with you, because you are both my friend and a sincere seeker. This teaching is a profound truth."
     },
     {
         "id": "4-4",
@@ -1972,7 +2136,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nअपरं भवतो जन्म परं जन्म विवस्वतः।\n\nकथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति।।4.4।।"
+        "sanskrit": "अर्जुन उवाच\n\nअपरं भवतो जन्म परं जन्म विवस्वतः।\n\nकथमेतद्विजानीयां त्वमादौ प्रोक्तवानिति।।4.4।।",
+        "modernText": "Arjuna said: You were born in recent times, while Vivasvan lived long ago. How should I understand that you taught this in the beginning?"
     },
     {
         "id": "4-5",
@@ -1983,7 +2148,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nबहूनि मे व्यतीतानि जन्मानि तव चार्जुन।\n\nतान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप।।4.5।।"
+        "sanskrit": "श्री भगवानुवाच\n\nबहूनि मे व्यतीतानि जन्मानि तव चार्जुन।\n\nतान्यहं वेद सर्वाणि न त्वं वेत्थ परन्तप।।4.5।।",
+        "modernText": "Krishna said: Many lifetimes have passed for both of us. I remember them all, but you do not."
     },
     {
         "id": "4-6",
@@ -1994,7 +2160,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अजोऽपि सन्नव्ययात्मा भूतानामीश्वरोऽपि सन्।\n\nप्रकृतिं स्वामधिष्ठाय संभवाम्यात्ममायया।।4.6।।"
+        "sanskrit": "अजोऽपि सन्नव्ययात्मा भूतानामीश्वरोऽपि सन्।\n\nप्रकृतिं स्वामधिष्ठाय संभवाम्यात्ममायया।।4.6।।",
+        "modernText": "Though I am unborn and my nature is eternal, I appear in the world through my own power, guiding the course of life."
     },
     {
         "id": "4-7",
@@ -2005,7 +2172,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत।\n\nअभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम्।।4.7।।"
+        "sanskrit": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत।\n\nअभ्युत्थानमधर्मस्य तदाऽऽत्मानं सृजाम्यहम्।।4.7।।",
+        "modernText": "Whenever balance and righteousness decline and disorder begins to rise, I manifest in the world."
     },
     {
         "id": "4-8",
@@ -2016,7 +2184,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "परित्राणाय साधूनां विनाशाय च दुष्कृताम्।\n\nधर्मसंस्थापनार्थाय संभवामि युगे युगे।।4.8।।"
+        "sanskrit": "परित्राणाय साधूनां विनाशाय च दुष्कृताम्।\n\nधर्मसंस्थापनार्थाय संभवामि युगे युगे।।4.8।।",
+        "modernText": "I appear to protect those who live with integrity, to restrain harmful forces, and to restore balance in the world. This happens again and again through time."
     },
     {
         "id": "4-9",
@@ -2027,7 +2196,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः।\n\nत्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन।।4.9।।"
+        "sanskrit": "जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः।\n\nत्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन।।4.9।।",
+        "modernText": "One who truly understands the deeper nature of these actions and manifestations is no longer bound by the cycle of rebirth and moves toward liberation."
     },
     {
         "id": "4-10",
@@ -2038,7 +2208,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "वीतरागभयक्रोधा मन्मया मामुपाश्रिताः।\n\nबहवो ज्ञानतपसा पूता मद्भावमागताः।।4.10।।"
+        "sanskrit": "वीतरागभयक्रोधा मन्मया मामुपाश्रिताः।\n\nबहवो ज्ञानतपसा पूता मद्भावमागताः।।4.10।।",
+        "modernText": "Many people, freed from attachment, fear, and anger, have purified themselves through understanding and have come to share in this higher awareness."
     },
     {
         "id": "4-11",
@@ -2049,7 +2220,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम्।\n\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः।।4.11।।"
+        "sanskrit": "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम्।\n\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः।।4.11।।",
+        "modernText": "People approach truth in many different ways. Whatever path they sincerely follow, it ultimately leads toward the same reality."
     },
     {
         "id": "4-12",
@@ -2060,7 +2232,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "काङ्क्षन्तः कर्मणां सिद्धिं यजन्त इह देवताः।\n\nक्षिप्रं हि मानुषे लोके सिद्धिर्भवति कर्मजा।।4.12।।"
+        "sanskrit": "काङ्क्षन्तः कर्मणां सिद्धिं यजन्त इह देवताः।\n\nक्षिप्रं हि मानुषे लोके सिद्धिर्भवति कर्मजा।।4.12।।",
+        "modernText": "Those who seek quick success often turn toward limited goals and temporary rewards, which can be gained quickly through effort in the world."
     },
     {
         "id": "4-13",
@@ -2071,7 +2244,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः।\n\nतस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम्।।4.13।।"
+        "sanskrit": "चातुर्वर्ण्यं मया सृष्टं गुणकर्मविभागशः।\n\nतस्य कर्तारमपि मां विद्ध्यकर्तारमव्ययम्।।4.13।।",
+        "modernText": "Human society developed different roles based on natural qualities and types of work. Though I established this order, I remain beyond all action."
     },
     {
         "id": "4-14",
@@ -2082,7 +2256,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा।\n\nइति मां योऽभिजानाति कर्मभिर्न स बध्यते।।4.14।।"
+        "sanskrit": "न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा।\n\nइति मां योऽभिजानाति कर्मभिर्न स बध्यते।।4.14।।",
+        "modernText": "Actions do not bind one who acts without personal desire for results. Understanding this allows a person to remain free even while acting."
     },
     {
         "id": "4-15",
@@ -2093,7 +2268,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः।\n\nकुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम्।।4.15।।"
+        "sanskrit": "एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः।\n\nकुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम्।।4.15।।",
+        "modernText": "Knowing this truth, seekers of liberation in ancient times still performed their responsibilities. Therefore act as they did, with clarity and discipline."
     },
     {
         "id": "4-16",
@@ -2104,7 +2280,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः।\n\nतत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात्।।4.16।।"
+        "sanskrit": "किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः।\n\nतत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात्।।4.16।।",
+        "modernText": "Even thoughtful people struggle to understand what true action is and what inaction means. I will explain this so that you may act wisely."
     },
     {
         "id": "4-17",
@@ -2115,7 +2292,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः।\n\nअकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः।।4.17।।"
+        "sanskrit": "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः।\n\nअकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः।।4.17।।",
+        "modernText": "One must understand the difference between right action, harmful action, and the deeper meaning of inaction. The nature of action is subtle and complex."
     },
     {
         "id": "4-18",
@@ -2130,7 +2308,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "action"
         ],
         "speaker": "Krishna",
-        "sanskrit": "कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः।\n\nस बुद्धिमान् मनुष्येषु स युक्तः कृत्स्नकर्मकृत्।।4.18।।"
+        "sanskrit": "कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः।\n\nस बुद्धिमान् मनुष्येषु स युक्तः कृत्स्नकर्मकृत्।।4.18।।",
+        "modernText": "One who can see stillness within action and meaningful action within stillness possesses true understanding."
     },
     {
         "id": "4-19",
@@ -2141,7 +2320,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः।\n\nज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः।।4.19।।"
+        "sanskrit": "यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः।\n\nज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः।।4.19।।",
+        "modernText": "When a person's actions are free from selfish desire and driven by clear understanding, the wise recognize that person as truly awakened."
     },
     {
         "id": "4-20",
@@ -2152,7 +2332,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः।\n\nकर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः।।4.20।।"
+        "sanskrit": "त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः।\n\nकर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः।।4.20।।",
+        "modernText": "One who releases attachment to results, who is content and inwardly independent, remains inwardly free even while acting."
     },
     {
         "id": "4-21",
@@ -2163,7 +2344,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः।\n\nशारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम्।।4.21।।"
+        "sanskrit": "निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः।\n\nशारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम्।।4.21।।",
+        "modernText": "When a person acts with self-control, without possessiveness or expectation, their actions no longer create inner burden."
     },
     {
         "id": "4-22",
@@ -2174,7 +2356,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः।\n\nसमः सिद्धावसिद्धौ च कृत्वापि न निबध्यते।।4.22।।"
+        "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः।\n\nसमः सिद्धावसिद्धौ च कृत्वापि न निबध्यते।।4.22।।",
+        "modernText": "Content with whatever comes, steady in both success and failure, and free from envy, such a person remains unbound by their actions."
     },
     {
         "id": "4-23",
@@ -2185,7 +2368,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः।\n\nयज्ञायाचरतः कर्म समग्रं प्रविलीयते।।4.23।।"
+        "sanskrit": "गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः।\n\nयज्ञायाचरतः कर्म समग्रं प्रविलीयते।।4.23।।",
+        "modernText": "When someone acts without attachment, with the mind grounded in understanding, their actions dissolve naturally and leave no lasting burden."
     },
     {
         "id": "4-24",
@@ -2196,7 +2380,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ब्रह्मार्पणं ब्रह्महविर्ब्रह्माग्नौ ब्रह्मणा हुतम्।\n\nब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना।।4.24।।"
+        "sanskrit": "ब्रह्मार्पणं ब्रह्महविर्ब्रह्माग्नौ ब्रह्मणा हुतम्।\n\nब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना।।4.24।।",
+        "modernText": "For one who sees clearly, every aspect of action becomes part of the same deeper reality. The offering, the act, and the purpose all arise from the same ultimate reality."
     },
     {
         "id": "4-25",
@@ -2207,7 +2392,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "दैवमेवापरे यज्ञं योगिनः पर्युपासते।\n\nब्रह्माग्नावपरे यज्ञं यज्ञेनैवोपजुह्वति।।4.25।।"
+        "sanskrit": "दैवमेवापरे यज्ञं योगिनः पर्युपासते।\n\nब्रह्माग्नावपरे यज्ञं यज्ञेनैवोपजुह्वति।।4.25।।",
+        "modernText": "Some seek truth through devotion and reverence, while others offer their actions themselves into the fire of deeper understanding."
     },
     {
         "id": "4-26",
@@ -2218,7 +2404,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्रोत्रादीनीन्द्रियाण्यन्ये संयमाग्निषु जुह्वति।\n\nशब्दादीन्विषयानन्य इन्द्रियाग्निषु जुह्वति।।4.26।।"
+        "sanskrit": "श्रोत्रादीनीन्द्रियाण्यन्ये संयमाग्निषु जुह्वति।\n\nशब्दादीन्विषयानन्य इन्द्रियाग्निषु जुह्वति।।4.26।।",
+        "modernText": "Some practice discipline by restraining the senses, while others transform sensory experiences through awareness and self-control."
     },
     {
         "id": "4-27",
@@ -2229,7 +2416,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वाणीन्द्रियकर्माणि प्राणकर्माणि चापरे।\n\nआत्मसंयमयोगाग्नौ जुह्वति ज्ञानदीपिते।।4.27।।"
+        "sanskrit": "सर्वाणीन्द्रियकर्माणि प्राणकर्माणि चापरे।\n\nआत्मसंयमयोगाग्नौ जुह्वति ज्ञानदीपिते।।4.27।।",
+        "modernText": "Others dedicate all activities of the senses and the life force into the discipline of self-mastery guided by knowledge."
     },
     {
         "id": "4-28",
@@ -2240,7 +2428,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे।\n\nस्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः।।4.28।।"
+        "sanskrit": "द्रव्ययज्ञास्तपोयज्ञा योगयज्ञास्तथापरे।\n\nस्वाध्यायज्ञानयज्ञाश्च यतयः संशितव्रताः।।4.28।।",
+        "modernText": "Some practice generosity, some practice discipline and restraint, and others dedicate themselves to study and the pursuit of knowledge."
     },
     {
         "id": "4-29",
@@ -2251,7 +2440,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अपाने जुह्वति प्राण प्राणेऽपानं तथाऽपरे।\n\nप्राणापानगती रुद्ध्वा प्राणायामपरायणाः।।4.29।।"
+        "sanskrit": "अपाने जुह्वति प्राण प्राणेऽपानं तथाऽपरे।\n\nप्राणापानगती रुद्ध्वा प्राणायामपरायणाः।।4.29।।",
+        "modernText": "Some practice deep control of breath and life energy, using it as a path toward inner balance and awareness."
     },
     {
         "id": "4-30",
@@ -2262,7 +2452,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अपरे नियताहाराः प्राणान्प्राणेषु जुह्वति।\n\nसर्वेऽप्येते यज्ञविदो यज्ञक्षपितकल्मषाः।।4.30।।"
+        "sanskrit": "अपरे नियताहाराः प्राणान्प्राणेषु जुह्वति।\n\nसर्वेऽप्येते यज्ञविदो यज्ञक्षपितकल्मषाः।।4.30।।",
+        "modernText": "Others regulate their habits and lifestyle carefully, dedicating all aspects of life to a path of awareness and self-discipline."
     },
     {
         "id": "4-31",
@@ -2273,7 +2464,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम्।\n\nनायं लोकोऽस्त्ययज्ञस्य कुतो़ऽन्यः कुरुसत्तम।।4.31।।"
+        "sanskrit": "यज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम्।\n\nनायं लोकोऽस्त्ययज्ञस्य कुतो़ऽन्यः कुरुसत्तम।।4.31।।",
+        "modernText": "Those who live in the spirit of offering and contribution move toward the eternal reality. A life without such contribution leads nowhere meaningful."
     },
     {
         "id": "4-32",
@@ -2284,7 +2476,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एवं बहुविधा यज्ञा वितता ब्रह्मणो मुखे।\n\nकर्मजान्विद्धि तान्सर्वानेवं ज्ञात्वा विमोक्ष्यसे।।4.32।।"
+        "sanskrit": "एवं बहुविधा यज्ञा वितता ब्रह्मणो मुखे।\n\nकर्मजान्विद्धि तान्सर्वानेवं ज्ञात्वा विमोक्ष्यसे।।4.32।।",
+        "modernText": "Many different forms of dedicated action exist. Understanding that they all arise from purposeful action helps a person move toward liberation."
     },
     {
         "id": "4-33",
@@ -2295,7 +2488,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप।\n\nसर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते।।4.33।।"
+        "sanskrit": "श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप।\n\nसर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते।।4.33।।",
+        "modernText": "Yet the offering of knowledge is greater than material offerings, because all meaningful action ultimately finds its fulfillment in understanding."
     },
     {
         "id": "4-34",
@@ -2306,7 +2500,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया।\n\nउपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः।।4.34।।"
+        "sanskrit": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया।\n\nउपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः।।4.34।।",
+        "modernText": "Approach those who have realized truth with humility, sincere questions, and a willingness to learn. Those who see clearly can guide you toward understanding."
     },
     {
         "id": "4-35",
@@ -2317,7 +2512,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव।\n\nयेन भूतान्यशेषेण द्रक्ष्यस्यात्मन्यथो मयि।।4.35।।"
+        "sanskrit": "यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव।\n\nयेन भूतान्यशेषेण द्रक्ष्यस्यात्मन्यथो मयि।।4.35।।",
+        "modernText": "When you gain this understanding, confusion will no longer return. You will see all beings connected within the soul and within the deeper reality."
     },
     {
         "id": "4-36",
@@ -2328,7 +2524,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः।\n\nसर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि।।4.36।।"
+        "sanskrit": "अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः।\n\nसर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि।।4.36।।",
+        "modernText": "Even if someone has lived with many mistakes, the clarity of knowledge can carry them across those errors like a raft across a river."
     },
     {
         "id": "4-37",
@@ -2339,7 +2536,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन।\n\nज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा।।4.37।।"
+        "sanskrit": "यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन।\n\nज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा।।4.37।।",
+        "modernText": "Just as fire reduces wood to ashes, the fire of knowledge burns away the burden of past actions."
     },
     {
         "id": "4-38",
@@ -2354,7 +2552,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "meditation"
         ],
         "speaker": "Krishna",
-        "sanskrit": "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते।\n\nतत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति।।4.38।।"
+        "sanskrit": "न हि ज्ञानेन सदृशं पवित्रमिह विद्यते।\n\nतत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति।।4.38।।",
+        "modernText": "Nothing purifies the mind more deeply than true knowledge. With time and sincere effort, a person discovers this wisdom within the soul."
     },
     {
         "id": "4-39",
@@ -2365,7 +2564,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः।\n\nज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति।।4.39।।"
+        "sanskrit": "श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः।\n\nज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति।।4.39।।",
+        "modernText": "One who has trust, dedication, and disciplined senses gains knowledge. With that knowledge comes deep and lasting peace."
     },
     {
         "id": "4-40",
@@ -2376,7 +2576,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति।\n\nनायं लोकोऽस्ति न परो न सुखं संशयात्मनः।।4.40।।"
+        "sanskrit": "अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति।\n\nनायं लोकोऽस्ति न परो न सुखं संशयात्मनः।।4.40।।",
+        "modernText": "But the person who lacks understanding, trust, and clarity remains trapped in doubt. Such doubt destroys both peace and happiness."
     },
     {
         "id": "4-41",
@@ -2387,7 +2588,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "योगसंन्यस्तकर्माणं ज्ञानसंछिन्नसंशयम्।\n\nआत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय।।4.41।।"
+        "sanskrit": "योगसंन्यस्तकर्माणं ज्ञानसंछिन्नसंशयम्।\n\nआत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय।।4.41।।",
+        "modernText": "One who acts with inner discipline and whose doubts are removed through knowledge remains free, even while performing actions."
     },
     {
         "id": "4-42",
@@ -2398,7 +2600,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तस्मादज्ञानसंभूतं हृत्स्थं ज्ञानासिनाऽऽत्मनः।\n\nछित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत।।4.42।।"
+        "sanskrit": "तस्मादज्ञानसंभूतं हृत्स्थं ज्ञानासिनाऽऽत्मनः।\n\nछित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत।।4.42।।",
+        "modernText": "Therefore cut away the doubts that arise from ignorance through the clarity of knowledge. Stand in inner discipline and move forward with courage."
     },
     {
         "id": "5-1",
@@ -2409,7 +2612,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nसंन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि।\n\nयच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्िचतम्।।5.1।।"
+        "sanskrit": "अर्जुन उवाच\n\nसंन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि।\n\nयच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्िचतम्।।5.1।।",
+        "modernText": "Arjuna said: You praise both renouncing action and acting with discipline. Tell me clearly which of these paths is truly better."
     },
     {
         "id": "5-2",
@@ -2420,7 +2624,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nसंन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ।\n\nतयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते।।5.2।।"
+        "sanskrit": "श्री भगवानुवाच\n\nसंन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ।\n\nतयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते।।5.2।।",
+        "modernText": "Krishna said: Both renouncing selfish motives and acting with inner discipline can lead to the highest good. But acting with discipline while fulfilling one’s responsibilities is the better path."
     },
     {
         "id": "5-3",
@@ -2431,7 +2636,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति।\n\nनिर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते।।5.3।।"
+        "sanskrit": "ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति।\n\nनिर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते।।5.3।।",
+        "modernText": "A true renunciant is not one who abandons work, but one who lets go of hatred and craving. Free from these inner conflicts, such a person moves easily toward liberation."
     },
     {
         "id": "5-4",
@@ -2442,7 +2648,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सांख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः।\n\nएकमप्यास्थितः सम्यगुभयोर्विन्दते फलम्।।5.4।।"
+        "sanskrit": "सांख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः।\n\nएकमप्यास्थितः सम्यगुभयोर्विन्दते फलम्।।5.4।।",
+        "modernText": "Only the unwise see understanding and disciplined action as separate paths. One who is established in either path gains the benefits of both."
     },
     {
         "id": "5-5",
@@ -2453,7 +2660,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यत्सांख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते।\n\nएकं सांख्यं च योगं च यः पश्यति स पश्यति।।5.5।।"
+        "sanskrit": "यत्सांख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते।\n\nएकं सांख्यं च योगं च यः पश्यति स पश्यति।।5.5।।",
+        "modernText": "The fulfillment reached through deep understanding is also reached through disciplined action. One who sees these paths as one truly understands."
     },
     {
         "id": "5-6",
@@ -2464,7 +2672,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः।\n\nयोगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति।।5.6।।"
+        "sanskrit": "संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः।\n\nयोगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति।।5.6।।",
+        "modernText": "Renouncing action without inner discipline is difficult. But one who acts with awareness and balance quickly moves toward ultimate reality."
     },
     {
         "id": "5-7",
@@ -2475,7 +2684,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः।\n\nसर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते।।5.7।।"
+        "sanskrit": "योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः।\n\nसर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते।।5.7।।",
+        "modernText": "One who acts with inner discipline, whose mind is pure and senses are under control, sees the same soul in all beings. Even while acting, such a person remains untouched by the burden of action."
     },
     {
         "id": "5-8",
@@ -2486,7 +2696,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नैव किंचित्करोमीति युक्तो मन्येत तत्त्ववित्।\n\nपश्यन् श्रृणवन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपन् श्वसन्।।5.8।।"
+        "sanskrit": "नैव किंचित्करोमीति युक्तो मन्येत तत्त्ववित्।\n\nपश्यन् श्रृणवन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपन् श्वसन्।।5.8।।",
+        "modernText": "One who understands truth knows inwardly, 'I am not the doer.' Even while seeing, hearing, touching, eating, moving, resting, and breathing, they remain aware that life is simply unfolding through them."
     },
     {
         "id": "5-9",
@@ -2497,7 +2708,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि।\n\nइन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन्।।5.9।।"
+        "sanskrit": "प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि।\n\nइन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन्।।5.9।।",
+        "modernText": "Speaking, letting go, grasping, or opening and closing the eyes, such a person understands that the senses are simply interacting with the world."
     },
     {
         "id": "5-10",
@@ -2512,7 +2724,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "surrender"
         ],
         "speaker": "Krishna",
-        "sanskrit": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः।\n\nलिप्यते न स पापेन पद्मपत्रमिवाम्भसा।।5.10।।"
+        "sanskrit": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः।\n\nलिप्यते न स पापेन पद्मपत्रमिवाम्भसा।।5.10।।",
+        "modernText": "One who performs actions while offering them to the highest reality and letting go of attachment remains untouched by wrongdoing, just as a lotus leaf remains untouched by water."
     },
     {
         "id": "5-11",
@@ -2523,7 +2736,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि।\n\nयोगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वाऽऽत्मशुद्धये।।5.11।।"
+        "sanskrit": "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि।\n\nयोगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वाऽऽत्मशुद्धये।।5.11।।",
+        "modernText": "Those who practice disciplined action work through body, mind, intellect, and senses without attachment, using action as a way to purify the inner self."
     },
     {
         "id": "5-12",
@@ -2534,7 +2748,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम्।\n\nअयुक्तः कामकारेण फले सक्तो निबध्यते।।5.12।।"
+        "sanskrit": "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम्।\n\nअयुक्तः कामकारेण फले सक्तो निबध्यते।।5.12।।",
+        "modernText": "When a person releases attachment to the results of action, lasting peace arises. But when actions are driven by desire for results, the mind becomes bound."
     },
     {
         "id": "5-13",
@@ -2545,7 +2760,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वकर्माणि मनसा संन्यस्यास्ते सुखं वशी।\n\nनवद्वारे पुरे देही नैव कुर्वन्न कारयन्।।5.13।।"
+        "sanskrit": "सर्वकर्माणि मनसा संन्यस्यास्ते सुखं वशी।\n\nनवद्वारे पुरे देही नैव कुर्वन्न कारयन्।।5.13।।",
+        "modernText": "One who has mastered the mind rests peacefully within the body, understanding that the soul itself neither acts nor causes action."
     },
     {
         "id": "5-14",
@@ -2556,7 +2772,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः।\n\nन कर्मफलसंयोगं स्वभावस्तु प्रवर्तते।।5.14।।"
+        "sanskrit": "न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः।\n\nन कर्मफलसंयोगं स्वभावस्तु प्रवर्तते।।5.14।।",
+        "modernText": "The deeper reality does not create a person’s actions or their sense of agency. These arise from the natural forces of life itself."
     },
     {
         "id": "5-15",
@@ -2567,7 +2784,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः।\n\nअज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः।।5.15।।"
+        "sanskrit": "नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः।\n\nअज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः।।5.15।।",
+        "modernText": "Ultimate reality does not take on anyone’s wrongdoing or vertex. Ignorance hides true understanding, and because of this people become confused."
     },
     {
         "id": "5-16",
@@ -2578,7 +2796,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्ञानेन तु तदज्ञानं येषां नाशितमात्मनः।\n\nतेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम्।।5.16।।"
+        "sanskrit": "ज्ञानेन तु तदज्ञानं येषां नाशितमात्मनः।\n\nतेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम्।।5.16।।",
+        "modernText": "But when ignorance is removed through knowledge of the soul, that knowledge shines like the sun and reveals the deeper truth of existence."
     },
     {
         "id": "5-17",
@@ -2589,7 +2808,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणाः।\n\nगच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषाः।।5.17।।"
+        "sanskrit": "तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणाः।\n\nगच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषाः।।5.17।।",
+        "modernText": "Those whose understanding, awareness, and purpose are rooted in the highest truth move beyond confusion and toward liberation."
     },
     {
         "id": "5-18",
@@ -2600,7 +2820,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "विद्याविनयसंपन्ने ब्राह्मणे गवि हस्तिनि।\n\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः।।5.18।।"
+        "sanskrit": "विद्याविनयसंपन्ने ब्राह्मणे गवि हस्तिनि।\n\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः।।5.18।।",
+        "modernText": "The wise see with equal vision a humble scholar, a cow, an elephant, a dog, and even one considered an outcast. Their vision sees the same soul in all."
     },
     {
         "id": "5-19",
@@ -2611,7 +2832,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः।\n\nनिर्दोषं हि समं ब्रह्म तस्माद्ब्रह्मणि ते स्थिताः।।5.19।।"
+        "sanskrit": "इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः।\n\nनिर्दोषं हि समं ब्रह्म तस्माद्ब्रह्मणि ते स्थिताः।।5.19।।",
+        "modernText": "Those whose minds rest in equality overcome the illusions of division in this very life. Seeing all with equal vision, they live in harmony with ultimate reality."
     },
     {
         "id": "5-20",
@@ -2622,7 +2844,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम्।\n\nस्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः।।5.20।।"
+        "sanskrit": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम्।\n\nस्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः।।5.20।।",
+        "modernText": "One who does not become overly excited by pleasant experiences or distressed by unpleasant ones, whose understanding remains steady, lives established in deeper truth."
     },
     {
         "id": "5-21",
@@ -2633,7 +2856,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम्।\n\nस ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते।।5.21।।"
+        "sanskrit": "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम्।\n\nस ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते।।5.21।।",
+        "modernText": "One who no longer depends on external pleasures discovers a deeper joy within the soul. Through inner discipline, such a person experiences lasting happiness."
     },
     {
         "id": "5-22",
@@ -2644,7 +2868,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते।\n\nआद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः।।5.22।।"
+        "sanskrit": "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते।\n\nआद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः।।5.22।।",
+        "modernText": "Pleasures that arise from sensory contact inevitably lead to dissatisfaction, because they begin and end. The wise do not place their hopes in them."
     },
     {
         "id": "5-23",
@@ -2655,7 +2880,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात्।\n\nकामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः।।5.23।।"
+        "sanskrit": "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात्।\n\nकामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः।।5.23।।",
+        "modernText": "One who can endure the impulses of desire and anger before leaving the body lives with discipline and finds true happiness."
     },
     {
         "id": "5-24",
@@ -2666,7 +2892,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः।\n\nस योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति।।5.24।।"
+        "sanskrit": "योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः।\n\nस योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति।।5.24।।",
+        "modernText": "One whose joy, peace, and inner light arise from within the soul reaches ultimate reality and lives in deep harmony with it."
     },
     {
         "id": "5-25",
@@ -2677,7 +2904,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः।\n\nछिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः।।5.25।।"
+        "sanskrit": "लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः।\n\nछिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः।।5.25।।",
+        "modernText": "Those whose doubts are removed, whose minds are disciplined, and who work for the welfare of all beings move toward liberation."
     },
     {
         "id": "5-26",
@@ -2688,7 +2916,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कामक्रोधवियुक्तानां यतीनां यतचेतसाम्।\n\nअभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम्।।5.26।।"
+        "sanskrit": "कामक्रोधवियुक्तानां यतीनां यतचेतसाम्।\n\nअभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम्।।5.26।।",
+        "modernText": "For those who are free from desire and anger and who understand the soul, liberation is close at hand."
     },
     {
         "id": "5-27",
@@ -2699,7 +2928,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः।\n\nप्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ।।5.27।।"
+        "sanskrit": "स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः।\n\nप्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ।।5.27।।",
+        "modernText": "By withdrawing attention from external distractions, steadying the gaze, and calming the breath, one begins to quiet the restless movements of the mind."
     },
     {
         "id": "5-28",
@@ -2710,7 +2940,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः।\n\nविगतेच्छाभयक्रोधो यः सदा मुक्त एव सः।।5.28।।"
+        "sanskrit": "यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः।\n\nविगतेच्छाभयक्रोधो यः सदा मुक्त एव सः।।5.28।।",
+        "modernText": "A person who has mastered the senses, mind, and intellect, who is free from desire, fear, and anger, lives in a state of inner freedom."
     },
     {
         "id": "5-29",
@@ -2721,7 +2952,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम्।\n\nसुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति।।5.29।।"
+        "sanskrit": "भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम्।\n\nसुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति।।5.29।।",
+        "modernText": "Knowing the deeper reality as the source of all effort, the guiding presence of the world, and the friend of all beings, a person attains true peace."
     },
     {
         "id": "6-1",
@@ -2732,7 +2964,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nअनाश्रितः कर्मफलं कार्यं कर्म करोति यः।\n\nस संन्यासी च योगी च न निरग्निर्न चाक्रियः।।6.1।।"
+        "sanskrit": "श्री भगवानुवाच\n\nअनाश्रितः कर्मफलं कार्यं कर्म करोति यः।\n\nस संन्यासी च योगी च न निरग्निर्न चाक्रियः।।6.1।।",
+        "modernText": "Krishna said: One who performs their responsibilities without clinging to the results is the true renunciant and practitioner of inner discipline, not one who simply withdraws from action."
     },
     {
         "id": "6-2",
@@ -2743,7 +2976,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यं संन्यासमिति प्राहुर्योगं तं विद्धि पाण्डव।\n\nन ह्यसंन्यस्तसङ्कल्पो योगी भवति कश्चन।।6.2।।"
+        "sanskrit": "यं संन्यासमिति प्राहुर्योगं तं विद्धि पाण्डव।\n\nन ह्यसंन्यस्तसङ्कल्पो योगी भवति कश्चन।।6.2।।",
+        "modernText": "What is called renunciation is truly this inner discipline. No one becomes established in it without letting go of self-centered intentions."
     },
     {
         "id": "6-3",
@@ -2754,7 +2988,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते।\n\nयोगारूढस्य तस्यैव शमः कारणमुच्यते।।6.3।।"
+        "sanskrit": "आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते।\n\nयोगारूढस्य तस्यैव शमः कारणमुच्यते।।6.3।।",
+        "modernText": "For one who seeks inner discipline, responsible action is the path. For one who has already found steadiness, inner calm becomes the path."
     },
     {
         "id": "6-4",
@@ -2765,7 +3000,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते।\n\nसर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते।।6.4।।"
+        "sanskrit": "यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते।\n\nसर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते।।6.4।।",
+        "modernText": "When a person is no longer attached to sensory pleasures or driven by personal motives, they are said to be established in inner discipline."
     },
     {
         "id": "6-5",
@@ -2780,7 +3016,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "knowledge"
         ],
         "speaker": "Krishna",
-        "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्।\n\nआत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः।।6.5।।"
+        "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्।\n\nआत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः।।6.5।।",
+        "modernText": "Lift yourself through the strength of your own mind. Do not allow yourself to fall through carelessness. The mind can become either your greatest ally or your greatest obstacle."
     },
     {
         "id": "6-6",
@@ -2791,7 +3028,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना जितः।\n\nअनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्।।6.6।।"
+        "sanskrit": "बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना जितः।\n\nअनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्।।6.6।।",
+        "modernText": "For one who has mastered the mind, it becomes a trusted friend. But for one who has not, the mind behaves like an enemy."
     },
     {
         "id": "6-7",
@@ -2802,7 +3040,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः।\n\nशीतोष्णसुखदुःखेषु तथा मानापमानयोः।।6.7।।"
+        "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः।\n\nशीतोष्णसुखदुःखेषु तथा मानापमानयोः।।6.7।।",
+        "modernText": "A person who has gained mastery over the mind remains steady in heat and cold, pleasure and pain, honor and dishonor, resting in deep inner calm."
     },
     {
         "id": "6-8",
@@ -2813,7 +3052,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः।\n\nयुक्त इत्युच्यते योगी समलोष्टाश्मकाञ्चनः।।6.8।।"
+        "sanskrit": "ज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः।\n\nयुक्त इत्युच्यते योगी समलोष्टाश्मकाञ्चनः।।6.8।।",
+        "modernText": "One who is satisfied through knowledge and inner realization, whose senses are under control, and who sees a lump of earth, a stone, and gold with equal value has achieved inner balance."
     },
     {
         "id": "6-9",
@@ -2824,7 +3064,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु।\n\nसाधुष्वपि च पापेषु समबुद्धिर्विशिष्यते।।6.9।।"
+        "sanskrit": "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु।\n\nसाधुष्वपि च पापेषु समबुद्धिर्विशिष्यते।।6.9।।",
+        "modernText": "One who maintains equal regard toward friend and enemy, toward strangers and relatives, toward the virtuous and the flawed, lives with a higher understanding."
     },
     {
         "id": "6-10",
@@ -2835,7 +3076,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "योगी युञ्जीत सततमात्मानं रहसि स्थितः।\n\nएकाकी यतचित्तात्मा निराशीरपरिग्रहः।।6.10।।"
+        "sanskrit": "योगी युञ्जीत सततमात्मानं रहसि स्थितः।\n\nएकाकी यतचित्तात्मा निराशीरपरिग्रहः।।6.10।।",
+        "modernText": "A seeker of inner discipline should spend time in quiet reflection, living simply, with mind and body under control, free from constant desire and possessiveness."
     },
     {
         "id": "6-11",
@@ -2846,7 +3088,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "शुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मनः।\n\nनात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम्।।6.11।।"
+        "sanskrit": "शुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मनः।\n\nनात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम्।।6.11।।",
+        "modernText": "Choose a clean and peaceful place, and prepare a steady seat that is neither too high nor too low."
     },
     {
         "id": "6-12",
@@ -2857,7 +3100,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तत्रैकाग्रं मनः कृत्वा यतचित्तेन्द्रियक्रियः।\n\nउपविश्यासने युञ्ज्याद्योगमात्मविशुद्धये।।6.12।।"
+        "sanskrit": "तत्रैकाग्रं मनः कृत्वा यतचित्तेन्द्रियक्रियः।\n\nउपविश्यासने युञ्ज्याद्योगमात्मविशुद्धये।।6.12।।",
+        "modernText": "Sitting there, focus the mind inward and bring the senses under calm awareness. In this way the practice of meditation begins to purify the inner self."
     },
     {
         "id": "6-13",
@@ -2868,7 +3112,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "समं कायशिरोग्रीवं धारयन्नचलं स्थिरः।\n\nसंप्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन्।।6.13।।"
+        "sanskrit": "समं कायशिरोग्रीवं धारयन्नचलं स्थिरः।\n\nसंप्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन्।।6.13।।",
+        "modernText": "Hold the body, head, and neck upright and steady. Let the gaze rest gently without wandering."
     },
     {
         "id": "6-14",
@@ -2879,7 +3124,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थितः।\n\nमनः संयम्य मच्चित्तो युक्त आसीत मत्परः।।6.14।।"
+        "sanskrit": "प्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थितः।\n\nमनः संयम्य मच्चित्तो युक्त आसीत मत्परः।।6.14।।",
+        "modernText": "With a calm mind, free from fear, and with disciplined living, focus the mind on the highest truth and remain steady in meditation."
     },
     {
         "id": "6-15",
@@ -2890,7 +3136,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "युञ्जन्नेवं सदाऽऽत्मानं योगी नियतमानसः।\n\nशान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति।।6.15।।"
+        "sanskrit": "युञ्जन्नेवं सदाऽऽत्मानं योगी नियतमानसः।\n\nशान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति।।6.15।।",
+        "modernText": "Through steady practice and a disciplined mind, one discovers deep peace and the freedom that arises from union with ultimate reality."
     },
     {
         "id": "6-16",
@@ -2901,7 +3148,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः।\n\nन चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन।।6.16।।"
+        "sanskrit": "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः।\n\nन चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन।।6.16।।",
+        "modernText": "This path cannot be followed by one who lives in extremes, eating too much or too little, sleeping too much or too little."
     },
     {
         "id": "6-17",
@@ -2916,7 +3164,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "action"
         ],
         "speaker": "Krishna",
-        "sanskrit": "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु।\n\nयुक्तस्वप्नावबोधस्य योगो भवति दुःखहा।।6.17।।"
+        "sanskrit": "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु।\n\nयुक्तस्वप्नावबोधस्य योगो भवति दुःखहा।।6.17।।",
+        "modernText": "But for one who lives with balance in food, recreation, work, and rest, inner discipline becomes a powerful path that removes suffering."
     },
     {
         "id": "6-18",
@@ -2927,7 +3176,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदा विनियतं चित्तमात्मन्येवावतिष्ठते।\n\nनिःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा।।6.18।।"
+        "sanskrit": "यदा विनियतं चित्तमात्मन्येवावतिष्ठते।\n\nनिःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा।।6.18।।",
+        "modernText": "When the disciplined mind rests steadily in the soul, free from the pull of desires, a person is said to be established in inner discipline."
     },
     {
         "id": "6-19",
@@ -2938,7 +3188,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता।\n\nयोगिनो यतचित्तस्य युञ्जतो योगमात्मनः।।6.19।।"
+        "sanskrit": "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता।\n\nयोगिनो यतचित्तस्य युञ्जतो योगमात्मनः।।6.19।।",
+        "modernText": "Just as a lamp in a windless place burns without flickering, so the mind of one who practices meditation remains steady and calm."
     },
     {
         "id": "6-20",
@@ -2949,7 +3200,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यत्रोपरमते चित्तं निरुद्धं योगसेवया।\n\nयत्र चैवात्मनाऽऽत्मानं पश्यन्नात्मनि तुष्यति।।6.20।।"
+        "sanskrit": "यत्रोपरमते चित्तं निरुद्धं योगसेवया।\n\nयत्र चैवात्मनाऽऽत्मानं पश्यन्नात्मनि तुष्यति।।6.20।।",
+        "modernText": "In meditation the mind becomes still, and the seeker discovers the soul through direct awareness, finding deep contentment within."
     },
     {
         "id": "6-21",
@@ -2960,7 +3212,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सुखमात्यन्तिकं यत्तद्बुद्धिग्राह्यमतीन्द्रियम्।\n\nवेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः।।6.21।।"
+        "sanskrit": "सुखमात्यन्तिकं यत्तद्बुद्धिग्राह्यमतीन्द्रियम्।\n\nवेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः।।6.21।।",
+        "modernText": "In that state arises a profound joy that goes beyond the senses and is understood through inner awareness."
     },
     {
         "id": "6-22",
@@ -2971,7 +3224,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः।\n\nयस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते।।6.22।।"
+        "sanskrit": "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः।\n\nयस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते।।6.22।।",
+        "modernText": "Once this inner fulfillment is discovered, nothing else appears greater. Even great difficulties cannot shake one who is established in it."
     },
     {
         "id": "6-23",
@@ -2986,7 +3240,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "equanimity"
         ],
         "speaker": "Krishna",
-        "sanskrit": "तं विद्याद् दुःखसंयोगवियोगं योगसंज्ञितम्।\n\nस निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा।।6.23।।"
+        "sanskrit": "तं विद्याद् दुःखसंयोगवियोगं योगसंज्ञितम्।\n\nस निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा।।6.23।।",
+        "modernText": "This state of freedom from inner suffering is the true meaning of inner discipline. It should be practiced with determination and a steady heart."
     },
     {
         "id": "6-24",
@@ -2997,7 +3252,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषतः।\n\nमनसैवेन्द्रियग्रामं विनियम्य समन्ततः।।6.24।।"
+        "sanskrit": "सङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषतः।\n\nमनसैवेन्द्रियग्रामं विनियम्य समन्ततः।।6.24।।",
+        "modernText": "Let go of all desires born from restless thought, and bring the senses under the guidance of a calm and attentive mind."
     },
     {
         "id": "6-25",
@@ -3008,7 +3264,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया।\n\nआत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत्।।6.25।।"
+        "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया।\n\nआत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत्।।6.25।।",
+        "modernText": "Little by little, through steady understanding, allow the mind to settle into quietness. Once the mind rests in the soul, let it remain there."
     },
     {
         "id": "6-26",
@@ -3019,7 +3276,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम्।\n\nततस्ततो नियम्यैतदात्मन्येव वशं नयेत्।।6.26।।"
+        "sanskrit": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम्।\n\nततस्ततो नियम्यैतदात्मन्येव वशं नयेत्।।6.26।।",
+        "modernText": "Whenever the restless mind wanders, gently bring it back again under the guidance of awareness."
     },
     {
         "id": "6-27",
@@ -3030,7 +3288,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम्।\n\nउपैति शान्तरजसं ब्रह्मभूतमकल्मषम्।।6.27।।"
+        "sanskrit": "प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम्।\n\nउपैति शान्तरजसं ब्रह्मभूतमकल्मषम्।।6.27।।",
+        "modernText": "Great happiness arises for one whose mind becomes peaceful, whose restless energy is calmed, and whose inner nature is purified."
     },
     {
         "id": "6-28",
@@ -3041,7 +3300,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "युञ्जन्नेवं सदाऽऽत्मानं योगी विगतकल्मषः।\n\nसुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्नुते।।6.28।।"
+        "sanskrit": "युञ्जन्नेवं सदाऽऽत्मानं योगी विगतकल्मषः।\n\nसुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्नुते।।6.28।।",
+        "modernText": "Through continued practice, the seeker becomes free from inner impurities and experiences the limitless joy of union with ultimate reality."
     },
     {
         "id": "6-29",
@@ -3052,7 +3312,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि।\n\nईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः।।6.29।।"
+        "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि।\n\nईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः।।6.29।।",
+        "modernText": "One who is established in inner discipline sees the soul present in all beings and all beings within the soul. Such a person sees unity everywhere."
     },
     {
         "id": "6-30",
@@ -3063,7 +3324,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति।\n\nतस्याहं न प्रणश्यामि स च मे न प्रणश्यति।।6.30।।"
+        "sanskrit": "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति।\n\nतस्याहं न प्रणश्यामि स च मे न प्रणश्यति।।6.30।।",
+        "modernText": "One who sees the deeper reality present everywhere and everything within that reality never feels separated from it."
     },
     {
         "id": "6-31",
@@ -3074,7 +3336,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वभूतस्थितं यो मां भजत्येकत्वमास्थितः।\n\nसर्वथा वर्तमानोऽपि स योगी मयि वर्तते।।6.31।।"
+        "sanskrit": "सर्वभूतस्थितं यो मां भजत्येकत्वमास्थितः।\n\nसर्वथा वर्तमानोऽपि स योगी मयि वर्तते।।6.31।।",
+        "modernText": "One who recognizes the same sacred presence in all beings lives in unity with that presence, even while acting in the world."
     },
     {
         "id": "6-32",
@@ -3085,7 +3348,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन।\n\nसुखं वा यदि वा दुःखं सः योगी परमो मतः।।6.32।।"
+        "sanskrit": "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन।\n\nसुखं वा यदि वा दुःखं सः योगी परमो मतः।।6.32।।",
+        "modernText": "The highest practitioner is one who sees others as oneself, understanding both their joy and their suffering with equal compassion."
     },
     {
         "id": "6-33",
@@ -3096,7 +3360,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन।\n\nएतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम्।।6.33।।"
+        "sanskrit": "अर्जुन उवाच\n\nयोऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन।\n\nएतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम्।।6.33।।",
+        "modernText": "Arjuna said: This state of inner balance that you describe seems difficult to maintain, because the mind is so restless."
     },
     {
         "id": "6-34",
@@ -3107,7 +3372,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्।\n\nतस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्।।6.34।।"
+        "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्।\n\nतस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्।।6.34।।",
+        "modernText": "The mind is unstable, powerful, and difficult to control. It seems as hard to master as the wind."
     },
     {
         "id": "6-35",
@@ -3122,7 +3388,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "equanimity"
         ],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nअसंशयं महाबाहो मनो दुर्निग्रहं चलं।\n\nअभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते।।6.35।।"
+        "sanskrit": "श्री भगवानुवाच\n\nअसंशयं महाबाहो मनो दुर्निग्रहं चलं।\n\nअभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते।।6.35।।",
+        "modernText": "Krishna said: The mind is indeed restless and difficult to control. But through steady practice and detachment, it can be guided."
     },
     {
         "id": "6-36",
@@ -3133,7 +3400,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "असंयतात्मना योगो दुष्प्राप इति मे मतिः।\n\nवश्यात्मना तु यतता शक्योऽवाप्तुमुपायतः।।6.36।।"
+        "sanskrit": "असंयतात्मना योगो दुष्प्राप इति मे मतिः।\n\nवश्यात्मना तु यतता शक्योऽवाप्तुमुपायतः।।6.36।।",
+        "modernText": "Inner discipline is difficult for one who has not learned self-mastery. But for one who practices sincerely and steadily, it can be reached."
     },
     {
         "id": "6-37",
@@ -3144,7 +3412,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nअयतिः श्रद्धयोपेतो योगाच्चलितमानसः।\n\nअप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति।।6.37।।"
+        "sanskrit": "अर्जुन उवाच\n\nअयतिः श्रद्धयोपेतो योगाच्चलितमानसः।\n\nअप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति।।6.37।।",
+        "modernText": "Arjuna said: What happens to someone who begins this path with sincerity but loses steadiness before reaching completion?"
     },
     {
         "id": "6-38",
@@ -3155,7 +3424,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति।\n\nअप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि।।6.38।।"
+        "sanskrit": "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति।\n\nअप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि।।6.38।।",
+        "modernText": "Does such a person lose both worldly success and spiritual progress, like a cloud that breaks apart in the sky?"
     },
     {
         "id": "6-39",
@@ -3166,7 +3436,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः।\n\nत्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते।।6.39।।"
+        "sanskrit": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः।\n\nत्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते।।6.39।।",
+        "modernText": "Please remove this doubt for me completely, for only you can explain this clearly."
     },
     {
         "id": "6-40",
@@ -3177,7 +3448,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते।\n\nनहि कल्याणकृत्कश्िचद्दुर्गतिं तात गच्छति।।6.40।।"
+        "sanskrit": "श्री भगवानुवाच\n\nपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते।\n\nनहि कल्याणकृत्कश्िचद्दुर्गतिं तात गच्छति।।6.40।।",
+        "modernText": "Krishna said: No sincere effort toward goodness is ever lost. One who walks this path never truly falls into ruin."
     },
     {
         "id": "6-41",
@@ -3188,7 +3460,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वतीः समाः।\n\nशुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते।।6.41।।"
+        "sanskrit": "प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वतीः समाः।\n\nशुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते।।6.41।।",
+        "modernText": "Such a person may first experience the rewards of their past goodness and later be born again in a supportive and prosperous environment."
     },
     {
         "id": "6-42",
@@ -3199,7 +3472,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अथवा योगिनामेव कुले भवति धीमताम्।\n\nएतद्धि दुर्लभतरं लोके जन्म यदीदृशम्।।6.42।।"
+        "sanskrit": "अथवा योगिनामेव कुले भवति धीमताम्।\n\nएतद्धि दुर्लभतरं लोके जन्म यदीदृशम्।।6.42।।",
+        "modernText": "Or they may be born into a family of wise seekers, a rare and fortunate beginning in life."
     },
     {
         "id": "6-43",
@@ -3210,7 +3484,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम्।\n\nयतते च ततो भूयः संसिद्धौ कुरुनन्दन।।6.43।।"
+        "sanskrit": "तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम्।\n\nयतते च ततो भूयः संसिद्धौ कुरुनन्दन।।6.43।।",
+        "modernText": "In such circumstances they regain the wisdom they developed before and continue their journey toward fulfillment."
     },
     {
         "id": "6-44",
@@ -3221,7 +3496,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः।\n\nजिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते।।6.44।।"
+        "sanskrit": "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः।\n\nजिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते।।6.44।।",
+        "modernText": "The influence of past practice naturally guides them forward again. Even the search for inner discipline lifts a person beyond mechanical ritual."
     },
     {
         "id": "6-45",
@@ -3232,7 +3508,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः।\n\nअनेकजन्मसंसिद्धस्ततो याति परां गतिम्।।6.45।।"
+        "sanskrit": "प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः।\n\nअनेकजन्मसंसिद्धस्ततो याति परां गतिम्।।6.45।।",
+        "modernText": "With sincere effort across time, the seeker becomes purified and eventually reaches the highest goal of life."
     },
     {
         "id": "6-46",
@@ -3243,7 +3520,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः।\n\nकर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन।।6.46।।"
+        "sanskrit": "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः।\n\nकर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन।।6.46।।",
+        "modernText": "One who lives with inner discipline stands higher than one who practices severe austerity, higher than one who only studies, and higher than one who acts without awareness."
     },
     {
         "id": "6-47",
@@ -3254,7 +3532,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "योगिनामपि सर्वेषां मद्गतेनान्तरात्मना।\n\nश्रद्धावान्भजते यो मां स मे युक्ततमो मतः।।6.47।।"
+        "sanskrit": "योगिनामपि सर्वेषां मद्गतेनान्तरात्मना।\n\nश्रद्धावान्भजते यो मां स मे युक्ततमो मतः।।6.47।।",
+        "modernText": "Among all who practice inner discipline, the one who lives with deep trust, whose heart rests in the highest truth, and who remains inwardly connected to it is the most deeply united."
     },
     {
         "id": "7-1",
@@ -3265,7 +3544,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः।\n\nअसंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु।।7.1।।"
+        "sanskrit": "श्री भगवानुवाच\n\nमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः।\n\nअसंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु।।7.1।।",
+        "modernText": "Krishna said: Fix your mind on the highest truth and practice inner discipline with sincerity. In this way you will come to know reality fully and without doubt."
     },
     {
         "id": "7-2",
@@ -3276,7 +3556,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्ञानं तेऽहं सविज्ञानमिदं व���्ष्याम्यशेषतः।\n\nयज्ज्ञात्वा नेह भूयोऽन्यज्ज्ञातव्यमवशिष्यते।।7.2।।"
+        "sanskrit": "ज्ञानं तेऽहं सविज्ञानमिदं व���्ष्याम्यशेषतः।\n\nयज्ज्ञात्वा नेह भूयोऽन्यज्ज्ञातव्यमवशिष्यते।।7.2।।",
+        "modernText": "I will explain both knowledge and direct understanding. Once this is known, nothing else remains essential to know."
     },
     {
         "id": "7-3",
@@ -3287,7 +3568,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मनुष्याणां सहस्रेषु कश्िचद्यतति सिद्धये।\n\nयततामपि सिद्धानां कश्िचन्मां वेत्ति तत्त्वतः।।7.3।।"
+        "sanskrit": "मनुष्याणां सहस्रेषु कश्िचद्यतति सिद्धये।\n\nयततामपि सिद्धानां कश्िचन्मां वेत्ति तत्त्वतः।।7.3।।",
+        "modernText": "Among thousands of people, only a few strive for deeper understanding. And among those who strive, only a rare person truly understands ultimate reality."
     },
     {
         "id": "7-4",
@@ -3298,7 +3580,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "भूमिरापोऽनलो वायुः खं मनो बुद्धिरेव च।\n\nअहङ्कार इतीयं मे भिन्ना प्रकृतिरष्टधा।।7.4।।"
+        "sanskrit": "भूमिरापोऽनलो वायुः खं मनो बुद्धिरेव च।\n\nअहङ्कार इतीयं मे भिन्ना प्रकृतिरष्टधा।।7.4।।",
+        "modernText": "The physical world is composed of earth, water, fire, air, space, mind, intellect, and ego. These form the basic elements of material existence."
     },
     {
         "id": "7-5",
@@ -3309,7 +3592,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अपरेयमितस्त्वन्यां प्रकृतिं विद्धि मे पराम्।\n\nजीवभूतां महाबाहो ययेदं धार्यते जगत्।।7.5।।"
+        "sanskrit": "अपरेयमितस्त्वन्यां प्रकृतिं विद्धि मे पराम्।\n\nजीवभूतां महाबाहो ययेदं धार्यते जगत्।।7.5।।",
+        "modernText": "But beyond this visible nature is a higher principle, the living consciousness that sustains all life."
     },
     {
         "id": "7-6",
@@ -3320,7 +3604,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एतद्योनीनि भूतानि सर्वाणीत्युपधारय।\n\nअहं कृत्स्नस्य जगतः प्रभवः प्रलयस्तथा।।7.6।।"
+        "sanskrit": "एतद्योनीनि भूतानि सर्वाणीत्युपधारय।\n\nअहं कृत्स्नस्य जगतः प्रभवः प्रलयस्तथा।।7.6।।",
+        "modernText": "From these two aspects arise all living beings. The source and dissolution of the entire universe rests in the deeper reality behind them."
     },
     {
         "id": "7-7",
@@ -3331,7 +3616,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय।\n\nमयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव।।7.7।।"
+        "sanskrit": "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय।\n\nमयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव।।7.7।।",
+        "modernText": "There is nothing higher than that ultimate reality. Just as pearls are held together by a thread, all existence is held together by it."
     },
     {
         "id": "7-8",
@@ -3342,7 +3628,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः।\n\nप्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु।।7.8।।"
+        "sanskrit": "रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः।\n\nप्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु।।7.8।।",
+        "modernText": "The essence of life appears in many forms: the taste in water, the light of the sun and moon, the sacred sound Om in the Vedas (ancient teachings), the vibration of sound in space, and the strength within human beings."
     },
     {
         "id": "7-9",
@@ -3353,7 +3640,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पुण्यो गन्धः पृथिव्यां च तेजश्चास्मि विभावसौ।\n\nजीवनं सर्वभूतेषु तपश्चास्मि तपस्विषु।।7.9।।"
+        "sanskrit": "पुण्यो गन्धः पृथिव्यां च तेजश्चास्मि विभावसौ।\n\nजीवनं सर्वभूतेषु तपश्चास्मि तपस्विषु।।7.9।।",
+        "modernText": "It is the fragrance of the earth, the brilliance of fire, the life within all living beings, and the discipline of those who live with self-restraint."
     },
     {
         "id": "7-10",
@@ -3364,7 +3652,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बीजं मां सर्वभूतानां विद्धि पार्थ सनातनम्।\n\nबुद्धिर्बुद्धिमतामस्मि तेजस्तेजस्विनामहम्।।7.10।।"
+        "sanskrit": "बीजं मां सर्वभूतानां विद्धि पार्थ सनातनम्।\n\nबुद्धिर्बुद्धिमतामस्मि तेजस्तेजस्विनामहम्।।7.10।।",
+        "modernText": "It is the original seed of all existence, the intelligence of the intelligent, and the radiance of what shines brightly in the world."
     },
     {
         "id": "7-11",
@@ -3375,7 +3664,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बलं बलवतां चाहं कामरागविवर्जितम्।\n\nधर्माविरुद्धो भूतेषु कामोऽस्मि भरतर्षभ।।7.11।।"
+        "sanskrit": "बलं बलवतां चाहं कामरागविवर्जितम्।\n\nधर्माविरुद्धो भूतेषु कामोऽस्मि भरतर्षभ।।7.11।।",
+        "modernText": "It is the strength of the strong when free from selfish desire, and the natural impulse of life that remains aligned with harmony and responsibility."
     },
     {
         "id": "7-12",
@@ -3386,7 +3676,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ये चैव सात्त्विका भावा राजसास्तामसाश्च ये।\n\nमत्त एवेति तान्विद्धि नत्वहं तेषु ते मयि।।7.12।।"
+        "sanskrit": "ये चैव सात्त्विका भावा राजसास्तामसाश्च ये।\n\nमत्त एवेति तान्विद्धि नत्वहं तेषु ते मयि।।7.12।।",
+        "modernText": "All states of nature arise from this deeper reality. Though they emerge from it, it remains beyond them."
     },
     {
         "id": "7-13",
@@ -3397,7 +3688,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "त्रिभिर्गुणमयैर्भावैरेभिः सर्वमिदं जगत्।\n\nमोहितं नाभिजानाति मामेभ्यः परमव्ययम्।।7.13।।"
+        "sanskrit": "त्रिभिर्गुणमयैर्भावैरेभिः सर्वमिदं जगत्।\n\nमोहितं नाभिजानाति मामेभ्यः परमव्ययम्।।7.13।।",
+        "modernText": "Because people become absorbed in these changing states of nature, they fail to recognize the eternal reality beyond them."
     },
     {
         "id": "7-14",
@@ -3408,7 +3700,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "दैवी ह्येषा गुणमयी मम माया दुरत्यया।\n\nमामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते।।7.14।।"
+        "sanskrit": "दैवी ह्येषा गुणमयी मम माया दुरत्यया।\n\nमामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते।।7.14।।",
+        "modernText": "The forces of illusion that shape the world are difficult to overcome. But those who seek refuge in the highest truth move beyond this illusion."
     },
     {
         "id": "7-15",
@@ -3419,7 +3712,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न मां दुष्कृतिनो मूढाः प्रपद्यन्ते नराधमाः।\n\nमाययापहृतज्ञाना आसुरं भावमाश्रिताः।।7.15।।"
+        "sanskrit": "न मां दुष्कृतिनो मूढाः प्रपद्यन्ते नराधमाः।\n\nमाययापहृतज्ञाना आसुरं भावमाश्रिताः।।7.15।।",
+        "modernText": "Those whose understanding is clouded by selfishness and confusion turn away from deeper truth and remain caught in ignorance."
     },
     {
         "id": "7-16",
@@ -3430,7 +3724,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन।\n\nआर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ।।7.16।।"
+        "sanskrit": "चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन।\n\nआर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ।।7.16।।",
+        "modernText": "Four kinds of people turn toward the highest truth: those seeking relief from suffering, those searching for understanding, those seeking success, and those who already possess wisdom."
     },
     {
         "id": "7-17",
@@ -3441,7 +3736,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तेषां ज्ञानी नित्ययुक्त एकभक्ितर्विशिष्यते।\n\nप्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः।।7.17।।"
+        "sanskrit": "तेषां ज्ञानी नित्ययुक्त एकभक्ितर्विशिष्यते।\n\nप्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः।।7.17।।",
+        "modernText": "Among them, the one who truly understands and remains devoted to the highest truth stands above the rest, living in unity with it."
     },
     {
         "id": "7-18",
@@ -3452,7 +3748,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "उदाराः सर्व एवैते ज्ञानी त्वात्मैव मे मतम्।\n\nआस्थितः स हि युक्तात्मा मामेवानुत्तमां गतिम्।।7.18।।"
+        "sanskrit": "उदाराः सर्व एवैते ज्ञानी त्वात्मैव मे मतम्।\n\nआस्थितः स हि युक्तात्मा मामेवानुत्तमां गतिम्।।7.18।।",
+        "modernText": "All sincere seekers are noble, but the one who recognizes the deeper reality as the ultimate goal becomes fully united with it."
     },
     {
         "id": "7-19",
@@ -3467,7 +3764,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "devotion"
         ],
         "speaker": "Krishna",
-        "sanskrit": "बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते।\n\nवासुदेवः सर्वमिति स महात्मा सुदुर्लभः।।7.19।।"
+        "sanskrit": "बहूनां जन्मनामन्ते ज्ञानवान्मां प्रपद्यते।\n\nवासुदेवः सर्वमिति स महात्मा सुदुर्लभः।।7.19।।",
+        "modernText": "After many lifetimes of seeking, the wise person realizes that the entire universe is permeated by the same divine reality. Such a realization is very rare."
     },
     {
         "id": "7-20",
@@ -3478,7 +3776,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कामैस्तैस्तैर्हृतज���ञानाः प्रपद्यन्तेऽन्यदेवताः।\n\nतं तं नियममास्थाय प्रकृत्या नियताः स्वया।।7.20।।"
+        "sanskrit": "कामैस्तैस्तैर्हृतज���ञानाः प्रपद्यन्तेऽन्यदेवताः।\n\nतं तं नियममास्थाय प्रकृत्या नियताः स्वया।।7.20।।",
+        "modernText": "Those whose understanding is guided by personal desires turn toward many different forms of worship, each shaped by their own nature."
     },
     {
         "id": "7-21",
@@ -3489,7 +3788,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यो यो यां यां तनुं भक्तः श्रद्धयार्चितुमिच्छति।\n\nतस्य तस्याचलां श्रद्धां तामेव विदधाम्यहम्।।7.21।।"
+        "sanskrit": "यो यो यां यां तनुं भक्तः श्रद्धयार्चितुमिच्छति।\n\nतस्य तस्याचलां श्रद्धां तामेव विदधाम्यहम्।।7.21।।",
+        "modernText": "Whatever form a person chooses to worship with faith, that faith becomes strengthened through their devotion."
     },
     {
         "id": "7-22",
@@ -3500,7 +3800,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "स तया श्रद्धया युक्तस्तस्याराधनमीहते।\n\nलभते च ततः कामान्मयैव विहितान् हि तान्।।7.22।।"
+        "sanskrit": "स तया श्रद्धया युक्तस्तस्याराधनमीहते।\n\nलभते च ततः कामान्मयैव विहितान् हि तान्।।7.22।।",
+        "modernText": "Through that devotion they obtain what they seek, though ultimately all such outcomes arise from the same deeper reality."
     },
     {
         "id": "7-23",
@@ -3511,7 +3812,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अन्तवत्तु फलं तेषां तद्भवत्यल्पमेधसाम्।\n\nदेवान्देवयजो यान्ति मद्भक्ता यान्ति मामपि।।7.23।।"
+        "sanskrit": "अन्तवत्तु फलं तेषां तद्भवत्यल्पमेधसाम्।\n\nदेवान्देवयजो यान्ति मद्भक्ता यान्ति मामपि।।7.23।।",
+        "modernText": "But the results gained through limited understanding are temporary. Those who seek temporary goals reach temporary outcomes, while those who seek the highest truth reach lasting union with it."
     },
     {
         "id": "7-24",
@@ -3522,7 +3824,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अव्यक्तं व्यक्ितमापन्नं मन्यन्ते मामबुद्धयः।\n\nपरं भावमजानन्तो ममाव्ययमनुत्तमम्।।7.24।।"
+        "sanskrit": "अव्यक्तं व्यक्ितमापन्नं मन्यन्ते मामबुद्धयः।\n\nपरं भावमजानन्तो ममाव्ययमनुत्तमम्।।7.24।।",
+        "modernText": "Those who lack deeper understanding think the ultimate reality appears only in visible form, not realizing its timeless and imperishable nature."
     },
     {
         "id": "7-25",
@@ -3533,7 +3836,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नाहं प्रकाशः सर्वस्य योगमायासमावृतः।\n\nमूढोऽयं नाभिजानाति लोको मामजमव्ययम्।।7.25।।"
+        "sanskrit": "नाहं प्रकाशः सर्वस्य योगमायासमावृतः।\n\nमूढोऽयं नाभिजानाति लोको मामजमव्ययम्।।7.25।।",
+        "modernText": "Because reality is veiled by the power of illusion, most people do not recognize its eternal nature."
     },
     {
         "id": "7-26",
@@ -3544,7 +3848,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "वेदाहं समतीतानि वर्तमानानि चार्जुन।\n\nभविष्याणि च भूतानि मां तु वेद न कश्चन।।7.26।।"
+        "sanskrit": "वेदाहं समतीतानि वर्तमानानि चार्जुन।\n\nभविष्याणि च भूतानि मां तु वेद न कश्चन।।7.26।।",
+        "modernText": "The deeper reality knows all beings of the past, present, and future, though few truly know it."
     },
     {
         "id": "7-27",
@@ -3555,7 +3860,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत।\n\nसर्वभूतानि संमोहं सर्गे यान्ति परन्तप।।7.27।।"
+        "sanskrit": "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत।\n\nसर्वभूतानि संमोहं सर्गे यान्ति परन्तप।।7.27।।",
+        "modernText": "From birth, people become caught in confusion through attraction and aversion, losing sight of deeper truth."
     },
     {
         "id": "7-28",
@@ -3566,7 +3872,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "येषां त्वन्तगतं पापं जनानां पुण्यकर्मणाम्।\n\nते द्वन्द्वमोहनिर्मुक्ता भजन्ते मां दृढव्रताः।।7.28।।"
+        "sanskrit": "येषां त्वन्तगतं पापं जनानां पुण्यकर्मणाम्।\n\nते द्वन्द्वमोहनिर्मुक्ता भजन्ते मां दृढव्रताः।।7.28।।",
+        "modernText": "But those whose lives become purified through good actions rise above this confusion and seek the highest truth with determination."
     },
     {
         "id": "7-29",
@@ -3577,7 +3884,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "जरामरणमोक्षाय मामाश्रित्य यतन्ति ये।\n\nते ब्रह्म तद्विदुः कृत्स्नमध्यात्मं कर्म चाखिलम्।।7.29।।"
+        "sanskrit": "जरामरणमोक्षाय मामाश्रित्य यतन्ति ये।\n\nते ब्रह्म तद्विदुः कृत्स्नमध्यात्मं कर्म चाखिलम्।।7.29।।",
+        "modernText": "Those who seek freedom from aging and death by turning toward the highest truth come to understand ultimate reality, the soul, and the nature of action."
     },
     {
         "id": "7-30",
@@ -3588,7 +3896,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "साधिभूताधिदैवं मां साधियज्ञं च ये विदुः।\n\nप्रयाणकालेऽपि च मां ते विदुर्युक्तचेतसः।।7.30।।"
+        "sanskrit": "साधिभूताधिदैवं मां साधियज्ञं च ये विदुः।\n\nप्रयाणकालेऽपि च मां ते विदुर्युक्तचेतसः।।7.30।।",
+        "modernText": "Those who understand the deeper reality behind existence, the forces of nature, and the spirit of sacred offering remain aware of that truth even at the final moment of life"
     },
     {
         "id": "8-1",
@@ -3599,7 +3908,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nकिं तद्ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम।\n\nअधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते।।8.1।।"
+        "sanskrit": "अर्जुन उवाच\n\nकिं तद्ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम।\n\nअधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते।।8.1।।",
+        "modernText": "Arjuna said: What is Brahman, the ultimate reality? What is the soul? What is the nature of action? And what is meant by the principles that govern existence and the cosmos?"
     },
     {
         "id": "8-2",
@@ -3610,7 +3920,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन।\n\nप्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः।।8.2।।"
+        "sanskrit": "अधियज्ञः कथं कोऽत्र देहेऽस्मिन्मधुसूदन।\n\nप्रयाणकाले च कथं ज्ञेयोऽसि नियतात्मभिः।।8.2।।",
+        "modernText": "How is the sacred presence within the body to be understood, and how can a disciplined person recognize the highest truth at the moment of death?"
     },
     {
         "id": "8-3",
@@ -3621,7 +3932,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nअक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते।\n\nभूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः।।8.3।।"
+        "sanskrit": "श्री भगवानुवाच\n\nअक्षरं ब्रह्म परमं स्वभावोऽध्यात्ममुच्यते।\n\nभूतभावोद्भवकरो विसर्गः कर्मसंज्ञितः।।8.3।।",
+        "modernText": "Krishna said: The imperishable ultimate reality is called Brahman. The soul is the deeper self within each being. Action is the creative force that brings life into existence."
     },
     {
         "id": "8-4",
@@ -3632,7 +3944,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम्।\n\nअधियज्ञोऽहमेवात्र देहे देहभृतां वर।।8.4।।"
+        "sanskrit": "अधिभूतं क्षरो भावः पुरुषश्चाधिदैवतम्।\n\nअधियज्ञोऽहमेवात्र देहे देहभृतां वर।।8.4।।",
+        "modernText": "The changing world represents the field of living beings, while the cosmic intelligence sustains the divine order. Within every living body, the deeper presence guiding all sacrifice and transformation is the same ultimate reality."
     },
     {
         "id": "8-5",
@@ -3643,7 +3956,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम्।\n\nयः प्रयाति स मद्भावं याति नास्त्यत्र संशयः।।8.5।।"
+        "sanskrit": "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम्।\n\nयः प्रयाति स मद्भावं याति नास्त्यत्र संशयः।।8.5।।",
+        "modernText": "Whoever remembers the highest truth at the moment of death reaches that state without doubt."
     },
     {
         "id": "8-6",
@@ -3654,7 +3968,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम्।\n\nतं तमेवैति कौन्तेय सदा तद्भावभावितः।।8.6।।"
+        "sanskrit": "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम्।\n\nतं तमेवैति कौन्तेय सदा तद्भावभावितः।।8.6।।",
+        "modernText": "Whatever a person holds in their mind at the final moment of life reflects the state they have cultivated throughout their life."
     },
     {
         "id": "8-7",
@@ -3665,7 +3980,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च।\n\nमय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम्।।8.7।।"
+        "sanskrit": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च।\n\nमय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम्।।8.7।।",
+        "modernText": "Therefore remember the highest truth at all times while continuing to perform your responsibilities. With mind and understanding centered in that truth, you will reach it."
     },
     {
         "id": "8-8",
@@ -3676,7 +3992,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना।\n\nपरमं पुरुषं दिव्यं याति पार्थानुचिन्तयन्।।8.8।।"
+        "sanskrit": "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना।\n\nपरमं पुरुषं दिव्यं याति पार्थानुचिन्तयन्।।8.8।।",
+        "modernText": "With a disciplined mind that does not wander, one who continually reflects on the highest reality eventually realizes it."
     },
     {
         "id": "8-9",
@@ -3687,7 +4004,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कविं पुराणमनुशासितार\n\nमणोरणीयांसमनुस्मरेद्यः।\n\nसर्वस्य धातारमचिन्त्यरूप\n\nमादित्यवर्णं तमसः परस्तात्।।8.9।।"
+        "sanskrit": "कविं पुराणमनुशासितार\n\nमणोरणीयांसमनुस्मरेद्यः।\n\nसर्वस्य धातारमचिन्त्यरूप\n\nमादित्यवर्णं तमसः परस्तात्।।8.9।।",
+        "modernText": "That supreme reality is the eternal witness, the ancient source of all, the subtle sustainer of existence, radiant beyond darkness and beyond ordinary understanding."
     },
     {
         "id": "8-10",
@@ -3698,7 +4016,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रयाणकाले मनसाऽचलेन\n\nभक्त्या युक्तो योगबलेन चैव।\n\nभ्रुवोर्मध्ये प्राणमावेश्य सम्यक्\n\nस तं परं पुरुषमुपैति दिव्यम्।।8.10।।"
+        "sanskrit": "प्रयाणकाले मनसाऽचलेन\n\nभक्त्या युक्तो योगबलेन चैव।\n\nभ्रुवोर्मध्ये प्राणमावेश्य सम्यक्\n\nस तं परं पुरुषमुपैति दिव्यम्।।8.10।।",
+        "modernText": "At the final moment, one whose mind remains steady in devotion and discipline, focusing inward with full awareness, reaches that supreme reality."
     },
     {
         "id": "8-11",
@@ -3709,7 +4028,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदक्षरं वेदविदो वदन्ति\n\nविशन्ति यद्यतयो वीतरागाः।\n\nयदिच्छन्तो ब्रह्मचर्यं चरन्ति\n\nतत्ते पदं संग्रहेण प्रवक्ष्ये।।8.11।।"
+        "sanskrit": "यदक्षरं वेदविदो वदन्ति\n\nविशन्ति यद्यतयो वीतरागाः।\n\nयदिच्छन्तो ब्रह्मचर्यं चरन्ति\n\nतत्ते पदं संग्रहेण प्रवक्ष्ये।।8.11।।",
+        "modernText": "The state described in the Vedas (ancient teachings) as imperishable is sought by those who live with discipline and self-restraint. I will explain this state briefly."
     },
     {
         "id": "8-12",
@@ -3720,7 +4040,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च।\n\nमूर्ध्न्याधायात्मनः प्राणमास्थितो योगधारणाम्।।8.12।।"
+        "sanskrit": "सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च।\n\nमूर्ध्न्याधायात्मनः प्राणमास्थितो योगधारणाम्।।8.12।।",
+        "modernText": "By withdrawing attention from external distractions, steadying the mind within the heart, and directing the life energy upward, one enters deep concentration."
     },
     {
         "id": "8-13",
@@ -3731,7 +4052,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन्।\n\nयः प्रयाति त्यजन्देहं स याति परमां गतिम्।।8.13।।"
+        "sanskrit": "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन्।\n\nयः प्रयाति त्यजन्देहं स याति परमां गतिम्।।8.13।।",
+        "modernText": "Uttering the sacred sound Om while remembering the highest truth at the moment of departure leads the seeker toward the supreme goal."
     },
     {
         "id": "8-14",
@@ -3742,7 +4064,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अनन्यचेताः सततं यो मां स्मरति नित्यशः।\n\nतस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः।।8.14।।"
+        "sanskrit": "अनन्यचेताः सततं यो मां स्मरति नित्यशः।\n\nतस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः।।8.14।।",
+        "modernText": "For the one who remembers the highest truth constantly and without distraction, realization becomes easy to attain."
     },
     {
         "id": "8-15",
@@ -3753,7 +4076,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम्।\n\nनाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः।।8.15।।"
+        "sanskrit": "मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम्।\n\nनाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः।।8.15।।",
+        "modernText": "Those who reach this realization do not return again to the cycle of suffering in this temporary world."
     },
     {
         "id": "8-16",
@@ -3764,7 +4088,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन।\n\nमामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते।।8.16।।"
+        "sanskrit": "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन।\n\nमामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते।।8.16।।",
+        "modernText": "Even the highest realms of existence are temporary. But reaching the ultimate reality brings freedom from rebirth."
     },
     {
         "id": "8-17",
@@ -3775,7 +4100,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः।\n\nरात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः।।8.17।।"
+        "sanskrit": "सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः।\n\nरात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः।।8.17।।",
+        "modernText": "Those who understand the vast cycles of cosmic time understand the rhythm of creation and dissolution."
     },
     {
         "id": "8-18",
@@ -3786,7 +4112,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अव्यक्ताद्व्यक्तयः सर्वाः प्रभवन्त्यहरागमे।\n\nरात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके।।8.18।।"
+        "sanskrit": "अव्यक्ताद्व्यक्तयः सर्वाः प्रभवन्त्यहरागमे।\n\nरात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके।।8.18।।",
+        "modernText": "From the unseen source all visible beings arise, and into that same unseen reality they dissolve again."
     },
     {
         "id": "8-19",
@@ -3797,7 +4124,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते।\n\nरात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे।।8.19।।"
+        "sanskrit": "भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते।\n\nरात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे।।8.19।।",
+        "modernText": "This cycle repeats endlessly as life appears and disappears again and again."
     },
     {
         "id": "8-20",
@@ -3808,7 +4136,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः।\n\nयः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति।।8.20।।"
+        "sanskrit": "परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः।\n\nयः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति।।8.20।।",
+        "modernText": "Beyond this cycle of appearance and disappearance lies an eternal reality that never fades."
     },
     {
         "id": "8-21",
@@ -3819,7 +4148,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम्।\n\nयं प्राप्य न निवर्तन्ते तद्धाम परमं मम।।8.21।।"
+        "sanskrit": "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम्।\n\nयं प्राप्य न निवर्तन्ते तद्धाम परमं मम।।8.21।।",
+        "modernText": "That eternal and imperishable state is the supreme goal. Once it is reached, one does not return to the cycle of rebirth."
     },
     {
         "id": "8-22",
@@ -3830,7 +4160,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया।\n\nयस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम्।।8.22।।"
+        "sanskrit": "पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया।\n\nयस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम्।।8.22।।",
+        "modernText": "This supreme reality can be realized through wholehearted devotion. It pervades all beings and holds the entire universe within it."
     },
     {
         "id": "8-23",
@@ -3841,7 +4172,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः।\n\nप्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ।।8.23।।"
+        "sanskrit": "यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः।\n\nप्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ।।8.23।।",
+        "modernText": "Now I will explain the paths by which seekers depart this life either to return again or to move beyond the cycle of return."
     },
     {
         "id": "8-24",
@@ -3852,7 +4184,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम्।\n\nतत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः।।8.24।।"
+        "sanskrit": "अग्निर्ज्योतिरहः शुक्लः षण्मासा उत्तरायणम्।\n\nतत्र प्रयाता गच्छन्ति ब्रह्म ब्रह्मविदो जनाः।।8.24।।",
+        "modernText": "Those who depart during the path symbolized by light move toward realization and do not return."
     },
     {
         "id": "8-25",
@@ -3863,7 +4196,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम्।\n\nतत्र चान्द्���मसं ज्योतिर्योगी प्राप्य निवर्तते।।8.25।।"
+        "sanskrit": "धूमो रात्रिस्तथा कृष्णः षण्मासा दक्षिणायनम्।\n\nतत्र चान्द्���मसं ज्योतिर्योगी प्राप्य निवर्तते।।8.25।।",
+        "modernText": "Those who depart along the path symbolized by darkness eventually return again to the cycle of life."
     },
     {
         "id": "8-26",
@@ -3874,7 +4208,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते।\n\nएकया यात्यनावृत्तिमन्ययाऽऽवर्तते पुनः।।8.26।।"
+        "sanskrit": "शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते।\n\nएकया यात्यनावृत्तिमन्ययाऽऽवर्तते पुनः।।8.26।।",
+        "modernText": "These two paths have long been understood as the paths of return and non-return."
     },
     {
         "id": "8-27",
@@ -3885,7 +4220,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नैते सृती पार्थ जानन्योगी मुह्यति कश्चन।\n\nतस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन।।8.27।।"
+        "sanskrit": "नैते सृती पार्थ जानन्योगी मुह्यति कश्चन।\n\nतस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन।।8.27।।",
+        "modernText": "One who understands these truths is not confused by them. Therefore remain steady in inner discipline at all times."
     },
     {
         "id": "8-28",
@@ -3896,7 +4232,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "वेदेषु यज्ञेषु तपःसु चैव\n\nदानेषु यत्पुण्यफलं प्रदिष्टम्।\n\nअत्येति तत्सर्वमिदं विदित्वा\n\nयोगी परं स्थानमुपैति चाद्यम्।।8.28।।"
+        "sanskrit": "वेदेषु यज्ञेषु तपःसु चैव\n\nदानेषु यत्पुण्यफलं प्रदिष्टम्।\n\nअत्येति तत्सर्वमिदं विदित्वा\n\nयोगी परं स्थानमुपैति चाद्यम्।।8.28।।",
+        "modernText": "Understanding this path goes beyond the rewards promised in the Vedas (ancient teachings), rituals, austerities, or charity, leading instead to the highest and eternal reality."
     },
     {
         "id": "9-1",
@@ -3907,7 +4244,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nइदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे।\n\nज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽशुभात्।।9.1।।"
+        "sanskrit": "श्री भगवानुवाच\n\nइदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे।\n\nज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽशुभात्।।9.1।।",
+        "modernText": "Krishna said: Because you listen with an open mind, I will share with you a deeply hidden wisdom together with the understanding that brings it to life. Knowing this frees a person from confusion and harmful action."
     },
     {
         "id": "9-2",
@@ -3918,7 +4256,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "राजविद्या राजगुह्यं पवित्रमिदमुत्तमम्।\n\nप्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम्।।9.2।।"
+        "sanskrit": "राजविद्या राजगुह्यं पवित्रमिदमुत्तमम्।\n\nप्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम्।।9.2।।",
+        "modernText": "This is the highest knowledge and the deepest insight. It purifies the mind, can be directly experienced, is natural to live by, and never fades."
     },
     {
         "id": "9-3",
@@ -3929,7 +4268,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अश्रद्दधानाः पुरुषा धर्मस्यास्य परन्तप।\n\nअप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि।।9.3।।"
+        "sanskrit": "अश्रद्दधानाः पुरुषा धर्मस्यास्य परन्तप।\n\nअप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि।।9.3।।",
+        "modernText": "Those who lack trust in this path fail to recognize the deeper reality and remain caught in the cycle of ordinary life."
     },
     {
         "id": "9-4",
@@ -3940,7 +4280,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मया ततमिदं सर्वं जगदव्यक्तमूर्तिना।\n\nमत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः।।9.4।।"
+        "sanskrit": "मया ततमिदं सर्वं जगदव्यक्तमूर्तिना।\n\nमत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः।।9.4।।",
+        "modernText": "The entire universe is pervaded by an unseen presence. All beings exist within it, though it is not confined by them."
     },
     {
         "id": "9-5",
@@ -3951,7 +4292,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम्।\n\nभूतभृन्न च भूतस्थो ममात्मा भूतभावनः।।9.5।।"
+        "sanskrit": "न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम्।\n\nभूतभृन्न च भूतस्थो ममात्मा भूतभावनः।।9.5।।",
+        "modernText": "Yet in another sense, beings do not contain that presence. Such is the mystery of existence: it supports all life without being limited by it."
     },
     {
         "id": "9-6",
@@ -3962,7 +4304,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यथाऽऽकाशस्थितो नित्यं वायुः सर्वत्रगो महान्।\n\nतथा सर्वाणि भूतानि मत्स्थानीत्युपधारय।।9.6।।"
+        "sanskrit": "यथाऽऽकाशस्थितो नित्यं वायुः सर्वत्रगो महान्।\n\nतथा सर्वाणि भूतानि मत्स्थानीत्युपधारय।।9.6।।",
+        "modernText": "Just as the wind moves everywhere while resting within space, all beings exist within the vast field of existence."
     },
     {
         "id": "9-7",
@@ -3973,7 +4316,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम्।\n\nकल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम्।।9.7।।"
+        "sanskrit": "सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम्।\n\nकल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम्।।9.7।।",
+        "modernText": "At the end of a cosmic cycle, all beings return to their source. When a new cycle begins, they arise again."
     },
     {
         "id": "9-8",
@@ -3984,7 +4328,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रकृतिं स्वामवष्टभ्य विसृजामि पुनः पुनः।\n\nभूतग्राममिमं कृत्स्नमवशं प्रकृतेर्वशात्।।9.8।।"
+        "sanskrit": "प्रकृतिं स्वामवष्टभ्य विसृजामि पुनः पुनः।\n\nभूतग्राममिमं कृत्स्नमवशं प्रकृतेर्वशात्।।9.8।।",
+        "modernText": "Through the forces of nature, life unfolds again and again, expressing the rhythms of creation."
     },
     {
         "id": "9-9",
@@ -3995,7 +4340,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न च मां तानि कर्माणि निबध्नन्ति धनञ्जय।\n\nउदासीनवदासीनमसक्तं तेषु कर्मसु।।9.9।।"
+        "sanskrit": "न च मां तानि कर्माणि निबध्नन्ति धनञ्जय।\n\nउदासीनवदासीनमसक्तं तेषु कर्मसु।।9.9।।",
+        "modernText": "Yet these processes do not bind the source of existence, which remains unattached and unaffected."
     },
     {
         "id": "9-10",
@@ -4006,7 +4352,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मयाऽध्यक्षेण प्रकृतिः सूयते सचराचरम्।\n\nहेतुनाऽनेन कौन्तेय जगद्विपरिवर्तते।।9.10।।"
+        "sanskrit": "मयाऽध्यक्षेण प्रकृतिः सूयते सचराचरम्।\n\nहेतुनाऽनेन कौन्तेय जगद्विपरिवर्तते।।9.10।।",
+        "modernText": "Under the guidance of this deeper order, nature gives rise to all forms of life and the world continues to evolve."
     },
     {
         "id": "9-11",
@@ -4017,7 +4364,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम्।\n\nपरं भावमजानन्तो मम भूतमहेश्वरम्।।9.11।।"
+        "sanskrit": "अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम्।\n\nपरं भावमजानन्तो मम भूतमहेश्वरम्।।9.11।।",
+        "modernText": "Some fail to recognize this deeper presence when it appears through human form, not seeing the greater reality behind it."
     },
     {
         "id": "9-12",
@@ -4028,7 +4376,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मोघाशा मोघकर्माणो मोघज्ञाना विचेतसः।\n\nराक्षसीमासुरीं चैव प्रकृतिं मोहिनीं श्रिताः।।9.12।।"
+        "sanskrit": "मोघाशा मोघकर्माणो मोघज्ञाना विचेतसः।\n\nराक्षसीमासुरीं चैव प्रकृतिं मोहिनीं श्रिताः।।9.12।।",
+        "modernText": "Driven by confusion and selfish desire, they pursue empty hopes and actions that lead nowhere meaningful."
     },
     {
         "id": "9-13",
@@ -4039,7 +4388,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिताः।\n\nभजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम्।।9.13।।"
+        "sanskrit": "महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिताः।\n\nभजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम्।।9.13।।",
+        "modernText": "But those of deeper understanding recognize the source of all beings and devote themselves to it wholeheartedly."
     },
     {
         "id": "9-14",
@@ -4050,7 +4400,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः।\n\nनमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते।।9.14।।"
+        "sanskrit": "सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः।\n\nनमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते।।9.14।।",
+        "modernText": "With steady determination they seek truth, living with devotion, humility, and discipline."
     },
     {
         "id": "9-15",
@@ -4061,7 +4412,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते।\n\nएकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम्।।9.15।।"
+        "sanskrit": "ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते।\n\nएकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम्।।9.15।।",
+        "modernText": "Some approach this truth through devotion, others through knowledge, and others by recognizing its presence in many forms throughout the universe."
     },
     {
         "id": "9-16",
@@ -4072,7 +4424,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अहं क्रतुरहं यज्ञः स्वधाऽहमहमौषधम्।\n\nमंत्रोऽहमहमेवाज्यमहमग्निरहं हुतम्।।9.16।।"
+        "sanskrit": "अहं क्रतुरहं यज्ञः स्वधाऽहमहमौषधम्।\n\nमंत्रोऽहमहमेवाज्यमहमग्निरहं हुतम्।।9.16।।",
+        "modernText": "Every sacred act, offering, and transformation ultimately arises from the same source of existence."
     },
     {
         "id": "9-17",
@@ -4083,7 +4436,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पिताऽहमस्य जगतो माता धाता पितामहः।\n\nवेद्यं पवित्रमोंकार ऋक् साम यजुरेव च।।9.17।।"
+        "sanskrit": "पिताऽहमस्य जगतो माता धाता पितामहः।\n\nवेद्यं पवित्रमोंकार ऋक् साम यजुरेव च।।9.17।।",
+        "modernText": "That source is the origin of the world, its nurturer and sustainer, the wisdom behind the Vedas (ancient teachings), and the sacred sound Om."
     },
     {
         "id": "9-18",
@@ -4094,7 +4448,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत्।\n\nप्रभवः प्रलयः स्थानं निधानं बीजमव्ययम्।।9.18।।"
+        "sanskrit": "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत्।\n\nप्रभवः प्रलयः स्थानं निधानं बीजमव्ययम्।।9.18।।",
+        "modernText": "It is the goal of life, the support of existence, the witness within all beings, the refuge and the friend, the origin and the end of all things."
     },
     {
         "id": "9-19",
@@ -4105,7 +4460,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च।\n\nअमृतं चैव मृत्युश्च सदसच्चाहमर्जुन।।9.19।।"
+        "sanskrit": "तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च।\n\nअमृतं चैव मृत्युश्च सदसच्चाहमर्जुन।।9.19।।",
+        "modernText": "It appears through the forces of nature, through life and death, through presence and absence."
     },
     {
         "id": "9-20",
@@ -4116,7 +4472,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "त्रैविद्या मां सोमपाः पूतपापा\n\nयज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते।\n\nते पुण्यमासाद्य सुरेन्द्रलोक\n\nमश्नन्ति दिव्यान्दिवि देवभोगान्।।9.20।।"
+        "sanskrit": "त्रैविद्या मां सोमपाः पूतपापा\n\nयज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते।\n\nते पुण्यमासाद्य सुरेन्द्रलोक\n\nमश्नन्ति दिव्यान्दिवि देवभोगान्।।9.20।।",
+        "modernText": "Those who perform rituals seeking heavenly rewards may reach those states for a time and enjoy their results."
     },
     {
         "id": "9-21",
@@ -4127,7 +4484,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ते तं भुक्त्वा स्वर्गलोकं विशालं\n\nक्षीणे पुण्ये मर्त्यलोकं विशन्ति।\n\nएव त्रयीधर्ममनुप्रपन्ना\n\nगतागतं कामकामा लभन्ते।।9.21।।"
+        "sanskrit": "ते तं भुक्त्वा स्वर्गलोकं विशालं\n\nक्षीणे पुण्ये मर्त्यलोकं विशन्ति।\n\nएव त्रयीधर्ममनुप्रपन्ना\n\nगतागतं कामकामा लभन्ते।।9.21।।",
+        "modernText": "But when the results of their actions are exhausted, they return again to the ordinary cycle of life."
     },
     {
         "id": "9-22",
@@ -4142,7 +4500,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "surrender"
         ],
         "speaker": "Krishna",
-        "sanskrit": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते।\n\nतेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्।।9.22।।"
+        "sanskrit": "अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते।\n\nतेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्।।9.22।।",
+        "modernText": "Those who devote themselves to the highest reality with steady awareness find that what they truly need is provided and what they have is preserved."
     },
     {
         "id": "9-23",
@@ -4153,7 +4512,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयाऽन्विताः।\n\nतेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम्।।9.23।।"
+        "sanskrit": "येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयाऽन्विताः।\n\nतेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम्।।9.23।।",
+        "modernText": "Even those who worship other forms with sincere faith are ultimately directing their devotion toward the same deeper source, though they may not yet understand it fully."
     },
     {
         "id": "9-24",
@@ -4164,7 +4524,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च।\n\nन तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते।।9.24।।"
+        "sanskrit": "अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च।\n\nन तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते।।9.24।।",
+        "modernText": "For the source of existence is the true receiver and sustainer of all acts of devotion, though many do not yet recognize this."
     },
     {
         "id": "9-25",
@@ -4175,7 +4536,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यान्ति देवव्रता देवान् पितृ़न्यान्ति पितृव्रताः।\n\nभूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम्।।9.25।।"
+        "sanskrit": "यान्ति देवव्रता देवान् पितृ़न्यान्ति पितृव्रताः।\n\nभूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम्।।9.25।।",
+        "modernText": "Those who seek limited goals reach limited destinations, but those who seek the highest truth move toward union with it."
     },
     {
         "id": "9-26",
@@ -4186,7 +4548,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति।\n\nतदहं भक्त्युपहृतमश्नामि प्रयतात्मनः।।9.26।।"
+        "sanskrit": "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति।\n\nतदहं भक्त्युपहृतमश्नामि प्रयतात्मनः।।9.26।।",
+        "modernText": "Even a simple offering made with sincerity and devotion is accepted when it comes from a pure heart."
     },
     {
         "id": "9-27",
@@ -4201,7 +4564,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "surrender"
         ],
         "speaker": "Krishna",
-        "sanskrit": "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत्।\n\nयत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम्।।9.27।।"
+        "sanskrit": "यत्करोषि यदश्नासि यज्जुहोषि ददासि यत्।\n\nयत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम्।।9.27।।",
+        "modernText": "Whatever you do, whatever you consume, whatever you offer or give, and whatever discipline you practice, perform it as an offering to the highest truth."
     },
     {
         "id": "9-28",
@@ -4212,7 +4576,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "शुभाशुभफलैरेवं मोक्ष्यसे कर्मबन्धनैः।\n\nसंन्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि।।9.28।।"
+        "sanskrit": "शुभाशुभफलैरेवं मोक्ष्यसे कर्मबन्धनैः।\n\nसंन्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि।।9.28।।",
+        "modernText": "Living in this spirit frees you from the burdens created by actions and their consequences."
     },
     {
         "id": "9-29",
@@ -4223,7 +4588,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः।\n\nये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम्।।9.29।।"
+        "sanskrit": "समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः।\n\nये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम्।।9.29।।",
+        "modernText": "The deeper presence within existence is equal toward all beings. Yet those who turn toward it with devotion experience its presence more fully."
     },
     {
         "id": "9-30",
@@ -4234,7 +4600,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अपि चेत्सुदुराचारो भजते मामनन्यभाक्।\n\nसाधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः।।9.30।।"
+        "sanskrit": "अपि चेत्सुदुराचारो भजते मामनन्यभाक्।\n\nसाधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः।।9.30।।",
+        "modernText": "Even someone who has lived wrongly can transform if they sincerely turn toward truth with wholehearted dedication."
     },
     {
         "id": "9-31",
@@ -4245,7 +4612,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति।\n\nकौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति।।9.31।।"
+        "sanskrit": "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति।\n\nकौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति।।9.31।।",
+        "modernText": "Such a person soon grows into integrity and finds lasting peace. One who sincerely seeks truth is never lost."
     },
     {
         "id": "9-32",
@@ -4256,7 +4624,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः।\n\nस्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम्।।9.32।।"
+        "sanskrit": "मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः।\n\nस्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम्।।9.32।।",
+        "modernText": "Anyone who sincerely turns toward the highest truth, regardless of background or circumstance, can reach the highest goal."
     },
     {
         "id": "9-33",
@@ -4267,7 +4636,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "किं पुनर्ब्राह्मणाः पुण्या भक्ता राजर्षयस्तथा।\n\nअनित्यमसुखं लोकमिमं प्राप्य भजस्व माम्।।9.33।।"
+        "sanskrit": "किं पुनर्ब्राह्मणाः पुण्या भक्ता राजर्षयस्तथा।\n\nअनित्यमसुखं लोकमिमं प्राप्य भजस्व माम्।।9.33।।",
+        "modernText": "Recognizing the temporary nature of this world, turn your mind toward the deeper reality that endures."
     },
     {
         "id": "9-34",
@@ -4278,7 +4648,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु।\n\nमामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः।।9.34।।"
+        "sanskrit": "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु।\n\nमामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः।।9.34।।",
+        "modernText": "Let your thoughts, devotion, and actions be centered on the highest truth. Living in this awareness leads you toward it."
     },
     {
         "id": "10-1",
@@ -4289,7 +4660,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nभूय एव महाबाहो श्रृणु मे परमं वचः।\n\nयत्तेऽहं प्रीयमाणाय वक्ष्यामि हितकाम्यया।।10.1।।"
+        "sanskrit": "श्री भगवानुवाच\n\nभूय एव महाबाहो श्रृणु मे परमं वचः।\n\nयत्तेऽहं प्रीयमाणाय वक्ष्यामि हितकाम्यया।।10.1।।",
+        "modernText": "Krishna said: Listen again to this deeper wisdom that I share for your well-being."
     },
     {
         "id": "10-2",
@@ -4300,7 +4672,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न मे विदुः सुरगणाः प्रभवं न महर्षयः।\n\nअहमादिर्हि देवानां महर्षीणां च सर्वशः।।10.2।।"
+        "sanskrit": "न मे विदुः सुरगणाः प्रभवं न महर्षयः।\n\nअहमादिर्हि देवानां महर्षीणां च सर्वशः।।10.2।।",
+        "modernText": "Even the highest beings do not fully know the origin of the source of existence, because it is the origin of all that exists."
     },
     {
         "id": "10-3",
@@ -4311,7 +4684,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यो मामजमनादिं च वेत्ति लोकमहेश्वरम्।\n\nअसम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते।।10.3।।"
+        "sanskrit": "यो मामजमनादिं च वेत्ति लोकमहेश्वरम्।\n\nअसम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते।।10.3।।",
+        "modernText": "One who understands the source of existence as timeless and without beginning becomes free from confusion and inner burden."
     },
     {
         "id": "10-4",
@@ -4322,7 +4696,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बुद्धिर्ज्ञानमसंमोहः क्षमा सत्यं दमः शमः।\n\nसुखं दुःखं भवोऽभावो भयं चाभयमेव च।।10.4।।"
+        "sanskrit": "बुद्धिर्ज्ञानमसंमोहः क्षमा सत्यं दमः शमः।\n\nसुखं दुःखं भवोऽभावो भयं चाभयमेव च।।10.4।।",
+        "modernText": "Qualities such as intelligence, clarity, patience, truthfulness, self-control, peace, joy, and sorrow all arise within the unfolding of existence."
     },
     {
         "id": "10-5",
@@ -4333,7 +4708,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अहिंसा समता तुष्टिस्तपो दानं यशोऽयशः।\n\nभवन्ति भावा भूतानां मत्त एव पृथग्विधाः।।10.5।।"
+        "sanskrit": "अहिंसा समता तुष्टिस्तपो दानं यशोऽयशः।\n\nभवन्ति भावा भूतानां मत्त एव पृथग्विधाः।।10.5।।",
+        "modernText": "Likewise non-violence, balance, contentment, discipline, generosity, reputation, and adversity all emerge within this same field of life."
     },
     {
         "id": "10-6",
@@ -4344,7 +4720,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा।\n\nमद्भावा मानसा जाता येषां लोक इमाः प्रजाः।।10.6।।"
+        "sanskrit": "महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा।\n\nमद्भावा मानसा जाता येषां लोक इमाः प्रजाः।।10.6।।",
+        "modernText": "The earliest sages and guiding figures of humanity arose from this deeper source, and through them life continued to develop."
     },
     {
         "id": "10-7",
@@ -4355,7 +4732,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एतां विभूतिं योगं च मम यो वेत्ति तत्त्वतः।\n\nसोऽविकम्पेन योगेन युज्यते नात्र संशयः।।10.7।।"
+        "sanskrit": "एतां विभूतिं योगं च मम यो वेत्ति तत्त्वतः।\n\nसोऽविकम्पेन योगेन युज्यते नात्र संशयः।।10.7।।",
+        "modernText": "One who truly understands this unfolding of existence becomes firmly established in inner discipline."
     },
     {
         "id": "10-8",
@@ -4366,7 +4744,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते।\n\nइति मत्वा भजन्ते मां बुधा भावसमन्विताः।।10.8।।"
+        "sanskrit": "अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते।\n\nइति मत्वा भजन्ते मां बुधा भावसमन्विताः।।10.8।।",
+        "modernText": "I am the source of all existence. From this source everything arises. Knowing this, the wise live with reverence and devotion."
     },
     {
         "id": "10-9",
@@ -4377,7 +4756,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम्।\n\nकथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च।।10.9।।"
+        "sanskrit": "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम्।\n\nकथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च।।10.9।।",
+        "modernText": "Their minds remain centered on this truth, and they share insight with one another, finding joy in understanding."
     },
     {
         "id": "10-10",
@@ -4388,7 +4768,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम्।\n\nददामि बुद्धियोगं तं येन मामुपयान्ति ते।।10.10।।"
+        "sanskrit": "तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम्।\n\nददामि बुद्धियोगं तं येन मामुपयान्ति ते।।10.10।।",
+        "modernText": "To those who remain devoted with sincerity, deeper understanding naturally unfolds, guiding them closer to truth."
     },
     {
         "id": "10-11",
@@ -4399,7 +4780,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः।\n\nनाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता।।10.11।।"
+        "sanskrit": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः।\n\nनाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता।।10.11।।",
+        "modernText": "Out of compassion, clarity arises within them and dissolves the darkness of confusion."
     },
     {
         "id": "10-12",
@@ -4410,7 +4792,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nपरं ब्रह्म परं धाम पवित्रं परमं भवान्।\n\nपुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम्।।10.12।।"
+        "sanskrit": "अर्जुन उवाच\n\nपरं ब्रह्म परं धाम पवित्रं परमं भवान्।\n\nपुरुषं शाश्वतं दिव्यमादिदेवमजं विभुम्।।10.12।।",
+        "modernText": "Arjuna said: You are the supreme reality, the eternal presence, the pure and timeless source that pervades existence."
     },
     {
         "id": "10-13",
@@ -4421,7 +4804,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "आहुस्त्वामृषयः सर्वे देवर्षिर्नारदस्तथा।\n\nअसितो देवलो व्यासः स्वयं चैव ब्रवीषि मे।।10.13।।"
+        "sanskrit": "आहुस्त्वामृषयः सर्वे देवर्षिर्नारदस्तथा।\n\nअसितो देवलो व्यासः स्वयं चैव ब्रवीषि मे।।10.13।।",
+        "modernText": "Many wise teachers have spoken of this truth, and now you have revealed it to me directly."
     },
     {
         "id": "10-14",
@@ -4432,7 +4816,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "सर्वमेतदृतं मन्ये यन्मां वदसि केशव।\n\nन हि ते भगवन् व्यक्ितं विदुर्देवा न दानवाः।।10.14।।"
+        "sanskrit": "सर्वमेतदृतं मन्ये यन्मां वदसि केशव।\n\nन हि ते भगवन् व्यक्ितं विदुर्देवा न दानवाः।।10.14।।",
+        "modernText": "I accept your words as true, for the deeper reality is difficult even for divine beings to fully comprehend."
     },
     {
         "id": "10-15",
@@ -4443,7 +4828,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "स्वयमेवात्मनाऽत्मानं वेत्थ त्वं पुरुषोत्तम।\n\nभूतभावन भूतेश देवदेव जगत्पते।।10.15।।"
+        "sanskrit": "स्वयमेवात्मनाऽत्मानं वेत्थ त्वं पुरुषोत्तम।\n\nभूतभावन भूतेश देवदेव जगत्पते।।10.15।।",
+        "modernText": "Only the source of existence fully knows itself as the origin and ruler of the universe."
     },
     {
         "id": "10-16",
@@ -4454,7 +4840,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतयः।\n\nयाभिर्विभूतिभिर्लोकानिमांस्त्वं व्याप्य तिष्ठसि।।10.16।।"
+        "sanskrit": "वक्तुमर्हस्यशेषेण दिव्या ह्यात्मविभूतयः।\n\nयाभिर्विभूतिभिर्लोकानिमांस्त्वं व्याप्य तिष्ठसि।।10.16।।",
+        "modernText": "Please describe the ways this presence expresses itself throughout the world."
     },
     {
         "id": "10-17",
@@ -4465,7 +4852,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन्।\n\nकेषु केषु च भावेषु चिन्त्योऽसि भगवन्मया।।10.17।।"
+        "sanskrit": "कथं विद्यामहं योगिंस्त्वां सदा परिचिन्तयन्।\n\nकेषु केषु च भावेषु चिन्त्योऽसि भगवन्मया।।10.17।।",
+        "modernText": "How may I recognize this deeper presence through constant awareness?"
     },
     {
         "id": "10-18",
@@ -4476,7 +4864,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "विस्तरेणात्मनो योगं विभूतिं च जनार्दन।\n\nभूयः कथय तृप्तिर्हि श्रृण्वतो नास्ति मेऽमृतम्।।10.18।।"
+        "sanskrit": "विस्तरेणात्मनो योगं विभूतिं च जनार्दन।\n\nभूयः कथय तृप्तिर्हि श्रृण्वतो नास्ति मेऽमृतम्।।10.18।।",
+        "modernText": "Explain again the many ways this presence appears in existence, for hearing this wisdom brings great joy."
     },
     {
         "id": "10-19",
@@ -4487,7 +4876,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nहन्त ते कथयिष्यामि दिव्या ह्यात्मविभूतयः।\n\nप्राधान्यतः कुरुश्रेष्ठ नास्त्यन्तो विस्तरस्य मे।।10.19।।"
+        "sanskrit": "श्री भगवानुवाच\n\nहन्त ते कथयिष्यामि दिव्या ह्यात्मविभूतयः।\n\nप्राधान्यतः कुरुश्रेष्ठ नास्त्यन्तो विस्तरस्य मे।।10.19।।",
+        "modernText": "Krishna said: I will describe some of these expressions, though their full extent cannot be fully spoken."
     },
     {
         "id": "10-20",
@@ -4498,7 +4888,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अहमात्मा गुडाकेश सर्वभूताशयस्थितः।\n\nअहमादिश्च मध्यं च भूतानामन्त एव च।।10.20।।"
+        "sanskrit": "अहमात्मा गुडाकेश सर्वभूताशयस्थितः।\n\nअहमादिश्च मध्यं च भूतानामन्त एव च।।10.20।।",
+        "modernText": "I am the soul present in the heart of every being. I am the beginning, the middle, and the end of all existence."
     },
     {
         "id": "10-21",
@@ -4509,7 +4900,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आदित्यानामहं विष्णुर्ज्योतिषां रविरंशुमान्।\n\nमरीचिर्मरुतामस्मि नक्षत्राणामहं शशी।।10.21।।"
+        "sanskrit": "आदित्यानामहं विष्णुर्ज्योतिषां रविरंशुमान्।\n\nमरीचिर्मरुतामस्मि नक्षत्राणामहं शशी।।10.21।।",
+        "modernText": "Among shining lights I am the sun, among stars the moon, and among sustaining forces those that bring order to the cosmos."
     },
     {
         "id": "10-22",
@@ -4520,7 +4912,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "वेदानां सामवेदोऽस्मि देवानामस्मि वासवः।\n\nइन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना।।10.22।।"
+        "sanskrit": "वेदानां सामवेदोऽस्मि देवानामस्मि वासवः।\n\nइन्द्रियाणां मनश्चास्मि भूतानामस्मि चेतना।।10.22।।",
+        "modernText": "Among the Vedas (ancient teachings) I am the Sama Veda. Among the senses I am the mind, and among living beings I am consciousness."
     },
     {
         "id": "10-23",
@@ -4531,7 +4924,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "रुद्राणां शङ्करश्चास्मि वित्तेशो यक्षरक्षसाम्।\n\nवसूनां पावकश्चास्मि मेरुः शिखरिणामहम्।।10.23।।"
+        "sanskrit": "रुद्राणां शङ्करश्चास्मि वित्तेशो यक्षरक्षसाम्।\n\nवसूनां पावकश्चास्मि मेरुः शिखरिणामहम्।।10.23।।",
+        "modernText": "Among powerful forces I appear as those that shape creation, and among mountains as the great peaks that rise above the earth."
     },
     {
         "id": "10-24",
@@ -4542,7 +4936,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम्।\n\nसेनानीनामहं स्कन्दः सरसामस्मि सागरः।।10.24।।"
+        "sanskrit": "पुरोधसां च मुख्यं मां विद्धि पार्थ बृहस्पतिम्।\n\nसेनानीनामहं स्कन्दः सरसामस्मि सागरः।।10.24।।",
+        "modernText": "Among guiding intelligences I am wisdom itself, and among vast waters I am the ocean."
     },
     {
         "id": "10-25",
@@ -4553,7 +4948,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "महर्षीणां भृगुरहं गिरामस्म्येकमक्षरम्।\n\nयज्ञानां जपयज्ञोऽस्मि स्थावराणां हिमालयः।।10.25।।"
+        "sanskrit": "महर्षीणां भृगुरहं गिरामस्म्येकमक्षरम्।\n\nयज्ञानां जपयज्ञोऽस्मि स्थावराणां हिमालयः।।10.25।।",
+        "modernText": "Among sacred sounds I am the primal syllable. Among immovable forms I am the great mountains."
     },
     {
         "id": "10-26",
@@ -4564,7 +4960,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अश्वत्थः सर्ववृक्षाणां देवर्षीणां च नारदः।\n\nगन्धर्वाणां चित्ररथः सिद्धानां कपिलो मुनिः।।10.26।।"
+        "sanskrit": "अश्वत्थः सर्ववृक्षाणां देवर्षीणां च नारदः।\n\nगन्धर्वाणां चित्ररथः सिद्धानां कपिलो मुनिः।।10.26।।",
+        "modernText": "Among trees I am the sacred fig tree, among sages Narada, and among enlightened beings those who embody deep understanding."
     },
     {
         "id": "10-27",
@@ -4575,7 +4972,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "उच्चैःश्रवसमश्वानां विद्धि माममृतोद्भवम्।\n\nऐरावतं गजेन्द्राणां नराणां च नराधिपम्।।10.27।।"
+        "sanskrit": "उच्चैःश्रवसमश्वानां विद्धि माममृतोद्भवम्।\n\nऐरावतं गजेन्द्राणां नराणां च नराधिपम्।।10.27।।",
+        "modernText": "Among horses I am the noblest, among elephants the most majestic, and among people those who lead with wisdom."
     },
     {
         "id": "10-28",
@@ -4586,7 +4984,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आयुधानामहं वज्रं धेनूनामस्मि कामधुक्।\n\nप्रजनश्चास्मि कन्दर्पः सर्पाणामस्मि वासुकिः।।10.28।।"
+        "sanskrit": "आयुधानामहं वज्रं धेनूनामस्मि कामधुक्।\n\nप्रजनश्चास्मि कन्दर्पः सर्पाणामस्मि वासुकिः।।10.28।।",
+        "modernText": "Among weapons I am the thunderbolt, among cattle the wish-fulfilling cow, and among forces of creation the impulse that brings life into being."
     },
     {
         "id": "10-29",
@@ -4597,7 +4996,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अनन्तश्चास्मि नागानां वरुणो यादसामहम्।\n\nपितृ़णामर्यमा चास्मि यमः संयमतामहम्।।10.29।।"
+        "sanskrit": "अनन्तश्चास्मि नागानां वरुणो यादसामहम्।\n\nपितृ़णामर्यमा चास्मि यमः संयमतामहम्।।10.29।।",
+        "modernText": "Among serpents I am the cosmic serpent, among waters the lord of the oceans, and among ancestors the guiding spirit of lineage."
     },
     {
         "id": "10-30",
@@ -4608,7 +5008,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रह्लादश्चास्मि दैत्यानां कालः कलयतामहम्।\n\nमृगाणां च मृगेन्द्रोऽहं वैनतेयश्च पक्षिणाम्।।10.30।।"
+        "sanskrit": "प्रह्लादश्चास्मि दैत्यानां कालः कलयतामहम्।\n\nमृगाणां च मृगेन्द्रोऽहं वैनतेयश्च पक्षिणाम्।।10.30।।",
+        "modernText": "Among powerful beings I am the righteous among them, among measures I am time, among animals the lion, and among birds the great eagle."
     },
     {
         "id": "10-31",
@@ -4619,7 +5020,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पवनः पवतामस्मि रामः शस्त्रभृतामहम्।\n\nझषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी।।10.31।।"
+        "sanskrit": "पवनः पवतामस्मि रामः शस्त्रभृतामहम्।\n\nझषाणां मकरश्चास्मि स्रोतसामस्मि जाह्नवी।।10.31।।",
+        "modernText": "Among purifying forces I am the wind, among warriors the noble hero, among creatures of the water the shark, and among rivers the sacred Ganga."
     },
     {
         "id": "10-32",
@@ -4630,7 +5032,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन।\n\nअध्यात्मविद्या विद्यानां वादः प्रवदतामहम्।।10.32।।"
+        "sanskrit": "सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन।\n\nअध्यात्मविद्या विद्यानां वादः प्रवदतामहम्।।10.32।।",
+        "modernText": "In every process of creation I am the beginning, the middle, and the end. Among sciences I am the knowledge of the soul, and among debates fair reasoning."
     },
     {
         "id": "10-33",
@@ -4641,7 +5044,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अक्षराणामकारोऽस्मि द्वन्द्वः सामासिकस्य च।\n\nअहमेवाक्षयः कालो धाताऽहं विश्वतोमुखः।।10.33।।"
+        "sanskrit": "अक्षराणामकारोऽस्मि द्वन्द्वः सामासिकस्य च।\n\nअहमेवाक्षयः कालो धाताऽहं विश्वतोमुखः।।10.33।।",
+        "modernText": "Among letters I am the first sound, among forms of speech the balanced pair, and I am time itself which never ends."
     },
     {
         "id": "10-34",
@@ -4652,7 +5056,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मृत्युः सर्वहरश्चाहमुद्भवश्च भविष्यताम्।\n\nकीर्तिः श्रीर्वाक्च नारीणां स्मृतिर्मेधा धृतिः क्षमा।।10.34।।"
+        "sanskrit": "मृत्युः सर्वहरश्चाहमुद्भवश्च भविष्यताम्।\n\nकीर्तिः श्रीर्वाक्च नारीणां स्मृतिर्मेधा धृतिः क्षमा।।10.34।।",
+        "modernText": "I am the force that ends all things and the origin of what is yet to come. Among noble qualities I am wisdom, memory, courage, and forgiveness."
     },
     {
         "id": "10-35",
@@ -4663,7 +5068,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बृहत्साम तथा साम्नां गायत्री छन्दसामहम्।\n\nमासानां मार्गशीर्षोऽहमृतूनां कुसुमाकरः।।10.35।।"
+        "sanskrit": "बृहत्साम तथा साम्नां गायत्री छन्दसामहम्।\n\nमासानां मार्गशीर्षोऽहमृतूनां कुसुमाकरः।।10.35।।",
+        "modernText": "Among sacred hymns I am the most uplifting, among poetic rhythms the Gayatri, among months the most fertile, and among seasons the renewal of spring."
     },
     {
         "id": "10-36",
@@ -4674,7 +5080,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "द्यूतं छलयतामस्मि तेजस्तेजस्विनामहम्।\n\nजयोऽस्मि व्यवसायोऽस्मि सत्त्वं सत्त्ववतामहम्।।10.36।।"
+        "sanskrit": "द्यूतं छलयतामस्मि तेजस्तेजस्विनामहम्।\n\nजयोऽस्मि व्यवसायोऽस्मि सत्त्वं सत्त्ववतामहम्।।10.36।।",
+        "modernText": "Among games of chance I am the play itself. I am brilliance in what shines, determination that leads to victory, and goodness within what is good."
     },
     {
         "id": "10-37",
@@ -4685,7 +5092,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनंजयः।\n\nमुनीनामप्यहं व्यासः कवीनामुशना कविः।।10.37।।"
+        "sanskrit": "वृष्णीनां वासुदेवोऽस्मि पाण्डवानां धनंजयः।\n\nमुनीनामप्यहं व्यासः कवीनामुशना कविः।।10.37।।",
+        "modernText": "Among the Vrishnis I am Vasudeva, among the Pandavas I am Arjuna, among sages Vyasa, and among poets Ushanas."
     },
     {
         "id": "10-38",
@@ -4696,7 +5104,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम्।\n\nमौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम्।।10.38।।"
+        "sanskrit": "दण्डो दमयतामस्मि नीतिरस्मि जिगीषताम्।\n\nमौनं चैवास्मि गुह्यानां ज्ञानं ज्ञानवतामहम्।।10.38।।",
+        "modernText": "Among forces of discipline I am the power that restrains wrongdoing, among strategies wise judgment, among secrets silence, and among the wise knowledge."
     },
     {
         "id": "10-39",
@@ -4707,7 +5116,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यच्चापि सर्वभूतानां बीजं तदहमर्जुन।\n\nन तदस्ति विना यत्स्यान्मया भूतं चराचरम्।।10.39।।"
+        "sanskrit": "यच्चापि सर्वभूतानां बीजं तदहमर्जुन।\n\nन तदस्ति विना यत्स्यान्मया भूतं चराचरम्।।10.39।।",
+        "modernText": "Whatever seed of existence appears in any being comes from this source. Nothing can exist apart from it."
     },
     {
         "id": "10-40",
@@ -4718,7 +5128,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नान्तोऽस्ति मम दिव्यानां विभूतीनां परंतप।\n\nएष तूद्देशतः प्रोक्तो विभूतेर्विस्तरो मया।।10.40।।"
+        "sanskrit": "नान्तोऽस्ति मम दिव्यानां विभूतीनां परंतप।\n\nएष तूद्देशतः प्रोक्तो विभूतेर्विस्तरो मया।।10.40।।",
+        "modernText": "The expressions of this deeper presence are endless. What I have described is only a small glimpse."
     },
     {
         "id": "10-41",
@@ -4729,7 +5140,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा।\n\nतत्तदेवावगच्छ त्वं मम तेजोंऽशसंभवम्।।10.41।।"
+        "sanskrit": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा।\n\nतत्तदेवावगच्छ त्वं मम तेजोंऽशसंभवम्।।10.41।।",
+        "modernText": "Whenever you see something magnificent, powerful, or beautiful, recognize it as a reflection of this greater presence."
     },
     {
         "id": "10-42",
@@ -4740,7 +5152,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अथवा बहुनैतेन किं ज्ञातेन तवार्जुन।\n\nविष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत्।।10.42।।"
+        "sanskrit": "अथवा बहुनैतेन किं ज्ञातेन तवार्जुन।\n\nविष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत्।।10.42।।",
+        "modernText": "Yet all these examples are only fragments. With a single portion of its being, the source of existence sustains the entire universe."
     },
     {
         "id": "11-1",
@@ -4751,7 +5164,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nमदनुग्रहाय परमं गुह्यमध्यात्मसंज्ञितम्।\n\nयत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम।।11.1।।"
+        "sanskrit": "अर्जुन उवाच\n\nमदनुग्रहाय परमं गुह्यमध्यात्मसंज्ञितम्।\n\nयत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम।।11.1।।",
+        "modernText": "Arjuna said: Through the compassionate teaching you have given about the soul and the deeper nature of existence, my confusion has begun to dissolve."
     },
     {
         "id": "11-2",
@@ -4762,7 +5176,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "भवाप्ययौ हि भूतानां श्रुतौ विस्तरशो मया।\n\nत्वत्तः कमलपत्राक्ष माहात्म्यमपि चाव्ययम्।।11.2।।"
+        "sanskrit": "भवाप्ययौ हि भूतानां श्रुतौ विस्तरशो मया।\n\nत्वत्तः कमलपत्राक्ष माहात्म्यमपि चाव्ययम्।।11.2।।",
+        "modernText": "You have explained the origin and dissolution of life, and the enduring greatness behind the universe."
     },
     {
         "id": "11-3",
@@ -4773,7 +5188,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "एवमेतद्यथात्थ त्वमात्मानं परमेश्वर।\n\nद्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम।।11.3।।"
+        "sanskrit": "एवमेतद्यथात्थ त्वमात्मानं परमेश्वर।\n\nद्रष्टुमिच्छामि ते रूपमैश्वरं पुरुषोत्तम।।11.3।।",
+        "modernText": "Everything you have said about the deeper reality is true. I now wish to see this reality in its full and universal form."
     },
     {
         "id": "11-4",
@@ -4784,7 +5200,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "मन्यसे यदि तच्छक्यं मया द्रष्टुमिति प्रभो।\n\nयोगेश्वर ततो मे त्वं दर्शयाऽत्मानमव्ययम्।।11.4।।"
+        "sanskrit": "मन्यसे यदि तच्छक्यं मया द्रष्टुमिति प्रभो।\n\nयोगेश्वर ततो मे त्वं दर्शयाऽत्मानमव्ययम्।।11.4।।",
+        "modernText": "If you believe I am capable of seeing it, reveal to me that imperishable form of existence."
     },
     {
         "id": "11-5",
@@ -4795,7 +5212,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nपश्य मे पार्थ रूपाणि शतशोऽथ सहस्रशः।\n\nनानाविधानि दिव्यानि नानावर्णाकृतीनि च।।11.5।।"
+        "sanskrit": "श्री भगवानुवाच\n\nपश्य मे पार्थ रूपाणि शतशोऽथ सहस्रशः।\n\nनानाविधानि दिव्यानि नानावर्णाकृतीनि च।।11.5।।",
+        "modernText": "Krishna said: Behold the countless expressions of existence, appearing in many forms, colors, and shapes."
     },
     {
         "id": "11-6",
@@ -4806,7 +5224,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पश्यादित्यान्वसून्रुद्रानश्िवनौ मरुतस्तथा।\n\nबहून्यदृष्टपूर्वाणि पश्याऽश्चर्याणि भारत।।11.6।।"
+        "sanskrit": "पश्यादित्यान्वसून्रुद्रानश्िवनौ मरुतस्तथा।\n\nबहून्यदृष्टपूर्वाणि पश्याऽश्चर्याणि भारत।।11.6।।",
+        "modernText": "See the many powers of nature and the forces that sustain the universe. Witness wonders never seen before."
     },
     {
         "id": "11-7",
@@ -4817,7 +5236,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इहैकस्थं जगत्कृत्स्नं पश्याद्य सचराचरम्।\n\nमम देहे गुडाकेश यच्चान्यद्द्रष्टुमिच्छसि।।11.7।।"
+        "sanskrit": "इहैकस्थं जगत्कृत्स्नं पश्याद्य सचराचरम्।\n\nमम देहे गुडाकेश यच्चान्यद्द्रष्टुमिच्छसि।।11.7।।",
+        "modernText": "In this moment you will see the entire universe gathered together in one presence, with everything that exists contained within it."
     },
     {
         "id": "11-8",
@@ -4828,7 +5248,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न तु मां शक्यसे द्रष्टुमनेनैव स्वचक्षुषा।\n\nदिव्यं ददामि ते चक्षुः पश्य मे योगमैश्वरम्।।11.8।।"
+        "sanskrit": "न तु मां शक्यसे द्रष्टुमनेनैव स्वचक्षुषा।\n\nदिव्यं ददामि ते चक्षुः पश्य मे योगमैश्वरम्।।11.8।।",
+        "modernText": "But this cannot be perceived with ordinary vision. I grant you a deeper sight so that you may perceive this reality."
     },
     {
         "id": "11-9",
@@ -4839,7 +5260,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "सञ्जय उवाच\n\nएवमुक्त्वा ततो राजन्महायोगेश्वरो हरिः।\n\nदर्शयामास पार्थाय परमं रूपमैश्वरम्।।11.9।।"
+        "sanskrit": "सञ्जय उवाच\n\nएवमुक्त्वा ततो राजन्महायोगेश्वरो हरिः।\n\nदर्शयामास पार्थाय परमं रूपमैश्वरम्।।11.9।।",
+        "modernText": "Sanjaya said: Having spoken these words, Krishna revealed to Arjuna a vast and universal vision."
     },
     {
         "id": "11-10",
@@ -4850,7 +5272,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "अनेकवक��त्रनयनमनेकाद्भुतदर्शनम्।\n\nअनेकदिव्याभरणं दिव्यानेकोद्यतायुधम्।।11.10।।"
+        "sanskrit": "अनेकवक��त्रनयनमनेकाद्भुतदर्शनम्।\n\nअनेकदिव्याभरणं दिव्यानेकोद्यतायुधम्।।11.10।।",
+        "modernText": "It appeared with countless faces and eyes, filled with astonishing forms and symbols of power."
     },
     {
         "id": "11-11",
@@ -4861,7 +5284,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "दिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम्।\n\nसर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम्।।11.11।।"
+        "sanskrit": "दिव्यमाल्याम्बरधरं दिव्यगन्धानुलेपनम्।\n\nसर्वाश्चर्यमयं देवमनन्तं विश्वतोमुखम्।।11.11।।",
+        "modernText": "It shone with radiant beauty and immeasurable presence, extending in every direction."
     },
     {
         "id": "11-12",
@@ -4872,7 +5296,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता।\n\nयदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः।।11.12।।"
+        "sanskrit": "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता।\n\nयदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः।।11.12।।",
+        "modernText": "Its brilliance was like the light of a thousand suns rising at once in the sky."
     },
     {
         "id": "11-13",
@@ -4883,7 +5308,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "तत्रैकस्थं जगत्कृत्स्नं प्रविभक्तमनेकधा।\n\nअपश्यद्देवदेवस्य शरीरे पाण्डवस्तदा।।11.13।।"
+        "sanskrit": "तत्रैकस्थं जगत्कृत्स्नं प्रविभक्तमनेकधा।\n\nअपश्यद्देवदेवस्य शरीरे पाण्डवस्तदा।।11.13।।",
+        "modernText": "Within that vision, Arjuna saw the entire universe gathered together in a single presence."
     },
     {
         "id": "11-14",
@@ -4894,7 +5320,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "ततः स विस्मयाविष्टो हृष्टरोमा धनञ्जयः।\n\nप्रणम्य शिरसा देवं कृताञ्जलिरभाषत।।11.14।।"
+        "sanskrit": "ततः स विस्मयाविष्टो हृष्टरोमा धनञ्जयः।\n\nप्रणम्य शिरसा देवं कृताञ्जलिरभाषत।।11.14।।",
+        "modernText": "Overwhelmed with awe, Arjuna bowed deeply and spoke with folded hands."
     },
     {
         "id": "11-15",
@@ -4905,7 +5332,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nपश्यामि देवांस्तव देव देहे\n\nसर्वांस्तथा भूतविशेषसङ्घान्।\n\nब्रह्माणमीशं कमलासनस्थ\n\nमृषींश्च सर्वानुरगांश्च दिव्यान्।।11.15।।"
+        "sanskrit": "अर्जुन उवाच\n\nपश्यामि देवांस्तव देव देहे\n\nसर्वांस्तथा भूतविशेषसङ्घान्।\n\nब्रह्माणमीशं कमलासनस्थ\n\nमृषींश्च सर्वानुरगांश्च दिव्यान्।।11.15।।",
+        "modernText": "Arjuna said: I see all beings and all powers of existence within you. I see creators, sages, and the countless forms of life."
     },
     {
         "id": "11-16",
@@ -4916,7 +5344,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अनेकबाहूदरवक्त्रनेत्रं\n\nपश्यामि त्वां सर्वतोऽनन्तरूपम्।\n\nनान्तं न मध्यं न पुनस्तवादिं\n\nपश्यामि विश्वेश्वर विश्वरूप।।11.16।।"
+        "sanskrit": "अनेकबाहूदरवक्त्रनेत्रं\n\nपश्यामि त्वां सर्वतोऽनन्तरूपम्।\n\nनान्तं न मध्यं न पुनस्तवादिं\n\nपश्यामि विश्वेश्वर विश्वरूप।।11.16।।",
+        "modernText": "I see you extending in every direction with endless forms. I see no beginning, middle, or end."
     },
     {
         "id": "11-17",
@@ -4927,7 +5356,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "किरीटिनं गदिनं चक्रिणं च\n\nतेजोराशिं सर्वतोदीप्तिमन्तम्।\n\nपश्यामि त्वां दुर्निरीक्ष्यं समन्ता\n\nद्दीप्तानलार्कद्युतिमप्रमेयम्।।11.17।।"
+        "sanskrit": "किरीटिनं गदिनं चक्रिणं च\n\nतेजोराशिं सर्वतोदीप्तिमन्तम्।\n\nपश्यामि त्वां दुर्निरीक्ष्यं समन्ता\n\nद्दीप्तानलार्कद्युतिमप्रमेयम्।।11.17।।",
+        "modernText": "Your radiance shines everywhere like blazing fire or the sun itself."
     },
     {
         "id": "11-18",
@@ -4938,7 +5368,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "त्वमक्षरं परमं वेदितव्यं\n\nत्वमस्य विश्वस्य परं निधानम्।\n\nत्वमव्ययः शाश्वतधर्मगोप्ता\n\nसनातनस्त्वं पुरुषो मतो मे।।11.18।।"
+        "sanskrit": "त्वमक्षरं परमं वेदितव्यं\n\nत्वमस्य विश्वस्य परं निधानम्।\n\nत्वमव्ययः शाश्वतधर्मगोप्ता\n\nसनातनस्त्वं पुरुषो मतो मे।।11.18।।",
+        "modernText": "You are the imperishable reality, the highest truth to be known, and the ultimate foundation of the universe."
     },
     {
         "id": "11-19",
@@ -4949,7 +5380,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अनादिमध्यान्तमनन्तवीर्य\n\nमनन्तबाहुं शशिसूर्यनेत्रम्।\n\nपश्यामि त्वां दीप्तहुताशवक्त्रम्\n\nस्वतेजसा विश्वमिदं तपन्तम्।।11.19।।"
+        "sanskrit": "अनादिमध्यान्तमनन्तवीर्य\n\nमनन्तबाहुं शशिसूर्यनेत्रम्।\n\nपश्यामि त्वां दीप्तहुताशवक्त्रम्\n\nस्वतेजसा विश्वमिदं तपन्तम्।।11.19।।",
+        "modernText": "You appear without beginning or end, infinite in power, illuminating the entire universe."
     },
     {
         "id": "11-20",
@@ -4960,7 +5392,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "द्यावापृथिव्योरिदमन्तरं हि\n\nव्याप्तं त्वयैकेन दिशश्च सर्वाः।\n\nदृष्ट्वाऽद्भुतं रूपमुग्रं तवेदं\n\nलोकत्रयं प्रव्यथितं महात्मन्।।11.20।।"
+        "sanskrit": "द्यावापृथिव्योरिदमन्तरं हि\n\nव्याप्तं त्वयैकेन दिशश्च सर्वाः।\n\nदृष्ट्वाऽद्भुतं रूपमुग्रं तवेदं\n\nलोकत्रयं प्रव्यथितं महात्मन्।।11.20।।",
+        "modernText": "All space between heaven and earth is filled with this presence, and the worlds tremble before its immensity."
     },
     {
         "id": "11-21",
@@ -4971,7 +5404,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अमी हि त्वां सुरसङ्घाः विशन्ति\n\nकेचिद्भीताः प्राञ्जलयो गृणन्ति।\n\nस्वस्तीत्युक्त्वा महर्षिसिद्धसङ्घाः\n\nस्तुवन्ति त्वां स्तुतिभिः पुष्कलाभिः।।11.21।।"
+        "sanskrit": "अमी हि त्वां सुरसङ्घाः विशन्ति\n\nकेचिद्भीताः प्राञ्जलयो गृणन्ति।\n\nस्वस्तीत्युक्त्वा महर्षिसिद्धसङ्घाः\n\nस्तुवन्ति त्वां स्तुतिभिः पुष्कलाभिः।।11.21।।",
+        "modernText": "The powers of the universe approach in reverence. Some praise it with humility, while others stand in awe."
     },
     {
         "id": "11-22",
@@ -4982,7 +5416,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "रुद्रादित्या वसवो ये च साध्या\n\nविश्वेऽश्िवनौ मरुतश्चोष्मपाश्च।\n\nगन्धर्वयक्षासुरसिद्धसङ्घा\n\nवीक्षन्ते त्वां विस्मिताश्चैव सर्वे।।11.22।।"
+        "sanskrit": "रुद्रादित्या वसवो ये च साध्या\n\nविश्वेऽश्िवनौ मरुतश्चोष्मपाश्च।\n\nगन्धर्वयक्षासुरसिद्धसङ्घा\n\nवीक्षन्ते त्वां विस्मिताश्चैव सर्वे।।11.22।।",
+        "modernText": "All forces of nature and realms of existence gaze upon this vision in astonishment."
     },
     {
         "id": "11-23",
@@ -4993,7 +5428,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "रूपं महत्ते बहुवक्त्रनेत्रं\n\nमहाबाहो बहुबाहूरुपादम्।\n\nबहूदरं बहुदंष्ट्राकरालं\n\nदृष्ट्वा लोकाः प्रव्यथितास्तथाऽहम्।।11.23।।"
+        "sanskrit": "रूपं महत्ते बहुवक्त्रनेत्रं\n\nमहाबाहो बहुबाहूरुपादम्।\n\nबहूदरं बहुदंष्ट्राकरालं\n\nदृष्ट्वा लोकाः प्रव्यथितास्तथाऽहम्।।11.23।।",
+        "modernText": "Seeing this vast and overwhelming form, the worlds tremble, and so do I."
     },
     {
         "id": "11-24",
@@ -5004,7 +5440,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "नभःस्पृशं दीप्तमनेकवर्णं\n\nव्यात्ताननं दीप्तविशालनेत्रम्।\n\nदृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा\n\nधृतिं न विन्दामि शमं च विष्णो।।11.24।।"
+        "sanskrit": "नभःस्पृशं दीप्तमनेकवर्णं\n\nव्यात्ताननं दीप्तविशालनेत्रम्।\n\nदृष्ट्वा हि त्वां प्रव्यथितान्तरात्मा\n\nधृतिं न विन्दामि शमं च विष्णो।।11.24।।",
+        "modernText": "Your blazing presence fills the sky with color and fire. My heart trembles and I find no peace."
     },
     {
         "id": "11-25",
@@ -5015,7 +5452,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "दंष्ट्राकरालानि च ते मुखानि\n\nदृष्ट्वैव कालानलसन्निभानि।\n\nदिशो न जाने न लभे च शर्म\n\nप्रसीद देवेश जगन्निवास।।11.25।।"
+        "sanskrit": "दंष्ट्राकरालानि च ते मुखानि\n\nदृष्ट्वैव कालानलसन्निभानि।\n\nदिशो न जाने न लभे च शर्म\n\nप्रसीद देवेश जगन्निवास।।11.25।।",
+        "modernText": "Your fearful power burns like the fire of destruction. I lose my sense of direction and feel overwhelmed."
     },
     {
         "id": "11-26",
@@ -5026,7 +5464,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अमी च त्वां धृतराष्ट्रस्य पुत्राः\n\nसर्वे सहैवावनिपालसङ्घैः।\n\nभीष्मो द्रोणः सूतपुत्रस्तथाऽसौ\n\nसहास्मदीयैरपि योधमुख्यैः।।11.26।।"
+        "sanskrit": "अमी च त्वां धृतराष्ट्रस्य पुत्राः\n\nसर्वे सहैवावनिपालसङ्घैः।\n\nभीष्मो द्रोणः सूतपुत्रस्तथाऽसौ\n\nसहास्मदीयैरपि योधमुख्यैः।।11.26।।",
+        "modernText": "I see the warriors and kings of both armies rushing toward this immense force."
     },
     {
         "id": "11-27",
@@ -5037,7 +5476,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "वक्त्राणि ते त्वरमाणा विशन्ति\n\nदंष्ट्राकरालानि भयानकानि।\n\nकेचिद्विलग्ना दशनान्तरेषु\n\nसंदृश्यन्ते चूर्णितैरुत्तमाङ्गैः।।11.27।।"
+        "sanskrit": "वक्त्राणि ते त्वरमाणा विशन्ति\n\nदंष्ट्राकरालानि भयानकानि।\n\nकेचिद्विलग्ना दशनान्तरेषु\n\nसंदृश्यन्ते चूर्णितैरुत्तमाङ्गैः।।11.27।।",
+        "modernText": "They are drawn into its blazing power, as if pulled toward their destiny."
     },
     {
         "id": "11-28",
@@ -5048,7 +5488,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "यथा नदीनां बहवोऽम्बुवेगाः\n\nसमुद्रमेवाभिमुखाः द्रवन्ति।\n\nतथा तवामी नरलोकवीरा\n\nविशन्ति वक्त्राण्यभिविज्वलन्ति।।11.28।।"
+        "sanskrit": "यथा नदीनां बहवोऽम्बुवेगाः\n\nसमुद्रमेवाभिमुखाः द्रवन्ति।\n\nतथा तवामी नरलोकवीरा\n\nविशन्ति वक्त्राण्यभिविज्वलन्ति।।11.28।।",
+        "modernText": "Just as rivers rush toward the ocean, these warriors move inevitably toward this great force."
     },
     {
         "id": "11-29",
@@ -5059,7 +5500,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "यथा प्रदीप्तं ज्वलनं पतङ्गा\n\nविशन्ति नाशाय समृद्धवेगाः।\n\nतथैव नाशाय विशन्ति लोका\n\nस्तवापि वक्त्राणि समृद्धवेगाः।।11.29।।"
+        "sanskrit": "यथा प्रदीप्तं ज्वलनं पतङ्गा\n\nविशन्ति नाशाय समृद्धवेगाः।\n\nतथैव नाशाय विशन्ति लोका\n\nस्तवापि वक्त्राणि समृद्धवेगाः।।11.29।।",
+        "modernText": "Like moths rushing into flame, they move toward destruction."
     },
     {
         "id": "11-30",
@@ -5070,7 +5512,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "लेलिह्यसे ग्रसमानः समन्ता\n\nल्लोकान्समग्रान्वदनैर्ज्वलद्भिः।\n\nतेजोभिरापूर्य जगत्समग्रं\n\nभासस्तवोग्राः प्रतपन्ति विष्णो।।11.30।।"
+        "sanskrit": "लेलिह्यसे ग्रसमानः समन्ता\n\nल्लोकान्समग्रान्वदनैर्ज्वलद्भिः।\n\nतेजोभिरापूर्य जगत्समग्रं\n\nभासस्तवोग्राः प्रतपन्ति विष्णो।।11.30।।",
+        "modernText": "Your blazing presence consumes everything, filling the universe with its overwhelming radiance."
     },
     {
         "id": "11-31",
@@ -5081,7 +5524,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "आख्याहि मे को भवानुग्ररूपो\n\nनमोऽस्तु ते देववर प्रसीद।\n\nविज्ञातुमिच्छामि भवन्तमाद्यं\n\nन हि प्रजानामि तव प्रवृत्तिम्।।11.31।।"
+        "sanskrit": "आख्याहि मे को भवानुग्ररूपो\n\nनमोऽस्तु ते देववर प्रसीद।\n\nविज्ञातुमिच्छामि भवन्तमाद्यं\n\nन हि प्रजानामि तव प्रवृत्तिम्।।11.31।।",
+        "modernText": "Tell me who you are in this terrible form. I wish to understand your true nature and purpose."
     },
     {
         "id": "11-32",
@@ -5092,7 +5536,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nकालोऽस्मि लोकक्षयकृत्प्रवृद्धो\n\nलोकान्समाहर्तुमिह प्रवृत्तः।\n\nऋतेऽपि त्वां न भविष्यन्ति सर्वे\n\nयेऽवस्थिताः प्रत्यनीकेषु योधाः।।11.32।।"
+        "sanskrit": "श्री भगवानुवाच\n\nकालोऽस्मि लोकक्षयकृत्प्रवृद्धो\n\nलोकान्समाहर्तुमिह प्रवृत्तः।\n\nऋतेऽपि त्वां न भविष्यन्ति सर्वे\n\nयेऽवस्थिताः प्रत्यनीकेषु योधाः।।11.32।।",
+        "modernText": "Krishna said: I am time, the force that brings all things to their end. The warriors before you are already destined to fall."
     },
     {
         "id": "11-33",
@@ -5103,7 +5548,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तस्मात्त्वमुत्तिष्ठ यशो लभस्व\n\nजित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम्।\n\nमयैवैते निहताः पूर्वमेव\n\nनिमित्तमात्रं भव सव्यसाचिन्।।11.33।।"
+        "sanskrit": "तस्मात्त्वमुत्तिष्ठ यशो लभस्व\n\nजित्वा शत्रून् भुङ्क्ष्व राज्यं समृद्धम्।\n\nमयैवैते निहताः पूर्वमेव\n\nनिमित्तमात्रं भव सव्यसाचिन्।।11.33।।",
+        "modernText": "Therefore arise and act. These outcomes are already unfolding within the movement of time. You are simply an instrument through which events take place."
     },
     {
         "id": "11-34",
@@ -5114,7 +5560,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "द्रोणं च भीष्मं च जयद्रथं च\n\nकर्णं तथाऽन्यानपि योधवीरान्।\n\nमया हतांस्त्वं जहि मा व्यथिष्ठा\n\nयुध्यस्व जेतासि रणे सपत्नान्।।11.34।।"
+        "sanskrit": "द्रोणं च भीष्मं च जयद्रथं च\n\nकर्णं तथाऽन्यानपि योधवीरान्।\n\nमया हतांस्त्वं जहि मा व्यथिष्ठा\n\nयुध्यस्व जेतासि रणे सपत्नान्।।11.34।।",
+        "modernText": "The warriors you fear to confront are already caught in the unfolding of destiny. Stand and fulfill your role."
     },
     {
         "id": "11-35",
@@ -5125,7 +5572,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "सञ्जय उवाच\n\nएतच्छ्रुत्वा वचनं केशवस्य\n\nकृताञ्जलिर्वेपमानः किरीटी।\n\nनमस्कृत्वा भूय एवाह कृष्णं\n\nसगद्गदं भीतभीतः प्रणम्य।।11.35।।"
+        "sanskrit": "सञ्जय उवाच\n\nएतच्छ्रुत्वा वचनं केशवस्य\n\nकृताञ्जलिर्वेपमानः किरीटी।\n\nनमस्कृत्वा भूय एवाह कृष्णं\n\nसगद्गदं भीतभीतः प्रणम्य।।11.35।।",
+        "modernText": "Sanjaya said: Hearing these words, Arjuna trembled and bowed deeply once again."
     },
     {
         "id": "11-36",
@@ -5136,7 +5584,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nस्थाने हृषीकेश तव प्रकीर्त्या\n\nजगत् प्रहृष्यत्यनुरज्यते च।\n\nरक्षांसि भीतानि दिशो द्रवन्ति\n\nसर्वे नमस्यन्ति च सिद्धसङ्घाः।।11.36।।"
+        "sanskrit": "अर्जुन उवाच\n\nस्थाने हृषीकेश तव प्रकीर्त्या\n\nजगत् प्रहृष्यत्यनुरज्यते च।\n\nरक्षांसि भीतानि दिशो द्रवन्ति\n\nसर्वे नमस्यन्ति च सिद्धसङ्घाः।।11.36।।",
+        "modernText": "Arjuna said: It is right that the world rejoices in your greatness. Those who oppose truth flee, while the wise bow in reverence."
     },
     {
         "id": "11-37",
@@ -5147,7 +5596,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "कस्माच्च ते न नमेरन्महात्मन्\n\nगरीयसे ब्रह्मणोऽप्यादिकर्त्रे।\n\nअनन्त देवेश जगन्निवास\n\nत्वमक्षरं सदसत्तत्परं यत्।।11.37।।"
+        "sanskrit": "कस्माच्च ते न नमेरन्महात्मन्\n\nगरीयसे ब्रह्मणोऽप्यादिकर्त्रे।\n\nअनन्त देवेश जगन्निवास\n\nत्वमक्षरं सदसत्तत्परं यत्।।11.37।।",
+        "modernText": "You are the source beyond all creators, the eternal presence beyond both existence and non-existence."
     },
     {
         "id": "11-38",
@@ -5158,7 +5608,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "त्वमादिदेवः पुरुषः पुराण\n\nस्त्वमस्य विश्वस्य परं निधानम्।\n\nवेत्तासि वेद्यं च परं च धाम\n\nत्वया ततं विश्वमनन्तरूप।।11.38।।"
+        "sanskrit": "त्वमादिदेवः पुरुषः पुराण\n\nस्त्वमस्य विश्वस्य परं निधानम्।\n\nवेत्तासि वेद्यं च परं च धाम\n\nत्वया ततं विश्वमनन्तरूप।।11.38।।",
+        "modernText": "You are the original source of all life, the ultimate foundation of the universe, the one who knows and sustains all."
     },
     {
         "id": "11-39",
@@ -5169,7 +5620,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "वायुर्यमोऽग्निर्वरुणः शशाङ्कः\n\nप्रजापतिस्त्वं प्रपितामहश्च।\n\nनमो नमस्तेऽस्तु सहस्रकृत्वः\n\nपुनश्च भूयोऽपि नमो नमस्ते।।11.39।।"
+        "sanskrit": "वायुर्यमोऽग्निर्वरुणः शशाङ्कः\n\nप्रजापतिस्त्वं प्रपितामहश्च।\n\nनमो नमस्तेऽस्तु सहस्रकृत्वः\n\nपुनश्च भूयोऽपि नमो नमस्ते।।11.39।।",
+        "modernText": "All the powers of nature arise from you. Again and again I bow before this infinite presence."
     },
     {
         "id": "11-40",
@@ -5180,7 +5632,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "नमः पुरस्तादथ पृष्ठतस्ते\n\nनमोऽस्तु ते सर्वत एव सर्व।\n\nअनन्तवीर्यामितविक्रमस्त्वं\n\nसर्वं समाप्नोषि ततोऽसि सर्वः।।11.40।।"
+        "sanskrit": "नमः पुरस्तादथ पृष्ठतस्ते\n\nनमोऽस्तु ते सर्वत एव सर्व।\n\nअनन्तवीर्यामितविक्रमस्त्वं\n\nसर्वं समाप्नोषि ततोऽसि सर्वः।।11.40।।",
+        "modernText": "You exist everywhere, in every direction. Your presence fills all existence."
     },
     {
         "id": "11-41",
@@ -5191,7 +5644,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "सखेति मत्वा प्रसभं यदुक्तं\n\nहे कृष्ण हे यादव हे सखेति।\n\nअजानता महिमानं तवेदं\n\nमया प्रमादात्प्रणयेन वापि।।11.41।।"
+        "sanskrit": "सखेति मत्वा प्रसभं यदुक्तं\n\nहे कृष्ण हे यादव हे सखेति।\n\nअजानता महिमानं तवेदं\n\nमया प्रमादात्प्रणयेन वापि।।11.41।।",
+        "modernText": "In the past I spoke to you casually as a friend, not understanding the depth of what you truly represent."
     },
     {
         "id": "11-42",
@@ -5202,7 +5656,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "यच्चावहासार्थमसत्कृतोऽसि\n\nविहारशय्यासनभोजनेषु।\n\nएकोऽथवाप्यच्युत तत्समक्षं\n\nतत्क्षामये त्वामहमप्रमेयम्।।11.42।।"
+        "sanskrit": "यच्चावहासार्थमसत्कृतोऽसि\n\nविहारशय्यासनभोजनेषु।\n\nएकोऽथवाप्यच्युत तत्समक्षं\n\nतत्क्षामये त्वामहमप्रमेयम्।।11.42।।",
+        "modernText": "If I have ever shown disrespect in play or conversation, forgive me for not recognizing your true nature."
     },
     {
         "id": "11-43",
@@ -5213,7 +5668,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "पितासि लोकस्य चराचरस्य\n\nत्वमस्य पूज्यश्च गुरुर्गरीयान्।\n\nन त्वत्समोऽस्त्यभ्यधिकः कुतोऽन्यो\n\nलोकत्रयेऽप्यप्रतिमप्रभाव।।11.43।।"
+        "sanskrit": "पितासि लोकस्य चराचरस्य\n\nत्वमस्य पूज्यश्च गुरुर्गरीयान्।\n\nन त्वत्समोऽस्त्यभ्यधिकः कुतोऽन्यो\n\nलोकत्रयेऽप्यप्रतिमप्रभाव।।11.43।।",
+        "modernText": "You are the source and teacher of the universe. Nothing can equal the power that sustains all existence."
     },
     {
         "id": "11-44",
@@ -5224,7 +5680,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "तस्मात्प्रणम्य प्रणिधाय कायं\n\nप्रसादये त्वामहमीशमीड्यम्।\n\nपितेव पुत्रस्य सखेव सख्युः\n\nप्रियः प्रियायार्हसि देव सोढुम्।।11.44।।"
+        "sanskrit": "तस्मात्प्रणम्य प्रणिधाय कायं\n\nप्रसादये त्वामहमीशमीड्यम्।\n\nपितेव पुत्रस्य सखेव सख्युः\n\nप्रियः प्रियायार्हसि देव सोढुम्।।11.44।।",
+        "modernText": "With humility I bow before you and seek your grace, as a child seeks forgiveness from a parent or a friend from a friend."
     },
     {
         "id": "11-45",
@@ -5235,7 +5692,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अदृष्टपूर्वं हृषितोऽस्मि दृष्ट्वा\n\nभयेन च प्रव्यथितं मनो मे।\n\nतदेव मे दर्शय देव रूपं\n\nप्रसीद देवेश जगन्निवास।।11.45।।"
+        "sanskrit": "अदृष्टपूर्वं हृषितोऽस्मि दृष्ट्वा\n\nभयेन च प्रव्यथितं मनो मे।\n\nतदेव मे दर्शय देव रूपं\n\nप्रसीद देवेश जगन्निवास।।11.45।।",
+        "modernText": "Though I am amazed by what I have seen, the vision also fills me with fear. Please return to the form that feels familiar and gentle."
     },
     {
         "id": "11-46",
@@ -5246,7 +5704,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "किरीटिनं गदिनं चक्रहस्त\n\nमिच्छामि त्वां द्रष्टुमहं तथैव।\n\nतेनैव रूपेण चतुर्भुजेन\n\nसहस्रबाहो भव विश्वमूर्ते।।11.46।।"
+        "sanskrit": "किरीटिनं गदिनं चक्रहस्त\n\nमिच्छामि त्वां द्रष्टुमहं तथैव।\n\nतेनैव रूपेण चतुर्भुजेन\n\nसहस्रबाहो भव विश्वमूर्ते।।11.46।।",
+        "modernText": "Let me see you again as before, in the form I recognize."
     },
     {
         "id": "11-47",
@@ -5257,7 +5716,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nमया प्रसन्नेन तवार्जुनेदं\n\nरूपं परं दर्शितमात्मयोगात्।\n\nतेजोमयं विश्वमनन्तमाद्यं\n\nयन्मे त्वदन्येन न दृष्टपूर्वम्।।11.47।।"
+        "sanskrit": "श्री भगवानुवाच\n\nमया प्रसन्नेन तवार्जुनेदं\n\nरूपं परं दर्शितमात्मयोगात्।\n\nतेजोमयं विश्वमनन्तमाद्यं\n\nयन्मे त्वदन्येन न दृष्टपूर्वम्।।11.47।।",
+        "modernText": "Krishna said: Out of grace I revealed this universal vision to you. No one before you has seen it in this way."
     },
     {
         "id": "11-48",
@@ -5268,7 +5728,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न वेदयज्ञाध्ययनैर्न दानै\n\nर्न च क्रियाभिर्न तपोभिरुग्रैः।\n\nएवंरूपः शक्य अहं नृलोके\n\nद्रष्टुं त्वदन्येन कुरुप्रवीर।।11.48।।"
+        "sanskrit": "न वेदयज्ञाध्ययनैर्न दानै\n\nर्न च क्रियाभिर्न तपोभिरुग्रैः।\n\nएवंरूपः शक्य अहं नृलोके\n\nद्रष्टुं त्वदन्येन कुरुप्रवीर।।11.48।।",
+        "modernText": "This vision cannot be reached through rituals, study, charity, or severe discipline alone."
     },
     {
         "id": "11-49",
@@ -5279,7 +5740,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मा ते व्यथा मा च विमूढभावो\n\nदृष्ट्वा रूपं घोरमीदृङ्ममेदम्।\n\nव्यपेतभीः प्रीतमनाः पुनस्त्वं\n\nतदेव मे रूपमिदं प्रपश्य।।11.49।।"
+        "sanskrit": "मा ते व्यथा मा च विमूढभावो\n\nदृष्ट्वा रूपं घोरमीदृङ्ममेदम्।\n\nव्यपेतभीः प्रीतमनाः पुनस्त्वं\n\nतदेव मे रूपमिदं प्रपश्य।।11.49।।",
+        "modernText": "Do not be afraid of what you have seen. Let your mind return to calm and behold once again the familiar form."
     },
     {
         "id": "11-50",
@@ -5290,7 +5752,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "सञ्जय उवाच\n\nइत्यर्जुनं वासुदेवस्तथोक्त्वा\n\nस्वकं रूपं दर्शयामास भूयः।\n\nआश्वासयामास च भीतमेनं\n\nभूत्वा पुनः सौम्यवपुर्महात्मा।।11.50।।"
+        "sanskrit": "सञ्जय उवाच\n\nइत्यर्जुनं वासुदेवस्तथोक्त्वा\n\nस्वकं रूपं दर्शयामास भूयः।\n\nआश्वासयामास च भीतमेनं\n\nभूत्वा पुनः सौम्यवपुर्महात्मा।।11.50।।",
+        "modernText": "Sanjaya said: Krishna then returned to his gentle form and reassured the frightened Arjuna."
     },
     {
         "id": "11-51",
@@ -5301,7 +5764,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nदृष्ट्वेदं मानुषं रूपं तवसौम्यं जनार्दन।\n\nइदानीमस्मि संवृत्तः सचेताः प्रकृतिं गतः।।11.51।।"
+        "sanskrit": "अर्जुन उवाच\n\nदृष्ट्वेदं मानुषं रूपं तवसौम्यं जनार्दन।\n\nइदानीमस्मि संवृत्तः सचेताः प्रकृतिं गतः।।11.51।।",
+        "modernText": "Arjuna said: Seeing your familiar human form again, my mind is at peace."
     },
     {
         "id": "11-52",
@@ -5312,7 +5776,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nसुदुर्दर्शमिदं रूपं दृष्टवानसि यन्मम।\n\nदेवा अप्यस्य रूपस्य नित्यं दर्शनकाङ्क्षिणः।।11.52।।"
+        "sanskrit": "श्री भगवानुवाच\n\nसुदुर्दर्शमिदं रूपं दृष्टवानसि यन्मम।\n\nदेवा अप्यस्य रूपस्य नित्यं दर्शनकाङ्क्षिणः।।11.52।।",
+        "modernText": "Krishna said: This universal vision is extremely difficult to perceive. Even the highest beings long to see it."
     },
     {
         "id": "11-53",
@@ -5323,7 +5788,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नाहं वेदैर्न तपसा न दानेन न चेज्यया।\n\nशक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा।।11.53।।"
+        "sanskrit": "नाहं वेदैर्न तपसा न दानेन न चेज्यया।\n\nशक्य एवंविधो द्रष्टुं दृष्टवानसि मां यथा।।11.53।।",
+        "modernText": "It cannot be reached through study, rituals, charity, or sacrifice alone."
     },
     {
         "id": "11-54",
@@ -5334,7 +5800,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "भक्त्या त्वनन्यया शक्यमहमेवंविधोऽर्जुन।\n\nज्ञातुं दृष्टुं च तत्त्वेन प्रवेष्टुं च परंतप।।11.54।।"
+        "sanskrit": "भक्त्या त्वनन्यया शक्यमहमेवंविधोऽर्जुन।\n\nज्ञातुं दृष्टुं च तत्त्वेन प्रवेष्टुं च परंतप।।11.54।।",
+        "modernText": "But through wholehearted devotion and sincere alignment with truth, it can be truly known and experienced."
     },
     {
         "id": "11-55",
@@ -5345,7 +5812,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "This verse encapsulates the essence of the Gita: make your life an offering. When every action is dedicated to the Divine without attachment to the result, you find true freedom and peace.",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः।\n\nनिर्वैरः सर्वभूतेषु यः स मामेति पाण्डव।।11.55।।"
+        "sanskrit": "मत्कर्मकृन्मत्परमो मद्भक्तः सङ्गवर्जितः।\n\nनिर्वैरः सर्वभूतेषु यः स मामेति पाण्डव।।11.55।।",
+        "modernText": "One who acts with dedication to truth, who sees it as the highest goal, who lives without attachment and without hostility toward any being, ultimately comes into harmony with it."
     },
     {
         "id": "12-1",
@@ -5356,7 +5824,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाचएवं सततयुक्ता ये भक्तास्त्वां पर्युपासते।येचाप्यक्षरमव्यक्तं तेषां के योगवित्तमाः।।12.1।।"
+        "sanskrit": "अर्जुन उवाचएवं सततयुक्ता ये भक्तास्त्वां पर्युपासते।येचाप्यक्षरमव्यक्तं तेषां के योगवित्तमाः।।12.1।।",
+        "modernText": "Arjuna asks which path leads more directly to realization: devotion directed toward the guiding presence within existence, or contemplation of the imperishable and unmanifest reality."
     },
     {
         "id": "12-2",
@@ -5367,7 +5836,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाचमय्यावेश्य मनो ये मां नित्ययुक्ता उपासते।श्रद्धया परयोपेतास्ते मे युक्ततमा मताः।।12.2।।"
+        "sanskrit": "श्री भगवानुवाचमय्यावेश्य मनो ये मां नित्ययुक्ता उपासते।श्रद्धया परयोपेतास्ते मे युक्ततमा मताः।।12.2।।",
+        "modernText": "Krishna said: Those who steady their minds on the living truth behind existence, remaining devoted with deep trust, are considered deeply united with the path."
     },
     {
         "id": "12-3",
@@ -5378,7 +5848,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ये त्वक्षरमनिर्देश्यमव्यक्तं पर्युपासते।सर्वत्रगमचिन्त्यं च कूटस्थमचलं ध्रुवम्।।12.3।।"
+        "sanskrit": "ये त्वक्षरमनिर्देश्यमव्यक्तं पर्युपासते।सर्वत्रगमचिन्त्यं च कूटस्थमचलं ध्रुवम्।।12.3।।",
+        "modernText": "Others contemplate the imperishable, the unseen and formless reality that pervades everything."
     },
     {
         "id": "12-4",
@@ -5389,7 +5860,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "संनियम्येन्द्रियग्रामं सर्वत्र समबुद्धयः।ते प्राप्नुवन्ति मामेव सर्वभूतहिते रताः।।12.4।।"
+        "sanskrit": "संनियम्येन्द्रियग्रामं सर्वत्र समबुद्धयः।ते प्राप्नुवन्ति मामेव सर्वभूतहिते रताः।।12.4।।",
+        "modernText": "Through discipline of the senses, balance of mind, and dedication to the welfare of all beings, they too reach the same truth."
     },
     {
         "id": "12-5",
@@ -5400,7 +5872,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम्।\n\nअव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते।।12.5।।"
+        "sanskrit": "क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम्।\n\nअव्यक्ता हि गतिर्दुःखं देहवद्भिरवाप्यते।।12.5।।",
+        "modernText": "Yet the path of the formless and unseen is difficult for those living in embodied life."
     },
     {
         "id": "12-6",
@@ -5411,7 +5884,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्पराः।अनन्येनैव योगेन मां ध्यायन्त उपासते।।12.6।।"
+        "sanskrit": "ये तु सर्वाणि कर्माणि मयि संन्यस्य मत्पराः।अनन्येनैव योगेन मां ध्यायन्त उपासते।।12.6।।",
+        "modernText": "But those who dedicate their actions to the highest truth and hold it as their deepest aim, meditating with wholehearted devotion,"
     },
     {
         "id": "12-7",
@@ -5422,7 +5896,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तेषामहं समुद्धर्ता मृत्युसंसारसागरात्।भवामि नचिरात्पार्थ मय्यावेशितचेतसाम्।।12.7।।"
+        "sanskrit": "तेषामहं समुद्धर्ता मृत्युसंसारसागरात्।भवामि नचिरात्पार्थ मय्यावेशितचेतसाम्।।12.7।।",
+        "modernText": "are lifted beyond the cycle of fear and suffering because their minds remain centered on the deeper reality."
     },
     {
         "id": "12-8",
@@ -5433,7 +5908,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय।निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः।।12.8।।"
+        "sanskrit": "मय्येव मन आधत्स्व मयि बुद्धिं निवेशय।निवसिष्यसि मय्येव अत ऊर्ध्वं न संशयः।।12.8।।",
+        "modernText": "Fix your mind on the deeper reality behind existence and let your understanding rest in it. In doing so you live in harmony with it."
     },
     {
         "id": "12-9",
@@ -5444,7 +5920,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अथ चित्तं समाधातुं न शक्नोषि मयि स्थिरम्।अभ्यासयोगेन ततो मामिच्छाप्तुं धनञ्जय।।12.9।।"
+        "sanskrit": "अथ चित्तं समाधातुं न शक्नोषि मयि स्थिरम्।अभ्यासयोगेन ततो मामिच्छाप्तुं धनञ्जय।।12.9।।",
+        "modernText": "If you cannot hold the mind there steadily, then approach it through repeated and sincere practice."
     },
     {
         "id": "12-10",
@@ -5455,7 +5932,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अभ्यासेऽप्यसमर्थोऽसि मत्कर्मपरमो भव।मदर्थमपि कर्माणि कुर्वन् सिद्धिमवाप्स्यसि।।12.10।।"
+        "sanskrit": "अभ्यासेऽप्यसमर्थोऽसि मत्कर्मपरमो भव।मदर्थमपि कर्माणि कुर्वन् सिद्धिमवाप्स्यसि।।12.10।।",
+        "modernText": "If practice is difficult, then perform your actions in the spirit of service to the highest truth. Through such action growth unfolds."
     },
     {
         "id": "12-11",
@@ -5466,7 +5944,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अथैतदप्यशक्तोऽसि कर्तुं मद्योगमाश्रितः।सर्वकर्मफलत्यागं ततः कुरु यतात्मवान्।।12.11।।"
+        "sanskrit": "अथैतदप्यशक्तोऽसि कर्तुं मद्योगमाश्रितः।सर्वकर्मफलत्यागं ततः कुरु यतात्मवान्।।12.11।।",
+        "modernText": "If even this feels difficult, then simply let go of attachment to the results of actions and act with inner discipline."
     },
     {
         "id": "12-12",
@@ -5477,7 +5956,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते।ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम्।।12.12।।"
+        "sanskrit": "श्रेयो हि ज्ञानमभ्यासाज्ज्ञानाद्ध्यानं विशिष्यते।ध्यानात्कर्मफलत्यागस्त्यागाच्छान्तिरनन्तरम्।।12.12।।",
+        "modernText": "Understanding is better than mechanical practice. Meditation is deeper than understanding. But freedom from attachment to results brings immediate peace."
     },
     {
         "id": "12-13",
@@ -5492,7 +5972,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "clarity"
         ],
         "speaker": "Krishna",
-        "sanskrit": "अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च।निर्ममो निरहङ्कारः समदुःखसुखः क्षमी।।12.13।।"
+        "sanskrit": "अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च।निर्ममो निरहङ्कारः समदुःखसुखः क्षमी।।12.13।।",
+        "modernText": "One who holds no hatred toward any being, who is compassionate and kind, free from possessiveness and ego, steady in pleasure and pain, and forgiving,"
     },
     {
         "id": "12-14",
@@ -5503,7 +5984,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः।मय्यर्पितमनोबुद्धिर्यो मद्भक्तः स मे प्रियः।।12.14।।"
+        "sanskrit": "सन्तुष्टः सततं योगी यतात्मा दृढनिश्चयः।मय्यर्पितमनोबुद्धिर्यो मद्भक्तः स मे प्रियः।।12.14।।",
+        "modernText": "content, disciplined, self-controlled, and firm in purpose, with mind and understanding dedicated to truth, lives deeply aligned with the path."
     },
     {
         "id": "12-15",
@@ -5514,7 +5996,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः।हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः।।12.15।।"
+        "sanskrit": "यस्मान्नोद्विजते लोको लोकान्नोद्विजते च यः।हर्षामर्षभयोद्वेगैर्मुक्तो यः स च मे प्रियः।।12.15।।",
+        "modernText": "One who does not disturb the world and is not disturbed by it, who is free from envy, fear, and agitation, lives in harmony with reality."
     },
     {
         "id": "12-16",
@@ -5529,7 +6012,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "equanimity"
         ],
         "speaker": "Krishna",
-        "sanskrit": "अनपेक्षः शुचिर्दक्ष उदासीनो गतव्यथः।सर्वारम्भपरित्यागी यो मद्भक्तः स मे प्रियः।।12.16।।"
+        "sanskrit": "अनपेक्षः शुचिर्दक्ष उदासीनो गतव्यथः।सर्वारम्भपरित्यागी यो मद्भक्तः स मे प्रियः।।12.16।।",
+        "modernText": "One who expects little, lives with clarity and purity, acts skillfully and impartially, and releases unnecessary pursuits walks this path well."
     },
     {
         "id": "12-17",
@@ -5540,7 +6024,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यो न हृष्यति न द्वेष्टि न शोचति न काङ्क्षति।शुभाशुभपरित्यागी भक्ितमान्यः स मे प्रियः।।12.17।।"
+        "sanskrit": "यो न हृष्यति न द्वेष्टि न शोचति न काङ्क्षति।शुभाशुभपरित्यागी भक्ितमान्यः स मे प्रियः।।12.17।।",
+        "modernText": "One who neither clings to joy nor resists difficulty, who lets go of desire and fear, and remains devoted to truth lives deeply aligned with this way of life."
     },
     {
         "id": "12-18",
@@ -5551,7 +6036,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "समः शत्रौ च मित्रे च तथा मानापमानयोः।शीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः।।12.18।।"
+        "sanskrit": "समः शत्रौ च मित्रे च तथा मानापमानयोः।शीतोष्णसुखदुःखेषु समः सङ्गविवर्जितः।।12.18।।",
+        "modernText": "One who remains steady toward friend and enemy, honor and dishonor, pleasure and pain, free from attachment,"
     },
     {
         "id": "12-19",
@@ -5562,7 +6048,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येनकेनचित्।अनिकेतः स्थिरमतिर्भक्ितमान्मे प्रियो नरः।।12.19।।"
+        "sanskrit": "तुल्यनिन्दास्तुतिर्मौनी सन्तुष्टो येनकेनचित्।अनिकेतः स्थिरमतिर्भक्ितमान्मे प्रियो नरः।।12.19।।",
+        "modernText": "who treats praise and criticism alike, lives simply, remains steady in mind, and stays devoted to truth walks in harmony with the deeper reality."
     },
     {
         "id": "12-20",
@@ -5573,7 +6060,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ये तु धर्म्यामृतमिदं यथोक्तं पर्युपासते।श्रद्दधाना मत्परमा भक्तास्तेऽतीव मे प्रियाः।।12.20।।"
+        "sanskrit": "ये तु धर्म्यामृतमिदं यथोक्तं पर्युपासते।श्रद्दधाना मत्परमा भक्तास्तेऽतीव मे प्रियाः।।12.20।।",
+        "modernText": "Those who follow this way of living truthfully with trust and sincerity, holding the highest truth as their aim, walk a deeply valued path."
     },
     {
         "id": "13-1",
@@ -5586,7 +6074,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "knowledge"
         ],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nप्रकृतिं पुरुषं चैव क्षेत्रं क्षेत्रज्ञमेव च।\n\nएतद्वेदितुमिच्छामि ज्ञानं ज्ञेयं च केशव।।13.1।।"
+        "sanskrit": "अर्जुन उवाच\n\nप्रकृतिं पुरुषं चैव क्षेत्रं क्षेत्रज्ञमेव च।\n\nएतद्वेदितुमिच्छामि ज्ञानं ज्ञेयं च केशव।।13.1।।",
+        "modernText": "Arjuna asks about the nature of existence: the difference between nature and spirit, the body and the awareness that knows it, knowledge and what is truly worth knowing."
     },
     {
         "id": "13-2",
@@ -5597,7 +6086,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाचइदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते।एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः।।13.2।।"
+        "sanskrit": "श्री भगवानुवाचइदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते।एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः।।13.2।।",
+        "modernText": "Krishna said: The body is called the field, and the one who is aware of the body and its experiences is called the knower of the field."
     },
     {
         "id": "13-3",
@@ -5608,7 +6098,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत।\n\nक्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम।।13.3।।"
+        "sanskrit": "क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत।\n\nक्षेत्रक्षेत्रज्ञयोर्ज्ञानं यत्तज्ज्ञानं मतं मम।।13.3।।",
+        "modernText": "The same awareness exists within every field of experience. Understanding both the field and the knower is true knowledge."
     },
     {
         "id": "13-4",
@@ -5619,7 +6110,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तत्क्षेत्रं यच्च यादृक् च यद्विकारि यतश्च यत्।स च यो यत्प्रभावश्च तत्समासेन मे श्रृणु।।13.4।।"
+        "sanskrit": "तत्क्षेत्रं यच्च यादृक् च यद्विकारि यतश्च यत्।स च यो यत्प्रभावश्च तत्समासेन मे श्रृणु।।13.4।।",
+        "modernText": "Now listen as I briefly explain the nature of the field, its origins, its changes, and the power of the knower within it."
     },
     {
         "id": "13-5",
@@ -5630,7 +6122,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक्।ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्िचतैः।।13.5।।"
+        "sanskrit": "ऋषिभिर्बहुधा गीतं छन्दोभिर्विविधैः पृथक्।ब्रह्मसूत्रपदैश्चैव हेतुमद्भिर्विनिश्िचतैः।।13.5।।",
+        "modernText": "These truths have long been described by sages and preserved in the teachings and insights of ancient wisdom traditions."
     },
     {
         "id": "13-6",
@@ -5641,7 +6134,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "महाभूतान्यहङ्कारो बुद्धिरव्यक्तमेव च।इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः।।13.6।। इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः।एतत्क्षेत्रं समासेन सविकारमुदाहृतम्।।13.7।।"
+        "sanskrit": "महाभूतान्यहङ्कारो बुद्धिरव्यक्तमेव च।इन्द्रियाणि दशैकं च पञ्च चेन्द्रियगोचराः।।13.6।। इच्छा द्वेषः सुखं दुःखं सङ्घातश्चेतनाधृतिः।एतत्क्षेत्रं समासेन सविकारमुदाहृतम्।।13.7।।",
+        "modernText": "The field includes the elements of nature, the mind, the senses, and the experiences of desire, pleasure, pain, and awareness itself."
     },
     {
         "id": "13-7",
@@ -5652,7 +6146,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्।आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः।।13.8।।"
+        "sanskrit": "अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्।आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः।।13.8।।",
+        "modernText": "True knowledge begins with humility, honesty, nonviolence, patience, sincerity, respect for learning, purity, and self-discipline."
     },
     {
         "id": "13-8",
@@ -5667,7 +6162,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "action"
         ],
         "speaker": "Krishna",
-        "sanskrit": "इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च।जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम्।।13.9।।"
+        "sanskrit": "इन्द्रियार्थेषु वैराग्यमनहङ्कार एव च।जन्ममृत्युजराव्याधिदुःखदोषानुदर्शनम्।।13.9।।",
+        "modernText": "It includes freedom from ego, detachment from sensory obsession, and thoughtful reflection on the realities of aging, illness, and death."
     },
     {
         "id": "13-9",
@@ -5678,7 +6174,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "असक्ितरनभिष्वङ्गः पुत्रदारगृहादिषु।नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु।।13.10।।"
+        "sanskrit": "असक्ितरनभिष्वङ्गः पुत्रदारगृहादिषु।नित्यं च समचित्तत्वमिष्टानिष्टोपपत्तिषु।।13.10।।",
+        "modernText": "It also includes nonattachment to possessions and relationships, and steadiness in both favorable and unfavorable situations."
     },
     {
         "id": "13-10",
@@ -5689,7 +6186,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मयि चानन्ययोगेन भक्ितरव्यभिचारिणी।विविक्तदेशसेवित्वमरतिर्जनसंसदि।।13.11।।"
+        "sanskrit": "मयि चानन्ययोगेन भक्ितरव्यभिचारिणी।विविक्तदेशसेवित्वमरतिर्जनसंसदि।।13.11।।",
+        "modernText": "It includes unwavering dedication to truth, love of quiet reflection, and distance from restless distraction."
     },
     {
         "id": "13-11",
@@ -5700,7 +6198,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम्।एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोन्यथा।।13.12।।"
+        "sanskrit": "अध्यात्मज्ञाननित्यत्वं तत्त्वज्ञानार्थदर्शनम्।एतज्ज्ञानमिति प्रोक्तमज्ञानं यदतोन्यथा।।13.12।।",
+        "modernText": "A sincere search for understanding the soul and the goal of life is called knowledge. Anything that leads away from this is ignorance."
     },
     {
         "id": "13-12",
@@ -5711,7 +6210,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वाऽमृतमश्नुते।अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते।।13.13।।"
+        "sanskrit": "ज्ञेयं यत्तत्प्रवक्ष्यामि यज्ज्ञात्वाऽमृतमश्नुते।अनादिमत्परं ब्रह्म न सत्तन्नासदुच्यते।।13.13।।",
+        "modernText": "Now I will describe the truth worth knowing. Knowing it leads one to realize the eternal reality called Brahman."
     },
     {
         "id": "13-13",
@@ -5722,7 +6222,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम्।सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति।।13.14।।"
+        "sanskrit": "सर्वतः पाणिपादं तत्सर्वतोऽक्षिशिरोमुखम्।सर्वतः श्रुतिमल्लोके सर्वमावृत्य तिष्ठति।।13.14।।",
+        "modernText": "This reality exists everywhere, perceiving through every being and extending throughout existence."
     },
     {
         "id": "13-14",
@@ -5733,7 +6234,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम्।असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च।।13.15।।"
+        "sanskrit": "सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितम्।असक्तं सर्वभृच्चैव निर्गुणं गुणभोक्तृ च।।13.15।।",
+        "modernText": "It expresses itself through the senses yet is not limited by them. It supports everything while remaining unattached."
     },
     {
         "id": "13-15",
@@ -5744,7 +6246,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बहिरन्तश्च भूतानामचरं चरमेव च।सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत्।।13.16।।"
+        "sanskrit": "बहिरन्तश्च भूतानामचरं चरमेव च।सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत्।।13.16।।",
+        "modernText": "It exists both within and beyond all beings, subtle and difficult to perceive, both distant and very near."
     },
     {
         "id": "13-16",
@@ -5755,7 +6258,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अविभक्तं च भूतेषु विभक्तमिव च स्थितम्।भूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च।।13.17।।"
+        "sanskrit": "अविभक्तं च भूतेषु विभक्तमिव च स्थितम्।भूतभर्तृ च तज्ज्ञेयं ग्रसिष्णु प्रभविष्णु च।।13.17।।",
+        "modernText": "Though appearing divided among countless forms of life, it remains one and undivided."
     },
     {
         "id": "13-17",
@@ -5766,7 +6270,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते।ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम्।।13.18।।"
+        "sanskrit": "ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते।ज्ञानं ज्ञेयं ज्ञानगम्यं हृदि सर्वस्य विष्ठितम्।।13.18।।",
+        "modernText": "It is the light behind all lights, beyond darkness, the source of knowledge and the goal of knowledge, dwelling in the heart of every being."
     },
     {
         "id": "13-18",
@@ -5777,7 +6282,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः।मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते।।13.19।।"
+        "sanskrit": "इति क्षेत्रं तथा ज्ञानं ज्ञेयं चोक्तं समासतः।मद्भक्त एतद्विज्ञाय मद्भावायोपपद्यते।।13.19।।",
+        "modernText": "Understanding the body, knowledge, and this deeper reality leads a person into harmony with existence."
     },
     {
         "id": "13-19",
@@ -5788,7 +6294,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि।विकारांश्च गुणांश्चैव विद्धि प्रकृतिसंभवान्।।13.20।।"
+        "sanskrit": "प्रकृतिं पुरुषं चैव विद्ध्यनादी उभावपि।विकारांश्च गुणांश्चैव विद्धि प्रकृतिसंभवान्।।13.20।।",
+        "modernText": "Both nature and the conscious self are without beginning. The changes we observe arise from nature."
     },
     {
         "id": "13-20",
@@ -5799,7 +6306,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते।पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते।।13.21।।"
+        "sanskrit": "कार्यकारणकर्तृत्वे हेतुः प्रकृतिरुच्यते।पुरुषः सुखदुःखानां भोक्तृत्वे हेतुरुच्यते।।13.21।।",
+        "modernText": "Nature produces the structures and processes of life, while the conscious self experiences pleasure and pain."
     },
     {
         "id": "13-21",
@@ -5810,7 +6318,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान्।कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु।।13.22।।"
+        "sanskrit": "पुरुषः प्रकृतिस्थो हि भुङ्क्ते प्रकृतिजान्गुणान्।कारणं गुणसङ्गोऽस्य सदसद्योनिजन्मसु।।13.22।।",
+        "modernText": "When awareness becomes attached to the qualities of nature, it becomes bound to cycles of experience and rebirth."
     },
     {
         "id": "13-22",
@@ -5821,7 +6330,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "उपद्रष्टाऽनुमन्ता च भर्ता भोक्ता महेश्वरः।परमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः।।13.23।।"
+        "sanskrit": "उपद्रष्टाऽनुमन्ता च भर्ता भोक्ता महेश्वरः।परमात्मेति चाप्युक्तो देहेऽस्मिन्पुरुषः परः।।13.23।।",
+        "modernText": "Yet within the body exists a deeper presence that observes, supports, and sustains life."
     },
     {
         "id": "13-23",
@@ -5832,7 +6342,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "य एवं वेत्ति पुरुषं प्रकृतिं च गुणैःसह।सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते।।13.24।।"
+        "sanskrit": "य एवं वेत्ति पुरुषं प्रकृतिं च गुणैःसह।सर्वथा वर्तमानोऽपि न स भूयोऽभिजायते।।13.24।।",
+        "modernText": "One who understands the relationship between nature, the self, and the qualities of experience becomes free from rebirth."
     },
     {
         "id": "13-24",
@@ -5843,7 +6354,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना।अन्ये सांख्येन योगेन कर्मयोगेन चापरे।।13.25।।"
+        "sanskrit": "ध्यानेनात्मनि पश्यन्ति केचिदात्मानमात्मना।अन्ये सांख्येन योगेन कर्मयोगेन चापरे।।13.25।।",
+        "modernText": "Some perceive the soul through meditation. Others through understanding. Others through disciplined action."
     },
     {
         "id": "13-25",
@@ -5854,7 +6366,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अन्ये त्वेवमजानन्तः श्रुत्वाऽन्येभ्य उपासते।तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः।।13.26।।"
+        "sanskrit": "अन्ये त्वेवमजानन्तः श्रुत्वाऽन्येभ्य उपासते।तेऽपि चातितरन्त्येव मृत्युं श्रुतिपरायणाः।।13.26।।",
+        "modernText": "Even those who learn through sincere listening can move beyond fear and mortality."
     },
     {
         "id": "13-26",
@@ -5865,7 +6378,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम्।क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ।।13.27।।"
+        "sanskrit": "यावत्सञ्जायते किञ्चित्सत्त्वं स्थावरजङ्गमम्।क्षेत्रक्षेत्रज्ञसंयोगात्तद्विद्धि भरतर्षभ।।13.27।।",
+        "modernText": "Every living being arises through the interaction of the field and the awareness that experiences it."
     },
     {
         "id": "13-27",
@@ -5876,7 +6390,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम्।विनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति।।13.28।।"
+        "sanskrit": "समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम्।विनश्यत्स्वविनश्यन्तं यः पश्यति स पश्यति।।13.28।।",
+        "modernText": "One who sees the same deeper presence existing equally in all beings truly sees."
     },
     {
         "id": "13-28",
@@ -5887,7 +6402,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम्।न हिनस्त्यात्मनाऽऽत्मानं ततो याति परां गतिम्।।13.29।।"
+        "sanskrit": "समं पश्यन्हि सर्वत्र समवस्थितमीश्वरम्।न हिनस्त्यात्मनाऽऽत्मानं ततो याति परां गतिम्।।13.29।।",
+        "modernText": "Seeing this unity, such a person does not harm themselves or others and reaches the highest realization."
     },
     {
         "id": "13-29",
@@ -5898,7 +6414,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः।यः पश्यति तथाऽऽत्मानमकर्तारं स पश्यति।।13.30।।"
+        "sanskrit": "प्रकृत्यैव च कर्माणि क्रियमाणानि सर्वशः।यः पश्यति तथाऽऽत्मानमकर्तारं स पश्यति।।13.30।।",
+        "modernText": "One who sees that nature performs all actions while the soul simply witnesses them sees clearly."
     },
     {
         "id": "13-30",
@@ -5909,7 +6426,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदा भूतपृथग्भावमेकस्थमनुपश्यति।तत एव च विस्तारं ब्रह्म सम्पद्यते तदा।।13.31।।"
+        "sanskrit": "यदा भूतपृथग्भावमेकस्थमनुपश्यति।तत एव च विस्तारं ब्रह्म सम्पद्यते तदा।।13.31।।",
+        "modernText": "When one recognizes that all life arises from a single underlying reality, one realizes Brahman."
     },
     {
         "id": "13-31",
@@ -5920,7 +6438,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः।शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते।���13.32।।"
+        "sanskrit": "अनादित्वान्निर्गुणत्वात्परमात्मायमव्ययः।शरीरस्थोऽपि कौन्तेय न करोति न लिप्यते।���13.32।।",
+        "modernText": "Because the soul is beginningless and beyond qualities, it remains untouched by the actions of the body."
     },
     {
         "id": "13-32",
@@ -5931,7 +6450,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते।सर्वत्रावस्थितो देहे तथाऽऽत्मा नोपलिप्यते।।13.33।।"
+        "sanskrit": "यथा सर्वगतं सौक्ष्म्यादाकाशं नोपलिप्यते।सर्वत्रावस्थितो देहे तथाऽऽत्मा नोपलिप्यते।।13.33।।",
+        "modernText": "Just as space is not stained by what happens within it, the soul remains unaffected by the events of life."
     },
     {
         "id": "13-33",
@@ -5942,7 +6462,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः।क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत।।13.34।।"
+        "sanskrit": "यथा प्रकाशयत्येकः कृत्स्नं लोकमिमं रविः।क्षेत्रं क्षेत्री तथा कृत्स्नं प्रकाशयति भारत।।13.34।।",
+        "modernText": "Just as the sun illuminates the world, awareness illuminates the field of experience."
     },
     {
         "id": "13-34",
@@ -5953,7 +6474,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा।भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम्।।13.34।।"
+        "sanskrit": "क्षेत्रक्षेत्रज्ञयोरेवमन्तरं ज्ञानचक्षुषा।भूतप्रकृतिमोक्षं च ये विदुर्यान्ति ते परम्।।13.34।।",
+        "modernText": "Those who understand the difference between the body and the knower within it, and who see how liberation arises from this understanding, reach the highest realization."
     },
     {
         "id": "14-1",
@@ -5964,7 +6486,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाचपरं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम्।यज्ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः।।14.1।।"
+        "sanskrit": "श्री भगवानुवाचपरं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम्।यज्ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः।।14.1।।",
+        "modernText": "Krishna says he will again explain the highest knowledge, the most profound understanding, by which sages have reached the highest realization."
     },
     {
         "id": "14-2",
@@ -5975,7 +6498,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः।सर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च।।14.2।।"
+        "sanskrit": "इदं ज्ञानमुपाश्रित्य मम साधर्म्यमागताः।सर्गेऽपि नोपजायन्ते प्रलये न व्यथन्ति च।।14.2।।",
+        "modernText": "Those who understand this knowledge come to share in the deeper nature of reality and move beyond the cycles of creation and dissolution."
     },
     {
         "id": "14-3",
@@ -5986,7 +6510,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मम योनिर्महद्ब्रह्म तस्मिन् गर्भं दधाम्यहम्।संभवः सर्वभूतानां ततो भवति भारत।।14.3।।"
+        "sanskrit": "मम योनिर्महद्ब्रह्म तस्मिन् गर्भं दधाम्यहम्।संभवः सर्वभूतानां ततो भवति भारत।।14.3।।",
+        "modernText": "The great source of existence is Brahman (the ultimate reality), within which the seed of life gives rise to all beings."
     },
     {
         "id": "14-4",
@@ -5997,7 +6522,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः।तासां ब्रह्म महद्योनिरहं बीजप्रदः पिता।।14.4।।"
+        "sanskrit": "सर्वयोनिषु कौन्तेय मूर्तयः सम्भवन्ति याः।तासां ब्रह्म महद्योनिरहं बीजप्रदः पिता।।14.4।।",
+        "modernText": "All forms that appear in the world arise from Brahman (the ultimate reality), the universal field from which life emerges."
     },
     {
         "id": "14-5",
@@ -6008,7 +6534,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सत्त्वं रजस्तम इति गुणाः प्रकृतिसंभवाः।निबध्नन्ति महाबाहो देहे देहिनमव्ययम्।।14.5।।"
+        "sanskrit": "सत्त्वं रजस्तम इति गुणाः प्रकृतिसंभवाः।निबध्नन्ति महाबाहो देहे देहिनमव्ययम्।।14.5।।",
+        "modernText": "Three qualities of Prakriti (nature) bind the soul to embodied life: sattva (clarity), rajas (activity), and tamas (inertia)."
     },
     {
         "id": "14-6",
@@ -6019,7 +6546,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम्।सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ।।14.6।।"
+        "sanskrit": "तत्र सत्त्वं निर्मलत्वात्प्रकाशकमनामयम्।सुखसङ्गेन बध्नाति ज्ञानसङ्गेन चानघ।।14.6।।",
+        "modernText": "Sattva (clarity) is pure and luminous. It brings harmony and understanding but still binds through attachment to happiness and knowledge."
     },
     {
         "id": "14-7",
@@ -6030,7 +6558,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम्।तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम्।।14.7।।"
+        "sanskrit": "रजो रागात्मकं विद्धि तृष्णासङ्गसमुद्भवम्।तन्निबध्नाति कौन्तेय कर्मसङ्गेन देहिनम्।।14.7।।",
+        "modernText": "Rajas (activity) arises from craving and restless desire. It binds the soul through constant involvement in action."
     },
     {
         "id": "14-8",
@@ -6041,7 +6570,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम्।प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत।।14.8।।"
+        "sanskrit": "तमस्त्वज्ञानजं विद्धि मोहनं सर्वदेहिनाम्।प्रमादालस्यनिद्राभिस्तन्निबध्नाति भारत।।14.8।।",
+        "modernText": "Tamas (inertia), born from ignorance, clouds understanding and binds through laziness, confusion, and neglect."
     },
     {
         "id": "14-9",
@@ -6052,7 +6582,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत।ज्ञानमावृत्य तु तमः प्रमादे सञ्जयत्युत।।14.9।।"
+        "sanskrit": "सत्त्वं सुखे सञ्जयति रजः कर्मणि भारत।ज्ञानमावृत्य तु तमः प्रमादे सञ्जयत्युत।।14.9।।",
+        "modernText": "Sattva (clarity) binds through attachment to happiness, rajas (activity) through attachment to action, and tamas (inertia) through confusion and neglect."
     },
     {
         "id": "14-10",
@@ -6063,7 +6594,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "रजस्तमश्चाभिभूय सत्त्वं भवति भारत।रजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा।।14.10।।"
+        "sanskrit": "रजस्तमश्चाभिभूय सत्त्वं भवति भारत।रजः सत्त्वं तमश्चैव तमः सत्त्वं रजस्तथा।।14.10।।",
+        "modernText": "At times sattva (clarity) prevails, overcoming the others; at other times rajas (activity) or tamas (inertia) become dominant."
     },
     {
         "id": "14-11",
@@ -6074,7 +6606,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते।ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत।।14.11।।"
+        "sanskrit": "सर्वद्वारेषु देहेऽस्मिन्प्रकाश उपजायते।ज्ञानं यदा तदा विद्याद्विवृद्धं सत्त्वमित्युत।।14.11।।",
+        "modernText": "When understanding shines through the senses and mind, it is a sign that sattva (clarity) has grown strong."
     },
     {
         "id": "14-12",
@@ -6085,7 +6618,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "लोभः प्रवृत्तिरारम्भः कर्मणामशमः स्पृहा।रजस्येतानि जायन्ते विवृद्धे भरतर्षभ।।14.12।।"
+        "sanskrit": "लोभः प्रवृत्तिरारम्भः कर्मणामशमः स्पृहा।रजस्येतानि जायन्ते विवृद्धे भरतर्षभ।।14.12।।",
+        "modernText": "Restlessness, ambition, effort, and longing appear when rajas (activity) becomes dominant."
     },
     {
         "id": "14-13",
@@ -6096,7 +6630,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च।तमस्येतानि जायन्ते विवृद्धे कुरुनन्दन।।14.13।।"
+        "sanskrit": "अप्रकाशोऽप्रवृत्तिश्च प्रमादो मोह एव च।तमस्येतानि जायन्ते विवृद्धे कुरुनन्दन।।14.13।।",
+        "modernText": "Darkness, laziness, confusion, and delusion arise when tamas (inertia) prevails."
     },
     {
         "id": "14-14",
@@ -6107,7 +6642,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत्।तदोत्तमविदां लोकानमलान्प्रतिपद्यते।।14.14।।"
+        "sanskrit": "यदा सत्त्वे प्रवृद्धे तु प्रलयं याति देहभृत्।तदोत्तमविदां लोकानमलान्प्रतिपद्यते।।14.14।।",
+        "modernText": "If the soul leaves the body while sattva (clarity) is dominant, it moves toward realms of greater understanding."
     },
     {
         "id": "14-15",
@@ -6118,7 +6654,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते।तथा प्रलीनस्तमसि मूढयोनिषु जायते।।14.15।।"
+        "sanskrit": "रजसि प्रलयं गत्वा कर्मसङ्गिषु जायते।तथा प्रलीनस्तमसि मूढयोनिषु जायते।।14.15।।",
+        "modernText": "When death occurs under rajas (activity), the soul returns among those driven by action; under tamas (inertia), it returns among those clouded by ignorance."
     },
     {
         "id": "14-16",
@@ -6129,7 +6666,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम्।रजसस्तु फलं दुःखमज्ञानं तमसः फलम्।।14.16।।"
+        "sanskrit": "कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम्।रजसस्तु फलं दुःखमज्ञानं तमसः फलम्।।14.16।।",
+        "modernText": "Actions rooted in sattva (clarity) lead toward harmony. Actions born of rajas (activity) lead to dissatisfaction, and those of tamas (inertia) deepen ignorance."
     },
     {
         "id": "14-17",
@@ -6140,7 +6678,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च।प्रमादमोहौ तमसो भवतोऽज्ञानमेव च।।14.17।।"
+        "sanskrit": "सत्त्वात्सञ्जायते ज्ञानं रजसो लोभ एव च।प्रमादमोहौ तमसो भवतोऽज्ञानमेव च।।14.17।।",
+        "modernText": "From sattva (clarity) arises knowledge. From rajas (activity) arises craving. From tamas (inertia) arise confusion and delusion."
     },
     {
         "id": "14-18",
@@ -6151,7 +6690,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः।जघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः।।14.18।।"
+        "sanskrit": "ऊर्ध्वं गच्छन्ति सत्त्वस्था मध्ये तिष्ठन्ति राजसाः।जघन्यगुणवृत्तिस्था अधो गच्छन्ति तामसाः।।14.18।।",
+        "modernText": "Those grounded in sattva (clarity) rise toward higher understanding. Those ruled by rajas (activity) remain caught in striving. Those ruled by tamas (inertia) sink into ignorance."
     },
     {
         "id": "14-19",
@@ -6162,7 +6702,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नान्यं गुणेभ्यः कर्तारं यदा द्रष्टानुपश्यति।गुणेभ्यश्च परं वेत्ति मद्भावं सोऽधिगच्छति।।14.19।।"
+        "sanskrit": "नान्यं गुणेभ्यः कर्तारं यदा द्रष्टानुपश्यति।गुणेभ्यश्च परं वेत्ति मद्भावं सोऽधिगच्छति।।14.19।।",
+        "modernText": "When one sees that the qualities of Prakriti (nature) alone drive the movements of life and recognizes the reality beyond them, true freedom begins."
     },
     {
         "id": "14-20",
@@ -6173,7 +6714,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान्।जन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते।।14.20।।"
+        "sanskrit": "गुणानेतानतीत्य त्रीन्देही देहसमुद्भवान्।जन्ममृत्युजरादुःखैर्विमुक्तोऽमृतमश्नुते।।14.20।।",
+        "modernText": "Transcending these three qualities frees the soul from birth, death, and sorrow, revealing its immortal nature."
     },
     {
         "id": "14-21",
@@ -6184,7 +6726,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाचकैर्लिंगैस्त्रीन्गुणानेतानतीतो भवति प्रभो।किमाचारः कथं चैतांस्त्रीन्गुणानतिवर्तते।।14.21।।"
+        "sanskrit": "अर्जुन उवाचकैर्लिंगैस्त्रीन्गुणानेतानतीतो भवति प्रभो।किमाचारः कथं चैतांस्त्रीन्गुणानतिवर्तते।।14.21।।",
+        "modernText": "Arjuna asks how one can recognize a person who has gone beyond these three qualities and how such freedom is achieved."
     },
     {
         "id": "14-22",
@@ -6195,7 +6738,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाचप्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव।न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति।।14.22।।"
+        "sanskrit": "श्री भगवानुवाचप्रकाशं च प्रवृत्तिं च मोहमेव च पाण्डव।न द्वेष्टि सम्प्रवृत्तानि न निवृत्तानि काङ्क्षति।।14.22।।",
+        "modernText": "Krishna explains that such a person neither resists nor clings to the movements of clarity, activity, or inertia as they arise and pass."
     },
     {
         "id": "14-23",
@@ -6206,7 +6750,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "उदासीनवदासीनो गुणैर्यो न विचाल्यते।गुणा वर्तन्त इत्येव योऽवतिष्ठति नेङ्गते।।14.23।।"
+        "sanskrit": "उदासीनवदासीनो गुणैर्यो न विचाल्यते।गुणा वर्तन्त इत्येव योऽवतिष्ठति नेङ्गते।।14.23।।",
+        "modernText": "Remaining steady and detached, they recognize that the qualities of Prakriti (nature) simply move within life."
     },
     {
         "id": "14-24",
@@ -6221,7 +6766,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "detachment"
         ],
         "speaker": "Krishna",
-        "sanskrit": "समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः।तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः।।14.24।।"
+        "sanskrit": "समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः।तुल्यप्रियाप्रियो धीरस्तुल्यनिन्दात्मसंस्तुतिः।।14.24।।",
+        "modernText": "They remain balanced in pleasure and pain, seeing wealth and poverty, praise and blame with equal clarity."
     },
     {
         "id": "14-25",
@@ -6232,7 +6778,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मानापमानयोस्तुल्यस्तुल्यो मित्रारिपक्षयोः।सर्वारम्भपरित्यागी गुणातीतः स उच्यते।।14.25।।"
+        "sanskrit": "मानापमानयोस्तुल्यस्तुल्यो मित्रारिपक्षयोः।सर्वारम्भपरित्यागी गुणातीतः स उच्यते।।14.25।।",
+        "modernText": "They remain the same in honor or insult, friend or enemy, free from ego-driven pursuits."
     },
     {
         "id": "14-26",
@@ -6243,7 +6790,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मां च योऽव्यभिचारेण भक्ितयोगेन सेवते।स गुणान्समतीत्यैतान् ब्रह्मभूयाय कल्पते।।14.26।।"
+        "sanskrit": "मां च योऽव्यभिचारेण भक्ितयोगेन सेवते।स गुणान्समतीत्यैतान् ब्रह्मभूयाय कल्पते।।14.26।।",
+        "modernText": "One who lives with unwavering dedication to truth rises beyond these qualities and becomes capable of realizing Brahman (the ultimate reality)."
     },
     {
         "id": "14-27",
@@ -6254,7 +6802,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ब्रह्मणो हि प्रतिष्ठाऽहममृतस्याव्ययस्य च।शाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च।।14.27।।"
+        "sanskrit": "ब्रह्मणो हि प्रतिष्ठाऽहममृतस्याव्ययस्य च।शाश्वतस्य च धर्मस्य सुखस्यैकान्तिकस्य च।।14.27।।",
+        "modernText": "For Brahman (the ultimate reality) is the foundation of immortality, enduring truth, and lasting peace."
     },
     {
         "id": "15-1",
@@ -6265,7 +6814,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाचऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम्।छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित्।।15.1।।"
+        "sanskrit": "श्री भगवानुवाचऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम्।छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित्।।15.1।।",
+        "modernText": "Krishna describes existence as an upside-down tree, whose roots lie in Brahman (the ultimate reality) while its branches extend into the world of experience."
     },
     {
         "id": "15-2",
@@ -6276,7 +6826,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अधश्चोर्ध्वं प्रसृतास्तस्य शाखा     गुणप्रवृद्धा विषयप्रवालाः।अधश्च मूलान्यनुसन्ततानि     कर्मानुबन्धीनि मनुष्यलोके।।15.2।।"
+        "sanskrit": "अधश्चोर्ध्वं प्रसृतास्तस्य शाखा     गुणप्रवृद्धा विषयप्रवालाः।अधश्च मूलान्यनुसन्ततानि     कर्मानुबन्धीनि मनुष्यलोके।।15.2।।",
+        "modernText": "Its branches grow through the qualities of Prakriti (nature) and extend through sensory desires, binding beings to cycles of action."
     },
     {
         "id": "15-3",
@@ -6287,7 +6838,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न रूपमस्येह तथोपलभ्यते    नान्तो न चादिर्न च संप्रतिष्ठा।अश्वत्थमेनं सुविरूढमूल    मसङ्गशस्त्रेण दृढेन छित्त्वा।।15.3।।"
+        "sanskrit": "न रूपमस्येह तथोपलभ्यते    नान्तो न चादिर्न च संप्रतिष्ठा।अश्वत्थमेनं सुविरूढमूल    मसङ्गशस्त्रेण दृढेन छित्त्वा।।15.3।।",
+        "modernText": "Its true form cannot be clearly perceived. Only by cutting through attachment can one free oneself from its grip."
     },
     {
         "id": "15-4",
@@ -6298,7 +6850,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ततः पदं तत्परिमार्गितव्य    यस्मिन्गता न निवर्तन्ति भूयः।तमेव चाद्यं पुरुषं प्रपद्ये    यतः प्रवृत्तिः प्रसृता पुराणी।।15.4।।"
+        "sanskrit": "ततः पदं तत्परिमार्गितव्य    यस्मिन्गता न निवर्तन्ति भूयः।तमेव चाद्यं पुरुषं प्रपद्ये    यतः प्रवृत्तिः प्रसृता पुराणी।।15.4।।",
+        "modernText": "Then one seeks the highest state of existence from which life originally flows and to which the awakened soul returns."
     },
     {
         "id": "15-5",
@@ -6309,7 +6862,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "निर्मानमोहा जितसङ्गदोषा    अध्यात्मनित्या विनिवृत्तकामाः।द्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञै    र्गच्छन्त्यमूढाः पदमव्ययं तत्।।15.5।।"
+        "sanskrit": "निर्मानमोहा जितसङ्गदोषा    अध्यात्मनित्या विनिवृत्तकामाः।द्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञै    र्गच्छन्त्यमूढाः पदमव्ययं तत्।।15.5।।",
+        "modernText": "Those free from pride and confusion, who have overcome attachment and remain steady in the soul, move toward that imperishable state."
     },
     {
         "id": "15-6",
@@ -6320,7 +6874,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न तद्भासयते सूर्यो न शशाङ्को न पावकः।यद्गत्वा न निवर्तन्ते तद्धाम परमं मम।।15.6।।"
+        "sanskrit": "न तद्भासयते सूर्यो न शशाङ्को न पावकः।यद्गत्वा न निवर्तन्ते तद्धाम परमं मम।।15.6।।",
+        "modernText": "That realm is beyond the light of sun, moon, or fire. Having reached it, one does not return to the cycles of the world."
     },
     {
         "id": "15-7",
@@ -6335,7 +6890,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "surrender"
         ],
         "speaker": "Krishna",
-        "sanskrit": "ममैवांशो जीवलोके जीवभूतः सनातनः।मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति।।15.7।।"
+        "sanskrit": "ममैवांशो जीवलोके जीवभूतः सनातनः।मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति।।15.7।।",
+        "modernText": "Each living being carries an eternal spark of Brahman (the ultimate reality), expressing itself through mind and senses within Prakriti (nature)."
     },
     {
         "id": "15-8",
@@ -6346,7 +6902,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः।गृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात्।।15.8।।"
+        "sanskrit": "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः।गृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात्।।15.8।।",
+        "modernText": "As the wind carries fragrance from place to place, the soul carries the mind and senses when it enters and leaves a body."
     },
     {
         "id": "15-9",
@@ -6357,7 +6914,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च।अधिष्ठाय मनश्चायं विषयानुपसेवते।।15.9।।"
+        "sanskrit": "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च।अधिष्ठाय मनश्चायं विषयानुपसेवते।।15.9।।",
+        "modernText": "Through the senses and mind, the soul experiences sight, sound, touch, taste, and smell."
     },
     {
         "id": "15-10",
@@ -6368,7 +6926,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम्।विमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः।।15.10।।"
+        "sanskrit": "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम्।विमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः।।15.10।।",
+        "modernText": "Those lost in confusion fail to see this inner presence moving through life, but those with clear understanding perceive it."
     },
     {
         "id": "15-11",
@@ -6379,7 +6938,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम्।यतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः।।15.11।।"
+        "sanskrit": "यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम्।यतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः।।15.11।।",
+        "modernText": "Those who seek with discipline perceive the soul within themselves, while those lacking awareness fail to see it even when they strive."
     },
     {
         "id": "15-12",
@@ -6390,7 +6950,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदादित्यगतं तेजो जगद्भासयतेऽखिलम्।यच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम्।।15.12।।"
+        "sanskrit": "यदादित्यगतं तेजो जगद्भासयतेऽखिलम्।यच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम्।।15.12।।",
+        "modernText": "The light that shines in the sun and illuminates the world, and the light within the moon and fire, arise from Brahman (the ultimate reality)."
     },
     {
         "id": "15-13",
@@ -6401,7 +6962,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "गामाविश्य च भूतानि धारयाम्यहमोजसा।पुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः।।15.13।।"
+        "sanskrit": "गामाविश्य च भूतानि धारयाम्यहमोजसा।पुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः।।15.13।।",
+        "modernText": "The sustaining power within the earth nourishes all life, and the cycles of nature provide the energy that sustains plants and living beings."
     },
     {
         "id": "15-14",
@@ -6412,7 +6974,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः।प्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम्।।15.14।।"
+        "sanskrit": "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः।प्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम्।।15.14।।",
+        "modernText": "The life-force within every body transforms food into energy and sustains the living organism."
     },
     {
         "id": "15-15",
@@ -6423,7 +6986,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वस्य चाहं हृदि सन्निविष्टो    मत्तः स्मृतिर्ज्ञानमपोहनं च।वेदैश्च सर्वैरहमेव वेद्यो    वेदान्तकृद्वेदविदेव चाहम्।।15.15।।"
+        "sanskrit": "सर्वस्य चाहं हृदि सन्निविष्टो    मत्तः स्मृतिर्ज्ञानमपोहनं च।वेदैश्च सर्वैरहमेव वेद्यो    वेदान्तकृद्वेदविदेव चाहम्।।15.15।।",
+        "modernText": "Within every heart resides the source from which memory, knowledge, and even forgetfulness arise. The ancient teachings ultimately point toward Brahman (the ultimate reality)."
     },
     {
         "id": "15-16",
@@ -6434,7 +6998,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च।क्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते।।15.16।।"
+        "sanskrit": "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च।क्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते।।15.16।।",
+        "modernText": "In existence there are two aspects: the changing and the unchanging. All living forms belong to the changing realm, while the soul remains constant."
     },
     {
         "id": "15-17",
@@ -6445,7 +7010,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "उत्तमः पुरुषस्त्वन्यः परमात्मेत्युदाहृतः।यो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः।।15.17।।"
+        "sanskrit": "उत्तमः पुरुषस्त्वन्यः परमात्मेत्युदाहृतः।यो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः।।15.17।।",
+        "modernText": "Beyond both stands the highest reality, the supreme presence that sustains all worlds."
     },
     {
         "id": "15-18",
@@ -6456,7 +7022,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः।अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः।।15.18।।"
+        "sanskrit": "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः।अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः।।15.18।।",
+        "modernText": "Because this reality transcends both the changing and the unchanging, it is known as the highest Self."
     },
     {
         "id": "15-19",
@@ -6467,7 +7034,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम्।स सर्वविद्भजति मां सर्वभावेन भारत।।15.19।।"
+        "sanskrit": "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम्।स सर्वविद्भजति मां सर्वभावेन भारत।।15.19।।",
+        "modernText": "One who understands this truth clearly comes to understand the essence of existence and lives in alignment with Brahman (the ultimate reality)."
     },
     {
         "id": "15-20",
@@ -6478,7 +7046,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इति गुह्यतमं शास्त्रमिदमुक्तं मयाऽनघ।एतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत।।15.20।।"
+        "sanskrit": "इति गुह्यतमं शास्त्रमिदमुक्तं मयाऽनघ।एतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत।।15.20।।",
+        "modernText": "Krishna concludes that this teaching reveals a profound secret: one who understands it becomes truly wise and fulfills the deepest purpose of life."
     },
     {
         "id": "16-1",
@@ -6493,7 +7062,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "knowledge"
         ],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nअभयं सत्त्वसंशुद्धिः ज्ञानयोगव्यवस्थितिः।\n\nदानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम्।।16.1।।"
+        "sanskrit": "श्री भगवानुवाच\n\nअभयं सत्त्वसंशुद्धिः ज्ञानयोगव्यवस्थितिः।\n\nदानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम्।।16.1।।",
+        "modernText": "Fearlessness, purity of mind, steady dedication to understanding, generosity, self-discipline, sincere offering, study of the Vedas (ancient teachings), inner discipline, and integrity are qualities that uplift human life."
     },
     {
         "id": "16-2",
@@ -6504,7 +7074,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम्।दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम्।।16.2।।"
+        "sanskrit": "अहिंसा सत्यमक्रोधस्त्यागः शान्तिरपैशुनम्।दया भूतेष्वलोलुप्त्वं मार्दवं ह्रीरचापलम्।।16.2।।",
+        "modernText": "Nonviolence, truthfulness, calmness, restraint from anger, renunciation of selfish motives, inner peace, absence of malice, compassion for all beings, freedom from greed, gentleness, modesty, and steadiness also belong to a noble nature."
     },
     {
         "id": "16-3",
@@ -6515,7 +7086,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता।\n\nभवन्ति सम्पदं दैवीमभिजातस्य भारत।।16.3।।"
+        "sanskrit": "तेजः क्षमा धृतिः शौचमद्रोहो नातिमानिता।\n\nभवन्ति सम्पदं दैवीमभिजातस्य भारत।।16.3।।",
+        "modernText": "Strength of character, forgiveness, patience, purity, freedom from hatred, and humility are marks of those whose nature is aligned with higher truth."
     },
     {
         "id": "16-4",
@@ -6526,7 +7098,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च।अज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम्।।16.4।।"
+        "sanskrit": "दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च।अज्ञानं चाभिजातस्य पार्थ सम्पदमासुरीम्।।16.4।।",
+        "modernText": "Hypocrisy, arrogance, pride, anger, harshness, and ignorance arise from a destructive mindset that leads one away from truth."
     },
     {
         "id": "16-5",
@@ -6537,7 +7110,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता।मा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव।।16.5।।"
+        "sanskrit": "दैवी सम्पद्विमोक्षाय निबन्धायासुरी मता।मा शुचः सम्पदं दैवीमभिजातोऽसि पाण्डव।।16.5।।",
+        "modernText": "A noble nature leads toward liberation, while a destructive nature leads toward deeper bondage."
     },
     {
         "id": "16-6",
@@ -6548,7 +7122,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "द्वौ भूतसर्गौ लोकेऽस्मिन् दैव आसुर एव च।दैवो विस्तरशः प्रोक्त आसुरं पार्थ मे श्रृणु।।16.6।।"
+        "sanskrit": "द्वौ भूतसर्गौ लोकेऽस्मिन् दैव आसुर एव च।दैवो विस्तरशः प्रोक्त आसुरं पार्थ मे श्रृणु।।16.6।।",
+        "modernText": "In human life two tendencies appear again and again: the tendency toward clarity and growth, and the tendency toward ignorance and destruction."
     },
     {
         "id": "16-7",
@@ -6559,7 +7134,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः।न शौचं नापि चाचारो न सत्यं तेषु विद्यते।।16.7।।"
+        "sanskrit": "प्रवृत्तिं च निवृत्तिं च जना न विदुरासुराः।न शौचं नापि चाचारो न सत्यं तेषु विद्यते।।16.7।।",
+        "modernText": "Those driven by ignorance cannot clearly distinguish what leads to growth and what leads to harm. They lack purity, discipline, and honesty."
     },
     {
         "id": "16-8",
@@ -6570,7 +7146,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम्।अपरस्परसम्भूतं किमन्यत्कामहैतुकम्।।16.8।।"
+        "sanskrit": "असत्यमप्रतिष्ठं ते जगदाहुरनीश्वरम्।अपरस्परसम्भूतं किमन्यत्कामहैतुकम्।।16.8।।",
+        "modernText": "Such people believe the world has no deeper foundation, no guiding intelligence, and that existence is driven only by desire and chance."
     },
     {
         "id": "16-9",
@@ -6581,7 +7158,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एतां दृष्टिमवष्टभ्य नष्टात्मानोऽल्पबुद्धयः।प्रभवन्त्युग्रकर्माणः क्षयाय जगतोऽहिताः।।16.9।।"
+        "sanskrit": "एतां दृष्टिमवष्टभ्य नष्टात्मानोऽल्पबुद्धयः।प्रभवन्त्युग्रकर्माणः क्षयाय जगतोऽहिताः।।16.9।।",
+        "modernText": "Holding such views, they become lost in destructive thinking and act in ways that harm both themselves and the world."
     },
     {
         "id": "16-10",
@@ -6592,7 +7170,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "काममाश्रित्य दुष्पूरं दम्भमानमदान्विताः।मोहाद्गृहीत्वासद्ग्राहान्प्रवर्तन्तेऽशुचिव्रताः।।16.10।।"
+        "sanskrit": "काममाश्रित्य दुष्पूरं दम्भमानमदान्विताः।मोहाद्गृहीत्वासद्ग्राहान्प्रवर्तन्तेऽशुचिव्रताः।।16.10।।",
+        "modernText": "Driven by endless desire, pride, and delusion, they cling to false beliefs and pursue impure aims."
     },
     {
         "id": "16-11",
@@ -6603,7 +7182,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "चिन्तामपरिमेयां च प्रलयान्तामुपाश्रिताः।कामोपभोगपरमा एतावदिति निश्िचताः।।16.11।।"
+        "sanskrit": "चिन्तामपरिमेयां च प्रलयान्तामुपाश्रिताः।कामोपभोगपरमा एतावदिति निश्िचताः।।16.11।।",
+        "modernText": "Their minds are consumed by endless anxieties and ambitions, believing that pleasure and possession are the highest goals of life."
     },
     {
         "id": "16-12",
@@ -6614,7 +7194,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आशापाशशतैर्बद्धाः कामक्रोधपरायणाः।ईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान्।।16.12।।"
+        "sanskrit": "आशापाशशतैर्बद्धाः कामक्रोधपरायणाः।ईहन्ते कामभोगार्थमन्यायेनार्थसञ्चयान्।।16.12।।",
+        "modernText": "Bound by countless desires and driven by anger and craving, they seek wealth and power through unjust means."
     },
     {
         "id": "16-13",
@@ -6625,7 +7206,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इदमद्य मया लब्धमिमं प्राप्स्ये मनोरथम्।इदमस्तीदमपि मे भविष्यति पुनर्धनम्।।16.13।।"
+        "sanskrit": "इदमद्य मया लब्धमिमं प्राप्स्ये मनोरथम्।इदमस्तीदमपि मे भविष्यति पुनर्धनम्।।16.13।।",
+        "modernText": "They think constantly about what they have gained and what they will gain next, believing ownership and control define success."
     },
     {
         "id": "16-14",
@@ -6636,7 +7218,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "असौ मया हतः शत्रुर्हनिष्ये चापरानपि।ईश्वरोऽहमहं भोगी सिद्धोऽहं बलवान्सुखी।।16.14।।"
+        "sanskrit": "असौ मया हतः शत्रुर्हनिष्ये चापरानपि।ईश्वरोऽहमहं भोगी सिद्धोऽहं बलवान्सुखी।।16.14।।",
+        "modernText": "They imagine themselves powerful and invincible, believing that their strength and achievements place them above others."
     },
     {
         "id": "16-15",
@@ -6647,7 +7230,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आढ्योऽभिजनवानस्मि कोऽन्योऽस्ति सदृशो मया।यक्ष्ये दास्यामि मोदिष्य इत्यज्ञानविमोहिताः।।16.15।।"
+        "sanskrit": "आढ्योऽभिजनवानस्मि कोऽन्योऽस्ति सदृशो मया।यक्ष्ये दास्यामि मोदिष्य इत्यज्ञानविमोहिताः।।16.15।।",
+        "modernText": "Blinded by pride in wealth and status, they boast about their achievements while remaining unaware of deeper truth."
     },
     {
         "id": "16-16",
@@ -6658,7 +7242,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अनेकचित्तविभ्रान्ता मोहजालसमावृताः।प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ।।16.16।।"
+        "sanskrit": "अनेकचित्तविभ्रान्ता मोहजालसमावृताः।प्रसक्ताः कामभोगेषु पतन्ति नरकेऽशुचौ।।16.16।।",
+        "modernText": "Lost in confusion and trapped in their own illusions, they become increasingly attached to pleasure and sink deeper into suffering."
     },
     {
         "id": "16-17",
@@ -6669,7 +7254,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः।यजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम्।।16.17।।"
+        "sanskrit": "आत्मसम्भाविताः स्तब्धा धनमानमदान्विताः।यजन्ते नामयज्ञैस्ते दम्भेनाविधिपूर्वकम्।।16.17।।",
+        "modernText": "Filled with ego and intoxicated by wealth and pride, they perform outward rituals only for display rather than for genuine understanding."
     },
     {
         "id": "16-18",
@@ -6680,7 +7266,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अहङ्कारं बलं दर्पं कामं क्रोधं च संश्रिताः।मामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः।।16.18।।"
+        "sanskrit": "अहङ्कारं बलं दर्पं कामं क्रोधं च संश्रिताः।मामात्मपरदेहेषु प्रद्विषन्तोऽभ्यसूयकाः।।16.18।।",
+        "modernText": "Driven by arrogance, desire, and anger, they lose awareness of the deeper reality that lives within themselves and within others."
     },
     {
         "id": "16-19",
@@ -6713,7 +7300,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः।कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्।।16.21।।"
+        "sanskrit": "त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः।कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्।।16.21।।",
+        "modernText": "Three forces lead human beings toward destruction: uncontrolled desire, anger, and greed. These should be abandoned."
     },
     {
         "id": "16-22",
@@ -6724,7 +7312,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एतैर्विमुक्तः कौन्तेय तमोद्वारैस्त्रिभिर्नरः।आचरत्यात्मनः श्रेयस्ततो याति परां गतिम्।।16.22।।"
+        "sanskrit": "एतैर्विमुक्तः कौन्तेय तमोद्वारैस्त्रिभिर्नरः।आचरत्यात्मनः श्रेयस्ततो याति परां गतिम्।।16.22।।",
+        "modernText": "One who frees the mind from these destructive impulses begins to walk the path toward the highest realization."
     },
     {
         "id": "16-23",
@@ -6735,7 +7324,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः।न स सिद्धिमवाप्नोति न सुखं न परां गतिम्।।16.23।।"
+        "sanskrit": "यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः।न स सिद्धिमवाप्नोति न सुखं न परां गतिम्।।16.23।।",
+        "modernText": "Ignoring the wisdom of sacred teachings and acting only from impulse prevents one from reaching fulfillment, happiness, or higher understanding."
     },
     {
         "id": "16-24",
@@ -6746,7 +7336,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ।ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि।।16.24।।"
+        "sanskrit": "तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ।ज्ञात्वा शास्त्रविधानोक्तं कर्म कर्तुमिहार्हसि।।16.24।।",
+        "modernText": "Therefore the Vedas (ancient teachings) and wisdom traditions should guide one's understanding of what actions lead toward truth and what actions lead away from it."
     },
     {
         "id": "17-1",
@@ -6768,7 +7359,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाचत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा।सात्त्विकी राजसी चैव तामसी चेति तां श्रृणु।।17.2।।"
+        "sanskrit": "श्री भगवानुवाचत्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा।सात्त्विकी राजसी चैव तामसी चेति तां श्रृणु।।17.2।।",
+        "modernText": "Faith arises from one's inner nature and appears in three forms shaped by the qualities of Prakriti (nature): clarity, restlessness, and inertia."
     },
     {
         "id": "17-3",
@@ -6779,7 +7371,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत।श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः।।17.3।।"
+        "sanskrit": "सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत।श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः।।17.3।।",
+        "modernText": "A person's character is shaped by what they deeply believe. One becomes what one's faith is directed toward."
     },
     {
         "id": "17-4",
@@ -6823,7 +7416,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रियः।यज्ञस्तपस्तथा दानं तेषां भेदमिमं श्रृणु।।17.7।।"
+        "sanskrit": "आहारस्त्वपि सर्वस्य त्रिविधो भवति प्रियः।यज्ञस्तपस्तथा दानं तेषां भेदमिमं श्रृणु।।17.7।।",
+        "modernText": "Even daily habits such as food, discipline, and generosity reflect the qualities that shape one's nature."
     },
     {
         "id": "17-8",
@@ -6834,7 +7428,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः।रस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः।।17.8।।"
+        "sanskrit": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः।रस्याः स्निग्धाः स्थिरा हृद्या आहाराः सात्त्विकप्रियाः।।17.8।।",
+        "modernText": "Foods that nourish life, clarity, strength, health, and joy are naturally preferred by those inclined toward sattva (clarity)."
     },
     {
         "id": "17-9",
@@ -6845,7 +7440,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः।आहारा राजसस्येष्टा दुःखशोकामयप्रदाः।।17.9।।"
+        "sanskrit": "कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः।आहारा राजसस्येष्टा दुःखशोकामयप्रदाः।।17.9।।",
+        "modernText": "Foods that are excessively bitter, sour, salty, or harsh excite the senses and are preferred by those influenced by rajas (restless activity)."
     },
     {
         "id": "17-10",
@@ -6856,7 +7452,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यातयामं गतरसं पूति पर्युषितं च यत्।उच्छिष्टमपि चामेध्यं भोजनं तामसप्रियम्।।17.10।।"
+        "sanskrit": "यातयामं गतरसं पूति पर्युषितं च यत्।उच्छिष्टमपि चामेध्यं भोजनं तामसप्रियम्।।17.10।।",
+        "modernText": "Food that is stale, lifeless, impure, or neglected appeals to those influenced by tamas (inertia and confusion)."
     },
     {
         "id": "17-11",
@@ -6867,7 +7464,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अफलाकाङ्क्षिभिर्यज्ञो विधिदृष्टो य इज्यते।यष्टव्यमेवेति मनः समाधाय स सात्त्विकः।।17.11।।"
+        "sanskrit": "अफलाकाङ्क्षिभिर्यज्ञो विधिदृष्टो य इज्यते।यष्टव्यमेवेति मनः समाधाय स सात्त्विकः।।17.11।।",
+        "modernText": "An offering made sincerely as a duty, without expectation of reward, reflects sattva (clarity)."
     },
     {
         "id": "17-12",
@@ -6878,7 +7476,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अभिसंधाय तु फलं दम्भार्थमपि चैव यत्।इज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम्।।17.12।।"
+        "sanskrit": "अभिसंधाय तु फलं दम्भार्थमपि चैव यत्।इज्यते भरतश्रेष्ठ तं यज्ञं विद्धि राजसम्।।17.12।।",
+        "modernText": "An offering performed for recognition, status, or personal gain reflects rajas (restless ambition)."
     },
     {
         "id": "17-13",
@@ -6889,7 +7488,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "विधिहीनमसृष्टान्नं मन्त्रहीनमदक्षिणम्।श्रद्धाविरहितं यज्ञं तामसं परिचक्षते।।17.13।।"
+        "sanskrit": "विधिहीनमसृष्टान्नं मन्त्रहीनमदक्षिणम्।श्रद्धाविरहितं यज्ञं तामसं परिचक्षते।।17.13।।",
+        "modernText": "An offering made carelessly, without understanding, respect, or sincerity reflects tamas (ignorance)."
     },
     {
         "id": "17-14",
@@ -6900,7 +7500,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम्।ब्रह्मचर्यमहिंसा च शारीरं तप उच्यते।।17.14।।"
+        "sanskrit": "देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम्।ब्रह्मचर्यमहिंसा च शारीरं तप उच्यते।।17.14।।",
+        "modernText": "Respect toward wisdom, humility before teachers, purity, discipline, and nonviolence are forms of inner discipline expressed through the body."
     },
     {
         "id": "17-15",
@@ -6911,7 +7512,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत्।स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते।।17.15।।"
+        "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत्।स्वाध्यायाभ्यसनं चैव वाङ्मयं तप उच्यते।।17.15।।",
+        "modernText": "Speech that is truthful, gentle, beneficial, and calm reflects discipline of the mind and respect for truth."
     },
     {
         "id": "17-16",
@@ -6922,7 +7524,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मनःप्रसादः सौम्यत्वं मौनमात्मविनिग्रहः।भावसंशुद्धिरित्येतत्तपो मानसमुच्यते।।17.16।।"
+        "sanskrit": "मनःप्रसादः सौम्यत्वं मौनमात्मविनिग्रहः।भावसंशुद्धिरित्येतत्तपो मानसमुच्यते।।17.16।।",
+        "modernText": "Calmness of mind, self-control, inner clarity, and sincerity of intention reflect discipline within the heart."
     },
     {
         "id": "17-17",
@@ -6933,7 +7536,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्रद्धया परया तप्तं तपस्तत्ित्रविधं नरैः।अफलाकाङ्क्षिभिर्युक्तैः सात्त्विकं परिचक्षते।।17.17।।"
+        "sanskrit": "श्रद्धया परया तप्तं तपस्तत्ित्रविधं नरैः।अफलाकाङ्क्षिभिर्युक्तैः सात्त्विकं परिचक्षते।।17.17।।",
+        "modernText": "When discipline of body, speech, and mind is practiced with faith and without desire for reward, it expresses sattva (clarity)."
     },
     {
         "id": "17-18",
@@ -6944,7 +7548,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सत्कारमानपूजार्थं तपो दम्भेन चैव यत्।क्रियते तदिह प्रोक्तं राजसं चलमध्रुवम्।।17.18।।"
+        "sanskrit": "सत्कारमानपूजार्थं तपो दम्भेन चैव यत्।क्रियते तदिह प्रोक्तं राजसं चलमध्रुवम्।।17.18।।",
+        "modernText": "When discipline is practiced for status, admiration, or recognition, it reflects rajas (restless ambition) and remains unstable."
     },
     {
         "id": "17-19",
@@ -6955,7 +7560,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मूढग्राहेणात्मनो यत्पीडया क्रियते तपः।परस्योत्सादनार्थं वा तत्तामसमुदाहृतम्।।17.19।।"
+        "sanskrit": "मूढग्राहेणात्मनो यत्पीडया क्रियते तपः।परस्योत्सादनार्थं वा तत्तामसमुदाहृतम्।।17.19।।",
+        "modernText": "When discipline becomes harsh self-punishment or is used to harm oneself or others, it reflects tamas (ignorance)."
     },
     {
         "id": "17-20",
@@ -6966,7 +7572,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे।देशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम्।।17.20।।"
+        "sanskrit": "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे।देशे काले च पात्रे च तद्दानं सात्त्विकं स्मृतम्।।17.20।।",
+        "modernText": "Giving generously at the right time, to the right purpose, without expectation of return, expresses sattva (clarity)."
     },
     {
         "id": "17-21",
@@ -6977,7 +7584,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः।दीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम्।।17.21।।"
+        "sanskrit": "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य वा पुनः।दीयते च परिक्लिष्टं तद्दानं राजसं स्मृतम्।।17.21।।",
+        "modernText": "Giving with expectation of reward or recognition reflects rajas (restless ambition)."
     },
     {
         "id": "17-22",
@@ -6988,7 +7596,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अदेशकाले यद्दानमपात्रेभ्यश्च दीयते।असत्कृतमवज्ञातं तत्तामसमुदाहृतम्।।17.22।।"
+        "sanskrit": "अदेशकाले यद्दानमपात्रेभ्यश्च दीयते।असत्कृतमवज्ञातं तत्तामसमुदाहृतम्।।17.22।।",
+        "modernText": "Giving carelessly, disrespectfully, or to harmful purposes reflects tamas (ignorance)."
     },
     {
         "id": "17-23",
@@ -6999,7 +7608,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः।ब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा।।17.23।।"
+        "sanskrit": "तत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः।ब्राह्मणास्तेन वेदाश्च यज्ञाश्च विहिताः पुरा।।17.23।।",
+        "modernText": "The sacred expression Om Tat Sat represents Brahman (the ultimate reality). These sounds have long symbolized truth, goodness, and alignment with the highest reality."
     },
     {
         "id": "17-24",
@@ -7010,7 +7620,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तस्मादोमित्युदाहृत्य यज्ञदानतपःक्रियाः।प्रवर्तन्ते विधानोक्ताः सततं ब्रह्मवादिनाम्।।17.24।।"
+        "sanskrit": "तस्मादोमित्युदाहृत्य यज्ञदानतपःक्रियाः।प्रवर्तन्ते विधानोक्ताः सततं ब्रह्मवादिनाम्।।17.24।।",
+        "modernText": "For this reason, acts of offering, generosity, and discipline traditionally begin with remembrance of Om, acknowledging Brahman (the ultimate reality)."
     },
     {
         "id": "17-25",
@@ -7021,7 +7632,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तदित्यनभिसन्धाय फलं यज्ञतपःक्रियाः।दानक्रियाश्च विविधाः क्रियन्ते मोक्षकाङ्क्षि।।17.25।।"
+        "sanskrit": "तदित्यनभिसन्धाय फलं यज्ञतपःक्रियाः।दानक्रियाश्च विविधाः क्रियन्ते मोक्षकाङ्क्षि।।17.25।।",
+        "modernText": "When actions are performed without attachment to their results and dedicated to truth, they become part of the path toward liberation."
     },
     {
         "id": "17-26",
@@ -7032,7 +7644,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सद्भावे साधुभावे च सदित्येतत्प्रयुज्यते।प्रशस्ते कर्मणि तथा सच्छब्दः पार्थ युज्यते।।17.26।।"
+        "sanskrit": "सद्भावे साधुभावे च सदित्येतत्प्रयुज्यते।प्रशस्ते कर्मणि तथा सच्छब्दः पार्थ युज्यते।।17.26।।",
+        "modernText": "The word Sat refers to what is real, good, and aligned with truth."
     },
     {
         "id": "17-27",
@@ -7043,7 +7656,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते।कर्म चैव तदर्थीयं सदित्येवाभिधीयते।।17.27।।"
+        "sanskrit": "यज्ञे तपसि दाने च स्थितिः सदिति चोच्यते।कर्म चैव तदर्थीयं सदित्येवाभिधीयते।।17.27।।",
+        "modernText": "Steadiness in actions of generosity, discipline, and offering that are dedicated to truth is also called Sat."
     },
     {
         "id": "17-28",
@@ -7054,7 +7668,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत्।असदित्युच्यते पार्थ न च तत्प्रेत्य नो इह।।17.28।।"
+        "sanskrit": "अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत्।असदित्युच्यते पार्थ न च तत्प्रेत्य नो इह।।17.28।।",
+        "modernText": "Actions, offerings, or disciplines performed without sincerity or faith lack alignment with truth and therefore bear no lasting value."
     },
     {
         "id": "18-1",
@@ -7065,7 +7680,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाच\n\nसंन्यासस्य महाबाहो तत्त्वमिच्छामि वेदितुम्।\n\nत्यागस्य च हृषीकेश पृथक्केशिनिषूदन।।18.1।।"
+        "sanskrit": "अर्जुन उवाच\n\nसंन्यासस्य महाबाहो तत्त्वमिच्छामि वेदितुम्।\n\nत्यागस्य च हृषीकेश पृथक्केशिनिषूदन।।18.1।।",
+        "modernText": "Arjuna asks for a clear explanation of the difference between renouncing action and relinquishing attachment to the results of action."
     },
     {
         "id": "18-2",
@@ -7076,7 +7692,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्री भगवानुवाच\n\nकाम्यानां कर्मणां न्यासं संन्यासं कवयो विदुः।\n\nसर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणाः।।18.2।।"
+        "sanskrit": "श्री भगवानुवाच\n\nकाम्यानां कर्मणां न्यासं संन्यासं कवयो विदुः।\n\nसर्वकर्मफलत्यागं प्राहुस्त्यागं विचक्षणाः।।18.2।।",
+        "modernText": "Krishna explains that renunciation means giving up actions driven by selfish desire, while true relinquishment means performing actions but letting go of attachment to their results."
     },
     {
         "id": "18-3",
@@ -7087,7 +7704,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "त्याज्यं दोषवदित्येके कर्म प्राहुर्मनीषिणः।\n\nयज्ञदानतपःकर्म न त्याज्यमिति चापरे।।18.3।।"
+        "sanskrit": "त्याज्यं दोषवदित्येके कर्म प्राहुर्मनीषिणः।\n\nयज्ञदानतपःकर्म न त्याज्यमिति चापरे।।18.3।।",
+        "modernText": "Some thinkers claim all action should be abandoned because action can lead to bondage, while others teach that acts of discipline, generosity, and offering should never be abandoned."
     },
     {
         "id": "18-4",
@@ -7098,7 +7716,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "निश्चयं श्रृणु मे तत्र त्यागे भरतसत्तम।त्यागो हि पुरुषव्याघ्र त्रिविधः संप्रकीर्तितः।।18.4।।"
+        "sanskrit": "निश्चयं श्रृणु मे तत्र त्यागे भरतसत्तम।त्यागो हि पुरुषव्याघ्र त्रिविधः संप्रकीर्तितः।।18.4।।",
+        "modernText": "Relinquishment itself appears in three forms depending on the qualities of Prakriti (nature) guiding a person's understanding."
     },
     {
         "id": "18-5",
@@ -7109,7 +7728,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यज्ञदानतपःकर्म न त्याज्यं कार्यमेव तत्।यज्ञो दानं तपश्चैव पावनानि मनीषिणाम्।।18.5।।"
+        "sanskrit": "यज्ञदानतपःकर्म न त्याज्यं कार्यमेव तत्।यज्ञो दानं तपश्चैव पावनानि मनीषिणाम्।।18.5।।",
+        "modernText": "Acts of generosity, discipline, and sincere offering should not be abandoned because they purify the mind and refine one's character."
     },
     {
         "id": "18-6",
@@ -7120,7 +7740,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "एतान्यपि तु कर्माणि सङ्गं त्यक्त्वा फलानि च।कर्तव्यानीति मे पार्थ निश्िचतं मतमुत्तमम्।।18.6।।"
+        "sanskrit": "एतान्यपि तु कर्माणि सङ्गं त्यक्त्वा फलानि च।कर्तव्यानीति मे पार्थ निश्िचतं मतमुत्तमम्।।18.6।।",
+        "modernText": "Even these actions should be performed without attachment to the results, and this approach reflects the clearest form of wise action."
     },
     {
         "id": "18-7",
@@ -7131,7 +7752,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नियतस्य तु संन्यासः कर्मणो नोपपद्यते।मोहात्तस्य परित्यागस्तामसः परिकीर्तितः।।18.7।।"
+        "sanskrit": "नियतस्य तु संन्यासः कर्मणो नोपपद्यते।मोहात्तस्य परित्यागस्तामसः परिकीर्तितः।।18.7।।",
+        "modernText": "Abandoning one's responsibilities out of confusion or misunderstanding arises from tamas (inertia and ignorance)."
     },
     {
         "id": "18-8",
@@ -7142,7 +7764,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "दुःखमित्येव यत्कर्म कायक्लेशभयात्त्यजेत्।स कृत्वा राजसं त्यागं नैव त्यागफलं लभेत्।।18.8।।"
+        "sanskrit": "दुःखमित्येव यत्कर्म कायक्लेशभयात्त्यजेत्।स कृत्वा राजसं त्यागं नैव त्यागफलं लभेत्।।18.8।।",
+        "modernText": "Giving up responsibilities because they are uncomfortable or difficult arises from rajas (restless avoidance) and does not lead to genuine freedom."
     },
     {
         "id": "18-9",
@@ -7153,7 +7776,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कार्यमित्येव यत्कर्म नियतं क्रियतेऽर्जुन।सङ्गं त्यक्त्वा फलं चैव स त्यागः सात्त्विको मतः।।18.9।।"
+        "sanskrit": "कार्यमित्येव यत्कर्म नियतं क्रियतेऽर्जुन।सङ्गं त्यक्त्वा फलं चैव स त्यागः सात्त्विको मतः।।18.9।।",
+        "modernText": "Performing one's responsibility simply because it is right, while releasing attachment to the outcome, reflects sattva (clarity)."
     },
     {
         "id": "18-10",
@@ -7164,7 +7788,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न द्वेष्ट्यकुशलं कर्म कुशले नानुषज्जते।त्यागी सत्त्वसमाविष्टो मेधावी छिन्नसंशयः।।18.10।।"
+        "sanskrit": "न द्वेष्ट्यकुशलं कर्म कुशले नानुषज्जते।त्यागी सत्त्वसमाविष्टो मेधावी छिन्नसंशयः।।18.10।।",
+        "modernText": "A person grounded in sattva (clarity) neither resists difficult work nor clings to pleasant work."
     },
     {
         "id": "18-11",
@@ -7175,7 +7800,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न हि देहभृता शक्यं त्यक्तुं कर्माण्यशेषतः।यस्तु कर्मफलत्यागी स त्यागीत्यभिधीयते।।18.11।।"
+        "sanskrit": "न हि देहभृता शक्यं त्यक्तुं कर्माण्यशेषतः।यस्तु कर्मफलत्यागी स त्यागीत्यभिधीयते।।18.11।।",
+        "modernText": "As long as one lives within a body, action cannot be fully avoided. True renunciation lies in releasing attachment to results."
     },
     {
         "id": "18-12",
@@ -7186,7 +7812,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अनिष्टमिष्टं मिश्रं च त्रिविधं कर्मणः फलम्।भवत्यत्यागिनां प्रेत्य न तु संन्यासिनां क्वचित्।।18.12।।"
+        "sanskrit": "अनिष्टमिष्टं मिश्रं च त्रिविधं कर्मणः फलम्।भवत्यत्यागिनां प्रेत्य न तु संन्यासिनां क्वचित्।।18.12।।",
+        "modernText": "Those who remain attached to the results of action experience pleasant, unpleasant, or mixed outcomes, while those who renounce attachment move beyond these results."
     },
     {
         "id": "18-13",
@@ -7197,7 +7824,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पञ्चैतानि महाबाहो कारणानि निबोध मे।सांख्ये कृतान्ते प्रोक्तानि सिद्धये सर्वकर्मणाम्।।18.13।।"
+        "sanskrit": "पञ्चैतानि महाबाहो कारणानि निबोध मे।सांख्ये कृतान्ते प्रोक्तानि सिद्धये सर्वकर्मणाम्।।18.13।।",
+        "modernText": "Every action arises through several causes rather than from a single individual agent."
     },
     {
         "id": "18-14",
@@ -7208,7 +7836,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अधिष्ठानं तथा कर्ता करणं च पृथग्विधम्।विविधाश्च पृथक्चेष्टा दैवं चैवात्र पञ्चमम्।।18.14।।"
+        "sanskrit": "अधिष्ठानं तथा कर्ता करणं च पृथग्विधम्।विविधाश्च पृथक्चेष्टा दैवं चैवात्र पञ्चमम्।।18.14।।",
+        "modernText": "The body, the sense of agency, the tools of action, the effort involved, and the surrounding conditions together produce every action."
     },
     {
         "id": "18-15",
@@ -7219,7 +7848,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "शरीरवाङ्मनोभिर्यत्कर्म प्रारभते नरः।न्याय्यं वा विपरीतं वा पञ्चैते तस्य हेतवः।।18.15।।"
+        "sanskrit": "शरीरवाङ्मनोभिर्यत्कर्म प्रारभते नरः।न्याय्यं वा विपरीतं वा पञ्चैते तस्य हेतवः।।18.15।।",
+        "modernText": "Whatever a person does through body, speech, or mind emerges from this combination of factors."
     },
     {
         "id": "18-16",
@@ -7230,7 +7860,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः।पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः।।18.16।।"
+        "sanskrit": "तत्रैवं सति कर्तारमात्मानं केवलं तु यः।पश्यत्यकृतबुद्धित्वान्न स पश्यति दुर्मतिः।।18.16।।",
+        "modernText": "Those who believe the individual self alone is the doer fail to see the deeper structure of action."
     },
     {
         "id": "18-17",
@@ -7241,7 +7872,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यस्य नाहंकृतो भावो बुद्धिर्यस्य न लिप्यते।हत्वापि स इमाँल्लोकान्न हन्ति न निबध्यते।।18.17।।"
+        "sanskrit": "यस्य नाहंकृतो भावो बुद्धिर्यस्य न लिप्यते।हत्वापि स इमाँल्लोकान्न हन्ति न निबध्यते।।18.17।।",
+        "modernText": "When ego is absent and understanding is clear, a person acts without becoming bound by the action itself."
     },
     {
         "id": "18-18",
@@ -7252,7 +7884,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना।करणं कर्म कर्तेति त्रिविधः कर्मसंग्रहः।।18.18।।"
+        "sanskrit": "ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना।करणं कर्म कर्तेति त्रिविधः कर्मसंग्रहः।।18.18।।",
+        "modernText": "Knowledge, the object of knowledge, and the knower initiate action, while the instrument, the action, and the agent form its structure."
     },
     {
         "id": "18-19",
@@ -7263,7 +7896,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदतः।प्रोच्यते गुणसंख्याने यथावच्छृणु तान्यपि।।18.19।।"
+        "sanskrit": "ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदतः।प्रोच्यते गुणसंख्याने यथावच्छृणु तान्यपि।।18.19।।",
+        "modernText": "Knowledge, action, and the agent appear in three forms depending on the qualities of Prakriti (nature)."
     },
     {
         "id": "18-20",
@@ -7274,7 +7908,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वभूतेषु येनैकं भावमव्ययमीक्षते।अविभक्तं विभक्तेषु तज्ज्ञानं विद्धि सात्त्विकम्।।18.20।।"
+        "sanskrit": "सर्वभूतेषु येनैकं भावमव्ययमीक्षते।अविभक्तं विभक्तेषु तज्ज्ञानं विद्धि सात्त्विकम्।।18.20।।",
+        "modernText": "Sattvic knowledge recognizes the one unchanging reality present in all beings, perceiving unity within diversity."
     },
     {
         "id": "18-21",
@@ -7285,7 +7920,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "पृथक्त्वेन तु यज्ज्ञानं नानाभावान्पृथग्विधान्।वेत्ति सर्वेषु भूतेषु तज्ज्ञानं विद्धि राजसम्।।18.21।।"
+        "sanskrit": "पृथक्त्वेन तु यज्ज्ञानं नानाभावान्पृथग्विधान्।वेत्ति सर्वेषु भूतेषु तज्ज्ञानं विद्धि राजसम्।।18.21।।",
+        "modernText": "Rajasic knowledge sees existence as divided into many separate and competing individuals."
     },
     {
         "id": "18-22",
@@ -7296,7 +7932,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यत्तु कृत्स्नवदेकस्मिन्कार्ये सक्तमहैतुकम्।अतत्त्वार्थवदल्पं च तत्तामसमुदाहृतम्।।18.22।।"
+        "sanskrit": "यत्तु कृत्स्नवदेकस्मिन्कार्ये सक्तमहैतुकम्।अतत्त्वार्थवदल्पं च तत्तामसमुदाहृतम्।।18.22।।",
+        "modernText": "Tamasic knowledge clings blindly to narrow views, mistaking partial understanding for the whole truth."
     },
     {
         "id": "18-23",
@@ -7307,7 +7944,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "नियतं सङ्गरहितमरागद्वेषतः कृतम्।अफलप्रेप्सुना कर्म यत्तत्सात्त्विकमुच्यते।।18.23।।"
+        "sanskrit": "नियतं सङ्गरहितमरागद्वेषतः कृतम्।अफलप्रेप्सुना कर्म यत्तत्सात्त्विकमुच्यते।।18.23।।",
+        "modernText": "Action performed as a duty, without attachment or desire for reward, reflects sattva (clarity)."
     },
     {
         "id": "18-24",
@@ -7318,7 +7956,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यत्तु कामेप्सुना कर्म साहङ्कारेण वा पुनः।क्रियते बहुलायासं तद्राजसमुदाहृतम्।।18.24।।"
+        "sanskrit": "यत्तु कामेप्सुना कर्म साहङ्कारेण वा पुनः।क्रियते बहुलायासं तद्राजसमुदाहृतम्।।18.24।।",
+        "modernText": "Action driven by ego, ambition, and desire for results reflects rajas (restless striving)."
     },
     {
         "id": "18-25",
@@ -7329,7 +7968,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अनुबन्धं क्षयं हिंसामनपेक्ष्य च पौरुषम्।मोहादारभ्यते कर्म यत्तत्तामसमुच्यते।।18.25।।"
+        "sanskrit": "अनुबन्धं क्षयं हिंसामनपेक्ष्य च पौरुषम्।मोहादारभ्यते कर्म यत्तत्तामसमुच्यते।।18.25।।",
+        "modernText": "Action performed blindly without understanding consequences reflects tamas (ignorance)."
     },
     {
         "id": "18-26",
@@ -7340,7 +7980,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मुक्तसङ्गोऽनहंवादी धृत्युत्साहसमन्वितः।सिद्ध्यसिद्ध्योर्निर्विकारः कर्ता सात्त्विक उच्यते।।18.26।।"
+        "sanskrit": "मुक्तसङ्गोऽनहंवादी धृत्युत्साहसमन्वितः।सिद्ध्यसिद्ध्योर्निर्विकारः कर्ता सात्त्विक उच्यते।।18.26।।",
+        "modernText": "The sattvic doer acts with steadiness, enthusiasm, and freedom from ego or attachment to success or failure."
     },
     {
         "id": "18-27",
@@ -7351,7 +7992,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "रागी कर्मफलप्रेप्सुर्लुब्धो हिंसात्मकोऽशुचिः।हर्षशोकान्वितः कर्ता राजसः परिकीर्तितः।।18.27।।"
+        "sanskrit": "रागी कर्मफलप्रेप्सुर्लुब्धो हिंसात्मकोऽशुचिः।हर्षशोकान्वितः कर्ता राजसः परिकीर्तितः।।18.27।।",
+        "modernText": "The rajasic doer is driven by craving for results and is influenced by greed, pride, and emotional swings."
     },
     {
         "id": "18-28",
@@ -7362,7 +8004,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अयुक्तः प्राकृतः स्तब्धः शठो नैष्कृतिकोऽलसः।विषादी दीर्घसूत्री च कर्ता तामस उच्यते।।18.28।।"
+        "sanskrit": "अयुक्तः प्राकृतः स्तब्धः शठो नैष्कृतिकोऽलसः।विषादी दीर्घसूत्री च कर्ता तामस उच्यते।।18.28।।",
+        "modernText": "The tamasic doer lacks discipline, clarity, and initiative, acting lazily and carelessly."
     },
     {
         "id": "18-29",
@@ -7373,7 +8016,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बुद्धेर्भेदं धृतेश्चैव गुणतस्त्रिविधं श्रृणु।प्रोच्यमानमशेषेण पृथक्त्वेन धनञ्जय।।18.29।।"
+        "sanskrit": "बुद्धेर्भेदं धृतेश्चैव गुणतस्त्रिविधं श्रृणु।प्रोच्यमानमशेषेण पृथक्त्वेन धनञ्जय।।18.29।।",
+        "modernText": "Understanding and determination also appear in three forms depending on the qualities of Prakriti (nature)."
     },
     {
         "id": "18-30",
@@ -7384,7 +8028,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये।बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी।।18.30।।"
+        "sanskrit": "प्रवृत्तिं च निवृत्तिं च कार्याकार्ये भयाभये।बन्धं मोक्षं च या वेत्ति बुद्धिः सा पार्थ सात्त्विकी।।18.30।।",
+        "modernText": "Sattvic understanding clearly recognizes what should be done, what should be avoided, what leads to freedom, and what leads to bondage."
     },
     {
         "id": "18-31",
@@ -7395,7 +8040,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यया धर्ममधर्मं च कार्यं चाकार्यमेव च।अयथावत्प्रजानाति बुद्धिः सा पार्थ राजसी।।18.31।।"
+        "sanskrit": "यया धर्ममधर्मं च कार्यं चाकार्यमेव च।अयथावत्प्रजानाति बुद्धिः सा पार्थ राजसी।।18.31।।",
+        "modernText": "Rajasic understanding confuses right and wrong and struggles to distinguish wise action from harmful action."
     },
     {
         "id": "18-32",
@@ -7406,7 +8052,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अधर्मं धर्ममिति या मन्यते तमसाऽऽवृता।सर्वार्थान्विपरीतांश्च बुद्धिः सा पार्थ तामसी।।18.32।।"
+        "sanskrit": "अधर्मं धर्ममिति या मन्यते तमसाऽऽवृता।सर्वार्थान्विपरीतांश्च बुद्धिः सा पार्थ तामसी।।18.32।।",
+        "modernText": "Tamasic understanding sees reality in a distorted way, mistaking harmful actions for righteous ones."
     },
     {
         "id": "18-33",
@@ -7417,7 +8064,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "धृत्या यया धारयते मनःप्राणेन्द्रियक्रियाः।योगेनाव्यभिचारिण्या धृतिः सा पार्थ सात्त्विकी।।18.33।।"
+        "sanskrit": "धृत्या यया धारयते मनःप्राणेन्द्रियक्रियाः।योगेनाव्यभिचारिण्या धृतिः सा पार्थ सात्त्विकी।।18.33।।",
+        "modernText": "Sattvic determination sustains discipline of mind, senses, and life through steady inner focus."
     },
     {
         "id": "18-34",
@@ -7428,7 +8076,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यया तु धर्मकामार्थान् धृत्या धारयतेऽर्जुन।प्रसङ्गेन फलाकाङ्क्षी धृतिः सा पार्थ राजसी।।18.34।।"
+        "sanskrit": "यया तु धर्मकामार्थान् धृत्या धारयतेऽर्जुन।प्रसङ्गेन फलाकाङ्क्षी धृतिः सा पार्थ राजसी।।18.34।।",
+        "modernText": "Rajasic determination clings to achievement, pleasure, and reward through attachment and ambition."
     },
     {
         "id": "18-35",
@@ -7439,7 +8088,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यया स्वप्नं भयं शोकं विषादं मदमेव च।न विमुञ्चति दुर्मेधा धृतिः सा पार्थ तामसी।।18.35।।"
+        "sanskrit": "यया स्वप्नं भयं शोकं विषादं मदमेव च।न विमुञ्चति दुर्मेधा धृतिः सा पार्थ तामसी।।18.35।।",
+        "modernText": "Tamasic determination holds onto fear, laziness, grief, and destructive habits."
     },
     {
         "id": "18-36",
@@ -7450,7 +8100,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सुखं त्विदानीं त्रिविधं श्रृणु मे भरतर्षभ।अभ्यासाद्रमते यत्र दुःखान्तं च निगच्छति।।18.36।।"
+        "sanskrit": "सुखं त्विदानीं त्रिविधं श्रृणु मे भरतर्षभ।अभ्यासाद्रमते यत्र दुःखान्तं च निगच्छति।।18.36।।",
+        "modernText": "Happiness also appears in three forms shaped by the qualities of Prakriti (nature)."
     },
     {
         "id": "18-37",
@@ -7461,7 +8112,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यत्तदग्रे विषमिव परिणामेऽमृतोपमम्।तत्सुखं सात्त्विकं प्रोक्तमात्मबुद्धिप्रसादजम्।।18.37।।"
+        "sanskrit": "यत्तदग्रे विषमिव परिणामेऽमृतोपमम्।तत्सुखं सात्त्विकं प्रोक्तमात्मबुद्धिप्रसादजम्।।18.37।।",
+        "modernText": "Sattvic happiness may feel difficult at first but eventually becomes deeply nourishing and peaceful."
     },
     {
         "id": "18-38",
@@ -7472,7 +8124,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "विषयेन्द्रियसंयोगाद्यत्तदग्रेऽमृतोपमम्।परिणामे विषमिव तत्सुखं राजसं स्मृतम्।।18.38।।"
+        "sanskrit": "विषयेन्द्रियसंयोगाद्यत्तदग्रेऽमृतोपमम्।परिणामे विषमिव तत्सुखं राजसं स्मृतम्।।18.38।।",
+        "modernText": "Rajasic happiness feels pleasant at first but eventually leads to dissatisfaction and imbalance."
     },
     {
         "id": "18-39",
@@ -7483,7 +8136,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदग्रे चानुबन्धे च सुखं मोहनमात्मनः।निद्रालस्यप्रमादोत्थं तत्तामसमुदाहृतम्।।18.39।।"
+        "sanskrit": "यदग्रे चानुबन्धे च सुखं मोहनमात्मनः।निद्रालस्यप्रमादोत्थं तत्तामसमुदाहृतम्।।18.39।।",
+        "modernText": "Tamasic happiness arises from laziness and ignorance and ultimately deepens confusion."
     },
     {
         "id": "18-40",
@@ -7494,7 +8148,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न तदस्ति पृथिव्यां वा दिवि देवेषु वा पुनः।सत्त्वं प्रकृतिजैर्मुक्तं यदेभिः स्यात्ित्रभिर्गुणैः।।18.40।।"
+        "sanskrit": "न तदस्ति पृथिव्यां वा दिवि देवेषु वा पुनः।सत्त्वं प्रकृतिजैर्मुक्तं यदेभिः स्यात्ित्रभिर्गुणैः।।18.40।।",
+        "modernText": "No being within the universe exists entirely free from the influence of the three qualities of Prakriti (nature)."
     },
     {
         "id": "18-41",
@@ -7505,7 +8160,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ब्राह्मणक्षत्रियविशां शूद्राणां च परंतप।कर्माणि प्रविभक्तानि स्वभावप्रभवैर्गुणैः।।18.41।।"
+        "sanskrit": "ब्राह्मणक्षत्रियविशां शूद्राणां च परंतप।कर्माणि प्रविभक्तानि स्वभावप्रभवैर्गुणैः।।18.41।।",
+        "modernText": "Different types of responsibilities arise from the natural qualities and tendencies within individuals."
     },
     {
         "id": "18-42",
@@ -7516,7 +8172,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "शमो दमस्तपः शौचं क्षान्तिरार्जवमेव च।ज्ञानं विज्ञानमास्तिक्यं ब्रह्मकर्म स्वभावजम्।।18.42।।"
+        "sanskrit": "शमो दमस्तपः शौचं क्षान्तिरार्जवमेव च।ज्ञानं विज्ञानमास्तिक्यं ब्रह्मकर्म स्वभावजम्।।18.42।।",
+        "modernText": "Calmness, discipline, wisdom, patience, purity, and faith arise naturally in those inclined toward contemplation and learning."
     },
     {
         "id": "18-43",
@@ -7527,7 +8184,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "शौर्यं तेजो धृतिर्दाक्ष्यं युद्धे चाप्यपलायनम्।दानमीश्वरभावश्च क्षात्रं कर्म स्वभावजम्।।18.43।।"
+        "sanskrit": "शौर्यं तेजो धृतिर्दाक्ष्यं युद्धे चाप्यपलायनम्।दानमीश्वरभावश्च क्षात्रं कर्म स्वभावजम्।।18.43।।",
+        "modernText": "Courage, strength, leadership, and generosity arise naturally in those inclined toward protection and responsibility."
     },
     {
         "id": "18-44",
@@ -7538,7 +8196,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कृषिगौरक्ष्यवाणिज्यं वैश्यकर्म स्वभावजम्।परिचर्यात्मकं कर्म शूद्रस्यापि स्वभावजम्।।18.44।।"
+        "sanskrit": "कृषिगौरक्ष्यवाणिज्यं वैश्यकर्म स्वभावजम्।परिचर्यात्मकं कर्म शूद्रस्यापि स्वभावजम्।।18.44।।",
+        "modernText": "Skill in trade, agriculture, and organization arises in those inclined toward productive work, while service supports the functioning of society."
     },
     {
         "id": "18-45",
@@ -7549,7 +8208,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः।स्वकर्मनिरतः सिद्धिं यथा विन्दति तच्छृणु।।18.45।।"
+        "sanskrit": "स्वे स्वे कर्मण्यभिरतः संसिद्धिं लभते नरः।स्वकर्मनिरतः सिद्धिं यथा विन्दति तच्छृणु।।18.45।।",
+        "modernText": "By dedicating oneself sincerely to the responsibilities aligned with one's nature, a person moves toward inner fulfillment."
     },
     {
         "id": "18-46",
@@ -7560,7 +8220,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम्।स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः।।18.46।।"
+        "sanskrit": "यतः प्रवृत्तिर्भूतानां येन सर्वमिदं ततम्।स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानवः।।18.46।।",
+        "modernText": "Through sincere work performed in harmony with the source from which all existence arises, one moves toward realization of Brahman (the ultimate reality)."
     },
     {
         "id": "18-47",
@@ -7571,7 +8232,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्।स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्।।18.47।।"
+        "sanskrit": "श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्।स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम्।।18.47।।",
+        "modernText": "It is better to follow one's own path imperfectly than to perfectly imitate another person's path."
     },
     {
         "id": "18-48",
@@ -7586,7 +8248,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "courage"
         ],
         "speaker": "Krishna",
-        "sanskrit": "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत्।सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः।।18.48।।"
+        "sanskrit": "सहजं कर्म कौन्तेय सदोषमपि न त्यजेत्।सर्वारम्भा हि दोषेण धूमेनाग्निरिवावृताः।।18.48।।",
+        "modernText": "Every form of work contains some imperfection, just as fire is accompanied by smoke, so responsibilities should not be abandoned because of difficulty."
     },
     {
         "id": "18-49",
@@ -7597,7 +8260,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "असक्तबुद्धिः सर्वत्र जितात्मा विगतस्पृहः।नैष्कर्म्यसिद्धिं परमां संन्यासेनाधिगच्छति।।18.49।।"
+        "sanskrit": "असक्तबुद्धिः सर्वत्र जितात्मा विगतस्पृहः।नैष्कर्म्यसिद्धिं परमां संन्यासेनाधिगच्छति।।18.49।।",
+        "modernText": "One who becomes inwardly detached, disciplined, and free from craving moves toward the freedom that arises through true renunciation."
     },
     {
         "id": "18-50",
@@ -7608,7 +8272,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सिद्धिं प्राप्तो यथा ब्रह्म तथाप्नोति निबोध मे।समासेनैव कौन्तेय निष्ठा ज्ञानस्य या परा।।18.50।।"
+        "sanskrit": "सिद्धिं प्राप्तो यथा ब्रह्म तथाप्नोति निबोध मे।समासेनैव कौन्तेय निष्ठा ज्ञानस्य या परा।।18.50।।",
+        "modernText": "Through disciplined understanding, a person who reaches this state realizes Brahman (the ultimate reality), the culmination of wisdom."
     },
     {
         "id": "18-51",
@@ -7619,7 +8284,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "बुद्ध्या विशुद्धया युक्तो धृत्याऽऽत्मानं नियम्य च।शब्दादीन् विषयांस्त्यक्त्वा रागद्वेषौ व्युदस्य च।।18.51।।"
+        "sanskrit": "बुद्ध्या विशुद्धया युक्तो धृत्याऽऽत्मानं नियम्य च।शब्दादीन् विषयांस्त्यक्त्वा रागद्वेषौ व्युदस्य च।।18.51।।",
+        "modernText": "With purified understanding, self-discipline, and freedom from attraction and aversion, the mind becomes steady and clear."
     },
     {
         "id": "18-52",
@@ -7630,7 +8296,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "विविक्तसेवी लघ्वाशी यतवाक्कायमानसः।ध्यानयोगपरो नित्यं वैराग्यं समुपाश्रितः।।18.52।।"
+        "sanskrit": "विविक्तसेवी लघ्वाशी यतवाक्कायमानसः।ध्यानयोगपरो नित्यं वैराग्यं समुपाश्रितः।।18.52।।",
+        "modernText": "Living with simplicity, moderation, reflection, and self-restraint supports the growth of deep understanding."
     },
     {
         "id": "18-53",
@@ -7641,7 +8308,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अहङ्कारं बलं दर्पं कामं क्रोधं परिग्रहम्।विमुच्य निर्ममः शान्तो ब्रह्मभूयाय कल्पते।।18.53।।"
+        "sanskrit": "अहङ्कारं बलं दर्पं कामं क्रोधं परिग्रहम्।विमुच्य निर्ममः शान्तो ब्रह्मभूयाय कल्पते।।18.53।।",
+        "modernText": "When ego, pride, anger, desire, and possessiveness fall away, the mind becomes peaceful and capable of realizing Brahman (the ultimate reality)."
     },
     {
         "id": "18-54",
@@ -7652,7 +8320,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ब्रह्मभूतः प्रसन्नात्मा न शोचति न काङ्क्षति।समः सर्वेषु भूतेषु मद्भक्तिं लभते पराम्।।18.54।।"
+        "sanskrit": "ब्रह्मभूतः प्रसन्नात्मा न शोचति न काङ्क्षति।समः सर्वेषु भूतेषु मद्भक्तिं लभते पराम्।।18.54।।",
+        "modernText": "One who realizes Brahman (the ultimate reality) becomes inwardly peaceful, free from craving and sorrow, and sees all beings with equal vision."
     },
     {
         "id": "18-55",
@@ -7663,7 +8332,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "भक्त्या मामभिजानाति यावान्यश्चास्मि तत्त्वतः।ततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम्।।18.55।।"
+        "sanskrit": "भक्त्या मामभिजानाति यावान्यश्चास्मि तत्त्वतः।ततो मां तत्त्वतो ज्ञात्वा विशते तदनन्तरम्।।18.55।।",
+        "modernText": "Through deep devotion to truth, the highest reality can be fully understood, and through that understanding one becomes united with it."
     },
     {
         "id": "18-56",
@@ -7674,7 +8344,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वकर्माण्यपि सदा कुर्वाणो मद्व्यपाश्रयः।मत्प्रसादादवाप्नोति शाश्वतं पदमव्ययम्।।18.56।।"
+        "sanskrit": "सर्वकर्माण्यपि सदा कुर्वाणो मद्व्यपाश्रयः।मत्प्रसादादवाप्नोति शाश्वतं पदमव्ययम्।।18.56।।",
+        "modernText": "Even while performing actions, one who lives in alignment with the deeper reality moves steadily toward the eternal state of freedom."
     },
     {
         "id": "18-57",
@@ -7685,7 +8356,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "चेतसा सर्वकर्माणि मयि संन्यस्य मत्परः।बुद्धियोगमुपाश्रित्य मच्चित्तः सततं भव।।18.57।।"
+        "sanskrit": "चेतसा सर्वकर्माणि मयि संन्यस्य मत्परः।बुद्धियोगमुपाश्रित्य मच्चित्तः सततं भव।।18.57।।",
+        "modernText": "By dedicating one's actions to truth and maintaining clear understanding, the mind remains steadily aligned with the highest purpose."
     },
     {
         "id": "18-58",
@@ -7700,7 +8372,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "clarity"
         ],
         "speaker": "Krishna",
-        "sanskrit": "मच्चित्तः सर्वदुर्गाणि मत्प्रसादात्तरिष्यसि।अथ चेत्त्वमहङ्कारान्न श्रोष्यसि विनङ्क्ष्यसि।।18.58।।"
+        "sanskrit": "मच्चित्तः सर्वदुर्गाणि मत्प्रसादात्तरिष्यसि।अथ चेत्त्वमहङ्कारान्न श्रोष्यसि विनङ्क्ष्यसि।।18.58।।",
+        "modernText": "When the mind remains grounded in this deeper understanding, obstacles can be overcome. But when ego dominates, confusion returns."
     },
     {
         "id": "18-59",
@@ -7711,7 +8384,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "यदहङ्कारमाश्रित्य न योत्स्य इति मन्यसे।मिथ्यैष व्यवसायस्ते प्रकृतिस्त्वां नियोक्ष्यति।।18.59।।"
+        "sanskrit": "यदहङ्कारमाश्रित्य न योत्स्य इति मन्यसे।मिथ्यैष व्यवसायस्ते प्रकृतिस्त्वां नियोक्ष्यति।।18.59।।",
+        "modernText": "Even when the ego resists action, one's deeper nature continues to guide behavior."
     },
     {
         "id": "18-60",
@@ -7722,7 +8396,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "स्वभावजेन कौन्तेय निबद्धः स्वेन कर्मणा।कर्तुं नेच्छसि यन्मोहात्करिष्यस्यवशोऽपि तत्।।18.60।।"
+        "sanskrit": "स्वभावजेन कौन्तेय निबद्धः स्वेन कर्मणा।कर्तुं नेच्छसि यन्मोहात्करिष्यस्यवशोऽपि तत्।।18.60।।",
+        "modernText": "Because each person is shaped by their own nature, they will eventually act according to that nature."
     },
     {
         "id": "18-61",
@@ -7733,7 +8408,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति।भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया।।18.61।।"
+        "sanskrit": "ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति।भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया।।18.61।।",
+        "modernText": "The deeper intelligence of life dwells within every heart, guiding the movement of existence as part of a vast unfolding."
     },
     {
         "id": "18-62",
@@ -7744,7 +8420,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "तमेव शरणं गच्छ सर्वभावेन भारत।तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम्।।18.62।।"
+        "sanskrit": "तमेव शरणं गच्छ सर्वभावेन भारत।तत्प्रसादात्परां शान्तिं स्थानं प्राप्स्यसि शाश्वतम्।।18.62।।",
+        "modernText": "By aligning oneself fully with this deeper truth, one finds lasting peace and freedom."
     },
     {
         "id": "18-63",
@@ -7755,7 +8432,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया।विमृश्यैतदशेषेण यथेच्छसि तथा कुरु।।18.63।।"
+        "sanskrit": "इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया।विमृश्यैतदशेषेण यथेच्छसि तथा कुरु।।18.63।।",
+        "modernText": "This wisdom has now been revealed. Reflect deeply on it and choose your path with awareness."
     },
     {
         "id": "18-64",
@@ -7766,7 +8444,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "सर्वगुह्यतमं भूयः श्रृणु मे परमं वचः।इष्टोऽसि मे दृढमिति ततो वक्ष्यामि ते हितम्।।18.64।।"
+        "sanskrit": "सर्वगुह्यतमं भूयः श्रृणु मे परमं वचः।इष्टोऽसि मे दृढमिति ततो वक्ष्यामि ते हितम्।।18.64।।",
+        "modernText": "Krishna offers one final teaching out of deep care for Arjuna's growth and understanding."
     },
     {
         "id": "18-65",
@@ -7777,7 +8456,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु।मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे।।18.65।।"
+        "sanskrit": "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु।मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे।।18.65।।",
+        "modernText": "Fix the mind on the highest truth, live in devotion to it, and dedicate actions to it. Through this alignment one moves toward the deepest realization."
     },
     {
         "id": "18-66",
@@ -7792,7 +8472,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "courage"
         ],
         "speaker": "Krishna",
-        "sanskrit": "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज।अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः।।18.66।।"
+        "sanskrit": "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज।अहं त्वा सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः।।18.66।।",
+        "modernText": "Let go of rigid attachments to limited ideas of duty and take refuge in the deeper truth of existence. Through that surrender, freedom from confusion becomes possible."
     },
     {
         "id": "18-67",
@@ -7803,7 +8484,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "इदं ते नातपस्काय नाभक्ताय कदाचन।न चाशुश्रूषवे वाच्यं न च मां योऽभ्यसूयति।।18.67।।"
+        "sanskrit": "इदं ते नातपस्काय नाभक्ताय कदाचन।न चाशुश्रूषवे वाच्यं न च मां योऽभ्यसूयति।।18.67।।",
+        "modernText": "This wisdom should be shared only with those who are sincere, disciplined, and open to understanding."
     },
     {
         "id": "18-68",
@@ -7814,7 +8496,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "य इमं परमं गुह्यं मद्भक्तेष्वभिधास्यति।भक्ितं मयि परां कृत्वा मामेवैष्यत्यसंशयः।।18.68।।"
+        "sanskrit": "य इमं परमं गुह्यं मद्भक्तेष्वभिधास्यति।भक्ितं मयि परां कृत्वा मामेवैष्यत्यसंशयः।।18.68।।",
+        "modernText": "Those who share this teaching with sincerity and devotion help others move toward truth."
     },
     {
         "id": "18-69",
@@ -7825,7 +8508,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "न च तस्मान्मनुष्येषु कश्िचन्मे प्रियकृत्तमः।भविता न च मे तस्मादन्यः प्रियतरो भुवि।।18.69।।"
+        "sanskrit": "न च तस्मान्मनुष्येषु कश्िचन्मे प्रियकृत्तमः।भविता न च मे तस्मादन्यः प्रियतरो भुवि।।18.69।।",
+        "modernText": "No act is more meaningful than helping others understand wisdom that leads toward freedom."
     },
     {
         "id": "18-70",
@@ -7836,7 +8520,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "अध्येष्यते च य इमं धर्म्यं संवादमावयोः।ज्ञानयज्ञेन तेनाहमिष्टः स्यामिति मे मतिः।।18.70।।"
+        "sanskrit": "अध्येष्यते च य इमं धर्म्यं संवादमावयोः।ज्ञानयज्ञेन तेनाहमिष्टः स्यामिति मे मतिः।।18.70।।",
+        "modernText": "Those who study this dialogue with sincerity engage in a profound act of reflection and learning."
     },
     {
         "id": "18-71",
@@ -7847,7 +8532,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "श्रद्धावाननसूयश्च श्रृणुयादपि यो नरः।सोऽपि मुक्तः शुभाँल्लोकान्प्राप्नुयात्पुण्यकर्मणाम्।।18.71।।"
+        "sanskrit": "श्रद्धावाननसूयश्च श्रृणुयादपि यो नरः।सोऽपि मुक्तः शुभाँल्लोकान्प्राप्नुयात्पुण्यकर्मणाम्।।18.71।।",
+        "modernText": "Even those who simply listen to this wisdom with faith and openness begin to move toward a better understanding of life."
     },
     {
         "id": "18-72",
@@ -7858,7 +8544,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Krishna",
-        "sanskrit": "कच्चिदेतच्छ्रुतं पार्थ त्वयैकाग्रेण चेतसा।कच्चिदज्ञानसंमोहः प्रनष्टस्ते धनञ्जय।।18.72।।"
+        "sanskrit": "कच्चिदेतच्छ्रुतं पार्थ त्वयैकाग्रेण चेतसा।कच्चिदज्ञानसंमोहः प्रनष्टस्ते धनञ्जय।।18.72।।",
+        "modernText": "Krishna asks Arjuna whether his confusion has been cleared through this understanding."
     },
     {
         "id": "18-73",
@@ -7869,7 +8556,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Arjuna",
-        "sanskrit": "अर्जुन उवाचनष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत।स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव।।18.73।।"
+        "sanskrit": "अर्जुन उवाचनष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत।स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव।।18.73।।",
+        "modernText": "Arjuna responds that his confusion has disappeared, his clarity has returned, and he is ready to act with understanding."
     },
     {
         "id": "18-74",
@@ -7880,7 +8568,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "सञ्जय उवाचइत्यहं वासुदेवस्य पार्थस्य च महात्मनः।संवादमिममश्रौषमद्भुतं रोमहर्षणम्।।18.74।।"
+        "sanskrit": "सञ्जय उवाचइत्यहं वासुदेवस्य पार्थस्य च महात्मनः।संवादमिममश्रौषमद्भुतं रोमहर्षणम्।।18.74।।",
+        "modernText": "Sanjaya describes hearing this profound dialogue between Krishna and Arjuna with great awe."
     },
     {
         "id": "18-75",
@@ -7891,7 +8580,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "व्यासप्रसादाच्छ्रुतवानेतद्गुह्यमहं परम्।योगं योगेश्वरात्कृष्णात्साक्षात्कथयतः स्वयम्।।18.75।।"
+        "sanskrit": "व्यासप्रसादाच्छ्रुतवानेतद्गुह्यमहं परम्।योगं योगेश्वरात्कृष्णात्साक्षात्कथयतः स्वयम्।।18.75।।",
+        "modernText": "Through the insight granted by the sage Vyasa, Sanjaya was able to witness this remarkable conversation."
     },
     {
         "id": "18-76",
@@ -7902,7 +8592,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "राजन्संस्मृत्य संस्मृत्य संवादमिममद्भुतम्।केशवार्जुनयोः पुण्यं हृष्यामि च मुहुर्मुहुः।।18.76।।"
+        "sanskrit": "राजन्संस्मृत्य संस्मृत्य संवादमिममद्भुतम्।केशवार्जुनयोः पुण्यं हृष्यामि च मुहुर्मुहुः।।18.76।।",
+        "modernText": "Remembering the dialogue between Krishna and Arjuna fills Sanjaya with deep wonder and reflection."
     },
     {
         "id": "18-77",
@@ -7913,7 +8604,8 @@ export const GITA_VERSES: GitaVerse[] = [
         "reflection": "",
         "themes": [],
         "speaker": "Sanjaya",
-        "sanskrit": "तच्च संस्मृत्य संस्मृत्य रूपमत्यद्भुतं हरेः।\n\nविस्मयो मे महान् राजन् हृष्यामि च पुनः पुनः।।18.77।।"
+        "sanskrit": "तच्च संस्मृत्य संस्मृत्य रूपमत्यद्भुतं हरेः।\n\nविस्मयो मे महान् राजन् हृष्यामि च पुनः पुनः।।18.77।।",
+        "modernText": "Remembering the vision of the universal form continues to inspire amazement and contemplation."
     },
     {
         "id": "18-78",
@@ -7928,7 +8620,8 @@ export const GITA_VERSES: GitaVerse[] = [
             "courage"
         ],
         "speaker": "Sanjaya",
-        "sanskrit": "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः।\n\nतत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम।।18.78।"
+        "sanskrit": "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः।\n\nतत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम।।18.78।",
+        "modernText": "Where wisdom and courage unite, there arise prosperity, harmony, and success."
     }
 ];
 

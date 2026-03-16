@@ -173,7 +173,7 @@ export const ReelComposition: React.FC = () => {
                         color: COLORS.text,
                         fontWeight: 'bold'
                     }}>
-                        Follow @gitalens
+                        Follow @gitasight
                     </p>
                     <p style={{
                         fontFamily: SERIF_FONT,

@@ -20,6 +20,7 @@ export interface GitaVerse {
   reference: string;
   sanskrit?: string;
   text: string;
+  modernText?: string;
   reflection: string;
   themes: string[];
   speaker: 'Krishna' | 'Arjuna' | 'Sanjaya' | 'Dhritarashtra';

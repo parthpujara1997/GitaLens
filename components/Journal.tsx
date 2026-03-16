@@ -6,6 +6,8 @@ import { supabase } from '../lib/supabase';
 import { Trash } from 'lucide-react';
 import ConfirmationModal from './ConfirmationModal';
 
+import FeatureGuide from './FeatureGuide';
+
 interface JournalProps {
   onComplete?: () => void;
   onAuthRequired: (mode: 'login' | 'signup') => void;
@@ -116,6 +118,12 @@ const Journal: React.FC<JournalProps> = ({ onComplete, onAuthRequired }) => {
       />
 
       <div className="space-y-8 animate-in fade-in duration-500 w-full max-w-xl mx-auto">
+        <FeatureGuide
+          title="INNER DIALOGUE"
+          description="A sacred space to record your insights. Your reflections here deepen your connection to the wisdom you discover."
+          featureId="journal"
+          className="-mb-2"
+        />
         <div className="text-center md:text-left mb-6">
           <h2 className="text-3xl font-semibold text-charcoal serif">Journal</h2>
           <p className="text-stone-500 text-sm italic">Capture your inner dialogue.</p>
