@@ -858,7 +858,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 15",
         "text": "2.15 That person whom these do not disturb, O best among men, who remains equal in pleasure and pain, is fit for immortality.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity","courage"],
         "speaker": "Krishna",
         "sanskrit": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ।\n\nसमदुःखसुखं धीरं सोऽमृतत्वाय कल्पते।।2.15।।",
         "modernText": "One who remains steady in both pleasure and pain develops deep inner strength. Such a person becomes ready for Moksha (liberation)."
@@ -870,7 +870,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 16",
         "text": "2.16 The unreal has no existence, and the real never ceases to be. The truth of both has been realized by the seers of reality.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","clarity"],
         "speaker": "Krishna",
         "sanskrit": "नासतो विद्यते भावो नाभावो विद्यते सतः।\n\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः।।2.16।।",
         "modernText": "What is unreal has no lasting existence, and what is real never ceases to be. Those who perceive truth understand the difference."
@@ -882,7 +882,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 17",
         "text": "2.17 Know that to be imperishable by which all this is pervaded. None can bring about the destruction of that which is eternal.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम्।\n\nविनाशमव्ययस्यास्य न कश्चित् कर्तुमर्हति।।2.17।।",
         "modernText": "Know that the soul, which pervades all life, is indestructible. Nothing can destroy this eternal essence."
@@ -942,7 +942,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 22",
         "text": "2.22 As a person casts off worn-out garments and puts on new ones, so the embodied soul casts off worn-out bodies and enters new ones.",
         "reflection": "By comparing bodies to clothes, Krishna locates identity in the soul rather than the body. Grief and fear arise when permanence is wrongly assigned to what is meant to change.",
-        "themes": [],
+        "themes": ["clarity","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "वासांसि जीर्णानि यथा विहाय\n\nनवानि गृह्णाति नरोऽपराणि।\n\nतथा शरीराणि विहाय जीर्णा\n\nन्यन्यानि संयाति नवानि देही।।2.22।।",
         "modernText": "Just as a person discards worn-out clothes and puts on new ones, the soul leaves old bodies and takes on new ones."
@@ -954,7 +954,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 23",
         "text": "2.23 Weapons do not cut it, fire does not burn it, water does not wet it, and wind does not dry it.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः।\n\nन चैनं क्लेदयन्त्यापो न शोषयति मारुतः।।2.23।।",
         "modernText": "Weapons cannot cut the soul, fire cannot burn it, water cannot drown it, and wind cannot dry it."
@@ -966,7 +966,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 24",
         "text": "2.24 This Self is uncuttable, unburnable, unwettable, and undryable. It is eternal, all-pervading, stable, immovable, and ancient.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च।\n\nनित्यः सर्वगतः स्थाणुरचलो���यं सनातनः।।2.24।।",
         "modernText": "The soul is eternal, stable, and beyond physical harm. It is present everywhere and remains unchanged."
@@ -978,7 +978,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 25",
         "text": "2.25 It is said to be unmanifest, inconceivable, and unchangeable. Knowing this, you ought not to grieve.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते।\n\nतस्मादेवं विदित्वैनं नानुशोचितुमर्हसि।।2.25।।",
         "modernText": "Because the soul cannot be seen or grasped by the senses, it is often misunderstood. Yet understanding its nature removes unnecessary sorrow."
@@ -1002,7 +1002,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 27",
         "text": "2.27 For one who is born, death is certain, and for one who dies, birth is certain. Therefore, in this unavoidable matter, you should not grieve.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity","equanimity"],
         "speaker": "Krishna",
         "sanskrit": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च।\n\nतस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि।।2.27।।",
         "modernText": "Death is certain for those who are born, and birth follows death. This cycle is part of existence and cannot be avoided."
@@ -1134,7 +1134,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 38",
         "text": "2.38 Making pleasure and pain, gain and loss, victory and defeat the same, engage in battle. Thus you shall not incur sin.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity","action"],
         "speaker": "Krishna",
         "sanskrit": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ।\n\nततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि।।2.38।।",
         "modernText": "Approach action with a balanced mind, seeing gain and loss, success and failure with the same clarity. When your inner state is steady, your actions remain pure."
@@ -1158,7 +1158,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 40",
         "text": "2.40 In this path there is no loss of effort, nor is there any harm. Even a little of this dharma protects one from great fear.",
         "reflection": "",
-        "themes": [],
+        "themes": ["courage","clarity"],
         "speaker": "Krishna",
         "sanskrit": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते।\n\nस्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्।।2.40।।",
         "modernText": "No sincere effort on the path of inner discipline is ever wasted. Even a small step in this direction protects the mind from great fear."
@@ -1170,7 +1170,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 41",
         "text": "2.41 Here the intellect is resolute and single-pointed, O joy of the Kurus. The intellect of the irresolute is many-branched and endless.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "व्यवसायात्मिका बुद्धिरेकेह कुरुनन्दन।\n\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम्।।2.41।।",
         "modernText": "A mind guided by wisdom becomes steady and focused. A restless mind, pulled by countless desires, moves endlessly in many directions."
@@ -1218,7 +1218,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 45",
         "text": "2.45 The Vedas deal with the three qualities of nature. Rise above these three, O Arjuna. Be free from duality, ever established in purity, unconcerned with acquisition and preservation, and established in the Self.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","clarity"],
         "speaker": "Krishna",
         "sanskrit": "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन।\n\nनिर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान्।।2.45।।",
         "modernText": "The Vedas (ancient teachings) often describe life through the forces of nature that shape human behavior. Rise beyond these forces. Remain steady, free from constant craving and the anxiety of gaining and keeping possessions."
@@ -1230,7 +1230,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 46",
         "text": "2.46 To a knower of Brahman, all the Vedas are of as much use as a small well is when water is everywhere abundant.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","clarity"],
         "speaker": "Krishna",
         "sanskrit": "यावानर्थ उदपाने सर्वतः संप्लुतोदके।\n\nतावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः।।2.46।।",
         "modernText": "For one who understands Brahman (the ultimate reality), the many teachings serve a role similar to a small well when water is abundant everywhere."
@@ -1274,7 +1274,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 49",
         "text": "2.49 Action is far inferior to the yoga of wisdom, O Dhananjaya. Seek refuge in wisdom. Those who act for reward are pitiable.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","action"],
         "speaker": "Krishna",
         "sanskrit": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय।\n\nबुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः।।2.49।।",
         "modernText": "Actions driven only by the desire for reward keep the mind bound to outcomes. Let wisdom guide your actions instead."
@@ -1286,7 +1286,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 50",
         "text": "2.50 Endowed with wisdom, one casts off both good and evil actions in this life. Therefore devote yourself to yoga. Yoga is skill in action.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action","clarity"],
         "speaker": "Krishna",
         "sanskrit": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते।\n\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम्।।2.50।।",
         "modernText": "When action is guided by clear understanding rather than craving, the mind rises above both success and failure. This is Yoga (disciplined union of mind and action) expressed through action."
@@ -1298,7 +1298,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 51",
         "text": "2.51 The wise, united with wisdom, renouncing the fruits of action, freed from the bondage of birth, attain the sorrowless state.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः।\n\nजन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम्।।2.51।।",
         "modernText": "Those who act with wisdom and let go of attachment to results move beyond cycles of anxiety and dissatisfaction and move toward Moksha (liberation)."
@@ -1382,7 +1382,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 58",
         "text": "2.58 When one withdraws the senses from their objects, as a tortoise withdraws its limbs, his wisdom is firmly established.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation","detachment"],
         "speaker": "Krishna",
         "sanskrit": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः।\n\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।2.58।।",
         "modernText": "Just as a turtle withdraws its limbs for protection, a wise person can draw the senses inward when needed and remain centered within."
@@ -1394,7 +1394,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 59",
         "text": "2.59 Sense objects fall away from the abstinent, but the taste for them remains. Even this taste ceases upon realization of the Supreme.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity","detachment"],
         "speaker": "Krishna",
         "sanskrit": "विषया विनिवर्तन्ते निराहारस्य देहिनः।\n\nरसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते।।2.59।।",
         "modernText": "Resisting desire may quiet the senses for a time, yet the craving can remain. When deeper understanding awakens, even the craving fades."
@@ -1406,7 +1406,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 60",
         "text": "2.60 Even the striving wise person, O son of Kunti, is forcibly carried away by the turbulent senses.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः।\n\nइन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः।।2.60।।",
         "modernText": "The senses are powerful and restless. Even a thoughtful person can be carried away by them if the mind is not watchful."
@@ -1418,7 +1418,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 61",
         "text": "2.61 Having restrained them all, one should remain steadfast, intent on Me. For one whose senses are under control, wisdom is firmly established.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation","clarity"],
         "speaker": "Krishna",
         "sanskrit": "तानि सर्वाणि संयम्य युक्त आसीत मत्परः।\n\nवशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता।।2.61।।",
         "modernText": "When the senses are guided by awareness and discipline, the mind becomes steady and wisdom takes root."
@@ -1446,7 +1446,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 63",
         "text": "2.63 From anger arises delusion. From delusion comes loss of memory. From loss of memory comes destruction of intellect. From destruction of intellect one perishes.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "क्रोधाद्भवति संमोहः संमोहात्स्मृतिविभ्रमः।\n\nस्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति।।2.63।।",
         "modernText": "Anger clouds perception. From this confusion comes loss of judgment, and when judgment collapses, one’s path is easily lost."
@@ -1458,7 +1458,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 64",
         "text": "2.64 But one who moves among objects with senses restrained, free from attraction and aversion, and governed by the Self, attains serenity.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity","detachment"],
         "speaker": "Krishna",
         "sanskrit": "रागद्वेषवियुक्तैस्तु विषयानिन्द्रियैश्चरन्।\n\nआत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति।।2.64।।",
         "modernText": "One who moves through the world with disciplined senses, free from attraction and aversion, gradually discovers inner serenity."
@@ -1470,7 +1470,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 65",
         "text": "2.65 In serenity arises the destruction of all sorrow. For the intellect of the serene-minded soon becomes firmly established.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity","equanimity"],
         "speaker": "Krishna",
         "sanskrit": "प्रसादे सर्वदुःखानां हानिरस्योपजायते।\n\nप्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते।।2.65।।",
         "modernText": "From serenity comes the quieting of inner turmoil. In that calmness, the mind becomes clear and steady."
@@ -1482,7 +1482,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 66",
         "text": "2.66 There is no wisdom for the unsteady, nor contemplation for the unsteady. Without contemplation there is no peace, and without peace how can there be happiness?",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना।\n\nन चाभावयतः शान्तिरशान्तस्य कुतः सुखम्।।2.66।।",
         "modernText": "A restless mind cannot know wisdom. Without wisdom there is no peace, and without peace there can be no lasting happiness."
@@ -1494,7 +1494,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 67",
         "text": "2.67 As the wind carries away a boat on water, so the mind that follows wandering senses carries away one’s wisdom.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते।\n\nतदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि।।2.67।।",
         "modernText": "When the mind follows wandering senses, it sweeps away understanding just as strong winds carry a boat off course."
@@ -1506,7 +1506,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 68",
         "text": "2.68 Therefore, O mighty-armed one, whose senses are completely restrained from their objects, his wisdom is firmly established.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः।\n\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता।।2.68।।",
         "modernText": "When the senses are guided and restrained, wisdom becomes firmly established."
@@ -1518,7 +1518,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 69",
         "text": "2.69 That which is night for all beings is wakefulness for the self-controlled. That in which beings are awake is night for the seeing sage.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","clarity"],
         "speaker": "Krishna",
         "sanskrit": "या निशा सर्वभूतानां तस्यां जागर्ति संयमी।\n\nयस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः।।2.69।।",
         "modernText": "What appears like night to most people is clear awareness to the wise. What others chase in waking life appears empty to one who sees clearly."
@@ -1546,7 +1546,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 71",
         "text": "2.71 That person who abandons all desires, moves without longing, without the sense of possession and without ego, attains peace.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","equanimity"],
         "speaker": "Krishna",
         "sanskrit": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः।\n\nनिर्ममो निरहंकारः स शांतिमधिगच्छति।।2.71।।",
         "modernText": "Peace belongs to the one who lets go of craving, possessiveness, and the constant claim of the ego."
@@ -1558,7 +1558,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 2, Verse 72",
         "text": "2.72 This is the Brahmic state, O Partha. Attaining this, one is not deluded. Established in it even at the time of death, one attains liberation in Brahman.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","clarity"],
         "speaker": "Krishna",
         "sanskrit": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति।\n\nस्थित्वाऽस्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति।।2.72।।",
         "modernText": "This is the state of deep spiritual clarity. One who becomes firmly established in it is no longer confused and moves toward Moksha (liberation)."
@@ -1606,7 +1606,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 4",
         "text": "3.4 A person does not attain freedom from action by abstaining from action, nor does one attain perfection merely by renunciation.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action","clarity"],
         "speaker": "Krishna",
         "sanskrit": "न कर्मणामनारम्भान्नैष्कर्म्यं पुरुषोऽश्नुते।\n\nन च संन्यसनादेव सिद्धिं समधिगच्छति।।3.4।।",
         "modernText": "A person does not reach freedom by avoiding action. Nor does simply giving things up lead to true fulfillment."
@@ -1618,7 +1618,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 5",
         "text": "3.5 No one ever remains, even for a moment, without performing action. All are compelled to act by the qualities born of nature.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action"],
         "speaker": "Krishna",
         "sanskrit": "न हि कश्िचत्क्षणमपि जातु तिष्ठत्यकर्मकृत्।\n\nकार्यते ह्यवशः कर्म सर्वः प्रकृतिजैर्गुणैः।।3.5।।",
         "modernText": "No one can remain without action even for a moment. The forces of nature within us constantly move us to act."
@@ -1642,7 +1642,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 7",
         "text": "3.7 But one who restrains the senses by the mind and engages the organs of action in the path of action without attachment, O Arjuna, excels.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action"],
         "speaker": "Krishna",
         "sanskrit": "यस्त्विन्द्रियाणि मनसा नियम्यारभतेऽर्जुन।\n\nकर्मेन्द्रियैः कर्मयोगमसक्तः स विशिष्यते।।3.7।।",
         "modernText": "But one who brings the senses under the guidance of the mind and acts with discipline, without attachment, walks a higher path."
@@ -1654,7 +1654,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 8",
         "text": "3.8 Perform your prescribed duty. Action is superior to inaction, and even the maintenance of the body would not be possible through inaction.",
         "reflection": "",
-        "themes": [],
+        "themes": ["duty","action"],
         "speaker": "Krishna",
         "sanskrit": "नियतं कुरु कर्म त्वं कर्म ज्यायो ह्यकर्मणः।\n\nशरीरयात्रापि च ते न प्रसिद्ध्येदकर्मणः।।3.8।।",
         "modernText": "Perform the responsibilities that belong to you. Action is better than inaction, for even sustaining life requires action."
@@ -1666,7 +1666,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 9",
         "text": "3.9 This world is bound by action other than that performed for sacrifice. Therefore, O son of Kunti, perform action for that purpose, free from attachment.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action","detachment"],
         "speaker": "Krishna",
         "sanskrit": "यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः।\n\nतदर्थं कर्म कौन्तेय मुक्तसंगः समाचर।।3.9।।",
         "modernText": "Actions performed only for personal gain bind the mind. But actions offered in a spirit of service and contribution bring freedom."
@@ -1750,7 +1750,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 16",
         "text": "3.16 One who does not follow the wheel thus set in motion, living in sin and delighting in the senses, O Partha, lives in vain.",
         "reflection": "",
-        "themes": [],
+        "themes": ["duty","clarity"],
         "speaker": "Krishna",
         "sanskrit": "एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः।\n\nअघायुरिन्द्रियारामो मोघं पार्थ स जीवति।।3.16।।",
         "modernText": "One who refuses to participate in this cycle of responsibility and contribution, choosing only pleasure and self-interest, lives without purpose."
@@ -1814,7 +1814,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 21",
         "text": "3.21 Whatever a great person does, others follow. Whatever standard that person sets, the world follows.",
         "reflection": "",
-        "themes": [],
+        "themes": ["duty","action"],
         "speaker": "Krishna",
         "sanskrit": "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः।\n\nस यत्प्रमाणं कुरुते लोकस्तदनुवर्तते।।3.21।।",
         "modernText": "Whatever a respected person does, others naturally follow. The example they set becomes the path many people take."
@@ -1862,7 +1862,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 25",
         "text": "3.25 As the ignorant act with attachment to action, O Bharata, so should the wise act without attachment, desiring the welfare of the world.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action","detachment"],
         "speaker": "Krishna",
         "sanskrit": "सक्ताः कर्मण्यविद्वांसो यथा कुर्वन्ति भारत।\n\nकुर्याद्विद्वांस्तथासक्तश्िचकीर्षुर्लोकसंग्रहम्।।3.25।।",
         "modernText": "Just as those without understanding act with attachment, the wise should act without attachment, always seeking the welfare of the world."
@@ -1902,7 +1902,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 28",
         "text": "3.28 But one who knows the truth, O mighty-armed, regarding the divisions of qualities and actions, understands that the qualities act upon the qualities and is not attached.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","clarity"],
         "speaker": "Krishna",
         "sanskrit": "तत्त्ववित्तु महाबाहो गुणकर्मविभागयोः।\n\nगुणा गुणेषु वर्तन्त इति मत्वा न सज्जते।।3.28।।",
         "modernText": "One who understands the truth sees that actions arise from the interaction of nature's forces and therefore does not become trapped in attachment."
@@ -1926,7 +1926,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 30",
         "text": "3.30 Renouncing all actions in Me, with the mind centered on the Self, free from desire and possessiveness, fight without inner fever.",
         "reflection": "",
-        "themes": [],
+        "themes": ["surrender","action","detachment"],
         "speaker": "Krishna",
         "sanskrit": "मयि सर्वाणि कर्माणि संन्यस्याध्यात्मचेतसा।\n\nनिराशीर्निर्ममो भूत्वा युध्यस्व विगतज्वरः।।3.30।।",
         "modernText": "Offer your actions to Brahman (the ultimate reality), center your mind in Atman (the soul), and act without desire or possessiveness. Perform your duty without inner conflict."
@@ -1938,7 +1938,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 31",
         "text": "3.31 Those who constantly follow this teaching of Mine, endowed with faith and free from resentment, they too are released from action.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion","action"],
         "speaker": "Krishna",
         "sanskrit": "ये मे मतमिदं नित्यमनुतिष्ठन्ति मानवाः।\n\nश्रद्धावन्तोऽनसूयन्तो मुच्यन्ते तेऽपि कर्मभिः।।3.31।।",
         "modernText": "Those who follow this teaching with sincerity and trust gradually free themselves from the burden of selfish action."
@@ -1962,7 +1962,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 33",
         "text": "3.33 Even the wise act according to their own nature. All beings follow their nature. What can restraint accomplish?",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "सदृशं चेष्टते स्वस्याः प्रकृतेर्ज्ञानवानपि।\n\nप्रकृतिं यान्ति भूतानि निग्रहः किं करिष्यति।।3.33।।",
         "modernText": "Even wise people act according to their nature. All beings follow their nature. Simply forcing restraint cannot fully change this."
@@ -1974,7 +1974,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 34",
         "text": "3.34 Attraction and aversion are fixed with regard to each sense and its object. One should not come under their control, for they are obstacles.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","clarity"],
         "speaker": "Krishna",
         "sanskrit": "इन्द्रियस्येन्द्रियस्यार्थे रागद्वेषौ व्यवस्थितौ।\n\nतयोर्न वशमागच्छेत्तौ ह्यस्य परिपन्थिनौ।।3.34।।",
         "modernText": "Each sense has its natural attractions and dislikes. One should not become controlled by them, for they can block the path of clarity."
@@ -2014,7 +2014,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 37",
         "text": "3.37 The Blessed Lord said: It is desire, it is anger, born of the quality of passion, all-devouring and greatly sinful. Know this to be the enemy here.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "श्री भगवानुवाच\n\nकाम एष क्रोध एष रजोगुणसमुद्भवः।\n\nमहाशनो महापाप्मा विद्ध्येनमिह वैरिणम्।।3.37।।",
         "modernText": "Krishna said: It is desire, which later turns into anger. Born from restless passion, it consumes the mind and becomes a powerful inner enemy."
@@ -2026,7 +2026,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 38",
         "text": "3.38 As fire is covered by smoke, as a mirror by dust, and as an embryo by the womb, so is this covered by that.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "धूमेनाव्रियते वह्निर्यथाऽऽदर्शो मलेन च।\n\nयथोल्बेनावृतो गर्भस्तथा तेनेदमावृतम्।।3.38।।",
         "modernText": "Just as fire can be hidden by smoke or a mirror by dust, the clarity of the mind can be covered by this force."
@@ -2038,7 +2038,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 39",
         "text": "3.39 Knowledge is covered by this constant enemy of the wise, O son of Kunti, in the form of desire, which is insatiable like fire.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "आवृतं ज्ञानमेतेन ज्ञानिनो नित्यवैरिणा।\n\nकामरूपेण कौन्तेय दुष्पूरेणानलेन च।।3.39।।",
         "modernText": "This restless desire clouds wisdom and keeps a person from seeing clearly. Like fire, it is never satisfied."
@@ -2050,7 +2050,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 40",
         "text": "3.40 The senses, the mind, and the intellect are said to be its seat. Through these it deludes the embodied one by covering knowledge.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "इन्द्रियाणि मनो बुद्धिरस्याधिष्ठानमुच्यते।\n\nएतैर्विमोहयत्येष ज्ञानमावृत्य देहिनम्।।3.40।।",
         "modernText": "Desire lives in the senses, the mind, and the intellect. Through these it distorts understanding and confuses the soul."
@@ -2062,7 +2062,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 41",
         "text": "3.41 Therefore, restraining the senses at the outset, O best of the Bharatas, destroy this sinful force which destroys knowledge and realization.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action"],
         "speaker": "Krishna",
         "sanskrit": "तस्मात्त्वमिन्द्रियाण्यादौ नियम्य भरतर्षभ।\n\nपाप्मानं प्रजहि ह्येनं ज्ञानविज्ञाननाशनम्।।3.41।।",
         "modernText": "Therefore begin by bringing the senses under discipline. In doing so, you weaken this force that destroys wisdom and inner clarity."
@@ -2074,7 +2074,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 42",
         "text": "3.42 They say the senses are superior, the mind is superior to the senses, the intellect is superior to the mind, and that which is superior to the intellect is the Self.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","clarity"],
         "speaker": "Krishna",
         "sanskrit": "इन्द्रियाणि पराण्याहुरिन्द्रियेभ्यः परं मनः।\n\nमनसस्तु परा बुद्धिर्यो बुद्धेः परतस्तु सः।।3.42।।",
         "modernText": "The senses are powerful, but the mind is greater than the senses. The intellect is greater than the mind. Beyond even the intellect lies Atman (the soul)."
@@ -2086,7 +2086,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 3, Verse 43",
         "text": "3.43 Thus knowing that which is higher than the intellect, steadying the self by the Self, slay this formidable enemy in the form of desire, O mighty-armed.",
         "reflection": "",
-        "themes": [],
+        "themes": ["courage","clarity"],
         "speaker": "Krishna",
         "sanskrit": "एवं बुद्धेः परं बुद्ध्वा संस्तभ्यात्मानमात्मना।\n\nजहि शत्रुं महाबाहो कामरूपं दुरासदम्।।3.43।।",
         "modernText": "Knowing that Atman (the soul) is higher than the intellect, steady the mind through inner awareness and overcome this powerful enemy called desire."
@@ -2194,7 +2194,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 9",
         "text": "4.9 One who thus knows in truth My divine birth and action, having abandoned the body, is not born again. He comes to Me, O Arjuna.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","devotion"],
         "speaker": "Krishna",
         "sanskrit": "जन्म कर्म च मे दिव्यमेवं यो वेत्ति तत्त्वतः।\n\nत्यक्त्वा देहं पुनर्जन्म नैति मामेति सोऽर्जुन।।4.9।।",
         "modernText": "One who truly understands the deeper nature of these actions and manifestations is no longer bound by the cycle of rebirth and moves toward liberation."
@@ -2206,7 +2206,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 10",
         "text": "4.10 Freed from attachment, fear, and anger, absorbed in Me and taking refuge in Me, many purified by the austerity of knowledge have attained My state.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "वीतरागभयक्रोधा मन्मया मामुपाश्रिताः।\n\nबहवो ज्ञानतपसा पूता मद्भावमागताः।।4.10।।",
         "modernText": "Many people, freed from attachment, fear, and anger, have purified themselves through understanding and have come to share in this higher awareness."
@@ -2218,7 +2218,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 11",
         "text": "4.11 As people approach Me, so do I accept them. All people follow My path in every way, O Partha.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "ये यथा मां प्रपद्यन्ते तांस्तथैव भजाम्यहम्।\n\nमम वर्त्मानुवर्तन्ते मनुष्याः पार्थ सर्वशः।।4.11।।",
         "modernText": "People approach truth in many different ways. Whatever path they sincerely follow, it ultimately leads toward the same reality."
@@ -2254,7 +2254,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 14",
         "text": "4.14 Actions do not taint Me, nor have I any desire for the fruits of action. One who knows Me thus is not bound by actions.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","action"],
         "speaker": "Krishna",
         "sanskrit": "न मां कर्माणि लिम्पन्ति न मे कर्मफले स्पृहा।\n\nइति मां योऽभिजानाति कर्मभिर्न स बध्यते।।4.14।।",
         "modernText": "Actions do not bind one who acts without personal desire for results. Understanding this allows a person to remain free even while acting."
@@ -2278,7 +2278,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 16",
         "text": "4.16 What is action and what is inaction, even the wise are confused about this. I shall declare to you what action is, knowing which you shall be freed from evil.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "किं कर्म किमकर्मेति कवयोऽप्यत्र मोहिताः।\n\nतत्ते कर्म प्रवक्ष्यामि यज्ज्ञात्वा मोक्ष्यसेऽशुभात्।।4.16।।",
         "modernText": "Even thoughtful people struggle to understand what true action is and what inaction means. I will explain this so that you may act wisely."
@@ -2290,7 +2290,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 17",
         "text": "4.17 One should know action, one should know wrong action, and one should know inaction. The course of action is profound.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "कर्मणो ह्यपि बोद्धव्यं बोद्धव्यं च विकर्मणः।\n\nअकर्मणश्च बोद्धव्यं गहना कर्मणो गतिः।।4.17।।",
         "modernText": "One must understand the difference between right action, harmful action, and the deeper meaning of inaction. The nature of action is subtle and complex."
@@ -2318,7 +2318,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 19",
         "text": "4.19 One whose undertakings are free from desire and intention, whose actions are burned by the fire of knowledge, him the wise call a sage.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः।\n\nज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः।।4.19।।",
         "modernText": "When a person's actions are free from selfish desire and driven by clear understanding, the wise recognize that person as truly awakened."
@@ -2330,7 +2330,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 20",
         "text": "4.20 Abandoning attachment to the fruits of action, ever content and independent, though engaged in action, he does not do anything at all.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","action"],
         "speaker": "Krishna",
         "sanskrit": "त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः।\n\nकर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः।।4.20।।",
         "modernText": "One who releases attachment to results, who is content and inwardly independent, remains inwardly free even while acting."
@@ -2342,7 +2342,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 21",
         "text": "4.21 Free from expectation, with the mind and self controlled, having abandoned all possessions, performing action by the body alone, he incurs no sin.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","action"],
         "speaker": "Krishna",
         "sanskrit": "निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः।\n\nशारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम्।।4.21।।",
         "modernText": "When a person acts with self-control, without possessiveness or expectation, their actions no longer create inner burden."
@@ -2354,7 +2354,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 22",
         "text": "4.22 Content with what comes by chance, beyond the pairs of opposites, free from envy, even-minded in success and failure, though acting, he is not bound.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity","detachment"],
         "speaker": "Krishna",
         "sanskrit": "यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः।\n\nसमः सिद्धावसिद्धौ च कृत्वापि न निबध्यते।।4.22।।",
         "modernText": "Content with whatever comes, steady in both success and failure, and free from envy, such a person remains unbound by their actions."
@@ -2366,7 +2366,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 23",
         "text": "4.23 For one who is free from attachment, liberated, whose mind is established in knowledge, action performed for sacrifice is wholly dissolved.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action","detachment"],
         "speaker": "Krishna",
         "sanskrit": "गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः।\n\nयज्ञायाचरतः कर्म समग्रं प्रविलीयते।।4.23।।",
         "modernText": "When someone acts without attachment, with the mind grounded in understanding, their actions dissolve naturally and leave no lasting burden."
@@ -2378,7 +2378,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 24",
         "text": "4.24 The offering is Brahman, the oblation is Brahman, offered by Brahman into the fire of Brahman. Brahman alone is to be attained by one who sees Brahman in action.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "ब्रह्मार्पणं ब्रह्महविर्ब्रह्माग्नौ ब्रह्मणा हुतम्।\n\nब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना।।4.24।।",
         "modernText": "For one who sees clearly, every aspect of action becomes part of the same deeper reality. The offering, the act, and the purpose all arise from the same ultimate reality."
@@ -2462,7 +2462,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 31",
         "text": "4.31 Those who partake of the nectar that remains from sacrifice go to the eternal Brahman. This world is not for one who does not sacrifice. How then the other, O best of the Kurus?",
         "reflection": "",
-        "themes": [],
+        "themes": ["action","devotion"],
         "speaker": "Krishna",
         "sanskrit": "यज्ञशिष्टामृतभुजो यान्ति ब्रह्म सनातनम्।\n\nनायं लोकोऽस्त्ययज्ञस्य कुतो़ऽन्यः कुरुसत्तम।।4.31।।",
         "modernText": "Those who live in the spirit of offering and contribution move toward the eternal reality. A life without such contribution leads nowhere meaningful."
@@ -2486,7 +2486,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 33",
         "text": "4.33 The sacrifice of knowledge is superior to the sacrifice of material things, O scorcher of foes. All action in its entirety culminates in knowledge, O Partha.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "श्रेयान्द्रव्यमयाद्यज्ञाज्ज्ञानयज्ञः परन्तप।\n\nसर्वं कर्माखिलं पार्थ ज्ञाने परिसमाप्यते।।4.33।।",
         "modernText": "Yet the offering of knowledge is greater than material offerings, because all meaningful action ultimately finds its fulfillment in understanding."
@@ -2498,7 +2498,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 34",
         "text": "4.34 Know this by prostration, by inquiry, and by service. The wise who have realized the truth will instruct you in knowledge.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","clarity"],
         "speaker": "Krishna",
         "sanskrit": "तद्विद्धि प्रणिपातेन परिप्रश्नेन सेवया।\n\nउपदेक्ष्यन्ति ते ज्ञानं ज्ञानिनस्तत्त्वदर्शिनः।।4.34।।",
         "modernText": "Approach those who have realized truth with humility, sincere questions, and a willingness to learn. Those who see clearly can guide you toward understanding."
@@ -2510,7 +2510,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 35",
         "text": "4.35 Knowing this, you shall not again fall into delusion, O son of Pandu. By this you shall see all beings in the Self and also in Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "यज्ज्ञात्वा न पुनर्मोहमेवं यास्यसि पाण्डव।\n\nयेन भूतान्यशेषेण द्रक्ष्यस्यात्मन्यथो मयि।।4.35।।",
         "modernText": "When you gain this understanding, confusion will no longer return. You will see all beings connected within the soul and within the deeper reality."
@@ -2522,7 +2522,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 36",
         "text": "4.36 Even if you are the most sinful of all sinners, you shall cross over all sin by the raft of knowledge alone.",
         "reflection": "",
-        "themes": [],
+        "themes": ["courage","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अपि चेदसि पापेभ्यः सर्वेभ्यः पापकृत्तमः।\n\nसर्वं ज्ञानप्लवेनैव वृजिनं सन्तरिष्यसि।।4.36।।",
         "modernText": "Even if someone has lived with many mistakes, the clarity of knowledge can carry them across those errors like a raft across a river."
@@ -2534,7 +2534,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 37",
         "text": "4.37 As a blazing fire reduces fuel to ashes, O Arjuna, so does the fire of knowledge reduce all actions to ashes.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन।\n\nज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा।।4.37।।",
         "modernText": "Just as fire reduces wood to ashes, the fire of knowledge burns away the burden of past actions."
@@ -2562,7 +2562,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 39",
         "text": "4.39 The person of faith attains knowledge, devoted to it and having restrained the senses. Having attained knowledge, one quickly reaches supreme peace.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","devotion"],
         "speaker": "Krishna",
         "sanskrit": "श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः।\n\nज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति।।4.39।।",
         "modernText": "One who has trust, dedication, and disciplined senses gains knowledge. With that knowledge comes deep and lasting peace."
@@ -2574,7 +2574,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 40",
         "text": "4.40 The ignorant, the faithless, and the doubting person perishes. For the doubting person there is neither this world nor the next, nor happiness.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति।\n\nनायं लोकोऽस्ति न परो न सुखं संशयात्मनः।।4.40।।",
         "modernText": "But the person who lacks understanding, trust, and clarity remains trapped in doubt. Such doubt destroys both peace and happiness."
@@ -2586,7 +2586,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 41",
         "text": "4.41 One who has renounced action through yoga, whose doubts are cut by knowledge, who is self-possessed, actions do not bind him, O Dhananjaya.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "योगसंन्यस्तकर्माणं ज्ञानसंछिन्नसंशयम्।\n\nआत्मवन्तं न कर्माणि निबध्नन्ति धनञ्जय।।4.41।।",
         "modernText": "One who acts with inner discipline and whose doubts are removed through knowledge remains free, even while performing actions."
@@ -2598,7 +2598,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 4, Verse 42",
         "text": "4.42 Therefore, cutting with the sword of knowledge this doubt born of ignorance that dwells in your heart, establish yourself in yoga. Arise, O Bharata.",
         "reflection": "",
-        "themes": [],
+        "themes": ["courage","action"],
         "speaker": "Krishna",
         "sanskrit": "तस्मादज्ञानसंभूतं हृत्स्थं ज्ञानासिनाऽऽत्मनः।\n\nछित्त्वैनं संशयं योगमातिष्ठोत्तिष्ठ भारत।।4.42।।",
         "modernText": "Therefore cut away the doubts that arise from ignorance through the clarity of knowledge. Stand in inner discipline and move forward with courage."
@@ -2634,7 +2634,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 3",
         "text": "5.3 He should be known as a constant renunciant who neither hates nor desires. Free from the pairs of opposites, O mighty-armed, he is easily freed from bondage.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","clarity"],
         "speaker": "Krishna",
         "sanskrit": "ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति।\n\nनिर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते।।5.3।।",
         "modernText": "A true renunciant is not one who abandons work, but one who lets go of hatred and craving. Free from these inner conflicts, such a person moves easily toward liberation."
@@ -2658,7 +2658,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 5",
         "text": "5.5 The state attained by the followers of knowledge is also reached by the followers of yoga. One who sees knowledge and yoga as one truly sees.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","action"],
         "speaker": "Krishna",
         "sanskrit": "यत्सांख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते।\n\nएकं सांख्यं च योगं च यः पश्यति स पश्यति।।5.5।।",
         "modernText": "The fulfillment reached through deep understanding is also reached through disciplined action. One who sees these paths as one truly understands."
@@ -2670,7 +2670,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 6",
         "text": "5.6 But renunciation, O mighty-armed, is difficult to attain without yoga. The sage who is disciplined by yoga quickly attains Brahman.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action","clarity"],
         "speaker": "Krishna",
         "sanskrit": "संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः।\n\nयोगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति।।5.6।।",
         "modernText": "Renouncing action without inner discipline is difficult. But one who acts with awareness and balance quickly moves toward ultimate reality."
@@ -2682,7 +2682,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 7",
         "text": "5.7 One who is united with yoga, pure in mind, self-controlled, with senses conquered, who sees the Self in all beings and all beings in the Self, though acting is not tainted.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","equanimity"],
         "speaker": "Krishna",
         "sanskrit": "योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः।\n\nसर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते।।5.7।।",
         "modernText": "One who acts with inner discipline, whose mind is pure and senses are under control, sees the same soul in all beings. Even while acting, such a person remains untouched by the burden of action."
@@ -2694,7 +2694,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 8",
         "text": "5.8 The knower of truth, united with yoga, thinks, ‘I do nothing at all,’ while seeing, hearing, touching, smelling, eating, moving, sleeping, and breathing.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "नैव किंचित्करोमीति युक्तो मन्येत तत्त्ववित्।\n\nपश्यन् श्रृणवन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपन् श्वसन्।।5.8।।",
         "modernText": "One who understands truth knows inwardly, 'I am not the doer.' Even while seeing, hearing, touching, eating, moving, resting, and breathing, they remain aware that life is simply unfolding through them."
@@ -2706,7 +2706,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 9",
         "text": "5.9 Speaking, letting go, grasping, opening and closing the eyes, he holds that the senses move among the objects of the senses.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि।\n\nइन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन्।।5.9।।",
         "modernText": "Speaking, letting go, grasping, or opening and closing the eyes, such a person understands that the senses are simply interacting with the world."
@@ -2734,7 +2734,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 11",
         "text": "5.11 By the body, mind, intellect, and even by the senses alone, yogins perform action abandoning attachment, for the purification of the self.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action"],
         "speaker": "Krishna",
         "sanskrit": "कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि।\n\nयोगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वाऽऽत्मशुद्धये।।5.11।।",
         "modernText": "Those who practice disciplined action work through body, mind, intellect, and senses without attachment, using action as a way to purify the inner self."
@@ -2746,7 +2746,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 12",
         "text": "5.12 United with yoga, having abandoned the fruit of action, one attains lasting peace. But the undisciplined, impelled by desire, attached to the fruit, is bound.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","equanimity"],
         "speaker": "Krishna",
         "sanskrit": "युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम्।\n\nअयुक्तः कामकारेण फले सक्तो निबध्यते।।5.12।।",
         "modernText": "When a person releases attachment to the results of action, lasting peace arises. But when actions are driven by desire for results, the mind becomes bound."
@@ -2818,7 +2818,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 18",
         "text": "5.18 The wise see with equal vision a learned and humble brahmin, a cow, an elephant, a dog, and one who eats dog’s flesh.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "विद्याविनयसंपन्ने ब्राह्मणे गवि हस्तिनि।\n\nशुनि चैव श्वपाके च पण्डिताः समदर्शिनः।।5.18।।",
         "modernText": "The wise see with equal vision a humble scholar, a cow, an elephant, a dog, and even one considered an outcast. Their vision sees the same soul in all."
@@ -2830,7 +2830,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 19",
         "text": "5.19 Here itself, creation is conquered by those whose mind is established in equality. Brahman is faultless and equal. Therefore they are established in Brahman.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः।\n\nनिर्दोषं हि समं ब्रह्म तस्माद्ब्रह्मणि ते स्थिताः।।5.19।।",
         "modernText": "Those whose minds rest in equality overcome the illusions of division in this very life. Seeing all with equal vision, they live in harmony with ultimate reality."
@@ -2842,7 +2842,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 20",
         "text": "5.20 One who does not rejoice on attaining what is pleasant, nor grieve on attaining what is unpleasant, whose intellect is steady and undeluded, who knows Brahman, is established in Brahman.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity"],
         "speaker": "Krishna",
         "sanskrit": "न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम्।\n\nस्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः।।5.20।।",
         "modernText": "One who does not become overly excited by pleasant experiences or distressed by unpleasant ones, whose understanding remains steady, lives established in deeper truth."
@@ -2854,7 +2854,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 21",
         "text": "5.21 With the self unattached to external contacts, one finds the joy that is in the Self. United with Brahman through yoga, one attains imperishable happiness.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation","clarity"],
         "speaker": "Krishna",
         "sanskrit": "बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम्।\n\nस ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते।।5.21।।",
         "modernText": "One who no longer depends on external pleasures discovers a deeper joy within the soul. Through inner discipline, such a person experiences lasting happiness."
@@ -2866,7 +2866,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 22",
         "text": "5.22 For the pleasures born of contact are sources of sorrow. They have a beginning and an end, O son of Kunti. The wise do not delight in them.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity","detachment"],
         "speaker": "Krishna",
         "sanskrit": "ये हि संस्पर्शजा भोगा दुःखयोनय एव ते।\n\nआद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः।।5.22।।",
         "modernText": "Pleasures that arise from sensory contact inevitably lead to dissatisfaction, because they begin and end. The wise do not place their hopes in them."
@@ -2878,7 +2878,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 23",
         "text": "5.23 One who is able, here itself before the liberation of the body, to endure the impulse arising from desire and anger, is disciplined and is a happy person.",
         "reflection": "",
-        "themes": [],
+        "themes": ["courage"],
         "speaker": "Krishna",
         "sanskrit": "शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात्।\n\nकामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः।।5.23।।",
         "modernText": "One who can endure the impulses of desire and anger before leaving the body lives with discipline and finds true happiness."
@@ -2890,7 +2890,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 24",
         "text": "5.24 One whose happiness is within, whose delight is within, whose light is within, that yogin attains Brahman, becoming Brahman.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः।\n\nस योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति।।5.24।।",
         "modernText": "One whose joy, peace, and inner light arise from within the soul reaches ultimate reality and lives in deep harmony with it."
@@ -2902,7 +2902,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 25",
         "text": "5.25 The sages attain Brahman, their sins destroyed, their doubts cut asunder, their selves disciplined, and engaged in the welfare of all beings.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः।\n\nछिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः।।5.25।।",
         "modernText": "Those whose doubts are removed, whose minds are disciplined, and who work for the welfare of all beings move toward liberation."
@@ -2914,7 +2914,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 26",
         "text": "5.26 For the ascetics who are free from desire and anger, with controlled minds, who know the Self, Brahman lies near on every side.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","meditation"],
         "speaker": "Krishna",
         "sanskrit": "कामक्रोधवियुक्तानां यतीनां यतचेतसाम्।\n\nअभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम्।।5.26।।",
         "modernText": "For those who are free from desire and anger and who understand the soul, liberation is close at hand."
@@ -2926,7 +2926,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 27",
         "text": "5.27 Having shut out external contacts, fixing the gaze between the eyebrows, and equalizing the incoming and outgoing breaths moving within the nostrils.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः।\n\nप्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ।।5.27।।",
         "modernText": "By withdrawing attention from external distractions, steadying the gaze, and calming the breath, one begins to quiet the restless movements of the mind."
@@ -2938,7 +2938,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 28",
         "text": "5.28 The sage who has restrained the senses, mind, and intellect, who is intent on liberation, free from desire, fear, and anger, is ever liberated.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः।\n\nविगतेच्छाभयक्रोधो यः सदा मुक्त एव सः।।5.28।।",
         "modernText": "A person who has mastered the senses, mind, and intellect, who is free from desire, fear, and anger, lives in a state of inner freedom."
@@ -2950,7 +2950,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 5, Verse 29",
         "text": "5.29 Knowing Me as the enjoyer of sacrifices and austerities, the great Lord of all worlds, the friend of all beings, one attains peace.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion","clarity"],
         "speaker": "Krishna",
         "sanskrit": "भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम्।\n\nसुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति।।5.29।।",
         "modernText": "Knowing the deeper reality as the source of all effort, the guiding presence of the world, and the friend of all beings, a person attains true peace."
@@ -2962,7 +2962,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 1",
         "text": "6.1 The Blessed Lord said: One who performs the action that ought to be done without depending on the fruit of action is a renunciant and a yogin, not one who has abandoned sacred fire and action.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action","detachment"],
         "speaker": "Krishna",
         "sanskrit": "श्री भगवानुवाच\n\nअनाश्रितः कर्मफलं कार्यं कर्म करोति यः।\n\nस संन्यासी च योगी च न निरग्निर्न चाक्रियः।।6.1।।",
         "modernText": "Krishna said: One who performs their responsibilities without clinging to the results is the true renunciant and practitioner of inner discipline, not one who simply withdraws from action."
@@ -2974,7 +2974,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 2",
         "text": "6.2 That which is called renunciation, know that to be yoga, O son of Pandu. For no one becomes a yogin without renouncing self-centered intention.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","clarity"],
         "speaker": "Krishna",
         "sanskrit": "यं संन्यासमिति प्राहुर्योगं तं विद्धि पाण्डव।\n\nन ह्यसंन्यस्तसङ्कल्पो योगी भवति कश्चन।।6.2।।",
         "modernText": "What is called renunciation is truly this inner discipline. No one becomes established in it without letting go of self-centered intentions."
@@ -2986,7 +2986,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 3",
         "text": "6.3 For the sage who seeks to ascend to yoga, action is said to be the means. For one who has ascended to yoga, serenity is said to be the means.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action","meditation"],
         "speaker": "Krishna",
         "sanskrit": "आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते।\n\nयोगारूढस्य तस्यैव शमः कारणमुच्यते।।6.3।।",
         "modernText": "For one who seeks inner discipline, responsible action is the path. For one who has already found steadiness, inner calm becomes the path."
@@ -2998,7 +2998,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 4",
         "text": "6.4 When one is no longer attached to sense objects or to actions, having renounced all intentions, then one is said to be established in yoga.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","meditation"],
         "speaker": "Krishna",
         "sanskrit": "यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते।\n\nसर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते।।6.4।।",
         "modernText": "When a person is no longer attached to sensory pleasures or driven by personal motives, they are said to be established in inner discipline."
@@ -3026,7 +3026,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 6",
         "text": "6.6 For one who has conquered the self, the Self is a friend. But for one who has not conquered the self, the Self behaves as an enemy.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना जितः।\n\nअनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्।।6.6।।",
         "modernText": "For one who has mastered the mind, it becomes a trusted friend. But for one who has not, the mind behaves like an enemy."
@@ -3038,7 +3038,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 7",
         "text": "6.7 For one who has conquered the self and is tranquil, the Supreme Self is steadfast in cold and heat, pleasure and pain, honor and dishonor.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity","meditation"],
         "speaker": "Krishna",
         "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः।\n\nशीतोष्णसुखदुःखेषु तथा मानापमानयोः।।6.7।।",
         "modernText": "A person who has gained mastery over the mind remains steady in heat and cold, pleasure and pain, honor and dishonor, resting in deep inner calm."
@@ -3050,7 +3050,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 8",
         "text": "6.8 The yogin who is satisfied with knowledge and realization, who is steady, with senses subdued, and who sees a clod of earth, a stone, and gold as the same, is said to be united.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "ज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः।\n\nयुक्त इत्युच्यते योगी समलोष्टाश्मकाञ्चनः।।6.8।।",
         "modernText": "One who is satisfied through knowledge and inner realization, whose senses are under control, and who sees a lump of earth, a stone, and gold with equal value has achieved inner balance."
@@ -3062,7 +3062,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 9",
         "text": "6.9 One who is of equal mind toward friend and foe, the neutral and the impartial, the hateful and the kinsman, the righteous and the sinful, excels.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity"],
         "speaker": "Krishna",
         "sanskrit": "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु।\n\nसाधुष्वपि च पापेषु समबुद्धिर्विशिष्यते।।6.9।।",
         "modernText": "One who maintains equal regard toward friend and enemy, toward strangers and relatives, toward the virtuous and the flawed, lives with a higher understanding."
@@ -3074,7 +3074,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 10",
         "text": "6.10 Let the yogin constantly unite the self with the Self, remaining alone in a secluded place, controlled in mind and body, free from desire and possession.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "योगी युञ्जीत सततमात्मानं रहसि स्थितः।\n\nएकाकी यतचित्तात्मा निराशीरपरिग्रहः।।6.10।।",
         "modernText": "A seeker of inner discipline should spend time in quiet reflection, living simply, with mind and body under control, free from constant desire and possessiveness."
@@ -3086,7 +3086,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 11",
         "text": "6.11 In a clean place, having established a firm seat for oneself, neither too high nor too low, made of cloth, deerskin, and grass.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "शुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मनः।\n\nनात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम्।।6.11।।",
         "modernText": "Choose a clean and peaceful place, and prepare a steady seat that is neither too high nor too low."
@@ -3098,7 +3098,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 12",
         "text": "6.12 Seated there, making the mind one-pointed, controlling the activities of mind and senses, let one practice yoga for the purification of the self.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "तत्रैकाग्रं मनः कृत्वा यतचित्तेन्द्रियक्रियः।\n\nउपविश्यासने युञ्ज्याद्योगमात्मविशुद्धये।।6.12।।",
         "modernText": "Sitting there, focus the mind inward and bring the senses under calm awareness. In this way the practice of meditation begins to purify the inner self."
@@ -3110,7 +3110,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 13",
         "text": "6.13 Holding the body, head, and neck erect and steady, gazing at the tip of the nose, without looking around.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "समं कायशिरोग्रीवं धारयन्नचलं स्थिरः।\n\nसंप्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन्।।6.13।।",
         "modernText": "Hold the body, head, and neck upright and steady. Let the gaze rest gently without wandering."
@@ -3122,7 +3122,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 14",
         "text": "6.14 Calm in mind, fearless, firm in the vow of continence, controlling the mind, fixing it on Me, let one sit united, with Me as the supreme goal.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation","devotion"],
         "speaker": "Krishna",
         "sanskrit": "प्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थितः।\n\nमनः संयम्य मच्चित्तो युक्त आसीत मत्परः।।6.14।।",
         "modernText": "With a calm mind, free from fear, and with disciplined living, focus the mind on the highest truth and remain steady in meditation."
@@ -3134,7 +3134,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 15",
         "text": "6.15 Thus constantly disciplining the self, the yogin of controlled mind attains peace, the supreme state of nirvana, which abides in Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "युञ्जन्नेवं सदाऽऽत्मानं योगी नियतमानसः।\n\nशान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति।।6.15।।",
         "modernText": "Through steady practice and a disciplined mind, one discovers deep peace and the freedom that arises from union with ultimate reality."
@@ -3146,7 +3146,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 16",
         "text": "6.16 Yoga is not for one who eats too much, nor for one who does not eat at all, nor for one who sleeps too much, nor for one who is always awake, O Arjuna.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः।\n\nन चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन।।6.16।।",
         "modernText": "This path cannot be followed by one who lives in extremes, eating too much or too little, sleeping too much or too little."
@@ -3174,7 +3174,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 18",
         "text": "6.18 When the disciplined mind rests in the Self alone, free from longing for all desires, then one is said to be united.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "यदा विनियतं चित्तमात्मन्येवावतिष्ठते।\n\nनिःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा।।6.18।।",
         "modernText": "When the disciplined mind rests steadily in the soul, free from the pull of desires, a person is said to be established in inner discipline."
@@ -3186,7 +3186,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 19",
         "text": "6.19 As a lamp placed in a windless place does not flicker, so is this likeness of the yogin of restrained mind, practicing yoga of the Self.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता।\n\nयोगिनो यतचित्तस्य युञ्जतो योगमात्मनः।।6.19।।",
         "modernText": "Just as a lamp in a windless place burns without flickering, so the mind of one who practices meditation remains steady and calm."
@@ -3198,7 +3198,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 20",
         "text": "6.20 Where the mind becomes still, restrained by the practice of yoga, and where one sees the Self by the Self and is satisfied in the Self.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "यत्रोपरमते चित्तं निरुद्धं योगसेवया।\n\nयत्र चैवात्मनाऽऽत्मानं पश्यन्नात्मनि तुष्यति।।6.20।।",
         "modernText": "In meditation the mind becomes still, and the seeker discovers the soul through direct awareness, finding deep contentment within."
@@ -3210,7 +3210,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 21",
         "text": "6.21 That supreme joy which is grasped by the intellect, beyond the senses, knowing which one does not move away from the truth.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "सुखमात्यन्तिकं यत्तद्बुद्धिग्राह्यमतीन्द्रियम्।\n\nवेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः।।6.21।।",
         "modernText": "In that state arises a profound joy that goes beyond the senses and is understood through inner awareness."
@@ -3222,7 +3222,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 22",
         "text": "6.22 Having attained which, one considers no other gain greater, and being established in which, one is not shaken even by great sorrow.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity"],
         "speaker": "Krishna",
         "sanskrit": "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः।\n\nयस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते।।6.22।।",
         "modernText": "Once this inner fulfillment is discovered, nothing else appears greater. Even great difficulties cannot shake one who is established in it."
@@ -3250,7 +3250,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 24",
         "text": "6.24 Abandoning without remainder all desires born of intention, and restraining with the mind the entire group of senses from all sides.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","meditation"],
         "speaker": "Krishna",
         "sanskrit": "सङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषतः।\n\nमनसैवेन्द्रियग्रामं विनियम्य समन्ततः।।6.24।।",
         "modernText": "Let go of all desires born from restless thought, and bring the senses under the guidance of a calm and attentive mind."
@@ -3262,7 +3262,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 25",
         "text": "6.25 Little by little, let one attain quietude by the intellect held firm by steadiness. Having fixed the mind in the Self, let one think of nothing else.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया।\n\nआत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत्।।6.25।।",
         "modernText": "Little by little, through steady understanding, allow the mind to settle into quietness. Once the mind rests in the soul, let it remain there."
@@ -3274,7 +3274,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 26",
         "text": "6.26 Wherever the restless and unsteady mind wanders, from there let one restrain it and bring it under the control of the Self alone.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम्।\n\nततस्ततो नियम्यैतदात्मन्येव वशं नयेत्।।6.26।।",
         "modernText": "Whenever the restless mind wanders, gently bring it back again under the guidance of awareness."
@@ -3286,7 +3286,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 27",
         "text": "6.27 Supreme happiness comes to this yogin whose mind is peaceful, whose passion is calmed, who has become Brahman, and who is free from impurity.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation","equanimity"],
         "speaker": "Krishna",
         "sanskrit": "प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम्।\n\nउपैति शान्तरजसं ब्रह्मभूतमकल्मषम्।।6.27।।",
         "modernText": "Great happiness arises for one whose mind becomes peaceful, whose restless energy is calmed, and whose inner nature is purified."
@@ -3298,7 +3298,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 28",
         "text": "6.28 Thus constantly disciplining the self, the yogin freed from impurities attains easily the infinite bliss of contact with Brahman.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "युञ्जन्नेवं सदाऽऽत्मानं योगी विगतकल्मषः।\n\nसुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्नुते।।6.28।।",
         "modernText": "Through continued practice, the seeker becomes free from inner impurities and experiences the limitless joy of union with ultimate reality."
@@ -3310,7 +3310,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 29",
         "text": "6.29 The yogin, united with yoga, sees the Self abiding in all beings and all beings in the Self. He sees the same everywhere.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","equanimity"],
         "speaker": "Krishna",
         "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि।\n\nईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः।।6.29।।",
         "modernText": "One who is established in inner discipline sees the soul present in all beings and all beings within the soul. Such a person sees unity everywhere."
@@ -3322,7 +3322,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 30",
         "text": "6.30 One who sees Me everywhere and sees everything in Me, I am never lost to him, nor is he ever lost to Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति।\n\nतस्याहं न प्रणश्यामि स च मे न प्रणश्यति।।6.30।।",
         "modernText": "One who sees the deeper reality present everywhere and everything within that reality never feels separated from it."
@@ -3334,7 +3334,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 31",
         "text": "6.31 One who worships Me abiding in all beings, established in unity, though acting in every way, dwells in Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "सर्वभूतस्थितं यो मां भजत्येकत्वमास्थितः।\n\nसर्वथा वर्तमानोऽपि स योगी मयि वर्तते।।6.31।।",
         "modernText": "One who recognizes the same sacred presence in all beings lives in unity with that presence, even while acting in the world."
@@ -3346,7 +3346,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 32",
         "text": "6.32 One who sees equality everywhere by comparison with oneself, whether in pleasure or in pain, O Arjuna, is considered the highest yogin.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity"],
         "speaker": "Krishna",
         "sanskrit": "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन।\n\nसुखं वा यदि वा दुःखं सः योगी परमो मतः।।6.32।।",
         "modernText": "The highest practitioner is one who sees others as oneself, understanding both their joy and their suffering with equal compassion."
@@ -3398,7 +3398,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 36",
         "text": "6.36 Yoga is difficult to attain for one who is uncontrolled, such is My opinion. But for one who is self-controlled and striving, it is attainable by proper means.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "असंयतात्मना योगो दुष्प्राप इति मे मतिः।\n\nवश्यात्मना तु यतता शक्योऽवाप्तुमुपायतः।।6.36।।",
         "modernText": "Inner discipline is difficult for one who has not learned self-mastery. But for one who practices sincerely and steadily, it can be reached."
@@ -3446,7 +3446,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 40",
         "text": "6.40 The Blessed Lord said: O Partha, neither here nor hereafter is there destruction for him. Indeed, no one who does good, My child, ever comes to grief.",
         "reflection": "",
-        "themes": [],
+        "themes": ["courage"],
         "speaker": "Krishna",
         "sanskrit": "श्री भगवानुवाच\n\nपार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते।\n\nनहि कल्याणकृत्कश्िचद्दुर्गतिं तात गच्छति।।6.40।।",
         "modernText": "Krishna said: No sincere effort toward goodness is ever lost. One who walks this path never truly falls into ruin."
@@ -3482,7 +3482,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 43",
         "text": "6.43 There he regains the connection with the intellect acquired in a former body, and strives again toward perfection, O joy of the Kurus.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम्।\n\nयतते च ततो भूयः संसिद्धौ कुरुनन्दन।।6.43।।",
         "modernText": "In such circumstances they regain the wisdom they developed before and continue their journey toward fulfillment."
@@ -3494,7 +3494,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 44",
         "text": "6.44 By that former practice alone he is carried forward, even unwillingly. Even the seeker of yoga transcends the ritualistic sound of the Vedas.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः।\n\nजिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते।।6.44।।",
         "modernText": "The influence of past practice naturally guides them forward again. Even the search for inner discipline lifts a person beyond mechanical ritual."
@@ -3506,7 +3506,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 45",
         "text": "6.45 But the yogin who strives with effort, purified of impurities, perfected through many births, then attains the supreme goal.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः।\n\nअनेकजन्मसंसिद्धस्ततो याति परां गतिम्।।6.45।।",
         "modernText": "With sincere effort across time, the seeker becomes purified and eventually reaches the highest goal of life."
@@ -3518,7 +3518,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 46",
         "text": "6.46 The yogin is regarded as superior to ascetics, superior even to the learned, and superior to those engaged in action. Therefore be a yogin, O Arjuna.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः।\n\nकर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन।।6.46।।",
         "modernText": "One who lives with inner discipline stands higher than one who practices severe austerity, higher than one who only studies, and higher than one who acts without awareness."
@@ -3530,7 +3530,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 6, Verse 47",
         "text": "6.47 Even among all yogins, the one who worships Me with faith, whose inner self abides in Me, is considered by Me to be the most united.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "योगिनामपि सर्वेषां मद्गतेनान्तरात्मना।\n\nश्रद्धावान्भजते यो मां स मे युक्ततमो मतः।।6.47।।",
         "modernText": "Among all who practice inner discipline, the one who lives with deep trust, whose heart rests in the highest truth, and who remains inwardly connected to it is the most deeply united."
@@ -3542,7 +3542,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 1",
         "text": "7.1 The Blessed Lord said: With your mind attached to Me, O Partha, practicing yoga and taking refuge in Me, hear how you shall know Me fully and without doubt.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "श्री भगवानुवाच\n\nमय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः।\n\nअसंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु।।7.1।।",
         "modernText": "Krishna said: Fix your mind on the highest truth and practice inner discipline with sincerity. In this way you will come to know reality fully and without doubt."
@@ -3554,7 +3554,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 2",
         "text": "7.2 I shall declare to you this knowledge together with realization, knowing which nothing further remains here to be known.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "ज्ञानं तेऽहं सविज्ञानमिदं व���्ष्याम्यशेषतः।\n\nयज्ज्ञात्वा नेह भूयोऽन्यज्ज्ञातव्यमवशिष्यते।।7.2।।",
         "modernText": "I will explain both knowledge and direct understanding. Once this is known, nothing else remains essential to know."
@@ -3566,7 +3566,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 3",
         "text": "7.3 Among thousands of men, scarcely one strives for perfection. Even among those who strive and have attained perfection, scarcely one knows Me in truth.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "मनुष्याणां सहस्रेषु कश्िचद्यतति सिद्धये।\n\nयततामपि सिद्धानां कश्िचन्मां वेत्ति तत्त्वतः।।7.3।।",
         "modernText": "Among thousands of people, only a few strive for deeper understanding. And among those who strive, only a rare person truly understands ultimate reality."
@@ -3578,7 +3578,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 4",
         "text": "7.4 Earth, water, fire, air, ether, mind, intellect, and ego. This is My eightfold divided nature.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "भूमिरापोऽनलो वायुः खं मनो बुद्धिरेव च।\n\nअहङ्कार इतीयं मे भिन्ना प्रकृतिरष्टधा।।7.4।।",
         "modernText": "The physical world is composed of earth, water, fire, air, space, mind, intellect, and ego. These form the basic elements of material existence."
@@ -3590,7 +3590,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 5",
         "text": "7.5 This is My lower nature. But know My other nature, higher than this, O mighty-armed, the life principle by which this world is sustained.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अपरेयमितस्त्वन्यां प्रकृतिं विद्धि मे पराम्।\n\nजीवभूतां महाबाहो ययेदं धार्यते जगत्।।7.5।।",
         "modernText": "But beyond this visible nature is a higher principle, the living consciousness that sustains all life."
@@ -3602,7 +3602,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 6",
         "text": "7.6 Know that all beings have these as their source. I am the origin and the dissolution of the entire universe.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "एतद्योनीनि भूतानि सर्वाणीत्युपधारय।\n\nअहं कृत्स्नस्य जगतः प्रभवः प्रलयस्तथा।।7.6।।",
         "modernText": "From these two aspects arise all living beings. The source and dissolution of the entire universe rests in the deeper reality behind them."
@@ -3614,7 +3614,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 7",
         "text": "7.7 There is nothing whatsoever higher than Me, O Dhananjaya. All this is strung on Me like pearls on a thread.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय।\n\nमयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव।।7.7।।",
         "modernText": "There is nothing higher than that ultimate reality. Just as pearls are held together by a thread, all existence is held together by it."
@@ -3626,7 +3626,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 8",
         "text": "7.8 I am the taste in water, O son of Kunti. I am the light in the moon and the sun. I am the sacred syllable Om in all the Vedas, sound in ether, and manliness in men.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "रसोऽहमप्सु कौन्तेय प्रभास्मि शशिसूर्ययोः।\n\nप्रणवः सर्ववेदेषु शब्दः खे पौरुषं नृषु।।7.8।।",
         "modernText": "The essence of life appears in many forms: the taste in water, the light of the sun and moon, the sacred sound Om in the Vedas (ancient teachings), the vibration of sound in space, and the strength within human beings."
@@ -3638,7 +3638,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 9",
         "text": "7.9 I am the pure fragrance in the earth and the brilliance in fire. I am the life in all beings and the austerity in ascetics.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "पुण्यो गन्धः पृथिव्यां च तेजश्चास्मि विभावसौ।\n\nजीवनं सर्वभूतेषु तपश्चास्मि तपस्विषु।।7.9।।",
         "modernText": "It is the fragrance of the earth, the brilliance of fire, the life within all living beings, and the discipline of those who live with self-restraint."
@@ -3650,7 +3650,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 10",
         "text": "7.10 Know Me to be the eternal seed of all beings, O Partha. I am the intellect of the intelligent and the splendor of the splendid.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "बीजं मां सर्वभूतानां विद्धि पार्थ सनातनम्।\n\nबुद्धिर्बुद्धिमतामस्मि तेजस्तेजस्विनामहम्।।7.10।।",
         "modernText": "It is the original seed of all existence, the intelligence of the intelligent, and the radiance of what shines brightly in the world."
@@ -3662,7 +3662,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 11",
         "text": "7.11 I am the strength of the strong, free from desire and attachment. I am desire in beings that is not opposed to righteousness, O best of the Bharatas.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "बलं बलवतां चाहं कामरागविवर्जितम्।\n\nधर्माविरुद्धो भूतेषु कामोऽस्मि भरतर्षभ।।7.11।।",
         "modernText": "It is the strength of the strong when free from selfish desire, and the natural impulse of life that remains aligned with harmony and responsibility."
@@ -3674,7 +3674,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 12",
         "text": "7.12 Whatever states of being there are, whether pure, active, or inert, know them to proceed from Me alone. I am not in them, they are in Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "ये चैव सात्त्विका भावा राजसास्तामसाश्च ये।\n\nमत्त एवेति तान्विद्धि नत्वहं तेषु ते मयि।।7.12।।",
         "modernText": "All states of nature arise from this deeper reality. Though they emerge from it, it remains beyond them."
@@ -3686,7 +3686,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 13",
         "text": "7.13 Deluded by these states composed of the three qualities, the whole world does not know Me as distinct from them and imperishable.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "त्रिभिर्गुणमयैर्भावैरेभिः सर्वमिदं जगत्।\n\nमोहितं नाभिजानाति मामेभ्यः परमव्ययम्।।7.13।।",
         "modernText": "Because people become absorbed in these changing states of nature, they fail to recognize the eternal reality beyond them."
@@ -3698,7 +3698,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 14",
         "text": "7.14 This divine power of Mine, constituted of the qualities, is difficult to cross over. Those who take refuge in Me alone cross over this illusion.",
         "reflection": "",
-        "themes": [],
+        "themes": ["surrender","devotion"],
         "speaker": "Krishna",
         "sanskrit": "दैवी ह्येषा गुणमयी मम माया दुरत्यया।\n\nमामेव ये प्रपद्यन्ते मायामेतां तरन्ति ते।।7.14।।",
         "modernText": "The forces of illusion that shape the world are difficult to overcome. But those who seek refuge in the highest truth move beyond this illusion."
@@ -3722,7 +3722,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 16",
         "text": "7.16 Four kinds of virtuous people worship Me, O Arjuna. The distressed, the seeker of knowledge, the seeker of wealth, and the knower, O best of the Bharatas.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन।\n\nआर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ।।7.16।।",
         "modernText": "Four kinds of people turn toward the highest truth: those seeking relief from suffering, those searching for understanding, those seeking success, and those who already possess wisdom."
@@ -3734,7 +3734,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 17",
         "text": "7.17 Of these, the knower, ever steadfast and devoted to the One, excels. I am exceedingly dear to the knower, and the knower is dear to Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "तेषां ज्ञानी नित्ययुक्त एकभक्ितर्विशिष्यते।\n\nप्रियो हि ज्ञानिनोऽत्यर्थमहं स च मम प्रियः।।7.17।।",
         "modernText": "Among them, the one who truly understands and remains devoted to the highest truth stands above the rest, living in unity with it."
@@ -3746,7 +3746,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 18",
         "text": "7.18 All these are noble, but the knower I consider as My very Self. For, established in unity, he has Me alone as the supreme goal.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "उदाराः सर्व एवैते ज्ञानी त्वात्मैव मे मतम्।\n\nआस्थितः स हि युक्तात्मा मामेवानुत्तमां गतिम्।।7.18।।",
         "modernText": "All sincere seekers are noble, but the one who recognizes the deeper reality as the ultimate goal becomes fully united with it."
@@ -3774,7 +3774,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 20",
         "text": "7.20 Those whose knowledge has been carried away by various desires resort to other deities, following various disciplines, constrained by their own nature.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "कामैस्तैस्तैर्हृतज���ञानाः प्रपद्यन्तेऽन्यदेवताः।\n\nतं तं नियममास्थाय प्रकृत्या नियताः स्वया।।7.20।।",
         "modernText": "Those whose understanding is guided by personal desires turn toward many different forms of worship, each shaped by their own nature."
@@ -3786,7 +3786,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 21",
         "text": "7.21 Whatever form any devotee desires to worship with faith, that very faith I make firm for that person.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "यो यो यां यां तनुं भक्तः श्रद्धयार्चितुमिच्छति।\n\nतस्य तस्याचलां श्रद्धां तामेव विदधाम्यहम्।।7.21।।",
         "modernText": "Whatever form a person chooses to worship with faith, that faith becomes strengthened through their devotion."
@@ -3798,7 +3798,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 22",
         "text": "7.22 Endowed with that faith, he seeks the worship of that form, and from it he obtains his desires, which are indeed granted by Me alone.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "स तया श्रद्धया युक्तस्तस्याराधनमीहते।\n\nलभते च ततः कामान्मयैव विहितान् हि तान्।।7.22।।",
         "modernText": "Through that devotion they obtain what they seek, though ultimately all such outcomes arise from the same deeper reality."
@@ -3810,7 +3810,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 23",
         "text": "7.23 But the fruit obtained by those of limited understanding is finite. The worshipers of the gods go to the gods, but My devotees come to Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "अन्तवत्तु फलं तेषां तद्भवत्यल्पमेधसाम्।\n\nदेवान्देवयजो यान्ति मद्भक्ता यान्ति मामपि।।7.23।।",
         "modernText": "But the results gained through limited understanding are temporary. Those who seek temporary goals reach temporary outcomes, while those who seek the highest truth reach lasting union with it."
@@ -3822,7 +3822,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 24",
         "text": "7.24 The unwise think of Me as having come to manifestation from the unmanifest, not knowing My supreme nature, imperishable and unsurpassed.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "अव्यक्तं व्यक्ितमापन्नं मन्यन्ते मामबुद्धयः।\n\nपरं भावमजानन्तो ममाव्ययमनुत्तमम्।।7.24।।",
         "modernText": "Those who lack deeper understanding think the ultimate reality appears only in visible form, not realizing its timeless and imperishable nature."
@@ -3834,7 +3834,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 25",
         "text": "7.25 I am not manifest to all, veiled by My divine power. This deluded world does not know Me, unborn and imperishable.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "नाहं प्रकाशः सर्वस्य योगमायासमावृतः।\n\nमूढोऽयं नाभिजानाति लोको मामजमव्ययम्।।7.25।।",
         "modernText": "Because reality is veiled by the power of illusion, most people do not recognize its eternal nature."
@@ -3846,7 +3846,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 26",
         "text": "7.26 I know all beings of the past, present, and future, O Arjuna. But no one knows Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "वेदाहं समतीतानि वर्तमानानि चार्जुन।\n\nभविष्याणि च भूतानि मां तु वेद न कश्चन।।7.26।।",
         "modernText": "The deeper reality knows all beings of the past, present, and future, though few truly know it."
@@ -3858,7 +3858,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 27",
         "text": "7.27 By the delusion of the pairs of opposites arising from desire and aversion, O Bharata, all beings are led into delusion at birth, O scorcher of foes.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "इच्छाद्वेषसमुत्थेन द्वन्द्वमोहेन भारत।\n\nसर्वभूतानि संमोहं सर्गे यान्ति परन्तप।।7.27।।",
         "modernText": "From birth, people become caught in confusion through attraction and aversion, losing sight of deeper truth."
@@ -3870,7 +3870,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 28",
         "text": "7.28 But those men of virtuous deeds, whose sins have come to an end, freed from the delusion of opposites, worship Me with firm resolve.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "येषां त्वन्तगतं पापं जनानां पुण्यकर्मणाम्।\n\nते द्वन्द्वमोहनिर्मुक्ता भजन्ते मां दृढव्रताः।।7.28।।",
         "modernText": "But those whose lives become purified through good actions rise above this confusion and seek the highest truth with determination."
@@ -3882,7 +3882,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 29",
         "text": "7.29 Those who strive for liberation from old age and death, taking refuge in Me, know Brahman entirely, and know the Self and all action.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "जरामरणमोक्षाय मामाश्रित्य यतन्ति ये।\n\nते ब्रह्म तद्विदुः कृत्स्नमध्यात्मं कर्म चाखिलम्।।7.29।।",
         "modernText": "Those who seek freedom from aging and death by turning toward the highest truth come to understand ultimate reality, the soul, and the nature of action."
@@ -3894,7 +3894,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 7, Verse 30",
         "text": "7.30 Those who know Me as the governing principle of beings, of the gods, and of sacrifice, they, with disciplined minds, know Me even at the time of departure.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","devotion"],
         "speaker": "Krishna",
         "sanskrit": "साधिभूताधिदैवं मां साधियज्ञं च ये विदुः।\n\nप्रयाणकालेऽपि च मां ते विदुर्युक्तचेतसः।।7.30।।",
         "modernText": "Those who understand the deeper reality behind existence, the forces of nature, and the spirit of sacred offering remain aware of that truth even at the final moment of life"
@@ -3954,7 +3954,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 5",
         "text": "8.5 Whoever, at the time of death, remembers Me alone and leaves the body, attains My state. Of this there is no doubt.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "अन्तकाले च मामेव स्मरन्मुक्त्वा कलेवरम्।\n\nयः प्रयाति स मद्भावं याति नास्त्यत्र संशयः।।8.5।।",
         "modernText": "Whoever remembers the highest truth at the moment of death reaches that state without doubt."
@@ -3966,7 +3966,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 6",
         "text": "8.6 Whatever state of being one remembers when leaving the body at the end, that state one attains, O son of Kunti, having been absorbed in it.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम्।\n\nतं तमेवैति कौन्तेय सदा तद्भावभावितः।।8.6।।",
         "modernText": "Whatever a person holds in their mind at the final moment of life reflects the state they have cultivated throughout their life."
@@ -3978,7 +3978,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 7",
         "text": "8.7 Therefore, at all times remember Me and fight. With mind and intellect fixed on Me, you shall surely come to Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["action","devotion"],
         "speaker": "Krishna",
         "sanskrit": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च।\n\nमय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम्।।8.7।।",
         "modernText": "Therefore remember the highest truth at all times while continuing to perform your responsibilities. With mind and understanding centered in that truth, you will reach it."
@@ -3990,7 +3990,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 8",
         "text": "8.8 With a mind disciplined by the practice of yoga and not wandering elsewhere, one attains the supreme divine Person by constantly contemplating Him, O Partha.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation","devotion"],
         "speaker": "Krishna",
         "sanskrit": "अभ्यासयोगयुक्तेन चेतसा नान्यगामिना।\n\nपरमं पुरुषं दिव्यं याति पार्थानुचिन्तयन्।।8.8।।",
         "modernText": "With a disciplined mind that does not wander, one who continually reflects on the highest reality eventually realizes it."
@@ -4002,7 +4002,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 9",
         "text": "8.9 Whoever remembers that supreme Person, the seer, the ancient, the ruler, subtler than the subtlest, the sustainer of all, of inconceivable form, radiant like the sun and beyond darkness.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "कविं पुराणमनुशासितार\n\nमणोरणीयांसमनुस्मरेद्यः।\n\nसर्वस्य धातारमचिन्त्यरूप\n\nमादित्यवर्णं तमसः परस्तात्।।8.9।।",
         "modernText": "That supreme reality is the eternal witness, the ancient source of all, the subtle sustainer of existence, radiant beyond darkness and beyond ordinary understanding."
@@ -4014,7 +4014,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 10",
         "text": "8.10 At the time of departure, with unwavering mind, endowed with devotion and the power of yoga, fixing the life-breath between the eyebrows, one attains that supreme divine Person.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "प्रयाणकाले मनसाऽचलेन\n\nभक्त्या युक्तो योगबलेन चैव।\n\nभ्रुवोर्मध्ये प्राणमावेश्य सम्यक्\n\nस तं परं पुरुषमुपैति दिव्यम्।।8.10।।",
         "modernText": "At the final moment, one whose mind remains steady in devotion and discipline, focusing inward with full awareness, reaches that supreme reality."
@@ -4026,7 +4026,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 11",
         "text": "8.11 That state which the knowers of the Vedas call the Imperishable, which ascetics free from passion enter, desiring which they practice celibacy, that state I shall briefly declare to you.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "यदक्षरं वेदविदो वदन्ति\n\nविशन्ति यद्यतयो वीतरागाः।\n\nयदिच्छन्तो ब्रह्मचर्यं चरन्ति\n\nतत्ते पदं संग्रहेण प्रवक्ष्ये।।8.11।।",
         "modernText": "The state described in the Vedas (ancient teachings) as imperishable is sought by those who live with discipline and self-restraint. I will explain this state briefly."
@@ -4038,7 +4038,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 12",
         "text": "8.12 Restraining all the gates of the body, confining the mind in the heart, and fixing the life-breath in the head, established in yogic concentration.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation"],
         "speaker": "Krishna",
         "sanskrit": "सर्वद्वाराणि संयम्य मनो हृदि निरुध्य च।\n\nमूर्ध्न्याधायात्मनः प्राणमास्थितो योगधारणाम्।।8.12।।",
         "modernText": "By withdrawing attention from external distractions, steadying the mind within the heart, and directing the life energy upward, one enters deep concentration."
@@ -4050,7 +4050,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 13",
         "text": "8.13 Uttering the single syllable Om, which is Brahman, and remembering Me, one who departs leaving the body attains the supreme goal.",
         "reflection": "",
-        "themes": [],
+        "themes": ["meditation","devotion"],
         "speaker": "Krishna",
         "sanskrit": "ओमित्येकाक्षरं ब्रह्म व्याहरन्मामनुस्मरन्।\n\nयः प्रयाति त्यजन्देहं स याति परमां गतिम्।।8.13।।",
         "modernText": "Uttering the sacred sound Om while remembering the highest truth at the moment of departure leads the seeker toward the supreme goal."
@@ -4062,7 +4062,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 14",
         "text": "8.14 For the yogin who constantly remembers Me without distraction, I am easily attainable, O Partha.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "अनन्यचेताः सततं यो मां स्मरति नित्यशः।\n\nतस्याहं सुलभः पार्थ नित्ययुक्तस्य योगिनः।।8.14।।",
         "modernText": "For the one who remembers the highest truth constantly and without distraction, realization becomes easy to attain."
@@ -4074,7 +4074,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 15",
         "text": "8.15 Having attained Me, the great souls do not take birth again in this impermanent abode of sorrow, having reached the supreme perfection.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "मामुपेत्य पुनर्जन्म दुःखालयमशाश्वतम्।\n\nनाप्नुवन्ति महात्मानः संसिद्धिं परमां गताः।।8.15।।",
         "modernText": "Those who reach this realization do not return again to the cycle of suffering in this temporary world."
@@ -4086,7 +4086,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 16",
         "text": "8.16 All worlds, up to the world of Brahma, are subject to return, O Arjuna. But having attained Me, O son of Kunti, there is no rebirth.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "आब्रह्मभुवनाल्लोकाः पुनरावर्तिनोऽर्जुन।\n\nमामुपेत्य तु कौन्तेय पुनर्जन्म न विद्यते।।8.16।।",
         "modernText": "Even the highest realms of existence are temporary. But reaching the ultimate reality brings freedom from rebirth."
@@ -4098,7 +4098,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 17",
         "text": "8.17 Those who know that a day of Brahma lasts for a thousand ages, and that his night also lasts for a thousand ages, they know day and night.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "सहस्रयुगपर्यन्तमहर्यद्ब्रह्मणो विदुः।\n\nरात्रिं युगसहस्रान्तां तेऽहोरात्रविदो जनाः।।8.17।।",
         "modernText": "Those who understand the vast cycles of cosmic time understand the rhythm of creation and dissolution."
@@ -4110,7 +4110,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 18",
         "text": "8.18 From the unmanifest all manifest beings arise at the coming of day. At the coming of night, they dissolve into that alone which is called the unmanifest.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अव्यक्ताद्व्यक्तयः सर्वाः प्रभवन्त्यहरागमे।\n\nरात्र्यागमे प्रलीयन्ते तत्रैवाव्यक्तसंज्ञके।।8.18।।",
         "modernText": "From the unseen source all visible beings arise, and into that same unseen reality they dissolve again."
@@ -4122,7 +4122,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 19",
         "text": "8.19 This same multitude of beings comes into being again and again, and dissolves helplessly, O Partha, at the coming of night, and arises again at the coming of day.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "भूतग्रामः स एवायं भूत्वा भूत्वा प्रलीयते।\n\nरात्र्यागमेऽवशः पार्थ प्रभवत्यहरागमे।।8.19।।",
         "modernText": "This cycle repeats endlessly as life appears and disappears again and again."
@@ -4134,7 +4134,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 20",
         "text": "8.20 But beyond that unmanifest there is another unmanifest existence, eternal, which does not perish when all beings perish.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "परस्तस्मात्तु भावोऽन्योऽव्यक्तोऽव्यक्तात्सनातनः।\n\nयः स सर्वेषु भूतेषु नश्यत्सु न विनश्यति।।8.20।।",
         "modernText": "Beyond this cycle of appearance and disappearance lies an eternal reality that never fades."
@@ -4146,7 +4146,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 21",
         "text": "8.21 That unmanifest is called the Imperishable. It is said to be the supreme goal. Having attained it, one does not return. That is My supreme abode.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अव्यक्तोऽक्षर इत्युक्तस्तमाहुः परमां गतिम्।\n\nयं प्राप्य न निवर्तन्ते तद्धाम परमं मम।।8.21।।",
         "modernText": "That eternal and imperishable state is the supreme goal. Once it is reached, one does not return to the cycle of rebirth."
@@ -4158,7 +4158,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 22",
         "text": "8.22 That supreme Person, O Partha, is attainable by exclusive devotion. In Him all beings dwell, and by Him all this is pervaded.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "पुरुषः स परः पार्थ भक्त्या लभ्यस्त्वनन्यया।\n\nयस्यान्तःस्थानि भूतानि येन सर्वमिदं ततम्।।8.22।।",
         "modernText": "This supreme reality can be realized through wholehearted devotion. It pervades all beings and holds the entire universe within it."
@@ -4170,7 +4170,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 23",
         "text": "8.23 Now I shall declare to you the times departing at which yogins do not return, and also the time at which they do return, O best of the Bharatas.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "यत्र काले त्वनावृत्तिमावृत्तिं चैव योगिनः।\n\nप्रयाता यान्ति तं कालं वक्ष्यामि भरतर्षभ।।8.23।।",
         "modernText": "Now I will explain the paths by which seekers depart this life either to return again or to move beyond the cycle of return."
@@ -4206,7 +4206,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 26",
         "text": "8.26 These two paths, bright and dark, are considered eternal for the world. By one, one goes without return, and by the other, one returns again.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "शुक्लकृष्णे गती ह्येते जगतः शाश्वते मते।\n\nएकया यात्यनावृत्तिमन्ययाऽऽवर्तते पुनः।।8.26।।",
         "modernText": "These two paths have long been understood as the paths of return and non-return."
@@ -4218,7 +4218,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 27",
         "text": "8.27 Knowing these two paths, O Partha, no yogin is deluded. Therefore, at all times be established in yoga, O Arjuna.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "नैते सृती पार्थ जानन्योगी मुह्यति कश्चन।\n\nतस्मात्सर्वेषु कालेषु योगयुक्तो भवार्जुन।।8.27।।",
         "modernText": "One who understands these truths is not confused by them. Therefore remain steady in inner discipline at all times."
@@ -4230,7 +4230,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 8, Verse 28",
         "text": "8.28 Whatever merit is declared in the Vedas, in sacrifices, in austerities, and in gifts, the yogin transcends all this by knowing this and attains the supreme primal abode.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "वेदेषु यज्ञेषु तपःसु चैव\n\nदानेषु यत्पुण्यफलं प्रदिष्टम्।\n\nअत्येति तत्सर्वमिदं विदित्वा\n\nयोगी परं स्थानमुपैति चाद्यम्।।8.28।।",
         "modernText": "Understanding this path goes beyond the rewards promised in the Vedas (ancient teachings), rituals, austerities, or charity, leading instead to the highest and eternal reality."
@@ -4242,7 +4242,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 1",
         "text": "9.1 The Blessed Lord said: To you who are free from malice I shall declare this most secret knowledge, together with realization, knowing which you shall be freed from evil.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "श्री भगवानुवाच\n\nइदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे।\n\nज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽशुभात्।।9.1।।",
         "modernText": "Krishna said: Because you listen with an open mind, I will share with you a deeply hidden wisdom together with the understanding that brings it to life. Knowing this frees a person from confusion and harmful action."
@@ -4254,7 +4254,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 2",
         "text": "9.2 This is the royal knowledge, the royal secret, the supreme purifier. It is directly perceivable, righteous, easy to practice, and imperishable.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "राजविद्या राजगुह्यं पवित्रमिदमुत्तमम्।\n\nप्रत्यक्षावगमं धर्म्यं सुसुखं कर्तुमव्ययम्।।9.2।।",
         "modernText": "This is the highest knowledge and the deepest insight. It purifies the mind, can be directly experienced, is natural to live by, and never fades."
@@ -4266,7 +4266,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 3",
         "text": "9.3 Those who lack faith in this dharma, O scorcher of foes, not attaining Me, return to the path of mortal existence.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "अश्रद्दधानाः पुरुषा धर्मस्यास्य परन्तप।\n\nअप्राप्य मां निवर्तन्ते मृत्युसंसारवर्त्मनि।।9.3।।",
         "modernText": "Those who lack trust in this path fail to recognize the deeper reality and remain caught in the cycle of ordinary life."
@@ -4278,7 +4278,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 4",
         "text": "9.4 By Me all this universe is pervaded in My unmanifest form. All beings abide in Me, but I do not abide in them.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "मया ततमिदं सर्वं जगदव्यक्तमूर्तिना।\n\nमत्स्थानि सर्वभूतानि न चाहं तेष्ववस्थितः।।9.4।।",
         "modernText": "The entire universe is pervaded by an unseen presence. All beings exist within it, though it is not confined by them."
@@ -4290,7 +4290,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 5",
         "text": "9.5 And yet beings do not abide in Me. Behold My divine yoga. My Self supports beings, yet is not in them, and is the source of their existence.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "न च मत्स्थानि भूतानि पश्य मे योगमैश्वरम्।\n\nभूतभृन्न च भूतस्थो ममात्मा भूतभावनः।।9.5।।",
         "modernText": "Yet in another sense, beings do not contain that presence. Such is the mystery of existence: it supports all life without being limited by it."
@@ -4302,7 +4302,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 6",
         "text": "9.6 As the mighty wind, moving everywhere, ever rests in space, so know that all beings rest in Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "यथाऽऽकाशस्थितो नित्यं वायुः सर्वत्रगो महान्।\n\nतथा सर्वाणि भूतानि मत्स्थानीत्युपधारय।।9.6।।",
         "modernText": "Just as the wind moves everywhere while resting within space, all beings exist within the vast field of existence."
@@ -4314,7 +4314,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 7",
         "text": "9.7 All beings, O son of Kunti, enter into My nature at the end of a cycle. At the beginning of the cycle, I send them forth again.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "सर्वभूतानि कौन्तेय प्रकृतिं यान्ति मामिकाम्।\n\nकल्पक्षये पुनस्तानि कल्पादौ विसृजाम्यहम्।।9.7।।",
         "modernText": "At the end of a cosmic cycle, all beings return to their source. When a new cycle begins, they arise again."
@@ -4326,7 +4326,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 8",
         "text": "9.8 Resting on My own nature, I bring forth again and again this entire multitude of beings, helpless under the control of nature.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "प्रकृतिं स्वामवष्टभ्य विसृजामि पुनः पुनः।\n\nभूतग्राममिमं कृत्स्नमवशं प्रकृतेर्वशात्।।9.8।।",
         "modernText": "Through the forces of nature, life unfolds again and again, expressing the rhythms of creation."
@@ -4338,7 +4338,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 9",
         "text": "9.9 These actions do not bind Me, O Dhananjaya. I remain indifferent, unattached to those actions.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment"],
         "speaker": "Krishna",
         "sanskrit": "न च मां तानि कर्माणि निबध्नन्ति धनञ्जय।\n\nउदासीनवदासीनमसक्तं तेषु कर्मसु।।9.9।।",
         "modernText": "Yet these processes do not bind the source of existence, which remains unattached and unaffected."
@@ -4350,7 +4350,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 10",
         "text": "9.10 Under My supervision, nature gives birth to the moving and the unmoving. Because of this, O son of Kunti, the world revolves.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "मयाऽध्यक्षेण प्रकृतिः सूयते सचराचरम्।\n\nहेतुनाऽनेन कौन्तेय जगद्विपरिवर्तते।।9.10।।",
         "modernText": "Under the guidance of this deeper order, nature gives rise to all forms of life and the world continues to evolve."
@@ -4362,7 +4362,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 11",
         "text": "9.11 The deluded despise Me when I take on a human form, not knowing My higher nature as the great Lord of beings.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम्।\n\nपरं भावमजानन्तो मम भूतमहेश्वरम्।।9.11।।",
         "modernText": "Some fail to recognize this deeper presence when it appears through human form, not seeing the greater reality behind it."
@@ -4374,7 +4374,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 12",
         "text": "9.12 Of vain hopes, vain actions, and vain knowledge, senseless, they take refuge in a demonic and destructive nature.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "मोघाशा मोघकर्माणो मोघज्ञाना विचेतसः।\n\nराक्षसीमासुरीं चैव प्रकृतिं मोहिनीं श्रिताः।।9.12।।",
         "modernText": "Driven by confusion and selfish desire, they pursue empty hopes and actions that lead nowhere meaningful."
@@ -4386,7 +4386,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 13",
         "text": "9.13 But the great souls, O Partha, taking refuge in the divine nature, worship Me with undivided mind, knowing Me as the imperishable source of beings.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "महात्मानस्तु मां पार्थ दैवीं प्रकृतिमाश्रिताः।\n\nभजन्त्यनन्यमनसो ज्ञात्वा भूतादिमव्ययम्।।9.13।।",
         "modernText": "But those of deeper understanding recognize the source of all beings and devote themselves to it wholeheartedly."
@@ -4398,7 +4398,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 14",
         "text": "9.14 Always glorifying Me, striving with firm resolve, bowing to Me with devotion, they worship Me, ever steadfast.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "सततं कीर्तयन्तो मां यतन्तश्च दृढव्रताः।\n\nनमस्यन्तश्च मां भक्त्या नित्ययुक्ता उपासते।।9.14।।",
         "modernText": "With steady determination they seek truth, living with devotion, humility, and discipline."
@@ -4410,7 +4410,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 15",
         "text": "9.15 Others worship Me by the sacrifice of knowledge, seeing Me as one, as distinct, and as manifold, facing all directions.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","devotion"],
         "speaker": "Krishna",
         "sanskrit": "ज्ञानयज्ञेन चाप्यन्ये यजन्तो मामुपासते।\n\nएकत्वेन पृथक्त्वेन बहुधा विश्वतोमुखम्।।9.15।।",
         "modernText": "Some approach this truth through devotion, others through knowledge, and others by recognizing its presence in many forms throughout the universe."
@@ -4422,7 +4422,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 16",
         "text": "9.16 I am the ritual, I am the sacrifice, I am the offering to the ancestors, I am the healing herb, I am the sacred chant, I am the clarified butter, I am the fire, and I am the oblation.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अहं क्रतुरहं यज्ञः स्वधाऽहमहमौषधम्।\n\nमंत्रोऽहमहमेवाज्यमहमग्निरहं हुतम्।।9.16।।",
         "modernText": "Every sacred act, offering, and transformation ultimately arises from the same source of existence."
@@ -4434,7 +4434,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 17",
         "text": "9.17 I am the father of this world, the mother, the sustainer, and the grandsire. I am the object of knowledge, the purifier, the sacred syllable Om, and also the Rig, Sama, and Yajur Vedas.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "पिताऽहमस्य जगतो माता धाता पितामहः।\n\nवेद्यं पवित्रमोंकार ऋक् साम यजुरेव च।।9.17।।",
         "modernText": "That source is the origin of the world, its nurturer and sustainer, the wisdom behind the Vedas (ancient teachings), and the sacred sound Om."
@@ -4446,7 +4446,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 18",
         "text": "9.18 I am the goal, the sustainer, the Lord, the witness, the abode, the refuge, and the friend. I am the origin, the dissolution, the foundation, the treasure house, and the imperishable seed.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "गतिर्भर्ता प्रभुः साक्षी निवासः शरणं सुहृत्।\n\nप्रभवः प्रलयः स्थानं निधानं बीजमव्ययम्।।9.18।।",
         "modernText": "It is the goal of life, the support of existence, the witness within all beings, the refuge and the friend, the origin and the end of all things."
@@ -4458,7 +4458,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 19",
         "text": "9.19 I give heat, I withhold and release the rain. I am immortality and death, and I am being and non-being, O Arjuna.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "तपाम्यहमहं वर्षं निगृह्णाम्युत्सृजामि च।\n\nअमृतं चैव मृत्युश्च सदसच्चाहमर्जुन।।9.19।।",
         "modernText": "It appears through the forces of nature, through life and death, through presence and absence."
@@ -4470,7 +4470,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 20",
         "text": "9.20 The knowers of the three Vedas, the drinkers of soma, purified of sin, worship Me with sacrifices and seek the way to heaven. Attaining the meritorious world of the lord of the gods, they enjoy the divine pleasures of the gods in heaven.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "त्रैविद्या मां सोमपाः पूतपापा\n\nयज्ञैरिष्ट्वा स्वर्गतिं प्रार्थयन्ते।\n\nते पुण्यमासाद्य सुरेन्द्रलोक\n\nमश्नन्ति दिव्यान्दिवि देवभोगान्।।9.20।।",
         "modernText": "Those who perform rituals seeking heavenly rewards may reach those states for a time and enjoy their results."
@@ -4482,7 +4482,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 21",
         "text": "9.21 Having enjoyed that vast heavenly world, when their merit is exhausted they enter the mortal world again. Thus, following the law of the three Vedas, desiring pleasures, they attain the cycle of coming and going.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "ते तं भुक्त्वा स्वर्गलोकं विशालं\n\nक्षीणे पुण्ये मर्त्यलोकं विशन्ति।\n\nएव त्रयीधर्ममनुप्रपन्ना\n\nगतागतं कामकामा लभन्ते।।9.21।।",
         "modernText": "But when the results of their actions are exhausted, they return again to the ordinary cycle of life."
@@ -4510,7 +4510,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 23",
         "text": "9.23 Even those who are devoted to other deities and worship them with faith, they too worship Me alone, O son of Kunti, though not according to the proper understanding.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयाऽन्विताः।\n\nतेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम्।।9.23।।",
         "modernText": "Even those who worship other forms with sincere faith are ultimately directing their devotion toward the same deeper source, though they may not yet understand it fully."
@@ -4522,7 +4522,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 24",
         "text": "9.24 For I alone am the enjoyer and Lord of all sacrifices. But they do not know Me in truth, and therefore they fall.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च।\n\nन तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते।।9.24।।",
         "modernText": "For the source of existence is the true receiver and sustainer of all acts of devotion, though many do not yet recognize this."
@@ -4534,7 +4534,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 25",
         "text": "9.25 Those devoted to the gods go to the gods. Those devoted to the ancestors go to the ancestors. Those who worship spirits go to the spirits. Those who worship Me come to Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "यान्ति देवव्रता देवान् पितृ़न्यान्ति पितृव्रताः।\n\nभूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम्।।9.25।।",
         "modernText": "Those who seek limited goals reach limited destinations, but those who seek the highest truth move toward union with it."
@@ -4546,7 +4546,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 26",
         "text": "9.26 Whoever offers Me with devotion a leaf, a flower, a fruit, or water, I accept that offering of devotion from the pure-minded.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति।\n\nतदहं भक्त्युपहृतमश्नामि प्रयतात्मनः।।9.26।।",
         "modernText": "Even a simple offering made with sincerity and devotion is accepted when it comes from a pure heart."
@@ -4574,7 +4574,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 28",
         "text": "9.28 Thus you shall be freed from the bonds of action, from good and evil results. United with the yoga of renunciation, liberated, you shall come to Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["detachment","surrender"],
         "speaker": "Krishna",
         "sanskrit": "शुभाशुभफलैरेवं मोक्ष्यसे कर्मबन्धनैः।\n\nसंन्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि।।9.28।।",
         "modernText": "Living in this spirit frees you from the burdens created by actions and their consequences."
@@ -4586,7 +4586,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 29",
         "text": "9.29 I am the same toward all beings. There is none hateful or dear to Me. But those who worship Me with devotion are in Me, and I am also in them.",
         "reflection": "",
-        "themes": [],
+        "themes": ["equanimity"],
         "speaker": "Krishna",
         "sanskrit": "समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः।\n\nये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम्।।9.29।।",
         "modernText": "The deeper presence within existence is equal toward all beings. Yet those who turn toward it with devotion experience its presence more fully."
@@ -4598,7 +4598,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 30",
         "text": "9.30 Even if one of very sinful conduct worships Me with exclusive devotion, he is to be regarded as righteous, for he has rightly resolved.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion","courage"],
         "speaker": "Krishna",
         "sanskrit": "अपि चेत्सुदुराचारो भजते मामनन्यभाक्।\n\nसाधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः।।9.30।।",
         "modernText": "Even someone who has lived wrongly can transform if they sincerely turn toward truth with wholehearted dedication."
@@ -4610,7 +4610,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 31",
         "text": "9.31 Quickly he becomes righteous and attains lasting peace. O son of Kunti, declare it boldly that My devotee never perishes.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion","courage"],
         "speaker": "Krishna",
         "sanskrit": "क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति।\n\nकौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति।।9.31।।",
         "modernText": "Such a person soon grows into integrity and finds lasting peace. One who sincerely seeks truth is never lost."
@@ -4622,7 +4622,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 32",
         "text": "9.32 For taking refuge in Me, O Partha, even those born of sinful origin, women, merchants, and workers, they too attain the supreme goal.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः।\n\nस्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम्।।9.32।।",
         "modernText": "Anyone who sincerely turns toward the highest truth, regardless of background or circumstance, can reach the highest goal."
@@ -4634,7 +4634,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 33",
         "text": "9.33 How much more then the holy brahmins and devoted royal sages. Having attained this impermanent and joyless world, worship Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "किं पुनर्ब्राह्मणाः पुण्या भक्ता राजर्षयस्तथा।\n\nअनित्यमसुखं लोकमिमं प्राप्य भजस्व माम्।।9.33।।",
         "modernText": "Recognizing the temporary nature of this world, turn your mind toward the deeper reality that endures."
@@ -4646,7 +4646,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 9, Verse 34",
         "text": "9.34 Fix your mind on Me, be devoted to Me, sacrifice to Me, bow down to Me. Thus uniting yourself with Me, with Me as the supreme goal, you shall come to Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion","surrender"],
         "speaker": "Krishna",
         "sanskrit": "मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु।\n\nमामेवैष्यसि युक्त्वैवमात्मानं मत्परायणः।।9.34।।",
         "modernText": "Let your thoughts, devotion, and actions be centered on the highest truth. Living in this awareness leads you toward it."
@@ -4682,7 +4682,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 10, Verse 3",
         "text": "10.3 One who knows Me as unborn and without beginning, as the great Lord of the worlds, he among mortals is undeluded and is freed from all sins.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "यो मामजमनादिं च वेत्ति लोकमहेश्वरम्।\n\nअसम्मूढः स मर्त्येषु सर्वपापैः प्रमुच्यते।।10.3।।",
         "modernText": "One who understands the source of existence as timeless and without beginning becomes free from confusion and inner burden."
@@ -4730,7 +4730,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 10, Verse 7",
         "text": "10.7 One who knows in truth this glory and yoga of Mine is united with unwavering yoga. Of this there is no doubt.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "एतां विभूतिं योगं च मम यो वेत्ति तत्त्वतः।\n\nसोऽविकम्पेन योगेन युज्यते नात्र संशयः।।10.7।।",
         "modernText": "One who truly understands this unfolding of existence becomes firmly established in inner discipline."
@@ -4742,7 +4742,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 10, Verse 8",
         "text": "10.8 I am the source of all. From Me everything proceeds. Knowing this, the wise worship Me with devotion.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion","knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते।\n\nइति मत्वा भजन्ते मां बुधा भावसमन्विताः।।10.8।।",
         "modernText": "I am the source of all existence. From this source everything arises. Knowing this, the wise live with reverence and devotion."
@@ -4754,7 +4754,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 10, Verse 9",
         "text": "10.9 With minds fixed on Me, with lives devoted to Me, enlightening one another and ever speaking of Me, they are satisfied and rejoice.",
         "reflection": "",
-        "themes": [],
+        "themes": ["devotion"],
         "speaker": "Krishna",
         "sanskrit": "मच्चित्ता मद्गतप्राणा बोधयन्तः परस्परम्।\n\nकथयन्तश्च मां नित्यं तुष्यन्ति च रमन्ति च।।10.9।।",
         "modernText": "Their minds remain centered on this truth, and they share insight with one another, finding joy in understanding."
@@ -4766,7 +4766,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 10, Verse 10",
         "text": "10.10 To those who are ever united with Me and worship Me with love, I grant the yoga of understanding by which they come to Me.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge","devotion"],
         "speaker": "Krishna",
         "sanskrit": "तेषां सततयुक्तानां भजतां प्रीतिपूर्वकम्।\n\nददामि बुद्धियोगं तं येन मामुपयान्ति ते।।10.10।।",
         "modernText": "To those who remain devoted with sincerity, deeper understanding naturally unfolds, guiding them closer to truth."
@@ -4778,7 +4778,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 10, Verse 11",
         "text": "10.11 Out of compassion for them, dwelling in their inner being, I destroy the darkness born of ignorance with the shining lamp of knowledge.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "तेषामेवानुकम्पार्थमहमज्ञानजं तमः।\n\nनाशयाम्यात्मभावस्थो ज्ञानदीपेन भास्वता।।10.11।।",
         "modernText": "Out of compassion, clarity arises within them and dissolves the darkness of confusion."
@@ -4886,7 +4886,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 10, Verse 20",
         "text": "10.20 I am the Self, O Gudakesha, seated in the hearts of all beings. I am the beginning, the middle, and also the end of all beings.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अहमात्मा गुडाकेश सर्वभूताशयस्थितः।\n\nअहमादिश्च मध्यं च भूतानामन्त एव च।।10.20।।",
         "modernText": "I am the soul present in the heart of every being. I am the beginning, the middle, and the end of all existence."
@@ -5030,7 +5030,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 10, Verse 32",
         "text": "10.32 Of creations I am the beginning, the middle, and also the end, O Arjuna. Among sciences I am the science of the Self. Among disputants I am fair reasoning.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "सर्गाणामादिरन्तश्च मध्यं चैवाहमर्जुन।\n\nअध्यात्मविद्या विद्यानां वादः प्रवदतामहम्।।10.32।।",
         "modernText": "In every process of creation I am the beginning, the middle, and the end. Among sciences I am the knowledge of the soul, and among debates fair reasoning."
@@ -5138,7 +5138,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 10, Verse 41",
         "text": "10.41 Whatever being there is that is glorious, prosperous, or powerful, know that to have arisen from a portion of My splendor.",
         "reflection": "",
-        "themes": [],
+        "themes": ["clarity"],
         "speaker": "Krishna",
         "sanskrit": "यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा।\n\nतत्तदेवावगच्छ त्वं मम तेजोंऽशसंभवम्।।10.41।।",
         "modernText": "Whenever you see something magnificent, powerful, or beautiful, recognize it as a reflection of this greater presence."
@@ -5150,7 +5150,7 @@ export const GITA_VERSES: GitaVerse[] = [
         "reference": "Chapter 10, Verse 42",
         "text": "10.42 But what need is there for you to know all this in detail, O Arjuna? With a single portion of Myself I pervade and sustain this entire universe.",
         "reflection": "",
-        "themes": [],
+        "themes": ["knowledge"],
         "speaker": "Krishna",
         "sanskrit": "अथवा बहुनैतेन किं ज्ञातेन तवार्जुन।\n\nविष्टभ्याहमिदं कृत्स्नमेकांशेन स्थितो जगत्।।10.42।।",
         "modernText": "Yet all these examples are only fragments. With a single portion of its being, the source of existence sustains the entire universe."

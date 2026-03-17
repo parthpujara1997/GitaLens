@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { View, UserProgress } from '../types';
-import { storageService } from '../services/storageService';
 import { getRandomFamousVerse } from '../gitaData';
 import { Share2, Copy, Check, Heart, Search, ChevronRight, Wind, Link, PenLine } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
@@ -112,8 +111,6 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                 <h1 className="font-serif text-3xl text-charcoal tracking-tight">{getGreeting()}</h1>
             </motion.header>
 
-
-
             {/* 2. The Daily Scroll (Verse) */}
             <motion.section
                 variants={item}
@@ -121,9 +118,9 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                 onClick={() => setShowReflection(!showReflection)}
                 className="relative group cursor-pointer"
             >
-                {/* Subtle Paper Background */}
-                <div className="absolute inset-0 bg-[#F5F5F0] rounded-2xl -rotate-1 scale-[0.98] transition-transform group-hover:rotate-0 group-hover:scale-100 duration-500 ease-out" />
-                <div className="relative bg-[#FBFBF9] rounded-2xl p-8 shadow-sm border border-[#EBEBE5] flex flex-col items-center text-center space-y-5 transition-shadow group-hover:shadow-md duration-500">
+                {/* Subtle Paper Background - Added back lift and shadow on hover */}
+                <div className="absolute inset-0 bg-[#F5F5F0] rounded-2xl transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]" />
+                <div className="relative bg-[#FBFBF9] rounded-2xl p-8 shadow-sm border border-[#EBEBE5] flex flex-col items-center text-center space-y-6 transition-all duration-500 group-hover:-translate-y-1">
 
                     <div className="flex items-center justify-center w-full opacity-60 px-4">
                         <div className="flex items-center space-x-2">
@@ -133,7 +130,7 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                         </div>
                     </div>
 
-                    <p className="font-serif text-xl md:text-2xl text-charcoal/90 leading-relaxed italic">
+                    <p className="font-serif text-xl md:text-2xl text-charcoal/90 leading-loose tracking-wide italic">
                         "{dailyVerse.modernText || dailyVerse.text}"
                     </p>
 
@@ -148,18 +145,23 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                                 initial={{ opacity: 0, height: 0 }}
                                 animate={{ opacity: 1, height: 'auto' }}
                                 exit={{ opacity: 0, height: 0 }}
-                                className="overflow-hidden w-full pt-2"
+                                className="overflow-hidden w-full"
                             >
-                                <div className="pt-4 border-t border-stone-100 text-[#6B6B63] text-sm leading-relaxed serif">
+                                <motion.div 
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.1, duration: 0.4 }}
+                                    className="pt-6 border-t border-stone-100 text-[#6B6B63] text-sm leading-relaxed serif"
+                                >
                                     {(reflectionsData as Record<string, string>)[`${dailyVerse.chapter}.${dailyVerse.verse}`] || dailyVerse.reflection || "Reflect deeply on this wisdom."}
-                                </div>
+                                </motion.div>
                             </motion.div>
                         )}
                     </AnimatePresence>
 
                     {/* Actions Row */}
-                    <div className={`flex items-center space-x-1 pt-2 transition-all duration-300 ${showReflection ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
-                        <button onClick={handleBookmark} className={`p-2 rounded-full hover:bg-stone-100 transition-colors ${isBookmarked ? 'text-red-500' : 'text-stone-400 hover:text-stone-600'}`}>
+                    <div className="flex items-center justify-center w-full space-x-2 pt-2 md:opacity-0 md:group-hover:opacity-100 opacity-100 transition-opacity duration-300">
+                        <button onClick={handleBookmark} className={`p-2 rounded-full hover:bg-stone-100 transition-colors ${isBookmarked ? 'text-[#C96A52]' : 'text-stone-400 hover:text-stone-600'}`}>
                             <Heart size={16} fill={isBookmarked ? "currentColor" : "none"} />
                         </button>
                         <button onClick={handleCopy} className="p-2 rounded-full text-stone-400 hover:text-stone-600 hover:bg-stone-100 transition-colors">
@@ -184,13 +186,17 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                 <button
                     data-tour="dashboard-card-guidance"
                     onClick={() => handleProtectedNavigate(View.GUIDANCE)}
-                    className="w-full bg-white group rounded-full p-4 px-6 shadow-sm border border-stone-200 hover:border-saffron-accent/50 hover:shadow-md transition-all duration-300 flex items-center justify-between"
+                    className="w-full bg-white group rounded-full p-4 px-6 shadow-sm border border-stone-200 hover:border-saffron-accent/50 hover:shadow-md transition-all duration-300 flex items-center justify-between relative overflow-hidden"
                 >
-                    <span className="text-stone-400 text-base font-serif group-hover:text-charcoal transition-colors">
-                        What is on your mind?
-                    </span>
-                    <div className="h-8 w-8 rounded-full bg-stone-50 flex items-center justify-center text-stone-300 group-hover:text-saffron-deep group-hover:translate-x-1 transition-all">
-                        <ChevronRight size={18} />
+                    <div className="flex items-center space-x-3 text-stone-400 group-hover:text-charcoal transition-colors">
+                        <Search size={18} className="text-stone-300 group-hover:text-saffron-accent transition-colors" />
+                        <span className="text-base font-serif flex items-center">
+                            What is on your mind?
+                            <span className="ml-1 w-0.5 h-4 bg-saffron-accent/70 animate-pulse hidden group-hover:block" />
+                        </span>
+                    </div>
+                    <div className="h-8 w-8 rounded-full bg-stone-50/50 flex items-center justify-center text-stone-300 group-hover:text-saffron-deep group-hover:bg-orange-50 transition-all">
+                        <ChevronRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
                     </div>
                 </button>
             </motion.section>
@@ -248,45 +254,25 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
                     />
                 )
             }
-        </motion.div >
+        </motion.div>
     );
 };
 
-// Helper Sub-component for Tool Cards
-const ToolCard = ({ title, subtitle, icon, onClick, active = false, completed = false, action, dataTour }: any) => {
-    // If action is provided (like InnerCompass embedded), we render that or a placeholder. 
-    // But for the strip, we might just want buttons.
-    // Special handling for InnerCompass: if not checked in, maybe we render it in a modal?
-    // OR for this "Sanctuary" design, clicking "Check-in" opens the view.
+interface ToolCardProps {
+    title: string;
+    subtitle: string;
+    icon: React.ReactNode;
+    onClick: () => void;
+    active?: boolean;
+    completed?: boolean;
+    dataTour?: string;
+}
 
-    // For now, simple buttons.
-    // If InnerCompass needs to be embedded, this design needs a tweak.
-    // Let's assume onNavigate(View.INNER_COMPASS) works fine.
-    // BUT the original dashboard embedded InnerCompass directly if not checked in.
-    // Let's stick to onNavigate for consistency in this clean layout, OR conditionally render the large card.
-
-    // Actually, the user liked the "Embedded" check-in.
-    // In this "Toolkit" strip, if we embed a whole compass it breaks the strip.
-    // Let's keep it as a button that navigates OR expands.
-    // I will stick to "Click to Navigate" for now to keep the "Strip" aesthetic clean.
-
-    // Correction: In the code above, for InnerCompass, I passed `action`.
-    // Let's handle InnerCompass specially.
-
-    if (action && !completed) {
-        // Embed case (Active Check-in) - Render a larger card taking full width?
-        // No, let's keep it simple. Just navigate.
-        // Wait, the original code had `<InnerCompass />` embedded.
-        // If I replace `Dashboard`, I lose that embedding.
-        // I should probably make `InnerCompass` a view or a modal if I want this strip look.
-        // Reverting to `onNavigate` for InnerCompass is safer for this specific "clean" design.
-        // Use `onClick` for everything.
-    }
-
+const ToolCard: React.FC<ToolCardProps> = ({ title, subtitle, icon, onClick, active = false, completed = false, dataTour }) => {
     return (
         <button
             data-tour={dataTour}
-            onClick={onClick || (() => { })}
+            onClick={onClick}
             className={`relative min-w-[100px] flex-1 flex flex-col items-center justify-center p-4 rounded-2xl border transition-all duration-300
             ${active
                     ? 'bg-white border-saffron-accent/30 shadow-sm shadow-orange-50/50 hover:shadow-md hover:-translate-y-1'
@@ -303,7 +289,7 @@ const ToolCard = ({ title, subtitle, icon, onClick, active = false, completed = 
 
             {completed && (
                 <div className="absolute top-2 right-2">
-                    <Check size={10} className="text-green-500" />
+                    <Check size={10} className="text-[#6B6B63]" />
                 </div>
             )}
         </button>

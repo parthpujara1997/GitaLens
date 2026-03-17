@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Mail, Lock, User, LogIn, UserPlus, Github, Chrome } from 'lucide-react';
+import { X, User, LogIn, UserPlus } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
+import { PasswordInput } from './PasswordInput';
+import { AnimatedInput } from './AnimatedInput';
 
 interface AuthModalProps {
     isOpen: boolean;
@@ -148,15 +150,12 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, defaultMode = 'l
                                     <div className="space-y-1">
                                         <label className="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Email Address</label>
                                         <div className="relative">
-                                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-400" size={18} />
-                                            <input
-                                                type="email"
+                                            <AnimatedInput
                                                 required
                                                 placeholder="seeker@gitasight.ai"
                                                 value={email}
                                                 autoComplete="email"
                                                 onChange={(e) => setEmail(e.target.value)}
-                                                className="w-full pl-12 pr-4 py-3 rounded-xl glass-input outline-none"
                                             />
                                         </div>
                                     </div>
@@ -179,15 +178,12 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, defaultMode = 'l
                                             )}
                                         </div>
                                         <div className="relative">
-                                            <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-400" size={18} />
-                                            <input
-                                                type="password"
+                                            <PasswordInput
                                                 required
                                                 placeholder="••••••••"
                                                 value={password}
                                                 autoComplete={mode === 'signup' || mode === 'update-password' ? 'new-password' : 'current-password'}
                                                 onChange={(e) => setPassword(e.target.value)}
-                                                className="w-full pl-12 pr-4 py-3 rounded-xl glass-input outline-none"
                                             />
                                         </div>
                                     </div>

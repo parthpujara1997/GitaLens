@@ -25,6 +25,7 @@ export interface GitaVerse {
   themes: string[];
   speaker: 'Krishna' | 'Arjuna' | 'Sanjaya' | 'Dhritarashtra';
   hindi?: string;
+  isTeaching?: boolean;
 }
 
 export interface GitaChapter {
