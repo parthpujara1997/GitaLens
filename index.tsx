@@ -6,6 +6,7 @@ import App from './App';
 import { AuthProvider } from './contexts/AuthContext';
 import { ToastProvider } from './contexts/ToastContext';
 import ErrorBoundary from './components/ErrorBoundary';
+import { Analytics } from '@vercel/analytics/react';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -19,6 +20,7 @@ root.render(
       <ToastProvider>
         <AuthProvider>
           <App />
+          <Analytics />
         </AuthProvider>
       </ToastProvider>
     </ErrorBoundary>
