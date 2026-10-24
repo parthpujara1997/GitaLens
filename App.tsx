@@ -328,6 +328,9 @@ const App: React.FC = () => {
             <p className="text-[10px] uppercase tracking-[0.2em] text-stone-500 opacity-30">
               © 2026 GitaSight • All rights reserved
             </p>
+            <p className="text-[10px] uppercase tracking-[0.2em] text-stone-500 opacity-40">
+              Project by Parth Pujara
+            </p>
           </footer>
         </main>
 

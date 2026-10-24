@@ -31,20 +31,20 @@ const TOUR_STEPS: TourStep[] = [
     {
         targetId: 'dashboard-card-guidance',
         title: 'Seek Guidance',
-        description: 'Wisdom at your fingertips. Ask questions about life, dilemmas, or purpose, and receive guidance rooted directly in the Bhagavad Gita.',
+        description: 'Wisdom at your fingertips. Ask questions about life, or use the suggested prompts to receive guidance rooted directly in the Gita.',
         position: 'bottom'
     },
 
     {
         targetId: 'dashboard-card-journal',
         title: 'Journal & Reflect',
-        description: 'Capture your thoughts. Save verses that resonate and record your own reflections to see how your clarity grows over time.',
+        description: 'Capture your thoughts. Use guided psychological prompts to build clarity, and save verses that resonate over time.',
         position: 'top'
     },
     {
         targetId: 'dashboard-card-lens',
         title: 'Lens Practice',
-        description: 'Shift your perspective. A powerful tool to reframe difficult situations through the lens of Gita\'s wisdom.',
+        description: 'Shift your perspective. A powerful tool to reframe difficult situations through guided breathwork and the Gita\'s wisdom.',
         position: 'top'
     },
     {

@@ -16,9 +16,10 @@ interface LensPracticeProps {
     onLanguageChange?: (lang: 'english' | 'hindi') => void;
 }
 
-type Step = 'INTRO' | 'SELECTION' | 'GROUNDING' | 'ORIENTATION' | 'PROMPT' | 'CLOSURE';
+type Step = 'INTRO' | 'SELECTION' | 'BREATHWORK' | 'GROUNDING' | 'ORIENTATION' | 'PROMPT' | 'CLOSURE';
 
 import FeatureGuide from './FeatureGuide';
+import BreathworkPacer from './BreathworkPacer';
 
 const STORAGE_KEY_INTRO = 'hasSeenLensIntro';
 const STORAGE_KEY_SESSION = 'lensPracticeSession';
@@ -168,7 +169,7 @@ const LensPractice: React.FC<LensPracticeProps> = ({
 
     const handleSelectLens = (lens: Lens) => {
         setSelectedLensId(lens.id);
-        setStep('GROUNDING');
+        setStep('BREATHWORK');
         setVisibleGroundingIndex(0);
         setIsComplete(false);
     };
@@ -233,10 +234,11 @@ const LensPractice: React.FC<LensPracticeProps> = ({
 
     const getStepNumber = () => {
         switch (step) {
-            case 'GROUNDING': return 1;
-            case 'ORIENTATION': return 2;
-            case 'PROMPT': return 3;
-            case 'CLOSURE': return 4;
+            case 'BREATHWORK': return 1;
+            case 'GROUNDING': return 2;
+            case 'ORIENTATION': return 3;
+            case 'PROMPT': return 4;
+            case 'CLOSURE': return 5;
             default: return 0;
         }
     };
@@ -269,8 +271,8 @@ const LensPractice: React.FC<LensPracticeProps> = ({
 
                 {/* Step Indicators */}
                 {step !== 'SELECTION' && (
-                    <div className="flex space-x-2" aria-label={`Step ${getStepNumber()} of 4`}>
-                        {[1, 2, 3, 4].map(i => (
+                    <div className="flex space-x-2" aria-label={`Step ${getStepNumber()} of 5`}>
+                        {[1, 2, 3, 4, 5].map(i => (
                             <div
                                 key={i}
                                 className={`w-1.5 h-1.5 rounded-full transition-colors duration-300 ${i <= getStepNumber() ? 'bg-stone-800' : 'bg-stone-300'
@@ -358,6 +360,22 @@ const LensPractice: React.FC<LensPracticeProps> = ({
                                     </motion.button>
                                 ))}
                             </div>
+                        </motion.div>
+                    )}
+
+                    {/* BREATHWORK */}
+                    {step === 'BREATHWORK' && selectedLens && (
+                        <motion.div
+                            key="breathwork"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="flex-grow flex flex-col items-center justify-center px-8 text-center pb-20"
+                        >
+                            <BreathworkPacer
+                                onComplete={() => setStep('GROUNDING')}
+                                onSkip={() => setStep('GROUNDING')}
+                            />
                         </motion.div>
                     )}
 

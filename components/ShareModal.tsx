@@ -118,7 +118,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
                 await navigator.share({
                     files: [file],
                     title: 'GitaSight Verse',
-                    text: `"${verse.modernText || verse.text}"\n\n— Bhagavad Gita ${verse.reference}\n\n✨ Shared from GitaSight`,
+                    text: `"${verse.modernText || verse.text}"\n\n- Bhagavad Gita ${verse.reference}\n\n✨ Shared from GitaSight`,
                 });
             } catch (error) {
                 if ((error as Error).name !== 'AbortError') {
@@ -181,7 +181,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
         }
         handleDownloadImage(); // Download image first
         // WhatsApp Web doesn't support image attachments via URL, text only
-        const text = encodeURIComponent(`"${verse.modernText || verse.text}"\n\n— Bhagavad Gita ${verse.reference}\n\n✨ Shared from GitaSight`);
+        const text = encodeURIComponent(`"${verse.modernText || verse.text}"\n\n- Bhagavad Gita ${verse.reference}\n\n✨ Shared from GitaSight`);
         window.open(`https://web.whatsapp.com/send?text=${text}`, '_blank');
     };
 
@@ -211,7 +211,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ verse, onClose, customReflectio
             return;
         }
         handleDownloadImage(); // Download image first
-        const text = encodeURIComponent(`"${verse.modernText || verse.text}"\n\n— Bhagavad Gita ${verse.reference}`);
+        const text = encodeURIComponent(`"${verse.modernText || verse.text}"\n\n- Bhagavad Gita ${verse.reference}`);
         window.open(`https://twitter.com/intent/tweet?text=${text}`, '_blank');
     };
 

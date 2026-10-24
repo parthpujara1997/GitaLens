@@ -2,11 +2,13 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { View, UserProgress } from '../types';
 import { getRandomFamousVerse } from '../gitaData';
-import { Share2, Copy, Check, Heart, Search, ChevronRight, Wind, Link, PenLine } from 'lucide-react';
+import { Share2, Copy, Check, Heart, ChevronRight, Wind, Link, PenLine } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
+import Tooltip from './Tooltip';
 
 import ShareModal from './ShareModal';
+import SadhanaTracker from './SadhanaTracker';
 // @ts-ignore
 import reflectionsData from '../src/data/ai_reflections.json';
 
@@ -63,7 +65,7 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
     const handleCopy = async (e: React.MouseEvent) => {
         e.stopPropagation();
         try {
-            await navigator.clipboard.writeText(`"${dailyVerse.text}"\n\n${dailyVerse.reference}`);
+            await navigator.clipboard.writeText(`"${dailyVerse.modernText || dailyVerse.text}"\n\n${dailyVerse.reference}`);
             setCopied(true);
             setTimeout(() => setCopied(false), 2000);
         } catch (err) { console.error(err); }
@@ -183,22 +185,23 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
 
             {/* 3. The Offering (Conversational Input) */}
             <motion.section variants={item}>
-                <button
-                    data-tour="dashboard-card-guidance"
-                    onClick={() => handleProtectedNavigate(View.GUIDANCE)}
-                    className="w-full bg-white group rounded-full p-4 px-6 shadow-sm border border-stone-200 hover:border-saffron-accent/50 hover:shadow-md transition-all duration-300 flex items-center justify-between relative overflow-hidden"
-                >
-                    <div className="flex items-center space-x-3 text-stone-400 group-hover:text-charcoal transition-colors">
-                        <Search size={18} className="text-stone-300 group-hover:text-saffron-accent transition-colors" />
-                        <span className="text-base font-serif flex items-center">
-                            What is on your mind?
-                            <span className="ml-1 w-0.5 h-4 bg-saffron-accent/70 animate-pulse hidden group-hover:block" />
-                        </span>
-                    </div>
-                    <div className="h-8 w-8 rounded-full bg-stone-50/50 flex items-center justify-center text-stone-300 group-hover:text-saffron-deep group-hover:bg-orange-50 transition-all">
-                        <ChevronRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
-                    </div>
-                </button>
+                <Tooltip content="Share your dilemma or question. Receive guidance rooted in the eternal wisdom of the Gita, tailored to your moment." width="w-72">
+                    <button
+                        data-tour="dashboard-card-guidance"
+                        onClick={() => handleProtectedNavigate(View.GUIDANCE)}
+                        className="w-full bg-white group rounded-full p-4 px-6 shadow-sm border border-stone-200 hover:border-saffron-accent/50 hover:shadow-md transition-all duration-300 flex items-center justify-between relative overflow-hidden"
+                    >
+                        <div className="flex items-center text-stone-400 group-hover:text-charcoal transition-colors">
+                            <span className="text-base font-serif flex items-center">
+                                What is on your mind?
+                                <span className="ml-1 w-0.5 h-4 bg-saffron-accent/70 animate-pulse hidden group-hover:block" />
+                            </span>
+                        </div>
+                        <div className="h-8 w-8 rounded-full bg-stone-50/50 flex items-center justify-center text-stone-300 group-hover:text-saffron-deep group-hover:bg-orange-50 transition-all">
+                            <ChevronRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
+                        </div>
+                    </button>
+                </Tooltip>
             </motion.section>
 
             {/* 4. The Toolkit (Practices Strip) */}
@@ -209,39 +212,43 @@ const SanctuaryDashboard: React.FC<DashboardProps> = ({ onNavigate, onProgressUp
 
                 <div className="flex space-x-3 overflow-x-auto pb-4 px-1 no-scrollbar sm:grid sm:grid-cols-3 sm:space-x-0 sm:gap-4">
                     {/* Reflect */}
-                    <ToolCard
-                        title="Reflect"
-                        subtitle="Daily Journal"
-                        icon={<PenLine size={20} />}
-                        onClick={() => handleProtectedNavigate(View.JOURNAL)}
-                        dataTour="dashboard-card-journal"
-                    />
+                    <Tooltip content="Write your thoughts and reflections on the Gita's teachings to deepen your understanding.">
+                        <ToolCard
+                            title="Reflect"
+                            subtitle="Daily Journal"
+                            icon={<PenLine size={20} />}
+                            onClick={() => handleProtectedNavigate(View.JOURNAL)}
+                            dataTour="dashboard-card-journal"
+                        />
+                    </Tooltip>
 
                     {/* Lens */}
-                    <ToolCard
-                        title="Reframe"
-                        subtitle="Lens Practice"
-                        icon={<Wind size={20} />}
-                        onClick={() => handleProtectedNavigate(View.LENS_PRACTICE)}
-                        dataTour="dashboard-card-lens"
-                    />
+                    <Tooltip content="Shift your perspective and see your challenges through a different lens of wisdom.">
+                        <ToolCard
+                            title="Reframe"
+                            subtitle="Lens Practice"
+                            icon={<Wind size={20} />}
+                            onClick={() => handleProtectedNavigate(View.LENS_PRACTICE)}
+                            dataTour="dashboard-card-lens"
+                        />
+                    </Tooltip>
 
                     {/* Clarity */}
-                    <ToolCard
-                        title="Untangle"
-                        subtitle="Clarity Chain"
-                        icon={<Link size={20} />}
-                        onClick={() => handleProtectedNavigate(View.CLARITY_CHAIN)}
-                        dataTour="dashboard-card-clarity"
-                    />
+                    <Tooltip content="Separate facts from interpretations to find clarity and peace in confusion.">
+                        <ToolCard
+                            title="Untangle"
+                            subtitle="Clarity Chain"
+                            icon={<Link size={20} />}
+                            onClick={() => handleProtectedNavigate(View.CLARITY_CHAIN)}
+                            dataTour="dashboard-card-clarity"
+                        />
+                    </Tooltip>
                 </div>
             </motion.section>
 
-            {/* Journey Footer - Minimal */}
-            <motion.div variants={item} className="text-center opacity-60 pt-4">
-                <p className="font-serif text-sm text-stone-500">
-                    Day {progress.reflection_days} of your journey
-                </p>
+            {/* Journey Footer - Sadhana Tracker */}
+            <motion.div variants={item} className="pt-8 pb-4">
+                <SadhanaTracker progress={progress} />
             </motion.div>
 
             {

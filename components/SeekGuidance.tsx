@@ -18,6 +18,12 @@ interface SeekGuidanceProps {
   onEndSession: () => void;
 }
 
+const SUGGESTED_PROMPTS = [
+  "I feel overwhelmed by my daily responsibilities.",
+  "How can I find peace when things don't go my way?",
+  "I am struggling to let go of a past failure."
+];
+
 const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, onNavigate, initialMessages, onUpdateMessages, onEndSession }) => {
   const { user } = useAuth();
   const [settings, setSettings] = useState<AppSettings>(initialSettings);
@@ -30,13 +36,33 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
   const [toast, setToast] = useState<string | null>(null);
   const [readingVerse, setReadingVerse] = useState<{ chapter: number; verse: number } | null>(null);
   const [streamingContent, setStreamingContent] = useState('');
+  const [displayContent, setDisplayContent] = useState('');
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
-  }, [messages, loading]);
+  }, [messages, loading, displayContent]);
+
+  // Character-by-character "typing" effect
+  useEffect(() => {
+    if (!loading && streamingContent === displayContent && streamingContent !== '') {
+      // Typing finished and loading is done - commit to permanent history
+      const newHistory = [...messages, { role: 'ai', content: streamingContent } as const];
+      onUpdateMessages(newHistory);
+      setStreamingContent('');
+      setDisplayContent('');
+      return;
+    }
+
+    if (displayContent.length < streamingContent.length) {
+      const timer = setTimeout(() => {
+        setDisplayContent(streamingContent.slice(0, displayContent.length + 1));
+      }, 15); // Fast but human-like typing speed
+      return () => clearTimeout(timer);
+    }
+  }, [streamingContent, displayContent, loading, messages, onUpdateMessages]);
 
   const handleLanguageChange = (level: LanguageLevel) => {
     const newSettings = { ...settings, languageLevel: level };
@@ -114,32 +140,29 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
   const handleSubmit = async (e?: React.FormEvent, overrideInput?: string) => {
     e?.preventDefault();
     const messageToSend = overrideInput || input.trim();
-    if (!messageToSend || loading) return;
+    if (!messageToSend || loading || streamingContent) return; // Prevent double submission during typing
 
     if (!overrideInput) {
-      onUpdateMessages([...messages, { role: 'user', content: messageToSend }]);
       setInput('');
     }
 
     setLoading(true);
     setStreamingContent('');
+    setDisplayContent('');
 
     try {
       // Add user message immediately
       const newHistory = [...messages, { role: 'user', content: messageToSend } as const];
       onUpdateMessages(newHistory);
 
-      const aiText = await callBackend(messageToSend, newHistory, (chunk) => {
+      await callBackend(messageToSend, newHistory, (chunk) => {
         setStreamingContent(prev => prev + chunk);
       });
 
-      // When done, replace streaming content with final message
-      onUpdateMessages([...newHistory, { role: 'ai', content: aiText }]);
-      setStreamingContent('');
+      // We don't call onUpdateMessages here anymore; the useEffect handles it after typing finishes.
     } catch {
       onUpdateMessages([
-        ...messages, // Fallback to original messages + user message + error
-        { role: 'user', content: messageToSend },
+        ...messages,
         { role: 'ai', content: 'Unable to reach the guidance service.' }
       ]);
     } finally {
@@ -165,7 +188,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
 
 
   return (
-    <div className="flex flex-col h-[75vh] md:h-[80vh] w-full max-w-xl mx-auto bg-white rounded-2xl border overflow-hidden">
+    <div className="flex flex-col min-h-[500px] h-[calc(100vh-140px)] max-h-[800px] w-full max-w-xl mx-auto bg-white rounded-2xl border overflow-hidden">
       <div className="px-6 py-4 border-b flex items-center justify-between bg-stone-50">
         <div className="flex items-center space-x-4">
           <button onClick={() => onNavigate('DASHBOARD')} className="text-stone-400 hover:text-stone-600 transition-colors">
@@ -174,7 +197,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
           <h3 className="text-xs uppercase tracking-widest font-bold text-stone-500">Guidance</h3>
         </div>
 
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-3 flex-wrap justify-end">
           <div className="relative">
             <button
               onClick={() => setShowLevelMenu(!showLevelMenu)}
@@ -221,7 +244,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
         featureId="seek-guidance"
       />
 
-      <div ref={scrollRef} className="flex-grow overflow-y-auto p-6 space-y-6 bg-stone-50/30 relative">
+      <div ref={scrollRef} className="flex-grow overflow-y-auto p-6 flex flex-col bg-stone-50/30 relative">
         <AnimatePresence>
           {toast && (
             <motion.div
@@ -237,9 +260,24 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
         </AnimatePresence>
 
         {messages.length === 0 && (
-          <div className="h-full flex flex-col items-center justify-center text-center space-y-4 opacity-40 py-20">
-            <Compass size={48} className="text-stone-300" />
-            <p className="text-stone-400 serif italic">Seek clarity through the timeless<br />wisdom of the Gita.</p>
+          <div className="flex-grow flex flex-col items-center justify-center text-center py-6">
+            <div className="flex flex-col items-center space-y-4 opacity-40 mb-8">
+              <Compass size={48} className="text-stone-300" />
+              <p className="text-stone-400 serif italic">Seek clarity through the timeless<br />wisdom of the Gita.</p>
+            </div>
+            
+            <div className="w-full max-w-sm space-y-3 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 mb-8">
+              <p className="text-xs uppercase tracking-widest text-stone-400 font-bold mb-3 opacity-70">You might ask:</p>
+              {SUGGESTED_PROMPTS.map((prompt, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => handleSubmit(undefined, prompt)}
+                  className="w-full text-left px-5 py-3.5 bg-white border border-stone-200 rounded-2xl hover:border-saffron-accent/50 hover:bg-stone-50/80 transition-all text-sm text-stone-600 shadow-sm hover:shadow group"
+                >
+                  <span className="group-hover:text-charcoal transition-colors">{prompt}</span>
+                </button>
+              ))}
+            </div>
           </div>
         )}
 
@@ -247,7 +285,7 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
           const verseRef = m.role === 'ai' ? findVerseReference(m.content) : null;
 
           return (
-            <div key={idx} className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'} space-y-2`}>
+          <div className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'} space-y-2 mb-6 last:mb-0`}>
               <div className={`max-w-[85%] rounded-2xl px-5 py-4 border ${m.role === 'user' ? 'bg-indigo text-white border-indigo' : 'bg-white text-charcoal shadow-sm border-stone-warm/30'}`}>
                 <p className="text-sm whitespace-pre-wrap leading-relaxed">{m.content}</p>
               </div>
@@ -270,11 +308,11 @@ const SeekGuidance: React.FC<SeekGuidanceProps> = ({ settings: initialSettings, 
 
 
         {/* Streaming Message Bubble */}
-        {loading && streamingContent && (
+        {(loading || displayContent.length < streamingContent.length) && displayContent && (
           <div className="flex flex-col items-start space-y-2">
             <div className="max-w-[85%] rounded-2xl px-5 py-4 border bg-white text-charcoal shadow-sm border-stone-warm/30">
               <p className="text-sm whitespace-pre-wrap leading-relaxed">
-                {streamingContent}
+                {displayContent}
                 <span className="inline-block w-1.5 h-3 ml-1 bg-stone-400 animate-pulse" />
               </p>
             </div>

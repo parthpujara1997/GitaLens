@@ -257,7 +257,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, defaultMode = 'l
                                     }}
                                     className="text-saffron-accent font-bold hover:underline"
                                 >
-                                    {(mode === 'login' || mode === 'forgot' || mode === 'update-password') ? 'Sign In' : 'Join Now'}
+                                    {mode === 'login' ? 'Join Now' : 'Sign In'}
                                 </button>
                             </p>
                         </div>

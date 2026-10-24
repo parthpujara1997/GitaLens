@@ -40,7 +40,7 @@ const FALLBACK_SUGGESTIONS = [
         healthyImpact: "I can learn from this experience and move forward with clarity and compassion for myself."
     },
     {
-        healthyMeaning: "I don't have control over everything—only my response and my effort.",
+        healthyMeaning: "I don't have control over everything, only my response and my effort.",
         healthyImpact: "I choose to focus on what I can influence rather than what I can't control."
     },
     {
